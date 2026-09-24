@@ -378,7 +378,7 @@ maximum-scale=5
 
 ## 10. 建議的未來程式架構
 
-目前《月光洞》為方便上傳，採 **單一 `index.html` 打包圖片與程式**。優點是部署簡單；缺點是檔案較大、修改不方便。
+《月光洞》為方便上傳，採 **單一 HTML 打包圖片與程式**。在多故事架構中，它放在 `stories/moon-cave/index.html`，root `index.html` 是「阿通的冒險世界」首頁。優點是部署簡單；缺點是故事檔案較大、修改不方便。本次目錄搬移不代表已抽出共用引擎。
 
 如果之後要大量製作故事，建議改成共用引擎：
 
@@ -481,12 +481,16 @@ https://<github-user>.github.io/<repo-name>/
 
 ### 更新版本
 
-最簡單：
+多故事專案採以下流程：
 
-1. Repository 打開舊 `index.html`。
-2. 上傳新版本取代／commit。
-3. 等 GitHub Pages 自動重新部署。
-4. 平板若仍看到舊版，重新整理或清瀏覽器快取。
+1. 從最新 `main` 建立工作分支。
+2. 更新對應故事的 `stories/<story-id>/index.html`；只有入口變更才修改 root `index.html`。
+3. 新故事放入自己的目錄，不覆蓋既有故事；首頁以 `./stories/<story-id>/` 連入，故事使用相對路徑返回首頁。
+4. 測試 project site 的 `/Moon-cave/` 前綴、資產路徑、存檔及互動，再建立 PR。
+5. 使用者確認 PR／發布後才合併 `main`，等待 GitHub Pages 部署完成。
+6. 驗證首頁與故事子路徑；平板若仍看到舊版，可重新整理或清除快取，勿任意清除網站存檔。
+
+本次入口 PR 合併前，正式站仍使用原 root `index.html`。
 
 ### 檔名
 
@@ -495,6 +499,8 @@ https://<github-user>.github.io/<repo-name>/
 `index.html`
 
 不要把正式入口命名成中文長檔名。
+
+多故事網站的 root `index.html` 為平台首頁，各故事仍以自己的 `index.html` 作為目錄入口。新故事狀態採 `adventure.<story-id>.state`，共用設定採 `adventure.settings.*`；既有故事的舊 key 需先評估 migration，不因搬移目錄直接更名。詳見 [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md)。
 
 ---
 
