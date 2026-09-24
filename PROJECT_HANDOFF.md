@@ -9,9 +9,12 @@
 
 - Repository：[mansonsick/Moon-cave](https://github.com/mansonsick/Moon-cave)
 - 正式分支：`main`
-- GitHub Pages：[月光洞的祕密](https://mansonsick.github.io/Moon-cave/)
-- 正式入口：repository root 的 `index.html`
+- GitHub Pages 根入口：[阿通的冒險世界](https://mansonsick.github.io/Moon-cave/)
+- 《月光洞》入口：[月光洞的祕密](https://mansonsick.github.io/Moon-cave/stories/moon-cave/)
+- 平台入口：root `index.html`；故事入口：`stories/moon-cave/index.html`。
 - 部署方式：GitHub Pages，`main` 分支、`/(root)`。
+
+以上為本次入口分支的目標路徑；PR 經使用者確認、合併且 Pages 部署完成後才生效。合併前正式站仍由 root `index.html` 提供《月光洞》v3。
 
 **GitHub `main` 最新內容是唯一正式規格來源（source of truth）。** 聊天中的舊資訊或本機舊副本與 GitHub 衝突時，以 GitHub `main` 為準。每次開始工程工作前，先核對最新 `main`、相關規格與開發紀錄，再進行修改。
 
@@ -128,13 +131,30 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 - 目標呈現：中文字在左，注音直排在單字右側。
 - 目前正式版使用預先渲染的透明注音文字圖，包入 HTML，以維持跨裝置穩定。
-- 使用者曾提供 `BpmfGenRyuMin-H.ttf` 類型字型；這不等同於已取得公開散布或網頁嵌入授權。
+- **使用者已指定 `BpmfGenRyuMin-H.ttf` 為全專案統一注音字型，後續所有故事均適用。** 首頁及新故事的標題、內文、選項、挑戰提示、成功／失敗畫面、導覽按鈕等新增或更新的兒童可見中文，皆使用此字型，不能漏回系統中文字型。
+- 字型提供不等同於已取得公開散布或網頁嵌入授權。
 - **授權未確認前，不得將字型檔 commit 到 public repository，也不得公開散布。**
 - 若未來改為 `@font-face`，先確認授權允許網頁嵌入與散布，再規劃實作。
+- 在此之前，統一於本機用該字型渲染透明 PNG，公開專案只放文字圖與對應可讀文字；圖片需有正確 `alt` 或按鈕可存取名稱。
+- 首頁文字來源在 `assets/hub-text/text.json`，共用離線產字工具為 `scripts/render_zhuyin.py`（使用方式見 `scripts/README.md`）。字型本體只從使用者的本機路徑讀取，不複製進 repository。
+- 逐句檢查多音字、輕聲與注音裁切；以平板及縮放後畫面確認清晰度。現有 v3 原字圖保持不變；後續新故事與新增 UI 皆套用以上規範。
 
 ## 6. 架構方向與啟動條件
 
-目前《月光洞》v3 是單一 `index.html`，打包圖片與程式，方便部署。應優先維持正式故事可用，不為重構而破壞現有版本。
+《月光洞》v3 繼續使用單一 HTML 打包圖片與程式；本次移至 `stories/moon-cave/index.html`。root `index.html` 只提供故事選擇，避免新故事覆蓋舊故事。應優先維持正式故事可用，不為重構而破壞現有版本。
+
+```text
+/
+├─ index.html                     # 阿通的冒險世界
+├─ assets/moon-cave-cover.webp    # 從 v3 原封不動抽出的首頁場景圖
+├─ stories/moon-cave/index.html   # v3，僅新增獨立頁底返回導覽
+├─ tests/                        # 路徑、舊存檔與原版／移動版回歸測試
+├─ PROJECT_HANDOFF.md
+├─ INTERACTIVE_STORY_SOP.md
+└─ MOON_CAVE_DEVLOG.md
+```
+
+尚未建立 `engine/`。原故事 JavaScript、CSS、注音文字圖及場景圖保持不變；返回首頁使用頁底的 `../../` 連結，不覆蓋操作區，也不清除存檔。
 
 **第二個故事開始時，再抽出可重用引擎（reusable engine）。** 長期模組方向：
 
@@ -173,7 +193,7 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 正式故事或新功能完成後，先提供可檢視的修改與測試結果，再由使用者確認正式發布。因 `main` 對應 GitHub Pages，正式網站內容變更併入 `main` 亦應納入發布決策。
 
-本次使用者已明確授權新增並 commit 交接文件；此授權範圍只有 `PROJECT_HANDOFF.md`。
+首次交接已於 commit `50841bd009b1a14e00f673b23fa5e5b7828dfb66` 完成。使用者之後已確認交接，另行授權本次多故事入口調整、分支提交及 PR；尚未授權合併至 `main`。
 
 ## 9. 固定開發流程
 
@@ -217,8 +237,33 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 ## 11. 本次交接範圍與下一步
 
-本次只新增 repository root 的 `PROJECT_HANDOFF.md` 並 commit，不修改 `index.html`、既有 SOP 或 DEVLOG，也不提升正式故事版本。
+目前範圍為 `feature/adventure-hub`：保存 v3 基準、搬移故事、新增「阿通的冒險世界」首頁、回歸測試、更新文件與建立 PR。故事版本仍為 v3。
 
-**在使用者確認前，不開始 engine 重構、不修改正式故事，也不自行啟動體感開發。**
+**PR 經使用者確認前不合併 `main`。本次不開始 Story 02、不重構 engine、不改故事玩法、不遷移 localStorage key，也不啟動體感開發。**
 
-下一步先由使用者確認交接文件與下一項工作範圍。若確認進行體感實驗，先製作獨立 `balanceSensor` 測試頁並保留普通 15 秒倒數；若確認開始第二個故事，先依故事開發流程完成內容與圖片規劃，再於適當階段抽出共用引擎。
+下一步由使用者檢視 PR 及平板實機體驗。確認合併後驗證 Pages 首頁與故事子路徑；之後再另行確認 Story 02 或體感實驗範圍。
+
+## 12. 存檔現況與未來 namespace 遷移提案
+
+以本次核對的 v3 實作為準：
+
+| key | 內容 | 本次處理 |
+| --- | --- | --- |
+| `moonCaveState` | JSON：場景、三件道具、分支紀錄、結局及 `textScale`。 | 保留讀寫行為，不更名、不清除。 |
+| `moonCaveTextScale` | 字級縮放數值。 | 保留，並維持優先於 state 中 `textScale` 的讀取順序。 |
+
+localStorage 依 origin 隔離，不依 URL path 隔離。兩個路徑都在 `https://mansonsick.github.io`，所以舊根目錄的存檔可直接由故事子目錄讀取。首頁不使用 localStorage，也不呼叫故事的 reset。
+
+原 v3 重新整理時恢復目前場景、已取得道具與字級；挑戰中途的倒數／跳躍進度，以及石門「已放入哪個凹槽」不保存。石門重新整理後保留道具，但需重新拖曳。「再玩一次」重置故事狀態並保留目前字級。這些行為本次不變。
+
+未來新故事採 `adventure.<story-id>.state`，例如 `adventure.story-02.state`；共用設定使用 `adventure.settings.*`。不得沿用《月光洞》的舊 key。
+
+《月光洞》建議另開遷移變更，經使用者確認後再實作：
+
+1. 以 `adventure.moon-cave.state` 為新 key，加入 schema 版本；優先讀取有效的新格式。
+2. 新 key 不存在時，讀取並驗證 `moonCaveState`，保留場景、道具、分支與結局；依原優先順序整合 `moonCaveTextScale`。
+3. 複製為新格式，寫入並讀回驗證成功後，才將新 key 視為有效；保留舊 key 作為原始回復副本。
+4. 驗證成功前不刪舊資料、不使用 `localStorage.clear()`；處理 JSON 損壞、儲存被拒與寫入失敗，避免覆蓋有效存檔。
+5. 測試新舊 key 共存、重複執行、字級優先順序與失敗回復。若仍需支援舊故事頁或版本回退，另行確定過渡期同步策略，避免新舊進度分歧。
+
+**以上僅為提案；本 PR 沒有執行 migration。**
