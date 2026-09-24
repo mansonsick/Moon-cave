@@ -83,7 +83,8 @@ body{overflow-x:hidden}
 <!-- Adventure hub navigation: outside the original story layout and state. -->
 <style id="adventure-home-style">
 .adventure-home{padding:20px max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background:#15120f;text-align:center}
-.adventure-home a{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:12px 28px;border:1px solid #a99572;border-radius:16px;color:#fff4d8;font:600 22px/1.5 system-ui,-apple-system,"Microsoft JhengHei",sans-serif;text-decoration:none;touch-action:manipulation}
+.adventure-home a{display:inline-flex;gap:12px;align-items:center;justify-content:center;min-height:56px;padding:12px 28px;border:1px solid #a99572;border-radius:16px;color:#fff4d8;font:600 22px/1.5 system-ui,-apple-system,"Microsoft JhengHei",sans-serif;text-decoration:none;touch-action:manipulation}
+.adventure-home img{display:block;width:auto;max-width:calc(100vw - 130px);height:36px;object-fit:contain}
 .adventure-home a:focus-visible{outline:3px solid #ffe173;outline-offset:4px}
 </style>
 </head>
@@ -221,5 +222,5 @@ function endScene(imgKey,textKey,isOrd){
 function finalScene(){return `<div class="game fade">${toolbar()}<div class="scene-wrap"><div class="scene-canvas"><img class="scene-img" src="${IMAGES.final}"><div class="end-actions">${hs('again','',"resetState('entrance')")}${hs('home','',"resetState('cover')",'soft')}</div></div></div><div class="story">${imgText('final')}</div></div>`}
 render();
 </script>
-<nav class="adventure-home" aria-label="冒險世界"><a href="../../">← 返回冒險首頁</a></nav>
+<nav class="adventure-home" aria-label="冒險世界"><a href="../../"><span aria-hidden="true">←</span><img src="../../assets/hub-text/home-return.png" alt="返回冒險首頁" width="1752" height="207"></a></nav>
 </body></html>

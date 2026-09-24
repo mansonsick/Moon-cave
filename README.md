@@ -11,6 +11,8 @@
 
 故事仍為單一 HTML，原圖片、注音與程式內嵌；尚未重構共用 engine。首頁沒有建置程序或外部服務依賴。
 
+首頁與以後所有故事統一使用 `BpmfGenRyuMin-H.ttf` 的右側注音。公開網站使用本機預先渲染的透明文字圖，字型本體不公開；改字方式見 [scripts/README.md](scripts/README.md)。
+
 ## 開發與測試
 
 - [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md)：工程分工、目前範圍與存檔遷移提案。

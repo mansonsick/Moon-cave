@@ -70,7 +70,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_error(404)
                 return
             data = target.read_bytes()
-            mime = 'image/webp' if target.suffix == '.webp' else 'text/html; charset=utf-8'
+            mime = {'.webp': 'image/webp', '.png': 'image/png'}.get(target.suffix, 'text/html; charset=utf-8')
         elif route == '/favicon.ico':
             self.send_response(204)
             self.end_headers()
@@ -272,8 +272,14 @@ def hub_and_legacy_storage(browser, base, out):
     for width, height in [(820, 1180), (768, 1024), (1024, 1366), (1180, 820), (390, 844)]:
         context = browser.new_context(viewport={'width': width, 'height': height}, has_touch=True)
         page = context.new_page()
+        font_requests = []
+        page.on('request', lambda r: font_requests.append(r.url) if re.search(r'\.(ttf|otf|woff2?)(?:\?|$)', r.url) else None)
         page.goto(base + '/Moon-cave/')
+        page.wait_for_function('Array.from(document.images).every(i => i.complete && i.naturalWidth > 0)')
         assert page.title() == '阿通的冒險世界'
+        assert page.locator('.text-image').count() == 9
+        assert page.get_by_role('heading', name='阿通的冒險世界').is_visible()
+        assert page.get_by_role('link', name='開始冒險', exact=False).is_visible()
         assert page.locator('article').count() == 1
         assert page.locator('.cover-link img').evaluate('i => i.complete && i.naturalWidth === 1055')
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
@@ -292,6 +298,7 @@ def hub_and_legacy_storage(browser, base, out):
         scene(page, 'cover')
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         page.screenshot(path=str(out / f'story-{width}x{height}.png'), full_page=True)
+        assert not font_requests, 'No raw font should be served to the browser'
         context.close()
     record('responsive-navigation', 'Portrait/landscape tablet and phone layouts; cover and CTA entry; explicit return link; no horizontal overflow.')
 
