@@ -498,7 +498,7 @@ https://<github-user>.github.io/<repo-name>/
 5. 使用者確認 PR／發布後才合併 `main`，等待 GitHub Pages 部署完成。
 6. 驗證首頁與故事子路徑；平板若仍看到舊版，可重新整理或清除快取，勿任意清除網站存檔。
 
-本次入口 PR 合併前，正式站仍使用原 root `index.html`。
+多故事入口已於 2026-09-28 經使用者確認合併並部署；root `index.html` 正式提供冒險首頁，《月光洞》在 `stories/moon-cave/` 獨立提供。
 
 ### 檔名
 

@@ -1,8 +1,8 @@
 # 《月光洞的祕密》開發紀錄
 
 Repository：`Moon-cave`  
-平台入口（入口 PR 合併後）：`https://mansonsick.github.io/Moon-cave/`
-故事入口（入口 PR 合併後）：`https://mansonsick.github.io/Moon-cave/stories/moon-cave/`
+平台入口：`https://mansonsick.github.io/Moon-cave/`
+故事入口：`https://mansonsick.github.io/Moon-cave/stories/moon-cave/`
 主角：阿通  
 目標平台：平板瀏覽器
 
@@ -210,7 +210,7 @@ Repository：`Moon-cave`
 - Public repository
 - `main` branch
 - `/(root)`
-- root `index.html` 為平台入口，`stories/moon-cave/index.html` 為故事入口（入口 PR 合併並部署後生效）。
+- root `index.html` 為平台入口，`stories/moon-cave/index.html` 為故事入口；2026-09-28 已正式上線。
 
 目前為單一 HTML 打包版，方便部署，但檔案較大。
 
@@ -225,7 +225,16 @@ Repository：`Moon-cave`
 
 ## Version History
 
-### 2026-09-24 多故事冒險入口 — 待 PR 確認／未發布（故事維持 v3）
+### 2026-09-28 冒險首頁正式上線（故事維持 v3）
+
+- 使用者已指示完成待辦並發布首頁。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已合併，merge commit：`578af25359994d1df68717e714d83e36b36d2e46`；[Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)。
+- 正式 root 現在是「阿通的冒險世界」；《月光洞的祕密》獨立位於 `/Moon-cave/stories/moon-cave/`，可從頁底返回首頁。原故事仍為 v3。
+- 首頁與返回按鈕使用指定注音字型產出的文字圖；未公開字型本體。
+- 發布前 6 組回歸通過；正式網站的 13 個檔案與發布 commit 完全一致，五種尺寸導覽、舊存檔續玩、三挑戰、拖曳、雙結局及字級功能通過瀏覽器測試。詳細證據與模擬限制見 [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)。
+- 存檔 key 與原 v3 相同，未遷移、未清除；Android／iPad 實機手指操作與雙指縮放仍待使用者回報。
+- 使用者已安排線上 GPT 開始第二本書製作；Codex 接續負責工程、測試與 GitHub 維護。完整分支、素材及教育目標仍須依 SOP 確認；此次發布沒有加入 Story 02 程式或重構 engine。
+
+### 2026-09-24 多故事冒險入口 — 開發紀錄（2026-09-28 已發布，故事維持 v3）
 
 基準：`main` commit `50841bd009b1a14e00f673b23fa5e5b7828dfb66`，原故事 blob `2071c1f9b662637e7db6708217d8d3c20c8cec5d`。原檔保存在 Git 歷史，可從該 commit 還原；不新增重複的正式故事備份頁。
 
@@ -254,7 +263,7 @@ Changed：
 
 - 重跑指令見 [tests/README.md](tests/README.md)；本次結果見 [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)。
 - 自動化不代替 Android 平板／iPad 實機與雙指縮放驗收。
-- 本分支不重構 engine、不啟動 Story 02、不合併 `main`；線上新路徑待使用者確認及 Pages 部署後驗收。
+- 9 月 24 日開發階段未合併 `main`、未重構 engine 或啟動 Story 02；後續發布狀態及分工見 2026-09-28 紀錄。
 
 ### v1
 

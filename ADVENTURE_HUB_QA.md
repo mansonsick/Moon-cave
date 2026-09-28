@@ -1,8 +1,8 @@
 # 冒險入口調整驗證紀錄
 
-- 日期：2026-09-24
+- 日期：2026-09-24；發布驗證更新：2026-09-28
 - 分支：`feature/adventure-hub`
-- 狀態：待使用者確認 PR；尚未合併／發布。
+- 狀態：使用者已確認發布，PR #1 已合併，GitHub Pages 已部署成功。
 - 正式故事：仍為《月光洞的祕密》v3。
 - 比對基準：commit `50841bd009b1a14e00f673b23fa5e5b7828dfb66` 的 root `index.html`。
 
@@ -59,7 +59,22 @@ Chromium 自動化中，使用原生模擬觸控拖曳、進入結局並重新�
 ### 實機與正式部署
 
 - 尚未做 Android 平板／iPad 實機測試；觸控模擬不能代替手指拖曳手感與雙指縮放。
-- `main` 未變更，正式 GitHub Pages 尚未切換。新路徑已在本機按相同前綴驗證，未宣稱線上已發布。
-- 使用者確認 PR 後才可合併。部署完成需再確認 `/Moon-cave/`、`/Moon-cave/stories/moon-cave/`、返回連結、圖片載入及既有裝置存檔。
+- PR #1 已於 2026-09-28 依使用者指示合併，正式 GitHub Pages 已切換為多故事入口；正式網址驗證見下節。
+- 正式使用者裝置的既有存檔與手指操作仍待實機回報；自動化使用隔離瀏覽器，不接觸使用者的存檔。
 - 故事 key 保持 `moonCaveState`／`moonCaveTextScale`；namespace migration 只提出建議，未執行。
-- 未建立 engine、未開始 Story 02，未加入字型檔或公開未授權字型。
+- 本次未建立 engine 或 Story 02 程式，未加入字型檔或公開未授權字型；使用者已安排線上 GPT 開始第二本書的內容製作。
+
+## 2026-09-28 正式發布驗證
+
+- 發布授權：使用者明確要求完成待辦並讓首頁上線。
+- [PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已合併；merge commit：`578af25359994d1df68717e714d83e36b36d2e46`。
+- [GitHub Pages 部署](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293) 結果為 `success`，來源為 `main`、`/(root)`。
+- 發布前以最新 PR 內容重跑原版及搬移版全部 6 組回歸檢查，全部通過。
+- 正式 [冒險首頁](https://mansonsick.github.io/Moon-cave/) 與 [月光洞](https://mansonsick.github.io/Moon-cave/stories/moon-cave/) 已可開啟。
+- 對正式網址取得的首頁、故事 HTML、封面及 10 張注音 PNG 共 13 個檔案逐一核對，皆為 HTTP 200，且位元內容與已發布的 Git commit 完全一致。
+- 以隔離 Chromium 在正式 HTTPS 網址測試 820×1180、768×1024、1024×1366、1180×820、390×844：首頁注音圖、圖片卡、開始按鈕、故事頁及返回首頁皆正常，無橫向溢出或 JavaScript／HTTP 資產錯誤；已目視檢查平板直向截圖。
+- 舊存檔續玩：只在測試瀏覽器中攔截一次舊根入口，以保存的 v3 建立舊存檔，再載入真實首頁及故事子路徑；場景、字級與儲存值相同。未操作使用者實際裝置或瀏覽器的存檔。
+- 正式故事再次完成三挑戰、盾牌失敗重試、Reward 等待、隱藏探索、觸控拖曳、凹槽圖示、普通／祕密結局、A−／A+、重新整理及再玩一次。倒數採測試時鐘加速。
+- 原 v3 的「拖曳 → 結局 → 重新整理」觸控模擬限制仍存在，沒有藉發布修改玩法；實體 Android／iPad 及雙指手勢仍待使用者驗收。
+
+本機驗證輸出：`hub-review/release-20260928/test-results.json`；正式網址驗證輸出及截圖：`hub-review/release-20260928-live/`（位於本機 repository 的同層資料夾，未加入公開 repository）。

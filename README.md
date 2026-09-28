@@ -7,7 +7,7 @@
 | `/Moon-cave/` | 冒險首頁：大型故事卡與「開始冒險」。 |
 | `/Moon-cave/stories/moon-cave/` | 《月光洞的祕密》v3；頁底可返回冒險首頁。 |
 
-此架構在 PR 確認、合併 `main` 並完成 Pages 部署後生效。合併前正式 root 仍是《月光洞》v3。
+已於 2026-09-28 經使用者確認上線：[冒險首頁](https://mansonsick.github.io/Moon-cave/)｜[月光洞的祕密](https://mansonsick.github.io/Moon-cave/stories/moon-cave/)。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已合併，[Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)。
 
 故事仍為單一 HTML，原圖片、注音與程式內嵌；尚未重構共用 engine。首頁沒有建置程序或外部服務依賴。
 
@@ -19,7 +19,7 @@
 - [INTERACTIVE_STORY_SOP.md](INTERACTIVE_STORY_SOP.md)：故事製作及發布標準。
 - [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md)：版本與變更紀錄。
 - [tests/README.md](tests/README.md)：瀏覽器回歸測試。
-- [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)：本次驗證結果與待實機／上線項目。
+- [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)：本機、正式網站驗證結果與待實機項目。
 
 GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，使用者確認前不合併或發布。
 
