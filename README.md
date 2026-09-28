@@ -1,11 +1,12 @@
 # 阿通的冒險世界
 
-低年級兒童的平板互動冒險繪本入口。目前收錄《月光洞的祕密》v3。
+低年級兒童的平板互動冒險繪本入口。目前收錄《月光洞的祕密》v3 與 Story 02《逃出虎姑婆的山屋》。首頁上下排列兩張故事卡；第二本以開場名稱「陌生山路的冒險」顯示，避免破梗。
 
 | 路徑 | 內容 |
 | --- | --- |
 | `/Moon-cave/` | 冒險首頁：大型故事卡與「開始冒險」。 |
 | `/Moon-cave/stories/moon-cave/` | 《月光洞的祕密》v3；頁底可返回冒險首頁。 |
+| `/Moon-cave/stories/story-02/` | 第二本完整故事；上方工具列可返回首頁。 |
 
 已於 2026-09-28 經使用者確認上線：[冒險首頁](https://mansonsick.github.io/Moon-cave/)｜[月光洞的祕密](https://mansonsick.github.io/Moon-cave/stories/moon-cave/)。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已合併，[Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)。
 
@@ -21,12 +22,14 @@
 - [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md)：版本與變更紀錄。
 - [tests/README.md](tests/README.md)：瀏覽器回歸測試。
 - [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)：本機、正式網站驗證結果與待實機項目。
+- [engine/SENSORS_REUSE.md](engine/SENSORS_REUSE.md)：已驗收的鏡頭／動作感測方法及後續接法。
+- [FUTURE_IMPROVEMENTS.md](FUTURE_IMPROVEMENTS.md)：背景音改善方向與成品回饋。
 
 GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，使用者確認前不合併或發布。
 
-## Story 02 平板測試版
+## Story 02 本階段完成
 
-《逃出虎姑婆的山屋》第一輪完整工程已通過瀏覽器驗收。使用者已於 2026-09-28 要求先上線供平板實測，經 PR #3／#4 合併至 main 發布：[平板測試入口](https://mansonsick.github.io/Moon-cave/stories/story-02/)。後續加入九種原創合成音效，保留靜音偏好；首頁卡片及月光洞保持原樣，感測與音效聽感仍待實機回饋。詳細方式見 [stories/story-02/README.md](stories/story-02/README.md)。
+使用者已於 2026-09-28 確認成品、鏡頭／移動偵測及操作特效聲音 OK，本故事先維持現狀。首頁已補上入口：[開始第二本](https://mansonsick.github.io/Moon-cave/stories/story-02/)。背景音「更小聲、場景特色更鮮明」僅記為後續製作方向，沒有回頭修改音檔或故事。詳細紀錄見 [stories/story-02/README.md](stories/story-02/README.md)。
 
 ## v3 保存基準
 

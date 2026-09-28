@@ -38,6 +38,7 @@
       background: #fffaf0;
       box-shadow: 0 14px 44px #5d503c18;
     }
+    .story-card + .story-card { margin-top: 36px; }
     .cover-link { display: flex; align-items: center; justify-content: center; background: #221d17; }
     .cover-link img { width: 100%; height: auto; display: block; }
     .story-info { padding: clamp(24px, 4vw, 48px); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
@@ -49,6 +50,7 @@
     .description img { width: 100%; height: auto; }
     /* Match the PNG widths so all three lines use the same character size. */
     .description img:nth-child(2) { width: calc(100% * 1752 / 2616); }
+    .story-card[data-story="story-02"] .description img:nth-child(2) { width: calc(100% * 1464 / 2616); }
     .start {
       display: inline-flex;
       align-items: center;
@@ -104,7 +106,7 @@
       <h1><img class="text-image" src="./assets/hub-text/world-title.png" alt="阿通的冒險世界" width="2040" height="207"></h1>
       <p><img class="text-image" src="./assets/hub-text/welcome-first.png" alt="選一本故事，" width="1752" height="207"><img class="text-image" src="./assets/hub-text/welcome-second.png" alt="一起出發吧！" width="1752" height="207"></p>
     </header>
-    <article class="story-card" aria-labelledby="moon-cave-title">
+    <article class="story-card" data-story="moon-cave" aria-labelledby="moon-cave-title">
       <a class="cover-link" href="./stories/moon-cave/" aria-label="進入月光洞的祕密">
         <img src="./assets/moon-cave-cover.webp" width="1055" height="1491" alt="月光照進古老洞穴，石階、蜘蛛網與寶箱藏在其中。" fetchpriority="high">
       </a>
@@ -113,6 +115,17 @@
         <h2 id="moon-cave-title"><img class="text-image" src="./assets/hub-text/story-title.png" alt="月光洞的祕密" width="1752" height="207"></h2>
         <p class="description"><img class="text-image" src="./assets/hub-text/description-first.png" alt="跟著阿通和小松鼠，" width="2616" height="207"><img class="text-image" src="./assets/hub-text/description-second.png" alt="走進月光洞，" width="1752" height="207"><img class="text-image" src="./assets/hub-text/description-third.png" alt="找找藏起來的祕密。" width="2616" height="207"></p>
         <a class="start" href="./stories/moon-cave/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="story-card" data-story="story-02" aria-labelledby="story-02-title">
+      <a class="cover-link" href="./stories/story-02/" aria-label="進入陌生山路的冒險">
+        <img src="./stories/story-02/assets/images/warm-house.png" width="1672" height="941" alt="阿通和小松鼠走到山中的木屋前，窗戶透出溫暖的燈光。" loading="lazy" decoding="async">
+      </a>
+      <div class="story-info">
+        <p class="chapter"><img class="text-image" src="./assets/hub-text/story-02-chapter.png" alt="阿通的第二場冒險" width="2328" height="207"></p>
+        <h2 id="story-02-title"><img class="text-image" src="./assets/hub-text/story-02-title.png" alt="陌生山路的冒險" width="2040" height="207"></h2>
+        <p class="description"><img class="text-image" src="./assets/hub-text/description-first.png" alt="跟著阿通和小松鼠，" width="2616" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-second.png" alt="觀察山屋，" width="1464" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-third.png" alt="找出安全回家的路。" width="2616" height="207"></p>
+        <a class="start" href="./stories/story-02/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
   </main>

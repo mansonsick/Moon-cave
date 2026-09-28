@@ -603,6 +603,10 @@ https://<github-user>.github.io/<repo-name>/
 
 每個 sensor challenge 必須有非 sensor fallback，避免舊設備或權限被拒絕時卡關。
 
+2026-09-28，使用者已確認 Story 02 的鏡頭／移動偵測功能可用。後續故事先參考 [已驗收方法與接法](engine/SENSORS_REUSE.md)，沿用權限、校正、暫停、資源清理及普通操作，不重寫同一套邏輯。
+
+聲音的後續準則：背景音再小聲一點，各場景特色要清楚，不要都以風聲為主；操作回饋音效方向已接受。詳見 [改善紀錄](FUTURE_IMPROVEMENTS.md)。Story 02 本階段完成，這些意見留待未來故事，不主動回改成品。
+
 ---
 
 ## 16. 新故事開發的標準順序
