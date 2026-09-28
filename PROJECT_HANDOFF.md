@@ -1,7 +1,7 @@
 # 互動兒童冒險繪本｜工程與 GitHub 維護交接
 
 - 交接日期：2026-09-24
-- 最近更新：2026-09-28（冒險首頁上線）
+- 最近更新：2026-09-28（冒險首頁已上線；本分支整理 Story 02 確認規格）
 - 專案性質：長期維護的低年級兒童平板互動冒險繪本
 - 目前正式故事：《月光洞的祕密》
 - 目前正式故事版本：v3
@@ -24,6 +24,8 @@
 | [INTERACTIVE_STORY_SOP.md](INTERACTIVE_STORY_SOP.md) | 跨故事的設計、圖片、互動、工程、測試及發布標準。 |
 | [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md) | 《月光洞》的既定故事流程、版本變更、已修正問題與待辦。 |
 | [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) | 工程接手規格、責任分工、維護流程與後續工作的啟動界線。 |
+| [CHATGPT_DESKTOP_COLLABORATION_SOP.md](CHATGPT_DESKTOP_COLLABORATION_SOP.md) | 線上 ChatGPT 的內容／視覺工作與 Codex 工程維護之交接。 |
+| [Story 02 文件入口](stories/story-02/README.md) | 已確認 STORY_SPEC、待交接資產、音效與工程計畫；本分支未合併／未發布。 |
 
 本次交接核對的 `main` 基準 commit：`f9a316f9d2243dcf24591e766395bdaaffcaf526`。此值供追溯本次交接，後續工作仍應讀取最新 `main`。
 
@@ -105,7 +107,7 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 ### 4.3 道具拖曳
 
 - 使用 Pointer Events 支援手指操作，不依賴桌面 HTML Drag API。
-- 按住產生拖曳影像；靠近正確凹槽時，凹槽發光。
+- 按住產生拖曳影像；一般凹槽靠近時可發光。Story 02 的隱藏鈴鉤依確認稿不發光，不用靠近發光洩漏答案；成功放入後才提供道具保留與成功回饋。《月光洞》原凹槽行為不變。
 - 放錯自動彈回；放對提供磁吸、縮放或光圈回饋。
 - **放入後圖示必須保留在凹槽中並發光，不可消失。**
 - dropzone 必須對準原圖凹槽，並在不同平板尺寸維持位置一致。
@@ -115,7 +117,7 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 - 平板本文預設 44–48 px，標題 56–64 px；互動標籤需清晰可讀。
 - 保留 `A− / A+` 調整功能。
 - 允許雙指縮放：`user-scalable=yes`、`maximum-scale=5`。
-- 背包固定顯示 3 個道具位置；未取得呈灰色低透明度，已取得呈正常色與淡光。
+- 《月光洞》背包維持 3 個道具位置及原有灰色／淡光表現。新故事依確認規格設定背包；Story 02 只顯示已取得道具，山神鈴取得前不顯示空槽或灰影。
 - 依 SOP 使用 localStorage 自動保存進度，重新整理不應立即丟失進度。
 - 「再玩一次」明確清除本故事狀態，避免殘留道具或分支紀錄。
 
@@ -176,7 +178,7 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 - 使用 DeviceMotion／DeviceOrientation。
 - 平板需直立，或維持在校正後的容許角度內。
 - 只有穩定時才計時，晃動過大則重置。
-- 必須保留普通 15 秒倒數 fallback。
+- 必須保留普通倒數 fallback，秒數由故事設定。《月光洞》既有鑰匙挑戰是 15 秒；Story 02 的 stillness／balance 與替代倒數均為 8 秒，15 秒不是跨故事固定值。
 - 裝置不支援或權限遭拒時，仍能使用 fallback 完成挑戰。
 - 感測門檻與容許角度需透過平板實測調整，不在交接階段宣告為已完成或已定案。
 
@@ -242,9 +244,11 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 本次發布沒有重構 engine、修改故事玩法、遷移 localStorage key 或啟動體感開發。實體 Android 平板／iPad 的手指操作及雙指縮放仍待使用者回報，不以瀏覽器模擬宣稱已完成實機驗收。
 
-使用者已於 2026-09-28 安排線上 GPT 開始製作第二本書並與 Codex 分工。內容階段沿用 SOP，由使用者確認主題、教育目的、完整分支、道具、雙結局及素材；Codex 負責接續工程整合、測試與 GitHub 維護。此紀錄不代表第二本書的故事稿、素材或程式已完成。
+使用者已確認第二本《逃出虎姑婆的山屋》的 `STORY02_STORY_SPEC_v1.md` 為故事與互動規格 v1.0，原文收錄於 [stories/story-02/STORY_SPEC.md](stories/story-02/STORY_SPEC.md)。它取代舊 Draft v0.1 與未採用的聊天提案；本規格分支尚未合併 `main`，不代表新故事已開發或發布。
 
-第二本書依確認後的 story id 放入 `stories/<story-id>/`，使用自己的 `adventure.<story-id>.state`，遵守統一注音字型規範。收到並核對已確認的內容與素材後再開始工程；共用引擎在該階段依實際需求抽出，持續保護《月光洞》正式版本。
+目前工作分支 `docs/story-02-plan` 只整理正式文件及資產目錄。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與統一注音字型；音效首次預設開啟，但點「開始冒險」後才實際啟用，並尊重已保存的關閉設定。詳細模組及驗收見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
+
+下一步由線上 ChatGPT／使用者依 [ASSET_MANIFEST.md](stories/story-02/ASSET_MANIFEST.md) 完成圖片與資產交接，Codex 核對後才進入 `feature/story-02-foundation`。此階段不建立 engine、完整故事程式或 Story 02 首頁卡片，不合併 `main`；規格確認不等於發布確認。共用引擎由下一工程階段逐步建立，先服務新故事並持續保護《月光洞》正式版本。
 
 ## 12. 存檔現況與未來 namespace 遷移提案
 

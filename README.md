@@ -17,11 +17,16 @@
 
 - [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md)：工程分工、目前範圍與存檔遷移提案。
 - [INTERACTIVE_STORY_SOP.md](INTERACTIVE_STORY_SOP.md)：故事製作及發布標準。
+- [CHATGPT_DESKTOP_COLLABORATION_SOP.md](CHATGPT_DESKTOP_COLLABORATION_SOP.md)：內容／視覺與工程／GitHub 分工。
 - [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md)：版本與變更紀錄。
 - [tests/README.md](tests/README.md)：瀏覽器回歸測試。
 - [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)：本機、正式網站驗證結果與待實機項目。
 
 GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，使用者確認前不合併或發布。
+
+## Story 02 規格準備
+
+《逃出虎姑婆的山屋》v1.0 故事規格已由使用者確認，文件與素材需求集中於 [stories/story-02/README.md](stories/story-02/README.md)。目前僅在 `docs/story-02-plan` 整理文件及空素材目錄，尚未合併／開發／發布；等圖片與資產交接後再進 `feature/story-02-foundation`。
 
 ## v3 保存基準
 
