@@ -21,6 +21,8 @@ main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d
 | ../../engine/interactions.js | 原圖百分比點位、Pointer Events 拖曳、放置鎖定、鑰匙圖形。 |
 | ../../engine/challenges.js | findObjects、sensor／普通倒數、tiltDodge 按鈕及傾斜同一碰撞規則。 |
 | ../../engine/sensors.js | 使用者手勢請求權限、資料有效性、校正、穩定判定及清理。 |
+| ../../engine/camera-lanes.js / camera-worker.js | 可選鏡頭站位、三區判定、本機推論及資源清理。 |
+| ../../engine/vendor/mediapipe/ | 固定版 Apache 2.0 JS／WASM／模型，鏡頭模式才載入。 |
 | ../../engine/audio-manager.js | 單 AudioContext／單 ambience、SFX、靜音、duck、過期操作取消。 |
 | ../../engine/styles.css | 平板閱讀、點位、背包、A−／A+、Reward。 |
 | ../../scripts/render_story_text.py | 指定本機字型產注音 PNG，不複製字型。 |
@@ -28,7 +30,7 @@ main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d
 | ../../experiments/audio/index.html | 實際音效、解鎖、靜音、切換與失敗處理。 |
 | ../../tests/story_02_test.py / sensor_audio_test.py / story_02_audio_test.py | Pages 前綴 UI、觸控、存檔、感測、音訊輸出與場景觸發測試。 |
 
-不把月光洞遷入 engine；沒有框架、打包器或遠端執行依賴。
+不把月光洞遷入 engine；沒有框架、打包器或遠端辨識服務。新增鏡頭模式使用自管靜態資產與本機 worker，原操作模式不載入模型。
 
 ## 場景與存檔
 
@@ -51,6 +53,7 @@ clues 為 prints／fur／tail；inventory 為 key／bell；completed 為 hide／
 - 初版可調參數：soft 8°、hard 18°、線性加速度 3 m/s²；stillness grace 800 ms，balance 1000 ms，真機待校正。
 - stillness 距垂直 25° 內；balance 維持校正角度。換螢幕方向重新校正。輕微平衡偏移暫停、持續明顯偏移溫和重試。
 - tiltDodge 三條路、五個障礙；碰撞回退並停約 650 ms，無 Game Over。預設按鈕，傾斜另按啟用，無資料回按鈕。
+- cameraEnabled 可選前鏡頭三區站位；無人／多人暫停，8 秒無有效站位回按鈕。退出或背景停止相機與 worker；實驗入口 `/experiments/camera-lanes/`，規則見 CAMERA_LANES.md。
 - 背景暫停，回前景須再操作；離場清理事件、frame、interval、拖曳殘影。Reward 永不自動消失。
 
 ## 音訊

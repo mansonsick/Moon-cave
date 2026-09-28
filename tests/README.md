@@ -39,3 +39,11 @@ python tests/story_02_audio_test.py --output ../hub-review/story02-tests
 25 組測試含完整普通路線、隱藏／祕密路線、真實滑鼠／觸控拖曳、存檔隔離、感測事件／失敗替代及 Web Audio。
 `sensor_audio_test.py` 使用記憶體 WAV 驗證音訊切換與失敗處理；`story_02_audio_test.py` 使用實際交付的 9 個 WAV，驗證雜湊、解碼、非零聲音輸出、關鍵場景觸發、神鈴跨場景延續與靜音記憶。結果與截圖輸出 repository 外。
 具體已測與未測範圍見 [Story 02 QA](../stories/story-02/QA.md)；這些測試不取代 iPad／Android 真機驗收。
+
+## 竹林鏡頭站位
+
+```sh
+python tests/camera_lanes_test.py --output ../hub-review/camera-tests
+```
+
+追加 12 組（合計 37 組）：真實模型／WASM 執行、三區判定、合成 video／姿勢驅動正式控制器、五障礙、權限與載入失敗、生命週期、正式故事／存檔及排版。只用人工 canvas 影像，絕不開啟真實鏡頭；實機效果另測。
