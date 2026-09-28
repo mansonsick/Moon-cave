@@ -1,5 +1,5 @@
 import { createStorage } from './storage.js';
-import { AudioManager } from './audio-manager.js';
+import { AudioManager } from './audio-manager.js?v=story02-audio-1';
 import { findObjects, stabilityChallenge, tiltDodge } from './challenges.js';
 import { bindDrag, place, keyGraphic } from './interactions.js';
 
@@ -12,6 +12,10 @@ export class StoryEngine {
     this.text = this.text.bind(this); this.button = this.button.bind(this);
     this.visibility = () => this.audio.setHidden(document.hidden);
     document.addEventListener('visibilitychange', this.visibility);
+    this.resumeAudio = () => {
+      if (this.started && this.audio.enabled && this.audio.context && this.audio.context.state !== 'running') void this.audio.unlock();
+    };
+    this.root.addEventListener('pointerdown', this.resumeAudio, true);
     // Even a resumed save waits for an explicit Start before audio or sensors can activate.
     this.renderGate();
   }
@@ -33,9 +37,11 @@ export class StoryEngine {
     button.append(this.text(label)); button.addEventListener('click', action); return button;
   }
   save() { this.storage.save(this.state); }
-  clearScene() { this.cleanups.splice(0).forEach(cleanup => cleanup()); this.audio.stopSfx(); }
+  clearScene(keepSfx = []) { this.cleanups.splice(0).forEach(cleanup => cleanup()); this.audio.stopSfx(keepSfx); }
   go(scene) {
-    this.state.scene = scene; this.state.ending = this.config.scenes[scene].ending || null; this.save(); this.render();
+    const target = this.config.scenes[scene];
+    this.state.scene = scene; this.state.ending = target.ending || null; this.save(); this.render(target.keepSfx || []);
+    if (target.entrySfx) this.audio.playSfx(target.entrySfx);
   }
   header() {
     const toolbar = document.createElement('nav'); toolbar.className = 'toolbar'; toolbar.setAttribute('aria-label', '閱讀工具');
@@ -87,8 +93,8 @@ export class StoryEngine {
     }
     return inventory;
   }
-  render() {
-    this.clearScene(); this.updateTitle(); this.applyScale();
+  render(keepSfx = []) {
+    this.clearScene(keepSfx); this.updateTitle(); this.applyScale();
     const id = this.state.scene, scene = this.config.scenes[id];
     this.root.dataset.scene = id; this.root.replaceChildren(this.header());
     const main = document.createElement('main'); main.className = 'story-card';
@@ -98,7 +104,7 @@ export class StoryEngine {
     const inventory = this.renderInventory();
     const panel = document.createElement('section'); panel.className = 'challenge'; panel.dataset.testid = 'challenge';
     main.append(title, stage, body, inventory, panel); this.root.append(main);
-    this.audio.setAmbience(scene.ambience);
+    this.audio.setAmbience(scene.ambience, scene.ambienceScale ?? 1);
     const reward = () => this.reward(panel, scene.reward, scene.next);
     const done = () => { if (!this.state.completed.includes(id)) this.state.completed.push(id); this.save(); this.render(); this.audio.playSfx('success'); };
     const isDragComplete = scene.type === 'drag' && this.state.placed.includes('bell');
@@ -119,7 +125,7 @@ export class StoryEngine {
         found: target => this.owned(target), onFind: target => {
           if (this.owned(target)) return;
           (target.kind === 'clue' ? this.state.clues : this.state.inventory).push(target.id); this.save();
-          this.render(); this.audio.playSfx('found-item');
+          this.render(); this.audio.playSfx(target.kind === 'clue' && this.model.revealed(this.state) ? 'success' : 'found-item');
           if (target.feedback && !this.model.revealed(this.state)) { const feedback = document.createElement('p'); feedback.className = 'find-feedback'; feedback.setAttribute('role', 'status'); feedback.append(this.text(target.feedback)); this.root.querySelector('.challenge').append(feedback); }
         } }));
       if (complete) reward();
@@ -184,5 +190,5 @@ export class StoryEngine {
     dialog.append(p, yes, cancel); this.root.append(dialog); dialog.showModal();
     dialog.addEventListener('close', () => dialog.remove(), { once: true });
   }
-  dispose() { this.clearScene(); this.audio.dispose(); document.removeEventListener('visibilitychange', this.visibility); }
+  dispose() { this.clearScene(); this.audio.dispose(); document.removeEventListener('visibilitychange', this.visibility); this.root.removeEventListener('pointerdown', this.resumeAudio, true); }
 }

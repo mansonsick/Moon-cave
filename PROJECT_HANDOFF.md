@@ -1,7 +1,7 @@
 # 互動兒童冒險繪本｜工程與 GitHub 維護交接
 
 - 交接日期：2026-09-24
-- 最近更新：2026-09-28（冒險首頁已上線；本分支整理 Story 02 確認規格）
+- 最近更新：2026-09-28（冒險首頁與 Story 02 測試版已上線；補齊 Story 02 關鍵場景音效）
 - 專案性質：長期維護的低年級兒童平板互動冒險繪本
 - 目前正式故事：《月光洞的祕密》
 - 目前正式故事版本：v3
@@ -25,7 +25,7 @@
 | [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md) | 《月光洞》的既定故事流程、版本變更、已修正問題與待辦。 |
 | [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) | 工程接手規格、責任分工、維護流程與後續工作的啟動界線。 |
 | [CHATGPT_DESKTOP_COLLABORATION_SOP.md](CHATGPT_DESKTOP_COLLABORATION_SOP.md) | 線上 ChatGPT 的內容／視覺工作與 Codex 工程維護之交接。 |
-| [Story 02 文件入口](stories/story-02/README.md) | 已完成第一輪工程，使用者授權線上平板測試；包含正式規格、音訊缺件與真機待驗清單。 |
+| [Story 02 文件入口](stories/story-02/README.md) | 已完成第一輪工程並獲授權線上平板測試；包含正式規格、9 個原創合成音訊與真機待驗清單。 |
 
 本次交接核對的 `main` 基準 commit：`f9a316f9d2243dcf24591e766395bdaaffcaf526`。此值供追溯本次交接，後續工作仍應讀取最新 `main`。
 
@@ -248,7 +248,7 @@ Story 02 已建立 `engine/`，目前只有新故事引用。《月光洞》原�
 
 規格來源為 `docs/story-02-plan`／PR #3。使用者交付圖片並授權完整工程後，另建 `feature/story-02-foundation`／PR #4，完成第一輪主線、三個挑戰、隱藏探索、雙結局與共用模組。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與指定注音字型產圖；音效首次預設開，但只在「開始冒險」後啟用，尊重已保存的關閉設定。詳細實作見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
 
-使用者於 2026-09-28 明確要求「先上線讓我用平板測試」，已授權依序合併 PR #3、#4 至 main，沿用 Pages 發布 Story 02 測試版直接網址；規格分支保留。這次沒有新增首頁卡片或修改月光洞。鑰匙依回饋縮小並降低對比，觸控範圍與提示保留。12 張正式圖、2 張最小衍生圖已收錄，9 個音訊待正式素材，沒有未授權替代音效。下一步為 [真機驗收](stories/story-02/QA.md) 與 [素材補齊](stories/story-02/ASSET_MANIFEST.md)。共用 engine 暫只服務 Story 02，不遷移月光洞。
+使用者於 2026-09-28 明確要求「先上線讓我用平板測試」，已授權依序合併 PR #3、#4 至 main，沿用 Pages 發布 Story 02 測試版直接網址；規格分支保留。這次沒有新增首頁卡片或修改月光洞。鑰匙依回饋縮小並降低對比，觸控範圍與提示保留。12 張正式圖、2 張最小衍生圖已收錄；後續依使用者要求補齊 9 個原創合成音訊，沒有使用第三方錄音。已測實際解碼與非零聲音輸出，音量和聽感仍待平板試聽。下一步為 [真機驗收](stories/story-02/QA.md)；資產來源見 [素材清單](stories/story-02/ASSET_MANIFEST.md)。共用 engine 暫只服務 Story 02，不遷移月光洞。
 
 ## 12. 存檔現況與未來 namespace 遷移提案
 

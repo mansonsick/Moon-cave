@@ -10,8 +10,9 @@
 | 文件 | 用途 |
 | --- | --- |
 | [STORY_SPEC.md](STORY_SPEC.md) | 確認版 v1.0 加本次資產／工程交接補充。 |
-| [ASSET_MANIFEST.md](ASSET_MANIFEST.md) | 實際圖片、點位、注音與音訊缺件。 |
+| [ASSET_MANIFEST.md](ASSET_MANIFEST.md) | 實際圖片、點位、注音與音訊資產。 |
 | [AUDIO_PLAN.md](AUDIO_PLAN.md) | 音效規格與製作方向。 |
+| [AUDIO_ASSETS.md](AUDIO_ASSETS.md) | 九種原創合成音效、來源與重建方法。 |
 | [ENGINEERING_PLAN.md](ENGINEERING_PLAN.md) | 已實作模組、存檔及生命週期。 |
 | [QA.md](QA.md) | 測試結果與真機／視覺限制。 |
 | [DEVLOG.md](DEVLOG.md) | 工程紀錄。 |
@@ -28,7 +29,7 @@
 [Story 02 平板測試版](https://mansonsick.github.io/Moon-cave/stories/story-02/)。以平板 Safari／Chrome 直接開啟 HTTPS 頁面。
 
 躲藏與木橋按「開始」後，若跳出動作／方向權限請允許，再穩穩拿好校正兩秒；竹林按「試試傾斜控制」。若感測不支援，仍可使用普通倒數／左右按鈕。
-回報時提供平板型號、瀏覽器、場景與看到的情況。正式音檔仍缺件，目前沒有聲音。
+回報時提供平板型號、瀏覽器、場景與看到的情況。已加入九種柔和合成音效；按「開始冒險」後才播放。若上方是 🔇，點一下改成 🔊；更新會保留原本的靜音偏好。
 
 ## 本機試玩
 
@@ -42,5 +43,5 @@
 
 ## 下一步
 
-補 9 個有來源／授權的正式音檔，確認兩張衍生圖、鑰匙與竹林視覺，完成 iPad／Android 真機驗收。
+確認新增音效在平板喇叭的音量／音色、兩張衍生圖與竹林視覺，完成 iPad／Android 真機驗收。
 本次先依使用者授權提供線上測試版；首頁故事卡與完整正式版驗收另行確認。

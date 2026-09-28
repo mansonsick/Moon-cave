@@ -32,9 +32,10 @@ python tests/adventure_hub_test.py --output ../hub-review
 ```sh
 python tests/story_02_test.py --output ../hub-review/story02-tests
 python tests/sensor_audio_test.py --output ../hub-review/story02-tests
+python tests/story_02_audio_test.py --output ../hub-review/story02-tests
 ```
 
 自建 `/Moon-cave/` 前綴本機伺服器、隔離 Chromium context 與虛擬時鐘；不改正式網站或使用者存檔。
-18 組測試含完整普通路線、隱藏／祕密路線、真實滑鼠／觸控拖曳、存檔隔離、感測事件／失敗替代及 Web Audio。
-音訊測試 WAV 僅在記憶體產生及攔截回傳，不作正式資產。結果與截圖輸出 repository 外。
+25 組測試含完整普通路線、隱藏／祕密路線、真實滑鼠／觸控拖曳、存檔隔離、感測事件／失敗替代及 Web Audio。
+`sensor_audio_test.py` 使用記憶體 WAV 驗證音訊切換與失敗處理；`story_02_audio_test.py` 使用實際交付的 9 個 WAV，驗證雜湊、解碼、非零聲音輸出、關鍵場景觸發、神鈴跨場景延續與靜音記憶。結果與截圖輸出 repository 外。
 具體已測與未測範圍見 [Story 02 QA](../stories/story-02/QA.md)；這些測試不取代 iPad／Android 真機驗收。

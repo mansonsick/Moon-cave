@@ -243,7 +243,8 @@
       "ambience": "creepy-house",
       "type": "stillnessSensor",
       "reward": "hide-success",
-      "next": "bamboo"
+      "next": "bamboo",
+      "ambienceScale": 0.5
     },
     "bamboo": {
       "title": "bamboo-title",
@@ -352,10 +353,11 @@
       "title": "ordinary-title",
       "text": "ordinary-line",
       "image": "ordinary.png",
-      "ambience": "forest-evening",
+      "ambience": null,
       "type": "ending",
       "ending": "ordinary",
-      "extra": "ordinary-close"
+      "extra": "ordinary-close",
+      "entrySfx": "success"
     },
     "secret": {
       "title": "secret-title",
@@ -364,7 +366,10 @@
       "ambience": "temple-night",
       "type": "ending",
       "ending": "secret",
-      "next": "secret-after"
+      "next": "secret-after",
+      "keepSfx": [
+        "secret-bell"
+      ]
     },
     "secret-after": {
       "title": "secret-after-title",
@@ -407,58 +412,76 @@
   },
   "audio": {
     "forest-evening": {
-      "src": "assets/audio/ambience/forest-evening.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/ambience/forest-evening.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "ambience",
+      "volume": 0.3
     },
     "creepy-house": {
-      "src": "assets/audio/ambience/creepy-house.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/ambience/creepy-house.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "ambience",
+      "volume": 0.24
     },
     "bamboo-chase": {
-      "src": "assets/audio/ambience/bamboo-chase.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/ambience/bamboo-chase.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "ambience",
+      "volume": 0.27
     },
     "temple-night": {
-      "src": "assets/audio/ambience/temple-night.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/ambience/temple-night.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "ambience",
+      "volume": 0.24
     },
     "found-item": {
-      "src": "assets/audio/sfx/found-item.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/sfx/found-item.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "sfx",
+      "volume": 0.55
     },
     "success": {
-      "src": "assets/audio/sfx/success.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/sfx/success.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "sfx",
+      "volume": 0.55
     },
     "fail-soft": {
-      "src": "assets/audio/sfx/fail-soft.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/sfx/fail-soft.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "sfx",
+      "volume": 0.42
     },
     "drag-lock": {
-      "src": "assets/audio/sfx/drag-lock.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/sfx/drag-lock.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "sfx",
+      "volume": 0.48
     },
     "secret-bell": {
-      "src": "assets/audio/sfx/secret-bell.mp3",
-      "available": false,
-      "license": null,
-      "status": "awaiting licensed master"
+      "src": "assets/audio/sfx/secret-bell.wav",
+      "available": true,
+      "license": "Project-original synthesis; no third-party samples",
+      "status": "original synthesized v1",
+      "category": "sfx",
+      "volume": 0.68
     }
   }
 }

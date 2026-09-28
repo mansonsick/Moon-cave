@@ -1,0 +1,123 @@
+{
+  "generator": "scripts/build_story02_audio.py",
+  "seed": 20260928,
+  "assets": [
+    {
+      "id": "forest-evening",
+      "file": "ambience/forest-evening.wav",
+      "category": "ambience",
+      "seconds": 20.0,
+      "bytes": 882044,
+      "sha256": "7e0cde26d0819a6a412dd74f3e69795a9ab3469e7c177215823185cb3b68e9ba",
+      "sampleRate": 22050,
+      "peak": 0.3,
+      "rms": 0.0524,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": true
+    },
+    {
+      "id": "creepy-house",
+      "file": "ambience/creepy-house.wav",
+      "category": "ambience",
+      "seconds": 20.0,
+      "bytes": 882044,
+      "sha256": "408747e30810b0445748c9551584a6cbb8345324d940b577c885e17e4b80e244",
+      "sampleRate": 22050,
+      "peak": 0.27,
+      "rms": 0.0474,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": true
+    },
+    {
+      "id": "bamboo-chase",
+      "file": "ambience/bamboo-chase.wav",
+      "category": "ambience",
+      "seconds": 20.0,
+      "bytes": 882044,
+      "sha256": "2367e3733cb5e9bc92b35a19967cda07f6bb4d9461b4fdb2c18afb53795fe1cd",
+      "sampleRate": 22050,
+      "peak": 0.32,
+      "rms": 0.0605,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": true
+    },
+    {
+      "id": "temple-night",
+      "file": "ambience/temple-night.wav",
+      "category": "ambience",
+      "seconds": 20.0,
+      "bytes": 882044,
+      "sha256": "1f80f9407fe3719431f5389357b68fe439d11e5c6148dee6c943ed61aff69730",
+      "sampleRate": 22050,
+      "peak": 0.27,
+      "rms": 0.0516,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": true
+    },
+    {
+      "id": "found-item",
+      "file": "sfx/found-item.wav",
+      "category": "sfx",
+      "seconds": 0.46,
+      "bytes": 20330,
+      "sha256": "aed2eac78ebfd3c7dd33848acd0aa353604cde88a8f64994cb17fc765b5896a1",
+      "sampleRate": 22050,
+      "peak": 0.46,
+      "rms": 0.0922,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": false
+    },
+    {
+      "id": "success",
+      "file": "sfx/success.wav",
+      "category": "sfx",
+      "seconds": 0.96,
+      "bytes": 42380,
+      "sha256": "b918b7767a38fb8ee9fc03c5c846d9283f93b48e5c1402a92c7de139822e0a4c",
+      "sampleRate": 22050,
+      "peak": 0.5,
+      "rms": 0.1294,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": false
+    },
+    {
+      "id": "fail-soft",
+      "file": "sfx/fail-soft.wav",
+      "category": "sfx",
+      "seconds": 0.42,
+      "bytes": 18566,
+      "sha256": "6ebf113f7cdc70a9c20c7ea7228ce96799cf90994cb5726216a4d5feb342fc5c",
+      "sampleRate": 22050,
+      "peak": 0.36,
+      "rms": 0.0988,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": false
+    },
+    {
+      "id": "drag-lock",
+      "file": "sfx/drag-lock.wav",
+      "category": "sfx",
+      "seconds": 0.46,
+      "bytes": 20330,
+      "sha256": "01412d711d7aecb192b4d85c586ffc2165c4b0219b846cc2c29896c3472cdabd",
+      "sampleRate": 22050,
+      "peak": 0.4,
+      "rms": 0.0677,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": false
+    },
+    {
+      "id": "secret-bell",
+      "file": "sfx/secret-bell.wav",
+      "category": "sfx",
+      "seconds": 3.9,
+      "bytes": 172034,
+      "sha256": "6aca1085fc7e7e666d9207223ca72a2e75bdba2db2fba07b158ace7c88ef37ed",
+      "sampleRate": 22050,
+      "peak": 0.55,
+      "rms": 0.0857,
+      "source": "Original procedural synthesis; no third-party samples",
+      "loop": false
+    }
+  ]
+}

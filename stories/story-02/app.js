@@ -1,11 +1,11 @@
-import { StoryEngine } from '../../engine/story-engine.js';
+import { StoryEngine } from '../../engine/story-engine.js?v=story02-audio-1';
 import * as model from './state.js';
 
 const root = document.getElementById('story');
 const baseURL = new URL('./', import.meta.url);
 async function start() {
   const [config, textManifest] = await Promise.all(['story.json', 'assets/text/text.json'].map(async path => {
-    const response = await fetch(new URL(path, baseURL));
+    const response = await fetch(new URL(path, baseURL), { cache: 'no-cache' });
     if (!response.ok) throw new Error(`Unable to load ${path}`);
     return response.json();
   }));

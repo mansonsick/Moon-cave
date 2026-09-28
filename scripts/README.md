@@ -27,3 +27,14 @@ python scripts/render_story_text.py --font "/private/path/BpmfGenRyuMin-H.ttf"
 2. 檢查中文字右側的注音、聲調與最末字不被裁切，確認平板小尺寸和雙指縮放後可讀。
 3. 更新圖片對應的 `alt`、按鈕名稱、圖片尺寸與必要的排版比例，保留可存取文字。
 4. 只提交 manifest、PNG、引用它們的頁面及文件，不提交字型檔。
+
+## Story 02 原創合成音訊
+
+重建已交付的 9 個 WAV 及音訊 manifest：
+
+```sh
+python -m pip install numpy scipy
+python scripts/build_story02_audio.py
+```
+
+固定亂數種子，以波形與濾波雜訊合成，不讀取第三方音訊。素材與播放規則見 [AUDIO_ASSETS.md](../stories/story-02/AUDIO_ASSETS.md)。網站直接播放 WAV，不需執行此工具。
