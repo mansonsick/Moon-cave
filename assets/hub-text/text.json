@@ -1,0 +1,17 @@
+{
+  "font": "BpmfGenRyuMin-H.ttf",
+  "font_size": 192,
+  "padding": 12,
+  "labels": [
+    {"id": "world-title", "text": "阿通的冒險世界", "color": "#284c3e"},
+    {"id": "welcome-first", "text": "選一本故事，", "color": "#665f50"},
+    {"id": "welcome-second", "text": "一起出發吧！", "color": "#665f50"},
+    {"id": "chapter", "text": "阿通的第一場冒險", "color": "#68785a"},
+    {"id": "story-title", "text": "月光洞的祕密", "color": "#302e24"},
+    {"id": "description-first", "text": "跟著阿通和小松鼠，", "color": "#645a49"},
+    {"id": "description-second", "text": "走進月光洞，", "color": "#645a49"},
+    {"id": "description-third", "text": "找找藏起來的祕密。", "color": "#645a49"},
+    {"id": "start", "text": "開始冒險", "color": "#fffaf0"},
+    {"id": "home-return", "text": "返回冒險首頁", "color": "#fff4d8"}
+  ]
+}

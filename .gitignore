@@ -1,0 +1,7 @@
+/debug.log
+__pycache__/
+# The supplied font is private; publish rendered text images only.
+*.ttf
+*.otf
+*.woff
+*.woff2

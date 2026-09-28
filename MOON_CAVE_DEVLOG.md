@@ -1,7 +1,8 @@
 # 《月光洞的祕密》開發紀錄
 
 Repository：`Moon-cave`  
-GitHub Pages：`https://mansonsick.github.io/Moon-cave/`  
+平台入口（入口 PR 合併後）：`https://mansonsick.github.io/Moon-cave/`
+故事入口（入口 PR 合併後）：`https://mansonsick.github.io/Moon-cave/stories/moon-cave/`
 主角：阿通  
 目標平台：平板瀏覽器
 
@@ -175,7 +176,7 @@ GitHub Pages：`https://mansonsick.github.io/Moon-cave/`
 
 ## 注音
 
-使用者提供字型：BpmfGenRyuMin-H 類型的故事書式注音字體。
+使用者指定字型：`BpmfGenRyuMin-H.ttf`，為全專案及後續所有故事的統一注音字型。
 
 實測效果：
 
@@ -209,7 +210,7 @@ GitHub Pages：`https://mansonsick.github.io/Moon-cave/`
 - Public repository
 - `main` branch
 - `/(root)`
-- `index.html` 為入口
+- root `index.html` 為平台入口，`stories/moon-cave/index.html` 為故事入口（入口 PR 合併並部署後生效）。
 
 目前為單一 HTML 打包版，方便部署，但檔案較大。
 
@@ -223,6 +224,37 @@ GitHub Pages：`https://mansonsick.github.io/Moon-cave/`
 ---
 
 ## Version History
+
+### 2026-09-24 多故事冒險入口 — 待 PR 確認／未發布（故事維持 v3）
+
+基準：`main` commit `50841bd009b1a14e00f673b23fa5e5b7828dfb66`，原故事 blob `2071c1f9b662637e7db6708217d8d3c20c8cec5d`。原檔保存在 Git 歷史，可從該 commit 還原；不新增重複的正式故事備份頁。
+
+Added：
+
+- 「阿通的冒險世界」首頁，目前只有一張大型《月光洞的祕密》故事卡。
+- 首頁場景圖直接從 v3 內嵌圖片抽出，圖片位元內容不變。
+- 依使用者檢視回饋，首頁所有中文與新增返回按鈕改用 `BpmfGenRyuMin-H.ttf` 預先渲染文字圖；字型本體未加入公開專案。
+- 新增離線文字圖產製工具與文字來源，並將「之後其他故事也統一使用此字型」寫入共用 SOP／HANDOFF。
+- 故事頁底獨立「返回冒險首頁」連結，不遮住既有畫面或操作區。
+- 原版與移動版的瀏覽器回歸測試，模擬 GitHub Pages 的 `/Moon-cave/` 前綴。
+
+Changed：
+
+- 原 root `index.html` 搬至 `stories/moon-cave/index.html`；原故事 JavaScript、CSS、文字與圖片不變，僅在外圍新增返回導覽。
+- 更新 HANDOFF、SOP 與 README 的入口路徑、PR 發布流程及存檔維護說明。
+
+存檔核對：
+
+- key 仍為 `moonCaveState` 與 `moonCaveTextScale`，本次不更名、不遷移。
+- 同 origin 的路徑搬移可繼續讀取既有存檔；首頁不讀寫 localStorage。
+- 石門已放入的凹槽不存檔；重新整理需再次拖曳，但已取得道具仍保留。挑戰中途進度也不存檔，維持 v3 行為。
+- migration 提案記錄於 `PROJECT_HANDOFF.md`，需另行確認才實作。
+
+驗證紀錄與發布限制：
+
+- 重跑指令見 [tests/README.md](tests/README.md)；本次結果見 [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)。
+- 自動化不代替 Android 平板／iPad 實機與雙指縮放驗收。
+- 本分支不重構 engine、不啟動 Story 02、不合併 `main`；線上新路徑待使用者確認及 Pages 部署後驗收。
 
 ### v1
 
