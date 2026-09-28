@@ -1,6 +1,6 @@
 # Story 02 第一輪工程驗收
 
-日期：2026-09-28。工程分支 `feature/story-02-foundation`，依規格 PR #3 接續；沒有合併或發布。
+日期：2026-09-28。工程分支 `feature/story-02-foundation`，依規格 PR #3 接續。第一輪完成後，使用者已要求先發布供平板測試；發布以 PR #3、#4 合併到 main 執行。
 執行環境：Windows、Python 3.13、Playwright 1.59.0、Chromium；本機 HTTP 使用 `/Moon-cave/` 前綴。
 
 ## 已通過
@@ -46,4 +46,9 @@ python tests/sensor_audio_test.py --output ../hub-review/story02-tests
 - 兩張 imagegen 衍生圖、簡化竹林角色／emoji、鑰匙大小與位置待使用者觀感確認。
 - 石龕／古廟採有鈴與空鉤的同構圖；原山路未清楚畫木屋、古廟未畫追來虎影，詳 [資產清單](ASSET_MANIFEST.md)。
 - 注音多音字／輕聲尚待內容端逐句覆核。
-- 此 PR 沒有首頁 Story 02 卡片，也沒有新的公開試玩部署；正式 Pages 維持 main。
+- 公開測試網址：https://mansonsick.github.io/Moon-cave/stories/story-02/。未新增首頁 Story 02 卡片；月光洞不變，感測仍待使用者真機驗收。
+
+## 本次鑰匙修正
+
+鑰匙圖形縮為 48%、改用較暗古銅色；透明點擊範圍保留。修改後 10 組故事測試通過，15／30 秒提示與取得流程不變。
+平板請依序測躲藏直立 8 秒、竹林「試試傾斜控制」、木橋穩定 8 秒，也可驗證拒絕權限後的普通操作。

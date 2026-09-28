@@ -25,7 +25,7 @@
 | [MOON_CAVE_DEVLOG.md](MOON_CAVE_DEVLOG.md) | 《月光洞》的既定故事流程、版本變更、已修正問題與待辦。 |
 | [PROJECT_HANDOFF.md](PROJECT_HANDOFF.md) | 工程接手規格、責任分工、維護流程與後續工作的啟動界線。 |
 | [CHATGPT_DESKTOP_COLLABORATION_SOP.md](CHATGPT_DESKTOP_COLLABORATION_SOP.md) | 線上 ChatGPT 的內容／視覺工作與 Codex 工程維護之交接。 |
-| [Story 02 文件入口](stories/story-02/README.md) | 已確認 STORY_SPEC、待交接資產、音效與工程計畫；本分支未合併／未發布。 |
+| [Story 02 文件入口](stories/story-02/README.md) | 已完成第一輪工程，使用者授權線上平板測試；包含正式規格、音訊缺件與真機待驗清單。 |
 
 本次交接核對的 `main` 基準 commit：`f9a316f9d2243dcf24591e766395bdaaffcaf526`。此值供追溯本次交接，後續工作仍應讀取最新 `main`。
 
@@ -157,7 +157,7 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 └─ MOON_CAVE_DEVLOG.md
 ```
 
-尚未建立 `engine/`。原故事 JavaScript、CSS、注音文字圖及場景圖保持不變；返回首頁使用頁底的 `../../` 連結，不覆蓋操作區，也不清除存檔。
+Story 02 已建立 `engine/`，目前只有新故事引用。《月光洞》原故事 JavaScript、CSS、注音文字圖及場景圖保持不變；返回首頁使用頁底的 `../../` 連結，不覆蓋操作區，也不清除存檔。
 
 **第二個故事開始時，再抽出可重用引擎（reusable engine）。** 長期模組方向：
 
@@ -242,13 +242,13 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 多故事入口已完成保存 v3 基準、搬移故事、新增「阿通的冒險世界」首頁、統一首頁注音、回歸測試及 PR 合併。故事版本仍為 v3；發布驗證記錄見 [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)。
 
-本次發布沒有重構 engine、修改故事玩法、遷移 localStorage key 或啟動體感開發。實體 Android 平板／iPad 的手指操作及雙指縮放仍待使用者回報，不以瀏覽器模擬宣稱已完成實機驗收。
+前述首頁發布沒有重構 engine、修改故事玩法或遷移月光洞 localStorage key；後續 Story 02 已有獨立共用模組及體感。實體 Android 平板／iPad 的手指操作及雙指縮放仍待使用者回報，不以瀏覽器模擬宣稱已完成實機驗收。
 
-使用者已確認第二本《逃出虎姑婆的山屋》的 `STORY02_STORY_SPEC_v1.md` 為故事與互動規格 v1.0，原文收錄於 [stories/story-02/STORY_SPEC.md](stories/story-02/STORY_SPEC.md)。它取代舊 Draft v0.1 與未採用的聊天提案；本規格分支尚未合併 `main`，不代表新故事已開發或發布。
+使用者已確認第二本《逃出虎姑婆的山屋》的 `STORY02_STORY_SPEC_v1.md` 為故事與互動規格 v1.0，收錄於 [stories/story-02/STORY_SPEC.md](stories/story-02/STORY_SPEC.md)，並追加正式資產／工程交接補充。它取代舊 Draft v0.1 與未採用的聊天提案。
 
-規格分支 `docs/story-02-plan` 與 Draft PR #3 保留。使用者交付圖片並授權完整工程後，另建 `feature/story-02-foundation`，完成第一輪主線、三個挑戰、隱藏探索、雙結局與共用模組。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與指定注音字型產圖；音效首次預設開，但只在「開始冒險」後啟用，尊重已保存的關閉設定。詳細實作見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
+規格來源為 `docs/story-02-plan`／PR #3。使用者交付圖片並授權完整工程後，另建 `feature/story-02-foundation`／PR #4，完成第一輪主線、三個挑戰、隱藏探索、雙結局與共用模組。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與指定注音字型產圖；音效首次預設開，但只在「開始冒險」後啟用，尊重已保存的關閉設定。詳細實作見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
 
-本輪工程 PR 以規格分支為 base，未合併 `main`，沒有新增正式首頁卡片或修改月光洞。12 張正式圖已收錄、2 張最小衍生圖待觀感確認，9 個音訊皆待正式素材；沒有使用未授權替代音效。下一步為 PR 審查、[QA 真機驗收](stories/story-02/QA.md) 與 [素材補齊](stories/story-02/ASSET_MANIFEST.md)，使用者最後確認後才安排合併／發布。共用 engine 暫只服務 Story 02，不遷移月光洞。
+使用者於 2026-09-28 明確要求「先上線讓我用平板測試」，已授權依序合併 PR #3、#4 至 main，沿用 Pages 發布 Story 02 測試版直接網址；規格分支保留。這次沒有新增首頁卡片或修改月光洞。鑰匙依回饋縮小並降低對比，觸控範圍與提示保留。12 張正式圖、2 張最小衍生圖已收錄，9 個音訊待正式素材，沒有未授權替代音效。下一步為 [真機驗收](stories/story-02/QA.md) 與 [素材補齊](stories/story-02/ASSET_MANIFEST.md)。共用 engine 暫只服務 Story 02，不遷移月光洞。
 
 ## 12. 存檔現況與未來 namespace 遷移提案
 

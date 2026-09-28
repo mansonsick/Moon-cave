@@ -1,11 +1,11 @@
 # Story 02 工程實作與後續計畫
 
-2026-09-28 完成第一輪完整工程，未合併／發布。依據 [STORY_SPEC.md](STORY_SPEC.md) v1.0 及本次工程交接補充。
+2026-09-28 完成第一輪完整工程，使用者後續授權先發布供平板實測。依據 [STORY_SPEC.md](STORY_SPEC.md) v1.0 及本次工程交接補充。
 
 ## 來源與分支
 
 main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d24c8bd48e3be2aefb5a045389b29ed995cc7`。
-工程 `feature/story-02-foundation` 從規格 head 建立，PR base 使用 `docs/story-02-plan`，避免重複規格差異。沒有合併任何分支。
+工程 `feature/story-02-foundation` 從規格 head 建立，PR #4 最初以 `docs/story-02-plan` 為 base。使用者授權線上實測後，先合併規格 PR #3，再將工程 PR #4 改以 main 為 base 並合併發布；規格分支不刪除。
 首頁及《月光洞》的程式、圖文、挑戰、存檔不變。
 
 ## 已實作模組
@@ -68,4 +68,4 @@ SFX 限連點／最多三聲，放鈴呼叫 drag-lock 與 secret-bell，鈴聲�
 1. 審工程 PR，確認衍生圖、點位與小遊戲外觀。
 2. iPad／Android 真機測姿勢、觸控與縮放；sensor 不穩可固定按鈕／普通倒數。
 3. 補正式合法音檔、循環接點、音量，再逐項設 available: true 並測試。
-4. 使用者確認後才安排規格／工程合併順序、首頁卡片與 Pages 發布。現在不合併 main。
+4. 本次先依使用者授權發布直接網址供平板實測；完成上述驗收後，再確認首頁卡片與完整正式版。

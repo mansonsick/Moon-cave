@@ -33,4 +33,5 @@ export function bindDrag(source, target, onPlaced) {
 }
 
 // Small interactive objects are native UI graphics, separate from the supplied scene art.
-export const keyGraphic = `<svg viewBox="0 0 100 50" aria-hidden="true"><g transform="rotate(-18 50 25)" fill="none" stroke="#a9742e" stroke-width="7" stroke-linecap="round"><circle cx="22" cy="25" r="14" fill="#bc884a"/><path d="M36 25h51m-12 0v12m11-12v9"/><circle cx="22" cy="25" r="5" stroke="#573b22" stroke-width="3"/></g></svg>`;
+// Keep the forgiving touch area while making the object itself blend into the drawer.
+export const keyGraphic = `<svg viewBox="0 0 100 50" aria-hidden="true"><g transform="translate(26 13) scale(.48) rotate(-18 50 25)" fill="none" stroke="#78664b" stroke-width="7" stroke-linecap="round"><circle cx="22" cy="25" r="14" fill="#807052"/><path d="M36 25h51m-12 0v12m11-12v9"/><circle cx="22" cy="25" r="5" stroke="#504535" stroke-width="3"/></g></svg>`;

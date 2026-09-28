@@ -1,8 +1,8 @@
 # Story 02｜逃出虎姑婆的山屋
 
-完整故事第一輪工程與瀏覽器驗收完成，待視覺／平板實機與 PR 審查；尚未合併或發布。
+完整故事第一輪工程與瀏覽器驗收完成。2026-09-28 使用者要求先上線供平板實測，已授權將規格與工程 PR 合併至 main，由 GitHub Pages 發布測試版；真機與正式素材驗收仍待完成。
 
-- 規格分支：`docs/story-02-plan`，保留 [Draft PR #3](https://github.com/mansonsick/Moon-cave/pull/3)。
+- 規格來源：`docs/story-02-plan`，[PR #3](https://github.com/mansonsick/Moon-cave/pull/3)。
 - 工程分支：`feature/story-02-foundation`，由規格 head 接續。
 - 基準 main：`436861ce6e00fa68646ab800bd35894312f9cb5b`。
 - 存檔：`adventure.story-02.state`；音效設定：`adventure.settings.sound`。
@@ -21,7 +21,14 @@
 
 入口 `index.html`／`app.js`；設定 `story.json`；存檔校驗 `state.js`；專用樣式 `story.css`。
 共用模組位於 [engine](../../engine/)，只由本故事及獨立實驗頁引用。
-正式首頁未加入 Story 02 卡片，《月光洞》維持 v3；不能把開發路徑當成已上線網址。
+正式首頁未加入 Story 02 卡片，《月光洞》維持 v3。測試版使用直接網址。
+
+## 平板測試入口
+
+[Story 02 平板測試版](https://mansonsick.github.io/Moon-cave/stories/story-02/)。以平板 Safari／Chrome 直接開啟 HTTPS 頁面。
+
+躲藏與木橋按「開始」後，若跳出動作／方向權限請允許，再穩穩拿好校正兩秒；竹林按「試試傾斜控制」。若感測不支援，仍可使用普通倒數／左右按鈕。
+回報時提供平板型號、瀏覽器、場景與看到的情況。正式音檔仍缺件，目前沒有聲音。
 
 ## 本機試玩
 
@@ -36,4 +43,4 @@
 ## 下一步
 
 補 9 個有來源／授權的正式音檔，確認兩張衍生圖、鑰匙與竹林視覺，完成 iPad／Android 真機驗收。
-先審 PR；使用者另行確認後才處理合併、首頁故事卡及 Pages 發布。
+本次先依使用者授權提供線上測試版；首頁故事卡與完整正式版驗收另行確認。
