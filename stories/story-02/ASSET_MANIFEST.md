@@ -59,26 +59,26 @@
 
 注音多音字、輕聲與實際平板小字級仍需內容端逐句確認。
 
-## 正式音訊缺件（9／9）
+## 音訊已補齊（原創合成 v1，9／9）
 
 | ID | 正式路徑 |
 | --- | --- |
-| forest-evening | assets/audio/ambience/forest-evening.mp3 |
-| creepy-house | assets/audio/ambience/creepy-house.mp3 |
-| bamboo-chase | assets/audio/ambience/bamboo-chase.mp3 |
-| temple-night | assets/audio/ambience/temple-night.mp3 |
-| found-item | assets/audio/sfx/found-item.mp3 |
-| success | assets/audio/sfx/success.mp3 |
-| fail-soft | assets/audio/sfx/fail-soft.mp3 |
-| drag-lock | assets/audio/sfx/drag-lock.mp3 |
-| secret-bell | assets/audio/sfx/secret-bell.mp3 |
+| forest-evening | assets/audio/ambience/forest-evening.wav |
+| creepy-house | assets/audio/ambience/creepy-house.wav |
+| bamboo-chase | assets/audio/ambience/bamboo-chase.wav |
+| temple-night | assets/audio/ambience/temple-night.wav |
+| found-item | assets/audio/sfx/found-item.wav |
+| success | assets/audio/sfx/success.wav |
+| fail-soft | assets/audio/sfx/fail-soft.wav |
+| drag-lock | assets/audio/sfx/drag-lock.wav |
+| secret-bell | assets/audio/sfx/secret-bell.wav |
 
-全部待正式音檔、來源／授權、音量與循環接點確認；設定 `available: false`，不請求缺檔。
-沒有假的空音檔或未授權替代音效。測試產生的記憶體 WAV 不保存為正式資產。
+全部已由專案程式原創合成，設定 `available: true`；22,050 Hz mono PCM16 WAV，合計 3.80 MB。來源、時長、hash 與聽感見 [AUDIO_ASSETS.md](AUDIO_ASSETS.md) 及 [音訊 manifest](assets/audio/manifest.json)。
+沒有第三方錄音／取樣或未授權網路音效；實體平板喇叭的音量與音色待使用者回饋。
 
 ## 尚待視覺確認
 
 - 兩張衍生圖、抽屜鑰匙、小遊戲角色與系統 emoji。
 - 石龕與古廟使用同一構圖的有鈴／空鉤版本；若需明確區分兩地點，可再補古廟圖。
 - 山路原圖未清楚畫出木屋、古廟圖未畫追來的虎影；以場景文字銜接，不宣稱所有 v1 美術要素已齊全。
-- 9 個正式音訊均缺件；沒有其他阻塞主線或任一結局的素材缺件。
+- 9 個音訊已用原創合成版本補齊；沒有阻塞主線或任一結局的素材缺件，可再依聽感替換精緻音檔。

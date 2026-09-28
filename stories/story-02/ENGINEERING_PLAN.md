@@ -25,8 +25,8 @@ main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d
 | ../../engine/styles.css | 平板閱讀、點位、背包、A−／A+、Reward。 |
 | ../../scripts/render_story_text.py | 指定本機字型產注音 PNG，不複製字型。 |
 | ../../experiments/balance-sensor/index.html | 獨立 stillness／balance 與 8 秒 fallback。 |
-| ../../experiments/audio/index.html | 解鎖、靜音、切換與缺音檔狀態。 |
-| ../../tests/story_02_test.py / sensor_audio_test.py | Pages 前綴 UI、觸控、存檔、感測、音訊測試。 |
+| ../../experiments/audio/index.html | 實際音效、解鎖、靜音、切換與失敗處理。 |
+| ../../tests/story_02_test.py / sensor_audio_test.py / story_02_audio_test.py | Pages 前綴 UI、觸控、存檔、感測、音訊輸出與場景觸發測試。 |
 
 不把月光洞遷入 engine；沒有框架、打包器或遠端執行依賴。
 
@@ -55,10 +55,10 @@ clues 為 prints／fur／tail；inventory 為 key／bell；completed 為 hide／
 
 ## 音訊
 
-九個 ID 與 ambience／sfx 正式目錄已設好，全部 available: false，不請求缺檔，也不製作代替音效。
+九個 ID 與 ambience／sfx 目錄已有原創合成 WAV，全部 available: true；來源、hash 與重建方法見 AUDIO_ASSETS.md。沒有第三方錄音或網路取樣。
 首次「開始冒險」才建立／resume AudioContext；封面聲音開關只改偏好。
 同 ambience 不重啟，切換先停舊音，快速 A → B → A 不讓過期 callback 停掉目前音軌。
-SFX 限連點／最多三聲，放鈴呼叫 drag-lock 與 secret-bell，鈴聲期間 duck 環境音。
+SFX 限連點／最多三聲，放鈴呼叫 drag-lock 與 secret-bell，鈴聲期間 duck 環境音。神光場景的 keepSfx 只保留同一次神鈴聲；其他場景取消過期 SFX。普通結局的 entrySfx 播放成功音，躲藏使用 ambienceScale: 0.5。短音效在解鎖後預載，背景返回若被瀏覽器暫停，下一次明確觸控再嘗試恢復。
 音訊載入／解碼／播放失敗不阻塞，故事不等待音訊完成。
 
 瀏覽器策略依 [MDN 感測權限](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static) 與 [Web Audio 建議](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices)。
@@ -67,5 +67,5 @@ SFX 限連點／最多三聲，放鈴呼叫 drag-lock 與 secret-bell，鈴聲�
 
 1. 審工程 PR，確認衍生圖、點位與小遊戲外觀。
 2. iPad／Android 真機測姿勢、觸控與縮放；sensor 不穩可固定按鈕／普通倒數。
-3. 補正式合法音檔、循環接點、音量，再逐項設 available: true 並測試。
+3. 在實體平板確認原創合成音效的音量／音色，必要時調整各檔 volume 或替換同 ID 音檔。
 4. 本次先依使用者授權發布直接網址供平板實測；完成上述驗收後，再確認首頁卡片與完整正式版。

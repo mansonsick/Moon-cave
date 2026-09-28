@@ -1,4 +1,4 @@
-> 2026-09-28 工程狀態：共用 Audio Manager 與九個正式資產路徑已完成；目前音檔 9／9 未交付，story.json 全部 available: false，不請求缺檔或使用替代音效。實作／測試見 ENGINEERING_PLAN.md、QA.md。
+> 2026-09-28 音效更新：依使用者要求完成 9 個原創合成 WAV，story.json 全部 available: true；沒有第三方取樣或網路音效。格式／來源／聽感與事件映射見 [AUDIO_ASSETS.md](AUDIO_ASSETS.md)，實作／測試見 ENGINEERING_PLAN.md、QA.md。
 
 # Story 02 音效規劃｜《逃出虎姑婆的山屋》
 
@@ -7,7 +7,7 @@
 主要平台：平板瀏覽器  
 原則：**重點場景使用背景音／環境音，操作只保留少量必要音效。**
 
-文件狀態：由使用者提供的 `STORY02_AUDIO_PLAN.md` 收錄為素材製作參考，已依確認版 [STORY_SPEC.md](STORY_SPEC.md) 第 6 節同步；若有差異，以確認版為準。音檔目前全部待交接，見 [ASSET_MANIFEST.md](ASSET_MANIFEST.md)。
+文件狀態：由使用者提供的 `STORY02_AUDIO_PLAN.md` 收錄為素材製作參考，已依確認版 [STORY_SPEC.md](STORY_SPEC.md) 第 6 節同步；若有差異，以確認版為準。原創合成第一版已補齊九種聲音，見 [ASSET_MANIFEST.md](ASSET_MANIFEST.md)；下列音色方向可繼續依平板聽感調整。
 
 已確認：**沒有既有設定時，預設音效開啟；孩子點「開始冒險」後才實際啟用 AudioContext。** 已保存的關閉設定必須保留。故事不等待音訊播放完成，聲音不可提前洩漏隱藏互動。
 
@@ -54,17 +54,17 @@
 ```text
 audio/
 ├─ ambience/
-│  ├─ forest-evening.mp3
-│  ├─ creepy-house.mp3
-│  ├─ bamboo-chase.mp3
-│  └─ temple-night.mp3
+│  ├─ forest-evening.wav
+│  ├─ creepy-house.wav
+│  ├─ bamboo-chase.wav
+│  └─ temple-night.wav
 │
 └─ sfx/
-   ├─ found-item.mp3
-   ├─ success.mp3
-   ├─ fail-soft.mp3
-   ├─ drag-lock.mp3
-   └─ secret-bell.mp3
+   ├─ found-item.wav
+   ├─ success.wav
+   ├─ fail-soft.wav
+   ├─ drag-lock.wav
+   └─ secret-bell.wav
 ```
 
 ---

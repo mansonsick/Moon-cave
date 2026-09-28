@@ -26,7 +26,7 @@ GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，
 
 ## Story 02 平板測試版
 
-《逃出虎姑婆的山屋》第一輪完整工程已通過瀏覽器驗收。使用者已於 2026-09-28 要求先上線供平板實測，經 PR #3／#4 合併至 main 發布：[平板測試入口](https://mansonsick.github.io/Moon-cave/stories/story-02/)。首頁卡片及月光洞保持原樣，正式音檔與感測實機驗收仍待完成。詳細方式見 [stories/story-02/README.md](stories/story-02/README.md)。
+《逃出虎姑婆的山屋》第一輪完整工程已通過瀏覽器驗收。使用者已於 2026-09-28 要求先上線供平板實測，經 PR #3／#4 合併至 main 發布：[平板測試入口](https://mansonsick.github.io/Moon-cave/stories/story-02/)。後續加入九種原創合成音效，保留靜音偏好；首頁卡片及月光洞保持原樣，感測與音效聽感仍待實機回饋。詳細方式見 [stories/story-02/README.md](stories/story-02/README.md)。
 
 ## v3 保存基準
 
