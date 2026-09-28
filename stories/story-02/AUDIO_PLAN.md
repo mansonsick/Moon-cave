@@ -1,3 +1,5 @@
+> 2026-09-28 工程狀態：共用 Audio Manager 與九個正式資產路徑已完成；目前音檔 9／9 未交付，story.json 全部 available: false，不請求缺檔或使用替代音效。實作／測試見 ENGINEERING_PLAN.md、QA.md。
+
 # Story 02 音效規劃｜《逃出虎姑婆的山屋》
 
 版本：v1.0  

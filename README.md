@@ -9,7 +9,7 @@
 
 已於 2026-09-28 經使用者確認上線：[冒險首頁](https://mansonsick.github.io/Moon-cave/)｜[月光洞的祕密](https://mansonsick.github.io/Moon-cave/stories/moon-cave/)。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已合併，[Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)。
 
-故事仍為單一 HTML，原圖片、注音與程式內嵌；尚未重構共用 engine。首頁沒有建置程序或外部服務依賴。
+正式《月光洞》仍為單一 HTML，原圖片、注音與程式內嵌；本工程分支的共用 engine 僅用於 Story 02。首頁沒有建置程序或外部服務依賴。
 
 首頁與以後所有故事統一使用 `BpmfGenRyuMin-H.ttf` 的右側注音。公開網站使用本機預先渲染的透明文字圖，字型本體不公開；改字方式見 [scripts/README.md](scripts/README.md)。
 
@@ -24,9 +24,9 @@
 
 GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，使用者確認前不合併或發布。
 
-## Story 02 規格準備
+## Story 02 平板測試版
 
-《逃出虎姑婆的山屋》v1.0 故事規格已由使用者確認，文件與素材需求集中於 [stories/story-02/README.md](stories/story-02/README.md)。目前僅在 `docs/story-02-plan` 整理文件及空素材目錄，尚未合併／開發／發布；等圖片與資產交接後再進 `feature/story-02-foundation`。
+《逃出虎姑婆的山屋》第一輪完整工程已通過瀏覽器驗收。使用者已於 2026-09-28 要求先上線供平板實測，經 PR #3／#4 合併至 main 發布：[平板測試入口](https://mansonsick.github.io/Moon-cave/stories/story-02/)。首頁卡片及月光洞保持原樣，正式音檔與感測實機驗收仍待完成。詳細方式見 [stories/story-02/README.md](stories/story-02/README.md)。
 
 ## v3 保存基準
 

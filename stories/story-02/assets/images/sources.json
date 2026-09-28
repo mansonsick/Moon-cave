@@ -1,0 +1,116 @@
+[
+  {
+    "file": "cover.png",
+    "source": "夕陽山谷的冒險啟程.png",
+    "sha256": "fe0afc88830757c0eb17941170d584665fc7d2ae170dacc7ba59c3c10517395c",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "mountain-path.png",
+    "source": "月升山徑上的男孩與松鼠.png",
+    "sha256": "9524cec44526e4f6827f50a8b44c2841fba176971469f32ec39763714f33cc03",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "warm-house.png",
+    "source": "月光下的溫暖山林小屋.png",
+    "sha256": "9ec042ca0fba24b49dd29dd1d28e4112c1835db7fca04ddf1ff374149331f04c",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "welcome.png",
+    "source": "月夜山屋的温暖晚餐.png",
+    "sha256": "f3bc23b38736515cf55bd1b3de45dc04357522802ae99ad7e44d8cab311a0855",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "clues.png",
+    "source": "月光山屋的神秘腳印.png",
+    "sha256": "fc655d508b6f0d437a7a6851e648405ba309418d519d7109857702af2700e547",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "key-search.png",
+    "source": "月夜山屋_男孩與松鼠的探險.png",
+    "sha256": "70c5ccd04f7812670205c2ad881c23d04d0ff7ab666b06fc3848271cab1ac58b",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "hide.png",
+    "source": "月光下的木屋捉迷藏.png",
+    "sha256": "33805ee351137b49bbcced51907b632932fcb3ea9406402de2f1140404526dd4",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "bamboo.png",
+    "source": "月下竹林驚魂追逐.png",
+    "sha256": "474c3cb0b45ffd39d52830e8c27264868e288018e5dec91b17c09e64a79382be",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "bridge.png",
+    "source": "月夜吊橋上的勇敢旅程.png",
+    "sha256": "2a6c01ffc615a13a7667bd3c7e821417a3a1a6c8f4c6457582b54684db823410",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "shrine.png",
+    "source": "月夜山林中的神社奇遇.png",
+    "sha256": "04618d8e36dab5c4cb4448c10e2010a416266b83cf05c91800e3ece04a1104a6",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "ordinary.png",
+    "source": "晨光下的山村歸途.png",
+    "sha256": "cd3e0495cf6aa1bf40f93364612865642f0e534bb806761a129ba254a00683ef",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "secret.png",
+    "source": "神光守護下的虎靈退散.png",
+    "sha256": "0ba5709d8d3cf7acfbb7ddf208dc9efc00cd900b8c237f6e50ab6065f5ca5503",
+    "width": 1672,
+    "height": 941,
+    "status": "supplied"
+  },
+  {
+    "file": "fork.png",
+    "source": "mountain-path.png",
+    "sha256": "b59d3df7bebac666dd685de91587c04b1e1843a4ae0d3423a7f86ab621293a5a",
+    "width": 1672,
+    "height": 941,
+    "status": "derived - visual approval pending",
+    "tool": "imagegen"
+  },
+  {
+    "file": "temple-empty-hook.png",
+    "source": "shrine.png",
+    "sha256": "f6f0a4f0bfbf6e45c359d7f2eaf75e93f51171793d8abd2bb98c01deb5dab856",
+    "width": 1672,
+    "height": 941,
+    "status": "derived - visual approval pending",
+    "tool": "imagegen"
+  }
+]

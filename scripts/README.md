@@ -13,6 +13,14 @@ python scripts/render_zhuyin.py --font "/private/path/BpmfGenRyuMin-H.ttf" --man
 
 製作新故事時，可在該故事資產目錄新增同格式 manifest，再使用同一支離線工具。不涉及共用 story engine 重構。
 
+Story 02 使用同一字型與 Pillow 產圖策略，另以 `render_story_text.py` 從 `story.json.labels` 分成可換行短片段，輸出尺寸及整句可存取文字：
+
+```sh
+python scripts/render_story_text.py --font "/private/path/BpmfGenRyuMin-H.ttf"
+```
+
+預設更新 `stories/story-02/assets/text/`；修改文案後應重新產圖並核對，不把字型原檔放入 repository。
+
 修改文字後：
 
 1. 重新產圖並逐句檢查多音字與輕聲；字型的預設讀音不保證適合所有語境。

@@ -1,0 +1,9 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Story audio workbench</title><link rel="stylesheet" href="../../engine/styles.css">
+<body><main id="story" class="story-card"><h1>Audio workbench</h1><p>All 9 production audio files are pending. Controls exercise the shared manager without substitutes or network audio.</p><button class="button" id="unlock">Start / unlock audio</button><button class="button" id="mute">Toggle sound</button><div id="controls" class="actions"></div><pre id="status" aria-live="polite"></pre><a href="../../stories/story-02/">Story preview</a></main><script type="module">
+import {AudioManager} from '../../engine/audio-manager.js';
+const base=new URL('../../stories/story-02/',location.href),config=await(await fetch(new URL('story.json',base))).json();
+const manager=new AudioManager(config.audio,base);const status=()=>document.querySelector('#status').textContent=JSON.stringify({enabled:manager.enabled,unlocked:manager.unlocked,desired:manager.desired,playing:manager.current?.id||null,voices:manager.voices.size},null,2);
+document.querySelector('#unlock').onclick=async()=>{await manager.unlock();status();};document.querySelector('#mute').onclick=()=>{manager.setEnabled(!manager.enabled);status();};
+for(const id of Object.keys(config.audio)){const button=document.createElement('button');button.className='button';button.textContent=id;button.onclick=async()=>{if(['forest-evening','creepy-house','bamboo-chase','temple-night'].includes(id))await manager.setAmbience(id);else await manager.playSfx(id);status();};document.querySelector('#controls').append(button);}
+document.addEventListener('visibilitychange',()=>{manager.setHidden(document.hidden);status();});window.addEventListener('pagehide',()=>manager.setHidden(true));status();
+</script></body></html>

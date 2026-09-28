@@ -6,6 +6,14 @@ Repository：`Moon-cave`
 主角：阿通  
 目標平台：平板瀏覽器
 
+## 2026-09-28｜Story 02 平板測試版發布授權
+
+使用者要求先上線供平板測試體感，已授權依序合併 PR #3、#4 並沿用 main 的 Pages 發布；直接測試網址為 https://mansonsick.github.io/Moon-cave/stories/story-02/。同時縮小並降低鑰匙對比，保留觸控範圍與兩層提示。首頁卡片及月光洞 v3 均不變，Story 02 的正式音檔與真機驗收仍待完成。
+
+## 2026-09-28｜Story 02 工程分支接續（第一輪尚未發布）
+
+從規格 Draft PR #3 接續建立 `feature/story-02-foundation`，完成完整第二本故事、雙結局及第一批共用模組，驗收與限制見 [Story 02 DEVLOG](stories/story-02/DEVLOG.md) 及 [QA](stories/story-02/QA.md)。正式首頁、《月光洞》v3 程式／圖片／挑戰與舊存檔無變更；沒有合併 main 或發布 Story 02。
+
 ---
 
 ## 專案目標

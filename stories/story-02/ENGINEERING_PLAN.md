@@ -1,90 +1,71 @@
-# Story 02 工程交接計畫
+# Story 02 工程實作與後續計畫
 
-狀態：文件準備完成；尚未施工。規格依據：[STORY_SPEC.md](STORY_SPEC.md) v1.0。
+2026-09-28 完成第一輪完整工程，使用者後續授權先發布供平板實測。依據 [STORY_SPEC.md](STORY_SPEC.md) v1.0 及本次工程交接補充。
 
-## 1. 來源與範圍
+## 來源與分支
 
-- 使用者明確確認 `STORY02_STORY_SPEC_v1.md`，取代先前 Draft v0.1 與聊天中未採用的提案。
-- 確認稿原文收錄於 `STORY_SPEC.md`；本次複製核對 SHA-256：`1d0bcb1bd3f18d8642b3c5556a885cbbc064ad6941f8b3c9518868f9aa8cb37b`（來源檔位元值，Git checkout 的換行轉換可能使位元雜湊不同）。
-- 本分支只建立文件及素材目錄，並同步共用文件中的適用範圍。不建立執行頁、故事設定程式、sensor／audio 測試頁或 engine。
-- 正式首頁、《月光洞》HTML、圖文、挑戰與舊存檔保持原樣。
-- 已確認的故事規則與仍需交接的資產／實機參數分開記錄；不得把素材未到齊解讀為故事規格尚未確認。
+main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d24c8bd48e3be2aefb5a045389b29ed995cc7`。
+工程 `feature/story-02-foundation` 從規格 head 建立，PR #4 最初以 `docs/story-02-plan` 為 base。使用者授權線上實測後，先合併規格 PR #3，再將工程 PR #4 改以 main 為 base 並合併發布；規格分支不刪除。
+首頁及《月光洞》的程式、圖文、挑戰、存檔不變。
 
-## 2. 已確認的實作約束
-
-| 項目 | Story 02 規則 |
-| --- | --- |
-| 背包 | 由故事設定；只顯示已取得道具，山神鈴取得前無空槽或灰影。三條線索獨立於背包。 |
-| 找物 | 1～3 個目標；重複點擊不重複發獎。必要鑰匙約 15 秒後可請求區域提示，再約 15 秒提供第二層提示；未進隱藏場景前不得提示山神鈴。 |
-| 別出聲 | 按開始後才請求／啟用感測，校正約 2 秒，接近直立且連續穩定 8 秒；偏移約 0.5～1 秒才重置，失敗可重新挑戰。僅測姿態與晃動，不使用麥克風。 |
-| 木橋 | 校正約 2 秒，指定姿勢累計穩定 8 秒；輕微偏移暫停，明顯偏移持續約 1 秒則重新計時。角度與 threshold 待實機校正。 |
-| 替代倒數 | Story 02 為 8 秒；《月光洞》鑰匙維持 15 秒。權限被拒、不支援或無有效資料時可完成普通操作。 |
-| 竹林 | 首版保留，先左右按鈕再接傾斜；兩者共用移動／碰撞。約 5 個障礙，碰撞短暫停頓或退一小段，無 Game Over。實機感測不穩時可發布按鈕模式。 |
-| 隱藏互動 | 腳印與鈴鉤不發光，不加祕密結局按鈕或未取得道具提示；鈴鉤也不套用一般 dropzone 的靠近發光提示。成功放入後可提供已放置圖示與成功回饋。 |
-| 結局 | 未取得鈴，或已取得但未使用，都可完成普通結局；只有取得並拖入鈴鉤才觸發祕密結局。 |
-| 聲音 | 無既有設定時預設開啟；按「開始冒險」後才實際啟用。尊重已保存的關閉設定。音訊失敗或關閉不阻塞故事，也不等待鈴聲播完才前進。 |
-| 閱讀 | 兒童可見中文統一指定注音字型預先產圖，保留可存取文字、A−／A+ 與雙指縮放。Reward 等待「繼續」。 |
-
-場景銜接按完整場景順序整理：`Cover → 01 → 02 → 03 → 04 → 05 → 06 → 07 → 08 → 09A`；在 `06` 點隱藏腳印可到 `06B` 取得鈴後回 `07`，在 `08` 自行拖鈴可到 `09B`。規格 3.3 的「完成後進木橋」為方向摘要，不能因此略過 Scene 06 的隱藏探索。
-
-## 3. 下一工程階段預定檔案
-
-下列均為規劃，尚未建立：
+## 已實作模組
 
 | 路徑 | 責任 |
 | --- | --- |
-| `stories/story-02/index.html` | 故事入口與共用模組載入。 |
-| `stories/story-02/story.json` | 場景、純文字對照、圖片、hotspot／dropzone、條件及 challenge／audio 設定。 |
-| `stories/story-02/story.css` | 本故事專用視覺。 |
-| `engine/story-engine.js` | 場景生命週期、道具、分支與 Reward。 |
-| `engine/storage.js` | 版本化故事狀態及共用設定；存檔失敗不阻塞流程。 |
-| `engine/interactions.js` | Pointer Events、一般／隱藏點位及拖曳，依原圖比例定位。 |
-| `engine/challenges.js` | 找物、普通倒數與重試／成功流程；竹林移動與碰撞模組再按實作規模拆分。 |
-| `engine/sensors.js` | 權限、能力偵測、資料有效性、校正、穩定判定與清理。 |
-| `engine/audio-manager.js` | 單一 AudioContext、環境音、SFX、開關、降音量與場景清理。 |
-| `engine/styles.css` | 共用閱讀、背包、提示及觸控版面。 |
-| `experiments/balance-sensor/index.html` | 首個獨立感測驗證，支援故事設定的秒數及普通倒數。 |
-| `experiments/audio/index.html` | 獨立音效解鎖、切換、靜音與前背景測試。 |
-| `tests/story_02_test.py`、`tests/sensor_audio_test.py` | 分支、存檔及裝置／音訊失敗路徑驗證。 |
+| index.html / app.js | 靜態入口、ES modules、設定載入。 |
+| story.json | 全場景、文字、圖片、點位、分支、道具、挑戰及音訊設定。 |
+| state.js | schema、校驗、修復不完整進度、身份揭露判定。 |
+| story.css | 竹林獨立小遊戲視覺。 |
+| ../../engine/story-engine.js | 場景生命週期、背包、Reward、分支、文字圖、提示、重玩。 |
+| ../../engine/storage.js | 故事 namespace、聲音偏好、儲存失敗仍可遊玩。 |
+| ../../engine/interactions.js | 原圖百分比點位、Pointer Events 拖曳、放置鎖定、鑰匙圖形。 |
+| ../../engine/challenges.js | findObjects、sensor／普通倒數、tiltDodge 按鈕及傾斜同一碰撞規則。 |
+| ../../engine/sensors.js | 使用者手勢請求權限、資料有效性、校正、穩定判定及清理。 |
+| ../../engine/audio-manager.js | 單 AudioContext／單 ambience、SFX、靜音、duck、過期操作取消。 |
+| ../../engine/styles.css | 平板閱讀、點位、背包、A−／A+、Reward。 |
+| ../../scripts/render_story_text.py | 指定本機字型產注音 PNG，不複製字型。 |
+| ../../experiments/balance-sensor/index.html | 獨立 stillness／balance 與 8 秒 fallback。 |
+| ../../experiments/audio/index.html | 解鎖、靜音、切換與缺音檔狀態。 |
+| ../../tests/story_02_test.py / sensor_audio_test.py | Pages 前綴 UI、觸控、存檔、感測、音訊測試。 |
 
-新模組先由 Story 02 使用；不以 Story 02 為由同時遷移《月光洞》。現成注音工具繼續使用 [render_zhuyin.py](../../scripts/render_zhuyin.py)。
+不把月光洞遷入 engine；沒有框架、打包器或遠端執行依賴。
 
-## 4. 存檔與生命週期
+## 場景與存檔
 
-- 故事：`adventure.story-02.state`。預定包含 schema 版本、場景、已發現線索、道具、已完成挑戰、鈴的放置結果及結局；正式 schema 留待工程階段。
-- 共用音效設定：`adventure.settings.sound`。音效實際可播放狀態與開關偏好分開，不能用保存的「開」假設瀏覽器已解鎖。
-- 感測偏好可用 `adventure.settings.motionEnabled`，但不把瀏覽器權限當成永久已獲准。
-- 重玩只清除本故事進度，保留共用偏好；不讀寫 `moonCaveState`／`moonCaveTextScale`。
-- 場景退出、重玩及切到背景時，清理或暫停計時器、感測事件、拖曳與音訊；感測缺資料不可當作穩定而自動通關。
-- 重新整理恢復已完成的進度；尚未完成的感測挑戰重新開始並校正，避免用離開頁面的時間補足挑戰秒數。取得道具與完成回呼必須可重複執行而不重複發獎。
+主線：`cover → path → house → welcome → clues → key → hide → bamboo → fork → bridge → temple → ordinary`。
 
-## 5. 音效整合順序
+隱藏：`fork → shrine → bridge`；`temple + bell + 自行拖入空鉤 → secret → secret-after`。
 
-音檔、場景對應與限制見 [AUDIO_PLAN.md](AUDIO_PLAN.md)。優先獨立測試，再由故事事件呼叫 Audio Manager，不在每幕散落播放器。
+schema v1 保存 `version, scene, clues, inventory, completed, placed, ending, textScale`。
+clues 為 prints／fur／tail；inventory 為 key／bell；completed 為 hide／bamboo／bridge；placed 為 bell。
+只接受已知 ID、去重，缺少必要前提的存檔回到最近可玩節點；壞 JSON／未知 schema 安全重開。
 
-1. 開／關、點擊解鎖、保存偏好與無聲模式。
-2. 單條環境音按需載入，相同環境不重啟，場景切換淡出再淡入。
-3. 找物／成功／重試／放入／鈴聲，限制連續觸發，切場景後不補播過期音效。
-4. 切背景暫停；回前景只嘗試恢復原本播放的環境音，被阻擋時等待下一次明確操作。
-5. 音檔載入、解碼或播放失敗時繼續故事；音訊不作為解謎唯一提示。
+固定 key `adventure.story-02.state`；音效 `adventure.settings.sound` 保存字串 true／false，預設 true。
+重整等待「開始冒險」才恢復場景，已完成獎勵與放置結果保存，未完成挑戰重啟。
+重玩僅重置 Story 02，保留共用音效偏好；不讀寫 moonCaveState／moonCaveTextScale，也不使用 localStorage.clear()。
 
-## 6. 啟動條件與實作順序
+## 挑戰及生命週期
 
-1. 線上 ChatGPT／使用者依 [ASSET_MANIFEST.md](ASSET_MANIFEST.md) 交付圖片、圖層、文字、位置資訊及音效素材／狀態；先核對來源、規格及使用者的圖片確認。
-2. 本規格分支保留待審、不合併。交接完成後再準備 `feature/story-02-foundation`；重新核對最新 `main`。規格 PR 若仍未合併，可由本規格分支接續，並把後續 PR 的基底與相依關係寫清楚，不為開始工程而自行合併文件 PR。
-3. 先建立最小共用故事框架與普通操作：找物、倒數、左右按鈕、拖鈴、雙結局及存檔。
-4. 在獨立測試頁驗證感測與音訊，通過後逐項整合；感測不穩時使用已確認的 fallback。
-5. 瀏覽器測試與平板實機驗收；Story 02 與首頁故事卡分別檢查，使用者確認發布後才合併。
+- 鑰匙 15 秒可請求抽屜區域提示，30 秒可請求位置提示及「拿起鑰匙」，必要物不會卡死；背景時間不計入。
+- stillness／balance：2 秒校正、8 秒計時；拒絕、無 API、無有效資料、中途斷訊均可普通 8 秒，替代按鈕一直可用。
+- 初版可調參數：soft 8°、hard 18°、線性加速度 3 m/s²；stillness grace 800 ms，balance 1000 ms，真機待校正。
+- stillness 距垂直 25° 內；balance 維持校正角度。換螢幕方向重新校正。輕微平衡偏移暫停、持續明顯偏移溫和重試。
+- tiltDodge 三條路、五個障礙；碰撞回退並停約 650 ms，無 Game Over。預設按鈕，傾斜另按啟用，無資料回按鈕。
+- 背景暫停，回前景須再操作；離場清理事件、frame、interval、拖曳殘影。Reward 永不自動消失。
 
-## 7. 驗收與待交接事項
+## 音訊
 
-故事驗收以 [STORY_SPEC.md 第 8 節](STORY_SPEC.md#8-驗收條件) 為準，追加工程驗證：
+九個 ID 與 ambience／sfx 正式目錄已設好，全部 available: false，不請求缺檔，也不製作代替音效。
+首次「開始冒險」才建立／resume AudioContext；封面聲音開關只改偏好。
+同 ambience 不重啟，切換先停舊音，快速 A → B → A 不讓過期 callback 停掉目前音軌。
+SFX 限連點／最多三聲，放鈴呼叫 drag-lock 與 secret-bell，鈴聲期間 duck 環境音。
+音訊載入／解碼／播放失敗不阻塞，故事不等待音訊完成。
 
-- `/Moon-cave/` 前綴與相對路徑；所有圖文及聲音的載入與缺檔處理。
-- 找物重複點擊、提示分級、隱藏入口／鈴鉤不洩漏，普通及祕密結局都可達。
-- 感測拒絕、API 不存在、事件無有效數值／停止、校正、短暫雜訊與前背景切換。
-- 音效預設開但不自動播放、保存的關閉設定、載入失敗、連點、切場景及背景暫停。
-- 重整／重玩後無重複發獎、孤立計時器或殘留音訊；Story 02 與《月光洞》存檔隔離。
-- iPad／Android 真機觸控、按鈕替代操作、A−／A+ 及雙指縮放；桌面模擬不代替實機。
+瀏覽器策略依 [MDN 感測權限](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent/requestPermission_static) 與 [Web Audio 建議](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API/Best_practices)。
 
-仍待資產交接與實測：正式圖片／音檔、竹林採圖層或獨立 mini-game 的視覺方案、精確點位、安全區、讀音核對、感測姿勢及門檻。這些待辦不重新開放已確認的故事、音效預設或 8 秒倒數決策。
+## 接續順序
+
+1. 審工程 PR，確認衍生圖、點位與小遊戲外觀。
+2. iPad／Android 真機測姿勢、觸控與縮放；sensor 不穩可固定按鈕／普通倒數。
+3. 補正式合法音檔、循環接點、音量，再逐項設 available: true 並測試。
+4. 本次先依使用者授權發布直接網址供平板實測；完成上述驗收後，再確認首頁卡片與完整正式版。
