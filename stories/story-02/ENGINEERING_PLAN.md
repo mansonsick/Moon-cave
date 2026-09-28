@@ -2,6 +2,8 @@
 
 2026-09-28 完成第一輪完整工程，使用者後續授權先發布供平板實測。依據 [STORY_SPEC.md](STORY_SPEC.md) v1.0 及本次工程交接補充。
 
+最新狀態：使用者已確認成品、鏡頭／移動偵測與操作音效 OK，本故事先維持現狀。以下保留工程歷史；未來背景音意見見 [改善紀錄](../../FUTURE_IMPROVEMENTS.md)，可重用接法見 [SENSORS_REUSE.md](../../engine/SENSORS_REUSE.md)。
+
 ## 來源與分支
 
 main 基準 `436861ce6e00fa68646ab800bd35894312f9cb5b`；規格 PR #3 head `a07d24c8bd48e3be2aefb5a045389b29ed995cc7`。

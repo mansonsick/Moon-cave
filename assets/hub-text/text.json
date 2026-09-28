@@ -12,6 +12,10 @@
     {"id": "description-second", "text": "走進月光洞，", "color": "#645a49"},
     {"id": "description-third", "text": "找找藏起來的祕密。", "color": "#645a49"},
     {"id": "start", "text": "開始冒險", "color": "#fffaf0"},
-    {"id": "home-return", "text": "返回冒險首頁", "color": "#fff4d8"}
+    {"id": "home-return", "text": "返回冒險首頁", "color": "#fff4d8"},
+    {"id": "story-02-chapter", "text": "阿通的第二場冒險", "color": "#68785a"},
+    {"id": "story-02-title", "text": "陌生山路的冒險", "color": "#302e24"},
+    {"id": "story-02-description-second", "text": "觀察山屋，", "color": "#645a49"},
+    {"id": "story-02-description-third", "text": "找出安全回家的路。", "color": "#645a49"}
   ]
 }

@@ -1,5 +1,7 @@
 # 竹林鏡頭站位模式
 
+2026-09-28 後續驗收：使用者確認鏡頭及移動偵測功能 OK，故事本階段完成，維持目前實作。方法已整理於 [共用重用筆記](../../engine/SENSORS_REUSE.md)；未提供機型／瀏覽器版本，不據此推論全面相容。
+
 依使用者 2026-09-28 要求，新增可選的左／中／右人體站位控制。原按鈕、傾斜、碰撞、五障礙、獎勵、進度與雙結局規則不變。
 
 ## 試玩
@@ -29,6 +31,6 @@
 
 `camera_lanes_test.py` 12 組通過：真實模型／WASM 對空白影像推論、合成 video／landmarks 驅動正式遊戲、三區／五障礙、鏡像、防抖、無人／多人暫停、權限拒絕／忽略／不支援／延遲授權、模型失敗、前背景清理、正式故事存檔隔離及多寬度排版。原故事／感測／音訊 25 組也重跑通過。
 
-**尚未用實體平板鏡頭或真人試玩。** Safari／Chrome 的鏡頭方向、距離、光線、速度與兒童身形效果仍待確認。較舊或缺少 Worker／OffscreenCanvas／ImageBitmap 的瀏覽器使用按鈕；此模式保持可選。
+工程未自行操作實體鏡頭；使用者已回報鏡頭／移動偵測可用。其他 Safari／Chrome 機型的方向、距離、光線、速度與兒童身形效果不因此保證一致。較舊或缺少 Worker／OffscreenCanvas／ImageBitmap 的瀏覽器使用按鈕；此模式保持可選。
 
 官方依據：[MediaPipe Web guide](https://developers.google.com/edge/mediapipe/solutions/vision/pose_landmarker/web_js)、[camera permission / HTTPS](https://developer.mozilla.org/en-US/docs/Web/API/MediaDevices/getUserMedia)。

@@ -70,7 +70,7 @@ class Handler(BaseHTTPRequestHandler):
                 self.send_error(404)
                 return
             data = target.read_bytes()
-            mime = {'.webp': 'image/webp', '.png': 'image/png'}.get(target.suffix, 'text/html; charset=utf-8')
+            mime = {'.webp': 'image/webp', '.png': 'image/png', '.js': 'text/javascript', '.mjs': 'text/javascript', '.json': 'application/json', '.css': 'text/css', '.wasm': 'application/wasm'}.get(target.suffix, 'text/html; charset=utf-8')
         elif route == '/favicon.ico':
             self.send_response(204)
             self.end_headers()
@@ -275,32 +275,49 @@ def hub_and_legacy_storage(browser, base, out):
         font_requests = []
         page.on('request', lambda r: font_requests.append(r.url) if re.search(r'\.(ttf|otf|woff2?)(?:\?|$)', r.url) else None)
         page.goto(base + '/Moon-cave/')
+        page.locator('[data-story="story-02"]').scroll_into_view_if_needed()
         page.wait_for_function('Array.from(document.images).every(i => i.complete && i.naturalWidth > 0)')
+        page.evaluate('Promise.all(Array.from(document.images, image => image.decode()))')
+        page.evaluate('scrollTo(0,0)')
         assert page.title() == '阿通的冒險世界'
-        assert page.locator('.text-image').count() == 9
+        assert page.locator('.text-image').count() == 15
         assert page.get_by_role('heading', name='阿通的冒險世界').is_visible()
-        assert page.get_by_role('link', name='開始冒險', exact=False).is_visible()
-        assert page.locator('article').count() == 1
-        assert page.locator('.cover-link img').evaluate('i => i.complete && i.naturalWidth === 1055')
+        assert page.get_by_role('link', name='開始冒險', exact=False).count() == 2
+        assert page.locator('article').count() == 2
+        assert '虎姑婆' not in page.content(), 'Hub must not reveal the identity before the story clues'
+        assert page.locator('[data-story="moon-cave"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1055')
+        assert page.locator('[data-story="story-02"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1672')
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
-        assert page.locator('.start').bounding_box()['height'] >= 56
+        for link in page.locator('.start').all(): assert link.bounding_box()['height'] >= 56
         assert stored(page) == {}, 'Hub must not write localStorage'
         page.screenshot(path=str(out / f'hub-{width}x{height}.png'), full_page=True)
-        page.locator('.start').tap()
+        page.locator('[data-story="moon-cave"] .start').tap()
         page.wait_for_url(base + '/Moon-cave/stories/moon-cave/')
         assert page.url == base + '/Moon-cave/stories/moon-cave/'
         scene(page, 'cover')
         page.get_by_role('link', name='返回冒險首頁').tap()
         page.wait_for_url(base + '/Moon-cave/')
         assert page.url == base + '/Moon-cave/'
-        page.locator('.cover-link').tap()
+        page.locator('[data-story="moon-cave"] .cover-link').tap()
         page.wait_for_url(base + '/Moon-cave/stories/moon-cave/')
         scene(page, 'cover')
         assert page.evaluate('document.documentElement.scrollWidth <= innerWidth')
         page.screenshot(path=str(out / f'story-{width}x{height}.png'), full_page=True)
+        page.get_by_role('link', name='返回冒險首頁').tap()
+        page.wait_for_url(base + '/Moon-cave/')
+        before = stored(page)
+        for selector in ['.start', '.cover-link']:
+            page.locator('[data-story="story-02"] ' + selector).tap()
+            page.wait_for_url(base + '/Moon-cave/stories/story-02/')
+            page.wait_for_selector('[data-action="start-adventure"]')
+            assert page.title() == '陌生山路的冒險'
+            assert stored(page) == before, 'Entering Story 02 must preserve saves before Start'
+            page.get_by_role('link', name='回到冒險世界').tap()
+            page.wait_for_url(base + '/Moon-cave/')
+        assert stored(page) == before
         assert not font_requests, 'No raw font should be served to the browser'
         context.close()
-    record('responsive-navigation', 'Portrait/landscape tablet and phone layouts; cover and CTA entry; explicit return link; no horizontal overflow.')
+    record('responsive-navigation', 'Two stacked story cards at 5 portrait/landscape/phone sizes; both covers and CTAs enter the correct story and return; Zhuyin, no spoilers, no storage changes or overflow.')
 
     context = browser.new_context(viewport={'width': 820, 'height': 1180}, has_touch=True)
     page = context.new_page()
@@ -317,7 +334,7 @@ def hub_and_legacy_storage(browser, base, out):
     page.reload()
     assert page.title() == '阿通的冒險世界'
     assert stored(page) == previous
-    page.locator('.start').tap()
+    page.locator('[data-story="moon-cave"] .start').tap()
     page.wait_for_url(base + '/Moon-cave/stories/moon-cave/')
     scene(page, 'stone')
     assert stored(page) == previous
@@ -326,7 +343,7 @@ def hub_and_legacy_storage(browser, base, out):
     page.wait_for_url(base + '/Moon-cave/')
     assert stored(page) == previous
     page.reload()
-    page.locator('.cover-link').tap()
+    page.locator('[data-story="moon-cave"] .cover-link').tap()
     page.wait_for_url(base + '/Moon-cave/stories/moon-cave/')
     scene(page, 'stone')
     assert stored(page) == previous
@@ -362,7 +379,7 @@ def main():
             except Exception:
                 failed_page = browser.contexts[-1].pages[-1]
                 failed_page.screenshot(path=str(out / 'failure.png'), full_page=True)
-                print('Failure state:', failed_page.evaluate('JSON.stringify(state)'), flush=True)
+                print('Failure state:', failed_page.evaluate('typeof state === "undefined" ? location.pathname : JSON.stringify(state)'), flush=True)
                 raise
             browser.close()
     finally:
