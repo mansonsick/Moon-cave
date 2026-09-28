@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Story sensor workbench</title><link rel="stylesheet" href="../../engine/styles.css">
+<body><main id="story" class="story-card"><h1>Sensor workbench</h1><p>Engineering preview. 2 s calibration, 8 s challenge. Keep a firm grip; ordinary countdown is always available.</p><div id="controls" class="actions"><button class="button" id="stillness">Stillness (upright)</button><button class="button" id="balance">Balance (calibrated angle)</button></div><section id="panel"></section><a href="../../stories/story-02/">Story preview</a></main>
+<script type="module">
+import {stabilityChallenge} from '../../engine/challenges.js';
+const labels={'start':'Start','countdown':'Ordinary 8-second countdown','retry':'Try again','permission':'Requesting permission…','still-instruction':'Hold upright and steady for 8 seconds.','balance-instruction':'Hold the calibrated angle for 8 seconds.','calibrating':'Hold still to calibrate (2 seconds).','countdown-mode':'Ordinary countdown (no sensor).','sensor-wait':'Waiting for real sensor data.','upright':'Hold the tablet upright.','steady':'Steady.','paused':'Timing paused.','retry-message':'Movement detected. Try again.','background-paused':'Paused in background. Start again.'};
+const text=id=>document.createTextNode(labels[id]||id);
+const button=(id,action)=>{const el=document.createElement('button');el.type='button';el.className='button';el.append(text(id));el.onclick=action;return el;};
+let cleanup=()=>{};
+function mount(kind){cleanup();const panel=document.querySelector('#panel');panel.replaceChildren();cleanup=stabilityChallenge({panel,kind,text,button,onComplete:()=>{cleanup();panel.replaceChildren(document.createTextNode('Complete — awaiting your next action.'));}});}
+document.querySelector('#stillness').onclick=()=>mount('stillness');document.querySelector('#balance').onclick=()=>mount('balance');mount('stillness');
+</script></body></html>

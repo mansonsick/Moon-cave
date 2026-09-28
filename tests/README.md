@@ -27,3 +27,14 @@ python tests/adventure_hub_test.py --output ../hub-review
 倒數以瀏覽器測試時鐘加速；不修改產品程式。實體平板、雙指手勢與實際 GitHub Pages 上線驗收仍須另做，不以模擬結果代替。
 
 原 v3 的 Chromium 模擬在「觸控拖曳 → 結局 → 重新整理」後，第一次點完成有時只有 touch／pointer 事件，第二次才觸發 click。測試只對這個情境記錄最多兩次點擊，並要求原版與搬移版次數一致；詳見 [ADVENTURE_HUB_QA.md](../ADVENTURE_HUB_QA.md)。可用 `--only baseline`、`--only relocated` 或 `--only hub` 針對該組檢查重跑。
+# Story 02 工程測試（追加）
+
+```sh
+python tests/story_02_test.py --output ../hub-review/story02-tests
+python tests/sensor_audio_test.py --output ../hub-review/story02-tests
+```
+
+自建 `/Moon-cave/` 前綴本機伺服器、隔離 Chromium context 與虛擬時鐘；不改正式網站或使用者存檔。
+18 組測試含完整普通路線、隱藏／祕密路線、真實滑鼠／觸控拖曳、存檔隔離、感測事件／失敗替代及 Web Audio。
+音訊測試 WAV 僅在記憶體產生及攔截回傳，不作正式資產。結果與截圖輸出 repository 外。
+具體已測與未測範圍見 [Story 02 QA](../stories/story-02/QA.md)；這些測試不取代 iPad／Android 真機驗收。

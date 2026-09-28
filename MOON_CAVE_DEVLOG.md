@@ -6,6 +6,10 @@ Repository：`Moon-cave`
 主角：阿通  
 目標平台：平板瀏覽器
 
+## 2026-09-28｜Story 02 工程分支接續（未發布）
+
+從規格 Draft PR #3 接續建立 `feature/story-02-foundation`，完成完整第二本故事、雙結局及第一批共用模組，驗收與限制見 [Story 02 DEVLOG](stories/story-02/DEVLOG.md) 及 [QA](stories/story-02/QA.md)。正式首頁、《月光洞》v3 程式／圖片／挑戰與舊存檔無變更；沒有合併 main 或發布 Story 02。
+
 ---
 
 ## 專案目標

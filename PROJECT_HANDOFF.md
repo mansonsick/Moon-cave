@@ -246,9 +246,9 @@ v2 的第二次「開始冒險」已改為「跟著地圖走」。後續修改�
 
 使用者已確認第二本《逃出虎姑婆的山屋》的 `STORY02_STORY_SPEC_v1.md` 為故事與互動規格 v1.0，原文收錄於 [stories/story-02/STORY_SPEC.md](stories/story-02/STORY_SPEC.md)。它取代舊 Draft v0.1 與未採用的聊天提案；本規格分支尚未合併 `main`，不代表新故事已開發或發布。
 
-目前工作分支 `docs/story-02-plan` 只整理正式文件及資產目錄。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與統一注音字型；音效首次預設開啟，但點「開始冒險」後才實際啟用，並尊重已保存的關閉設定。詳細模組及驗收見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
+規格分支 `docs/story-02-plan` 與 Draft PR #3 保留。使用者交付圖片並授權完整工程後，另建 `feature/story-02-foundation`，完成第一輪主線、三個挑戰、隱藏探索、雙結局與共用模組。Story 02 使用 `stories/story-02/`、`adventure.story-02.state` 與指定注音字型產圖；音效首次預設開，但只在「開始冒險」後啟用，尊重已保存的關閉設定。詳細實作見 [ENGINEERING_PLAN.md](stories/story-02/ENGINEERING_PLAN.md)。
 
-下一步由線上 ChatGPT／使用者依 [ASSET_MANIFEST.md](stories/story-02/ASSET_MANIFEST.md) 完成圖片與資產交接，Codex 核對後才進入 `feature/story-02-foundation`。此階段不建立 engine、完整故事程式或 Story 02 首頁卡片，不合併 `main`；規格確認不等於發布確認。共用引擎由下一工程階段逐步建立，先服務新故事並持續保護《月光洞》正式版本。
+本輪工程 PR 以規格分支為 base，未合併 `main`，沒有新增正式首頁卡片或修改月光洞。12 張正式圖已收錄、2 張最小衍生圖待觀感確認，9 個音訊皆待正式素材；沒有使用未授權替代音效。下一步為 PR 審查、[QA 真機驗收](stories/story-02/QA.md) 與 [素材補齊](stories/story-02/ASSET_MANIFEST.md)，使用者最後確認後才安排合併／發布。共用 engine 暫只服務 Story 02，不遷移月光洞。
 
 ## 12. 存檔現況與未來 namespace 遷移提案
 

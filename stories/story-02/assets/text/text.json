@@ -1,0 +1,1529 @@
+{
+  "font": "Bpmf GenRyu Min H (local render only)",
+  "fontSize": 192,
+  "labels": {
+    "book-title": {
+      "text": "逃出虎姑婆的山屋",
+      "parts": [
+        {
+          "src": "book-title-0.png",
+          "text": "逃出虎姑婆的",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "book-title-1.png",
+          "text": "山屋",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "neutral-title": {
+      "text": "陌生山路的冒險",
+      "parts": [
+        {
+          "src": "neutral-title-0.png",
+          "text": "陌生山路的冒",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "neutral-title-1.png",
+          "text": "險",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
+    "world": {
+      "text": "阿通的冒險世界",
+      "parts": [
+        {
+          "src": "world-0.png",
+          "text": "阿通的冒險世",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "world-1.png",
+          "text": "界",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
+    "home": {
+      "text": "回到冒險世界",
+      "parts": [
+        {
+          "src": "home-0.png",
+          "text": "回到冒險世界",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "start-adventure": {
+      "text": "開始冒險",
+      "parts": [
+        {
+          "src": "start-adventure-0.png",
+          "text": "開始冒險",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "continue": {
+      "text": "繼續",
+      "parts": [
+        {
+          "src": "continue-0.png",
+          "text": "繼續",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "start": {
+      "text": "開始",
+      "parts": [
+        {
+          "src": "start-0.png",
+          "text": "開始",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "retry": {
+      "text": "重新挑戰",
+      "parts": [
+        {
+          "src": "retry-0.png",
+          "text": "重新挑戰",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "replay": {
+      "text": "再玩一次",
+      "parts": [
+        {
+          "src": "replay-0.png",
+          "text": "再玩一次",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "replay-confirm": {
+      "text": "要從頭再玩一次嗎？",
+      "parts": [
+        {
+          "src": "replay-confirm-0.png",
+          "text": "要從頭再玩一",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "replay-confirm-1.png",
+          "text": "次嗎？",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "yes-replay": {
+      "text": "從頭開始",
+      "parts": [
+        {
+          "src": "yes-replay-0.png",
+          "text": "從頭開始",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "cancel": {
+      "text": "繼續這次冒險",
+      "parts": [
+        {
+          "src": "cancel-0.png",
+          "text": "繼續這次冒險",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "sound-on": {
+      "text": "關閉音效",
+      "parts": [
+        {
+          "src": "sound-on-0.png",
+          "text": "關閉音效",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "sound-off": {
+      "text": "開啟音效",
+      "parts": [
+        {
+          "src": "sound-off-0.png",
+          "text": "開啟音效",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "inventory": {
+      "text": "背包",
+      "parts": [
+        {
+          "src": "inventory-0.png",
+          "text": "背包",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "key-item": {
+      "text": "後門鑰匙",
+      "parts": [
+        {
+          "src": "key-item-0.png",
+          "text": "後門鑰匙",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "bell-item": {
+      "text": "山神鈴",
+      "parts": [
+        {
+          "src": "bell-item-0.png",
+          "text": "山神鈴",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "clue-prompt": {
+      "text": "找找看屋內有什麼奇怪的狀況吧。",
+      "parts": [
+        {
+          "src": "clue-prompt-0.png",
+          "text": "找找看屋內有",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "clue-prompt-1.png",
+          "text": "什麼奇怪的狀",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "clue-prompt-2.png",
+          "text": "況吧。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "clue-total": {
+      "text": "總共要找三個東西。",
+      "parts": [
+        {
+          "src": "clue-total-0.png",
+          "text": "總共要找三個",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "clue-total-1.png",
+          "text": "東西。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "found-key": {
+      "text": "找到後門鑰匙了！",
+      "parts": [
+        {
+          "src": "found-key-0.png",
+          "text": "找到後門鑰匙",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "found-key-1.png",
+          "text": "了！",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "found-bell": {
+      "text": "找到山神鈴了！",
+      "parts": [
+        {
+          "src": "found-bell-0.png",
+          "text": "找到山神鈴了！",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "need-hint": {
+      "text": "需要一點提示嗎？",
+      "parts": [
+        {
+          "src": "need-hint-0.png",
+          "text": "需要一點提示",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "need-hint-1.png",
+          "text": "嗎？",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "more-hint": {
+      "text": "再看清楚一點",
+      "parts": [
+        {
+          "src": "more-hint-0.png",
+          "text": "再看清楚一點",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "key-hint-one": {
+      "text": "看看阿通身旁的抽屜。",
+      "parts": [
+        {
+          "src": "key-hint-one-0.png",
+          "text": "看看阿通身旁",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "key-hint-one-1.png",
+          "text": "的抽屜。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "key-hint-two": {
+      "text": "鑰匙就在亮起的抽屜邊。",
+      "parts": [
+        {
+          "src": "key-hint-two-0.png",
+          "text": "鑰匙就在亮起",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "key-hint-two-1.png",
+          "text": "的抽屜邊。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "take-key": {
+      "text": "拿起鑰匙",
+      "parts": [
+        {
+          "src": "take-key-0.png",
+          "text": "拿起鑰匙",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "find-key": {
+      "text": "仔細看看屋裡，找出後門鑰匙。",
+      "parts": [
+        {
+          "src": "find-key-0.png",
+          "text": "仔細看看屋裡，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "find-key-1.png",
+          "text": "找出後門鑰匙。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "find-bell": {
+      "text": "石龕裡，好像有可以帶走的東西。",
+      "parts": [
+        {
+          "src": "find-bell-0.png",
+          "text": "石龕裡，",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "find-bell-1.png",
+          "text": "好像有可以帶",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "find-bell-2.png",
+          "text": "走的東西。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "footprint-found": {
+      "text": "地上有奇怪的腳印。",
+      "parts": [
+        {
+          "src": "footprint-found-0.png",
+          "text": "地上有奇怪的",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "footprint-found-1.png",
+          "text": "腳印。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "fur-found": {
+      "text": "床上有橘黑色的虎毛。",
+      "parts": [
+        {
+          "src": "fur-found-0.png",
+          "text": "床上有橘黑色",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "fur-found-1.png",
+          "text": "的虎毛。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "tail-found": {
+      "text": "老婆婆身後有一條尾巴！",
+      "parts": [
+        {
+          "src": "tail-found-0.png",
+          "text": "老婆婆身後有",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "tail-found-1.png",
+          "text": "一條尾巴！",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "reveal": {
+      "text": "阿通心裡一驚：她是虎姑婆！",
+      "parts": [
+        {
+          "src": "reveal-0.png",
+          "text": "阿通心裡一驚：",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "reveal-1.png",
+          "text": "她是虎姑婆！",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "still-instruction": {
+      "text": "先按開始。把平板拿直，穩穩保持八秒。",
+      "parts": [
+        {
+          "src": "still-instruction-0.png",
+          "text": "先按開始。",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "still-instruction-1.png",
+          "text": "把平板拿直，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "still-instruction-2.png",
+          "text": "穩穩保持八秒。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "balance-instruction": {
+      "text": "先按開始。雙手拿穩平板，保持同一角度八秒。",
+      "parts": [
+        {
+          "src": "balance-instruction-0.png",
+          "text": "先按開始。",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "balance-instruction-1.png",
+          "text": "雙手拿穩平板，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "balance-instruction-2.png",
+          "text": "保持同一角度",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "balance-instruction-3.png",
+          "text": "八秒。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "countdown": {
+      "text": "使用普通倒數",
+      "parts": [
+        {
+          "src": "countdown-0.png",
+          "text": "使用普通倒數",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "countdown-mode": {
+      "text": "一起安靜等八秒。",
+      "parts": [
+        {
+          "src": "countdown-mode-0.png",
+          "text": "一起安靜等八",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "countdown-mode-1.png",
+          "text": "秒。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "permission": {
+      "text": "準備感測中。也可以用普通操作。",
+      "parts": [
+        {
+          "src": "permission-0.png",
+          "text": "準備感測中。",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "permission-1.png",
+          "text": "也可以用普通",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "permission-2.png",
+          "text": "操作。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "calibrating": {
+      "text": "先穩穩拿好，準備兩秒。",
+      "parts": [
+        {
+          "src": "calibrating-0.png",
+          "text": "先穩穩拿好，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "calibrating-1.png",
+          "text": "準備兩秒。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "sensor-wait": {
+      "text": "正在等候感測資料。",
+      "parts": [
+        {
+          "src": "sensor-wait-0.png",
+          "text": "正在等候感測",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "sensor-wait-1.png",
+          "text": "資料。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "upright": {
+      "text": "請把平板拿得接近直立。",
+      "parts": [
+        {
+          "src": "upright-0.png",
+          "text": "請把平板拿得",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "upright-1.png",
+          "text": "接近直立。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "steady": {
+      "text": "很好，繼續保持穩定。",
+      "parts": [
+        {
+          "src": "steady-0.png",
+          "text": "很好，",
+          "width": 888,
+          "height": 212
+        },
+        {
+          "src": "steady-1.png",
+          "text": "繼續保持穩定。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "paused": {
+      "text": "慢慢拿穩，計時先停一下。",
+      "parts": [
+        {
+          "src": "paused-0.png",
+          "text": "慢慢拿穩，",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "paused-1.png",
+          "text": "計時先停一下。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "retry-message": {
+      "text": "晃了一下，沒關係，再試一次！",
+      "parts": [
+        {
+          "src": "retry-message-0.png",
+          "text": "晃了一下，",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "retry-message-1.png",
+          "text": "沒關係，",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "retry-message-2.png",
+          "text": "再試一次！",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "background-paused": {
+      "text": "剛剛暫停了。準備好再開始。",
+      "parts": [
+        {
+          "src": "background-paused-0.png",
+          "text": "剛剛暫停了。",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "background-paused-1.png",
+          "text": "準備好再開始。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "resume": {
+      "text": "繼續挑戰",
+      "parts": [
+        {
+          "src": "resume-0.png",
+          "text": "繼續挑戰",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "hide-success": {
+      "text": "虎姑婆沒有發現阿通。",
+      "parts": [
+        {
+          "src": "hide-success-0.png",
+          "text": "虎姑婆沒有發",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "hide-success-1.png",
+          "text": "現阿通。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "bridge-success": {
+      "text": "阿通平安走過木橋了！",
+      "parts": [
+        {
+          "src": "bridge-success-0.png",
+          "text": "阿通平安走過",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "bridge-success-1.png",
+          "text": "木橋了！",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "dodge-instruction": {
+      "text": "按左右移動，避開五個障礙。",
+      "parts": [
+        {
+          "src": "dodge-instruction-0.png",
+          "text": "按左右移動，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "dodge-instruction-1.png",
+          "text": "避開五個障礙。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "left": {
+      "text": "向左",
+      "parts": [
+        {
+          "src": "left-0.png",
+          "text": "向左",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "right": {
+      "text": "向右",
+      "parts": [
+        {
+          "src": "right-0.png",
+          "text": "向右",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "button-mode": {
+      "text": "使用左右按鈕",
+      "parts": [
+        {
+          "src": "button-mode-0.png",
+          "text": "使用左右按鈕",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "tilt-mode": {
+      "text": "試試傾斜控制",
+      "parts": [
+        {
+          "src": "tilt-mode-0.png",
+          "text": "試試傾斜控制",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "tilt-instruction": {
+      "text": "慢慢左右傾斜，避開障礙。",
+      "parts": [
+        {
+          "src": "tilt-instruction-0.png",
+          "text": "慢慢左右傾斜，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "tilt-instruction-1.png",
+          "text": "避開障礙。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "collision": {
+      "text": "碰到了！慢慢換一邊，再出發。",
+      "parts": [
+        {
+          "src": "collision-0.png",
+          "text": "碰到了！",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "collision-1.png",
+          "text": "慢慢換一邊，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "collision-2.png",
+          "text": "再出發。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "dodge-success": {
+      "text": "阿通穿過竹林了！",
+      "parts": [
+        {
+          "src": "dodge-success-0.png",
+          "text": "阿通穿過竹林",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "dodge-success-1.png",
+          "text": "了！",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "placed-bell": {
+      "text": "鈴聲響起了！",
+      "parts": [
+        {
+          "src": "placed-bell-0.png",
+          "text": "鈴聲響起了！",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "go-house": {
+      "text": "走向木屋",
+      "parts": [
+        {
+          "src": "go-house-0.png",
+          "text": "走向木屋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "enter-house": {
+      "text": "走進山屋",
+      "parts": [
+        {
+          "src": "enter-house-0.png",
+          "text": "走進山屋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "look-around": {
+      "text": "看看屋裡",
+      "parts": [
+        {
+          "src": "look-around-0.png",
+          "text": "看看屋裡",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "go-bridge": {
+      "text": "跑向木橋",
+      "parts": [
+        {
+          "src": "go-bridge-0.png",
+          "text": "跑向木橋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "wait-morning": {
+      "text": "躲起來等天亮",
+      "parts": [
+        {
+          "src": "wait-morning-0.png",
+          "text": "躲起來等天亮",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "leave-shrine": {
+      "text": "回到木橋",
+      "parts": [
+        {
+          "src": "leave-shrine-0.png",
+          "text": "回到木橋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "ordinary-close": {
+      "text": "阿通把事情告訴大人，安心回家。",
+      "parts": [
+        {
+          "src": "ordinary-close-0.png",
+          "text": "阿通把事情告",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "ordinary-close-1.png",
+          "text": "訴大人，",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "ordinary-close-2.png",
+          "text": "安心回家。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "secret-close": {
+      "text": "虎影逃回森林，山屋幻影消散了。",
+      "parts": [
+        {
+          "src": "secret-close-0.png",
+          "text": "虎影逃回森林，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "secret-close-1.png",
+          "text": "山屋幻影消散",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "secret-close-2.png",
+          "text": "了。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "safe-home": {
+      "text": "阿通和小松鼠平安回家了。",
+      "parts": [
+        {
+          "src": "safe-home-0.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "safe-home-1.png",
+          "text": "平安回家了。",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "load-error": {
+      "text": "故事暫時打不開，請重新整理再試一次。",
+      "parts": [
+        {
+          "src": "load-error-0.png",
+          "text": "故事暫時打不",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "load-error-1.png",
+          "text": "開，請重新整",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "load-error-2.png",
+          "text": "理再試一次。",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "loading": {
+      "text": "正在翻開故事……",
+      "parts": [
+        {
+          "src": "loading-0.png",
+          "text": "正在翻開故事……",
+          "width": 2328,
+          "height": 212
+        }
+      ]
+    },
+    "cover-title": {
+      "text": "陌生山路",
+      "parts": [
+        {
+          "src": "cover-title-0.png",
+          "text": "陌生山路",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "cover-line": {
+      "text": "阿通這次，走進了一條陌生山路。",
+      "parts": [
+        {
+          "src": "cover-line-0.png",
+          "text": "阿通這次，",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "cover-line-1.png",
+          "text": "走進了一條陌",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "cover-line-2.png",
+          "text": "生山路。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "path-title": {
+      "text": "山路迷途",
+      "parts": [
+        {
+          "src": "path-title-0.png",
+          "text": "山路迷途",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "path-line": {
+      "text": "天黑了。阿通在山路上迷路了。",
+      "parts": [
+        {
+          "src": "path-line-0.png",
+          "text": "天黑了。",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "path-line-1.png",
+          "text": "阿通在山路上",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "path-line-2.png",
+          "text": "迷路了。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "house-title": {
+      "text": "溫暖山屋",
+      "parts": [
+        {
+          "src": "house-title-0.png",
+          "text": "溫暖山屋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "house-line": {
+      "text": "山屋亮著燈，老婆婆在門口招手。",
+      "parts": [
+        {
+          "src": "house-line-0.png",
+          "text": "山屋亮著燈，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "house-line-1.png",
+          "text": "老婆婆在門口",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "house-line-2.png",
+          "text": "招手。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "welcome-title": {
+      "text": "老婆婆的招待",
+      "parts": [
+        {
+          "src": "welcome-title-0.png",
+          "text": "老婆婆的招待",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "welcome-line": {
+      "text": "老婆婆說：「我是你媽媽的姑婆。」",
+      "parts": [
+        {
+          "src": "welcome-line-0.png",
+          "text": "老婆婆說：",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "welcome-line-1.png",
+          "text": "「我是你媽媽",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "welcome-line-2.png",
+          "text": "的姑婆。",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "welcome-line-3.png",
+          "text": "」",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
+    "clues-title": {
+      "text": "奇怪的狀況",
+      "parts": [
+        {
+          "src": "clues-title-0.png",
+          "text": "奇怪的狀況",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "clues-line": {
+      "text": "阿通看看四周，覺得有些奇怪。",
+      "parts": [
+        {
+          "src": "clues-line-0.png",
+          "text": "阿通看看四周，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "clues-line-1.png",
+          "text": "覺得有些奇怪。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "key-title": {
+      "text": "找後門鑰匙",
+      "parts": [
+        {
+          "src": "key-title-0.png",
+          "text": "找後門鑰匙",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "key-line": {
+      "text": "虎姑婆去煮湯。快找後門鑰匙！",
+      "parts": [
+        {
+          "src": "key-line-0.png",
+          "text": "虎姑婆去煮湯。",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "key-line-1.png",
+          "text": "快找後門鑰匙！",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "hide-title": {
+      "text": "別出聲",
+      "parts": [
+        {
+          "src": "hide-title-0.png",
+          "text": "別出聲",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "hide-line": {
+      "text": "嘎吱！虎姑婆好像聽見聲音了。",
+      "parts": [
+        {
+          "src": "hide-line-0.png",
+          "text": "嘎吱！",
+          "width": 888,
+          "height": 212
+        },
+        {
+          "src": "hide-line-1.png",
+          "text": "虎姑婆好像聽",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "hide-line-2.png",
+          "text": "見聲音了。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "bamboo-title": {
+      "text": "衝進竹林",
+      "parts": [
+        {
+          "src": "bamboo-title-0.png",
+          "text": "衝進竹林",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "bamboo-line": {
+      "text": "後門開了！阿通衝進黑黑的竹林。",
+      "parts": [
+        {
+          "src": "bamboo-line-0.png",
+          "text": "後門開了！",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "bamboo-line-1.png",
+          "text": "阿通衝進黑黑",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "bamboo-line-2.png",
+          "text": "的竹林。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "fork-title": {
+      "text": "林間小路",
+      "parts": [
+        {
+          "src": "fork-title-0.png",
+          "text": "林間小路",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "fork-line": {
+      "text": "前面是木橋。草叢卻有小腳印……",
+      "parts": [
+        {
+          "src": "fork-line-0.png",
+          "text": "前面是木橋。",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "fork-line-1.png",
+          "text": "草叢卻有小腳",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "fork-line-2.png",
+          "text": "印……",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "shrine-title": {
+      "text": "小動物的祕密",
+      "parts": [
+        {
+          "src": "shrine-title-0.png",
+          "text": "小動物的祕密",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "shrine-line": {
+      "text": "腳印帶阿通來到一座小石龕。",
+      "parts": [
+        {
+          "src": "shrine-line-0.png",
+          "text": "腳印帶阿通來",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "shrine-line-1.png",
+          "text": "到一座小石龕。",
+          "width": 2040,
+          "height": 212
+        }
+      ]
+    },
+    "bridge-title": {
+      "text": "破舊木橋",
+      "parts": [
+        {
+          "src": "bridge-title-0.png",
+          "text": "破舊木橋",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "bridge-line": {
+      "text": "木橋一直晃。虎姑婆越來越近了！",
+      "parts": [
+        {
+          "src": "bridge-line-0.png",
+          "text": "木橋一直晃。",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "bridge-line-1.png",
+          "text": "虎姑婆越來越",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "bridge-line-2.png",
+          "text": "近了！",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "temple-title": {
+      "text": "山裡的古廟",
+      "parts": [
+        {
+          "src": "temple-title-0.png",
+          "text": "山裡的古廟",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "temple-line": {
+      "text": "阿通跑進古廟，虎姑婆也追來了。",
+      "parts": [
+        {
+          "src": "temple-line-0.png",
+          "text": "阿通跑進古廟，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "temple-line-1.png",
+          "text": "虎姑婆也追來",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "temple-line-2.png",
+          "text": "了。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "ordinary-title": {
+      "text": "平安回村",
+      "parts": [
+        {
+          "src": "ordinary-title-0.png",
+          "text": "平安回村",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "ordinary-line": {
+      "text": "天亮了。阿通終於安全跑回村子。",
+      "parts": [
+        {
+          "src": "ordinary-line-0.png",
+          "text": "天亮了。",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "ordinary-line-1.png",
+          "text": "阿通終於安全",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "ordinary-line-2.png",
+          "text": "跑回村子。",
+          "width": 1464,
+          "height": 212
+        }
+      ]
+    },
+    "secret-title": {
+      "text": "神光守護",
+      "parts": [
+        {
+          "src": "secret-title-0.png",
+          "text": "神光守護",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "secret-line": {
+      "text": "鈴聲一響，虎姑婆的法術破掉了！",
+      "parts": [
+        {
+          "src": "secret-line-0.png",
+          "text": "鈴聲一響，",
+          "width": 1464,
+          "height": 212
+        },
+        {
+          "src": "secret-line-1.png",
+          "text": "虎姑婆的法術",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "secret-line-2.png",
+          "text": "破掉了！",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "secret-after-title": {
+      "text": "安心回家",
+      "parts": [
+        {
+          "src": "secret-after-title-0.png",
+          "text": "安心回家",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "secret-after-line": {
+      "text": "原來那間山屋，只是虎姑婆的幻術。",
+      "parts": [
+        {
+          "src": "secret-after-line-0.png",
+          "text": "原來那間山屋，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "secret-after-line-1.png",
+          "text": "只是虎姑婆的",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "secret-after-line-2.png",
+          "text": "幻術。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    }
+  }
+}
