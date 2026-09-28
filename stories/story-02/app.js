@@ -1,4 +1,4 @@
-import { StoryEngine } from '../../engine/story-engine.js?v=story02-audio-1';
+import { StoryEngine } from '../../engine/story-engine.js?v=camera-1';
 import * as model from './state.js';
 
 const root = document.getElementById('story');

@@ -173,6 +173,8 @@ Story 02 已建立 `engine/`，目前只有新故事引用。《月光洞》原�
 
 ## 7. 未來體感實驗
 
+2026-09-28：依使用者要求，Story 02 竹林新增可選鏡頭三區站位及 [獨立測試入口](https://mansonsick.github.io/Moon-cave/experiments/camera-lanes/)。點選才開鏡頭，本機辨識，不錄影、不上傳；退出、完成及背景關鏡頭。原按鈕／傾斜保留，實機待驗範圍見 [CAMERA_LANES.md](stories/story-02/CAMERA_LANES.md)。
+
 第一個 sensor 實驗必須使用**獨立測試頁**，不直接修改正式故事。優先測試 `balanceSensor`：
 
 - 使用 DeviceMotion／DeviceOrientation。

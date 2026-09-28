@@ -1,5 +1,6 @@
 import { MotionSource, StabilityTracker, screenAngle } from './sensors.js';
 import { place } from './interactions.js';
+import { CameraLaneSource } from './camera-lanes.js?v=camera-1';
 
 // All controllers return cleanup; leaving a scene never leaves a timer or sensor behind.
 export function findObjects({ stage, targets, found, onFind }) {
@@ -75,10 +76,12 @@ export function stabilityChallenge({ panel, kind, config = {}, text, button, aud
 }
 
 const obstacles = ['🎋', '🪨', '🪵', '🎋', '🪵'];
-export function tiltDodge({ panel, text, button, audio, onComplete }) {
+export function tiltDodge({ panel, text, button, audio, onComplete, cameraEnabled = false }) {
   const source = new MotionSource();
+  const camera = new CameraLaneSource();
   let alive = true, running = false, lane = 1, passed = 0, y = -12, pause = 0, last = performance.now(), frame = 0;
   let useTilt = false, baseline = null, candidate = null, calibration = 0, missing = 0, revision = 0;
+  let useCamera = false, cameraMissing = 0;
   const lanes = [1, 0, 2, 1, 0];
   const status = document.createElement('p'); status.className = 'challenge-status'; status.setAttribute('role', 'status');
   let label;
@@ -87,22 +90,46 @@ export function tiltDodge({ panel, text, button, audio, onComplete }) {
   const field = document.createElement('div'); field.className = 'dodge-field'; field.dataset.mode = 'buttons';
   field.innerHTML = '<div class="lane-mark left"></div><div class="lane-mark right"></div><div class="obstacle" aria-hidden="true"></div><div class="runner" aria-label="阿通與小松鼠"><svg viewBox="0 0 80 100" aria-hidden="true"><path fill="#c4c8c7" d="M21 52h37l7 26-18 5-7-15-7 15-19-5z"/><path fill="#78623e" d="m22 78 14 1-2 19H20zm23 1 14-1 3 20H47z"/><circle fill="#f1b97b" cx="40" cy="31" r="22"/><path fill="#2b2330" d="M18 29C9-6 72-10 63 31L51 15 39 24 28 17z"/><circle cx="32" cy="31" r="2"/><circle cx="48" cy="31" r="2"/><path stroke="#98523e" fill="none" d="M33 42q7 6 14 0"/></svg><span class="runner-friend" aria-hidden="true">🐿️</span></div>';
   const obstacle = field.querySelector('.obstacle'), runner = field.querySelector('.runner');
+  const video = document.createElement('video'); video.className = 'camera-preview'; video.muted = true; video.playsInline = true;
+  video.setAttribute('playsinline', ''); video.setAttribute('aria-hidden', 'true'); video.hidden = true;
+  const selected = document.createElement('div'); selected.className = 'camera-selected'; selected.hidden = true; selected.setAttribute('aria-hidden', 'true');
+  const zoneLabels = document.createElement('div'); zoneLabels.className = 'camera-zone-labels'; zoneLabels.hidden = true;
+  if (cameraEnabled) for (const id of ['camera-left', 'camera-center', 'camera-right']) { const span = document.createElement('span'); span.append(text(id)); zoneLabels.append(span); }
+  field.prepend(video, selected); field.append(zoneLabels);
+  const cameraNote = document.createElement('p'); cameraNote.className = 'camera-note'; cameraNote.hidden = true;
+  if (cameraEnabled) cameraNote.append(text('camera-setup'), document.createElement('br'), text('camera-private'));
   const score = document.createElement('p'); score.className = 'dodge-score'; score.textContent = '0 / 5';
   const controls = document.createElement('div'); controls.className = 'actions dodge-controls';
   function move(next) { lane = Math.max(0, Math.min(2, next)); runner.style.left = `${(lane + .5) / 3 * 100}%`; field.dataset.lane = lane; }
-  function buttons() { revision++; useTilt = false; baseline = null; source.stop(); field.dataset.mode = 'buttons'; show('button-mode'); running = true; last = performance.now(); }
+  function stopCamera() { useCamera = false; camera.stop(); video.hidden = selected.hidden = zoneLabels.hidden = cameraNote.hidden = true; field.classList.remove('camera-active'); field.style.removeProperty('aspect-ratio'); }
+  function buttons(message = 'button-mode') { revision++; useTilt = false; baseline = null; source.stop(); stopCamera(); field.dataset.mode = 'buttons'; show(message); running = true; last = performance.now(); }
   const left = button('left', () => move(lane - 1)), right = button('right', () => move(lane + 1));
   left.dataset.action = 'left'; right.dataset.action = 'right';
   const start = button('start', () => { start.hidden = true; buttons(); }); start.dataset.action = 'challenge-start';
   const tilt = button('tilt-mode', async () => {
-    start.hidden = true; const ticket = ++revision; running = false; show('permission');
+    start.hidden = true; const ticket = ++revision; running = false; useTilt = false; stopCamera(); source.stop(); show('permission');
     const ok = await source.start(); if (!alive || ticket !== revision) return;
     if (!ok) { buttons(); return; }
     baseline = null; candidate = null; calibration = 0; missing = 0; useTilt = true; field.dataset.mode = 'tilt';
     show('calibrating'); running = true; last = performance.now();
   }); tilt.dataset.action = 'tilt';
-  const fallback = button('button-mode', buttons); fallback.dataset.action = 'buttons';
-  controls.append(left, start, right, tilt, fallback); panel.append(status, field, score, controls); move(1);
+  const fallback = button('button-mode', () => buttons()); fallback.dataset.action = 'buttons';
+  controls.append(left, start, right, tilt, fallback);
+  if (cameraEnabled) {
+    const enableCamera = button('camera-mode', async () => {
+      const ticket = ++revision; running = false; useTilt = false; source.stop(); stopCamera();
+      start.hidden = true; field.dataset.mode = 'camera-loading'; cameraNote.hidden = false; video.hidden = false; zoneLabels.hidden = false;
+      field.classList.add('camera-active'); show('camera-loading');
+      const ok = await camera.start(video, () => { if (alive && ticket === revision) buttons('camera-fallback'); });
+      if (!alive || ticket !== revision) return;
+      if (!ok) { buttons('camera-fallback'); return; }
+      field.style.aspectRatio = `${video.videoWidth} / ${video.videoHeight}`;
+      field.dataset.mode = 'camera'; useCamera = true; cameraMissing = 0; running = true; last = performance.now(); show('camera-wait');
+      field.scrollIntoView({ block: 'center', behavior: 'auto' });
+    });
+    enableCamera.dataset.action = 'camera'; controls.append(enableCamera);
+  }
+  panel.append(status, cameraNote, field, score, controls); move(1);
   const key = event => { if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') { event.preventDefault(); move(lane + (event.key === 'ArrowLeft' ? -1 : 1)); } };
   document.addEventListener('keydown', key);
   function tick(now) {
@@ -110,6 +137,17 @@ export function tiltDodge({ panel, text, button, audio, onComplete }) {
     const dt = Math.min(Math.max(now - last, 0), 60); last = now;
     let canAdvance = true;
     if (running && !document.hidden) {
+      if (useCamera) {
+        const sample = camera.read(now); cameraMissing = sample ? 0 : cameraMissing + dt;
+        if (sample) {
+          move(sample.lane); selected.hidden = false; selected.style.left = `${sample.lane / 3 * 100}%`;
+          field.style.aspectRatio = `${video.videoWidth} / ${video.videoHeight}`;
+          show('camera-instruction');
+        } else {
+          canAdvance = false; selected.hidden = true; show('camera-wait');
+          if (cameraMissing > 8000) buttons('camera-fallback');
+        }
+      }
       if (useTilt) {
         const s = source.read(now); missing = s ? 0 : missing + dt;
         if (missing > 2200) buttons();
@@ -142,7 +180,7 @@ export function tiltDodge({ panel, text, button, audio, onComplete }) {
             y = 32; pause = 650; field.classList.add('bumped'); show('collision'); audio?.playSfx('fail-soft');
           } else if (y > 108) {
             passed++; score.textContent = `${passed} / 5`; y = -12;
-            if (passed === 5) { running = false; source.stop(); onComplete(); return; }
+            if (passed === 5) { running = false; source.stop(); stopCamera(); onComplete(); return; }
           }
         }
         if (pause <= 0) field.classList.remove('bumped');
@@ -153,8 +191,10 @@ export function tiltDodge({ panel, text, button, audio, onComplete }) {
     frame = requestAnimationFrame(tick);
   }
   const visibility = () => {
-    if (document.hidden && running) { running = false; useTilt = false; revision++; source.stop(); start.hidden = false; start.replaceChildren(text('resume')); show('background-paused'); }
+    if (document.hidden && (running || field.dataset.mode === 'camera-loading')) suspend();
   };
+  function suspend() { running = false; useTilt = false; revision++; source.stop(); stopCamera(); field.dataset.mode = 'buttons'; start.hidden = false; start.replaceChildren(text('resume')); show('background-paused'); }
   document.addEventListener('visibilitychange', visibility); frame = requestAnimationFrame(tick);
-  return () => { alive = false; revision++; source.stop(); cancelAnimationFrame(frame); document.removeEventListener('keydown', key); document.removeEventListener('visibilitychange', visibility); };
+  window.addEventListener('pagehide', suspend);
+  return () => { alive = false; revision++; source.stop(); stopCamera(); cancelAnimationFrame(frame); document.removeEventListener('keydown', key); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pagehide', suspend); };
 }

@@ -813,6 +813,212 @@
         }
       ]
     },
+    "camera-mode": {
+      "text": "試試鏡頭站位",
+      "parts": [
+        {
+          "src": "camera-mode-0.png",
+          "text": "試試鏡頭站位",
+          "width": 1752,
+          "height": 212
+        }
+      ]
+    },
+    "camera-setup": {
+      "text": "把平板放穩，讓頭和身體入鏡。一次一個人，左右小步移動。",
+      "parts": [
+        {
+          "src": "camera-setup-0.png",
+          "text": "把平板放穩，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-setup-1.png",
+          "text": "讓頭和身體入",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-setup-2.png",
+          "text": "鏡。一次一個",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-setup-3.png",
+          "text": "人，左右小步",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-setup-4.png",
+          "text": "移動。",
+          "width": 888,
+          "height": 212
+        }
+      ]
+    },
+    "camera-private": {
+      "text": "畫面只在平板辨識，不錄影、不上傳。",
+      "parts": [
+        {
+          "src": "camera-private-0.png",
+          "text": "畫面只在平板",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-private-1.png",
+          "text": "辨識，",
+          "width": 888,
+          "height": 212
+        },
+        {
+          "src": "camera-private-2.png",
+          "text": "不錄影、不上",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-private-3.png",
+          "text": "傳。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "camera-loading": {
+      "text": "正在準備鏡頭，請稍等。",
+      "parts": [
+        {
+          "src": "camera-loading-0.png",
+          "text": "正在準備鏡頭，",
+          "width": 2040,
+          "height": 212
+        },
+        {
+          "src": "camera-loading-1.png",
+          "text": "請稍等。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "camera-wait": {
+      "text": "先暫停。請站進畫面，讓鏡頭看清楚你。",
+      "parts": [
+        {
+          "src": "camera-wait-0.png",
+          "text": "先暫停。",
+          "width": 1176,
+          "height": 212
+        },
+        {
+          "src": "camera-wait-1.png",
+          "text": "請站進畫面，",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-wait-2.png",
+          "text": "讓鏡頭看清楚",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-wait-3.png",
+          "text": "你。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "camera-instruction": {
+      "text": "站到左、中、右，帶阿通避開障礙。",
+      "parts": [
+        {
+          "src": "camera-instruction-0.png",
+          "text": "站到左、中、",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-instruction-1.png",
+          "text": "右，帶阿通避",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-instruction-2.png",
+          "text": "開障礙。",
+          "width": 1176,
+          "height": 212
+        }
+      ]
+    },
+    "camera-fallback": {
+      "text": "鏡頭暫時看不清楚，先用左右按鈕吧。",
+      "parts": [
+        {
+          "src": "camera-fallback-0.png",
+          "text": "鏡頭暫時看不",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-fallback-1.png",
+          "text": "清楚，",
+          "width": 888,
+          "height": 212
+        },
+        {
+          "src": "camera-fallback-2.png",
+          "text": "先用左右按鈕",
+          "width": 1752,
+          "height": 212
+        },
+        {
+          "src": "camera-fallback-3.png",
+          "text": "吧。",
+          "width": 600,
+          "height": 212
+        }
+      ]
+    },
+    "camera-left": {
+      "text": "左",
+      "parts": [
+        {
+          "src": "camera-left-0.png",
+          "text": "左",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
+    "camera-center": {
+      "text": "中",
+      "parts": [
+        {
+          "src": "camera-center-0.png",
+          "text": "中",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
+    "camera-right": {
+      "text": "右",
+      "parts": [
+        {
+          "src": "camera-right-0.png",
+          "text": "右",
+          "width": 312,
+          "height": 212
+        }
+      ]
+    },
     "collision": {
       "text": "碰到了！慢慢換一邊，再出發。",
       "parts": [

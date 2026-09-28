@@ -1,0 +1,8 @@
+# Keep audited upstream bytes stable across Windows and Unix checkouts.
+engine/vendor/mediapipe/** -text linguist-vendored
+# Preserve upstream formatting as well as content; integrity is checked by SHA-256.
+engine/vendor/mediapipe/wasm/*.js -whitespace
+engine/vendor/mediapipe/vision_bundle.mjs -whitespace
+# Project-owned documentation follows ordinary text normalization.
+engine/vendor/mediapipe/manifest.json text eol=lf
+engine/vendor/mediapipe/README.md text eol=lf

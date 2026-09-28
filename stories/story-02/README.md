@@ -13,6 +13,7 @@
 | [ASSET_MANIFEST.md](ASSET_MANIFEST.md) | 實際圖片、點位、注音與音訊資產。 |
 | [AUDIO_PLAN.md](AUDIO_PLAN.md) | 音效規格與製作方向。 |
 | [AUDIO_ASSETS.md](AUDIO_ASSETS.md) | 九種原創合成音效、來源與重建方法。 |
+| [CAMERA_LANES.md](CAMERA_LANES.md) | 竹林鏡頭站位、直接測試入口及裝置限制。 |
 | [ENGINEERING_PLAN.md](ENGINEERING_PLAN.md) | 已實作模組、存檔及生命週期。 |
 | [QA.md](QA.md) | 測試結果與真機／視覺限制。 |
 | [DEVLOG.md](DEVLOG.md) | 工程紀錄。 |
@@ -29,6 +30,7 @@
 [Story 02 平板測試版](https://mansonsick.github.io/Moon-cave/stories/story-02/)。以平板 Safari／Chrome 直接開啟 HTTPS 頁面。
 
 躲藏與木橋按「開始」後，若跳出動作／方向權限請允許，再穩穩拿好校正兩秒；竹林按「試試傾斜控制」。若感測不支援，仍可使用普通倒數／左右按鈕。
+竹林可選「試試鏡頭站位」：固定平板，以左／中／右站位控制。可先用 [獨立測試頁](https://mansonsick.github.io/Moon-cave/experiments/camera-lanes/)，不讀寫故事存檔。首次需載入約 18 MB；按鈕玩法不下載模型。
 回報時提供平板型號、瀏覽器、場景與看到的情況。已加入九種柔和合成音效；按「開始冒險」後才播放。若上方是 🔇，點一下改成 🔊；更新會保留原本的靜音偏好。
 
 ## 本機試玩

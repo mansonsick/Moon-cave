@@ -1,6 +1,6 @@
 import { createStorage } from './storage.js';
 import { AudioManager } from './audio-manager.js?v=story02-audio-1';
-import { findObjects, stabilityChallenge, tiltDodge } from './challenges.js';
+import { findObjects, stabilityChallenge, tiltDodge } from './challenges.js?v=camera-1';
 import { bindDrag, place, keyGraphic } from './interactions.js';
 
 export class StoryEngine {
@@ -135,7 +135,7 @@ export class StoryEngine {
       }
     } else if (['stillnessSensor', 'balanceSensor', 'tiltDodge'].includes(scene.type)) {
       if (this.state.completed.includes(id)) reward();
-      else if (scene.type === 'tiltDodge') this.cleanups.push(tiltDodge({ panel, text: this.text, button: this.button, audio: this.audio, onComplete: done }));
+      else if (scene.type === 'tiltDodge') this.cleanups.push(tiltDodge({ panel, text: this.text, button: this.button, audio: this.audio, onComplete: done, cameraEnabled: scene.cameraEnabled === true }));
       else {
         const kind = scene.type === 'stillnessSensor' ? 'stillness' : 'balance';
         this.cleanups.push(stabilityChallenge({ panel, kind, config: this.config.challenges[kind], text: this.text, button: this.button, audio: this.audio, onComplete: done }));

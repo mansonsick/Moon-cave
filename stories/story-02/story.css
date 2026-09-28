@@ -9,3 +9,16 @@
 .dodge-score { font-size: 26px; font-weight: 700; }
 .dodge-controls [data-action="left"], .dodge-controls [data-action="right"] { min-width: 125px; background: #f2d798; }
 .dodge-controls [data-action="tilt"], .dodge-controls [data-action="buttons"] { font-size: .8em; }
+.dodge-controls [data-action="camera"] { font-size: .8em; background: #dceadf; }
+.dodge-controls [hidden] { display: none; }
+.dodge-field.camera-active { width: min(100%, 760px); height: auto; aspect-ratio: 4 / 3; background: #172520; border-radius: 18px; }
+.camera-preview { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; transform: scaleX(-1); }
+.camera-selected { position: absolute; top: 0; bottom: 0; width: 33.333%; background: #b8ff7b2c; border: 3px solid #d0ff9eb0; pointer-events: none; }
+.camera-zone-labels { position: absolute; inset: 0 0 auto; display: flex; pointer-events: none; font-size: .7em; }
+.camera-zone-labels span { width: 33.333%; text-align: center; background: #fff8e9d9; }
+.camera-zone-labels .zhuyin { width: auto; background: none; }
+.camera-preview[hidden], .camera-selected[hidden], .camera-zone-labels[hidden], .camera-note[hidden] { display: none; }
+.camera-active .lane-mark { border-color: #fffce8; border-width: 3px; }
+.camera-active .obstacle { background: #f9efdaa8; border-radius: 50%; }
+.camera-active .runner { filter: drop-shadow(0 0 5px white) drop-shadow(0 4px 3px #142b31); }
+.challenge .camera-note { font-size: .75em; }
