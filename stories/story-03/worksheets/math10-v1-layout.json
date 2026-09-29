@@ -1,0 +1,450 @@
+{
+  "story_id": "story-03",
+  "worksheet_id": "math10-v1",
+  "layout_version": 1,
+  "page_mm": [
+    210,
+    297
+  ],
+  "coordinate_origin": "top-left",
+  "units": "mm",
+  "pages": [
+    {
+      "page": 1,
+      "gate_id": "gate-1",
+      "qr_payload": "aton|story-03|math10-v1|gate-1",
+      "marker_rects_mm": [
+        [
+          152,
+          73,
+          3,
+          3
+        ],
+        [
+          191,
+          73,
+          3,
+          3
+        ],
+        [
+          152,
+          251,
+          3,
+          3
+        ],
+        [
+          191,
+          251,
+          3,
+          3
+        ]
+      ],
+      "answer_region_mm": [
+        152,
+        73,
+        42,
+        181
+      ],
+      "slots": [
+        {
+          "question_id": 1,
+          "position": 1,
+          "box_mm": [
+            158,
+            77,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            79,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 2,
+          "position": 2,
+          "box_mm": [
+            158,
+            106,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            108,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 3,
+          "position": 3,
+          "box_mm": [
+            158,
+            135,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            137,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 4,
+          "position": 4,
+          "box_mm": [
+            158,
+            164,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            166,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 5,
+          "position": 5,
+          "box_mm": [
+            158,
+            193,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            195,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 6,
+          "position": 6,
+          "box_mm": [
+            158,
+            222,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            224,
+            24,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "page": 2,
+      "gate_id": "gate-2",
+      "qr_payload": "aton|story-03|math10-v1|gate-2",
+      "marker_rects_mm": [
+        [
+          152,
+          73,
+          3,
+          3
+        ],
+        [
+          191,
+          73,
+          3,
+          3
+        ],
+        [
+          152,
+          280,
+          3,
+          3
+        ],
+        [
+          191,
+          280,
+          3,
+          3
+        ]
+      ],
+      "answer_region_mm": [
+        152,
+        73,
+        42,
+        210
+      ],
+      "slots": [
+        {
+          "question_id": 7,
+          "position": 1,
+          "box_mm": [
+            158,
+            77,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            79,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 8,
+          "position": 2,
+          "box_mm": [
+            158,
+            106,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            108,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 9,
+          "position": 3,
+          "box_mm": [
+            158,
+            135,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            137,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 10,
+          "position": 4,
+          "box_mm": [
+            158,
+            164,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            166,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 11,
+          "position": 5,
+          "box_mm": [
+            158,
+            193,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            195,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 12,
+          "position": 6,
+          "box_mm": [
+            158,
+            222,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            224,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 13,
+          "position": 7,
+          "box_mm": [
+            158,
+            251,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            253,
+            24,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "page": 3,
+      "gate_id": "gate-3",
+      "qr_payload": "aton|story-03|math10-v1|gate-3",
+      "marker_rects_mm": [
+        [
+          152,
+          73,
+          3,
+          3
+        ],
+        [
+          191,
+          73,
+          3,
+          3
+        ],
+        [
+          152,
+          280,
+          3,
+          3
+        ],
+        [
+          191,
+          280,
+          3,
+          3
+        ]
+      ],
+      "answer_region_mm": [
+        152,
+        73,
+        42,
+        210
+      ],
+      "slots": [
+        {
+          "question_id": 14,
+          "position": 1,
+          "box_mm": [
+            158,
+            77,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            79,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 15,
+          "position": 2,
+          "box_mm": [
+            158,
+            106,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            108,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 16,
+          "position": 3,
+          "box_mm": [
+            158,
+            135,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            137,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 17,
+          "position": 4,
+          "box_mm": [
+            158,
+            164,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            166,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 18,
+          "position": 5,
+          "box_mm": [
+            158,
+            193,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            195,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 19,
+          "position": 6,
+          "box_mm": [
+            158,
+            222,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            224,
+            24,
+            24
+          ]
+        },
+        {
+          "question_id": 20,
+          "position": 7,
+          "box_mm": [
+            158,
+            251,
+            28,
+            28
+          ],
+          "inner_crop_mm": [
+            160,
+            253,
+            24,
+            24
+          ]
+        }
+      ]
+    }
+  ]
+}

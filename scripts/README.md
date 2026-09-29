@@ -28,6 +28,10 @@ python scripts/render_story_text.py --font "/private/path/BpmfGenRyuMin-H.ttf"
 3. 更新圖片對應的 `alt`、按鈕名稱、圖片尺寸與必要的排版比例，保留可存取文字。
 4. 只提交 manifest、PNG、引用它們的頁面及文件，不提交字型檔。
 
+## Story 03 可列印練習紙
+
+另有 Story 03 列印檔產生工具 `build_story03_worksheets.py`，從題卷 JSON 輸出三頁 A4 練習紙、獨立解答及答案格座標。中文仍使用本機指定字型渲染，PDF 不嵌入字型；重建方式與驗證見 [列印說明](../stories/story-03/worksheets/README.md)。
+
 ## Story 02 原創合成音訊
 
 重建已交付的 9 個 WAV 及音訊 manifest：
