@@ -48,3 +48,11 @@ python tests/camera_lanes_test.py --output ../hub-review/camera-tests
 ```
 
 追加 12 組（合計 37 組）：真實模型／WASM 執行、三區判定、合成 video／姿勢驅動正式控制器、五障礙、權限與載入失敗、生命週期、正式故事／存檔及排版。只用人工 canvas 影像，絕不開啟真實鏡頭；實機效果另測。
+
+## Story 03 分層與題卷碼
+
+```sh
+python tests/story_03_test.py --output ../hub-review/story03-web
+```
+
+覆蓋 500 題卷碼、相容性範例、三道門與雙結局、題卷切換、存檔隔離、靜音、三張 A4 空白格與分開解答、分層素材及直橫向版面。驗收範圍與待辦見 [Story 03 QA](../stories/story-03/QA.md)。不開啟相機，不宣稱已完成手寫辨識。

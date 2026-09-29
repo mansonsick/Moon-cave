@@ -1,0 +1,48 @@
+{
+  "mode": "Built-in image_gen",
+  "date": "2026-09-29",
+  "assets": [
+    {
+      "file": "forest-bg.png",
+      "reference": "forest",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Edit target: the supplied forest story illustration. Remove only the boy and squirrel completely, reconstruct the path, plants and rocks underneath naturally. Keep the landscape, distant star tower, unlit lantern on stump, sunset lighting, painterly style, wide 16:9 composition and all other elements unchanged. No people or animals, no text. This is a clean background layer."
+    },
+    {
+      "file": "tower-bg.png",
+      "reference": "tower",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Edit target: supplied tower interior. Remove the boy and squirrel completely, naturally complete floor and staircase. Replace only the central closed wooden door with an open dark passage within exactly the same stone arch; preserve the stone frame, bench, window, fireflies, furnishings, painterly style and 16:9 framing. No people or animals, no text. This is a clean background, a separate door sprite will close the arch."
+    },
+    {
+      "file": "roof-bg.png",
+      "reference": "roof",
+      "transparent": false,
+      "prompt": "Use case: precise-object-edit. Edit target: supplied star tower roof. Remove boy, squirrel and wooden treasure chest completely; reconstruct the stone floor and balustrade underneath. Preserve the round stone pedestal on the right with its EMPTY five-point star recess, scenery, arches and starry sky, exact perspective and 16:9 framing. No people or animals, no text. Clean background layer."
+    },
+    {
+      "file": "atong.png",
+      "reference": "tower",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Edit target: boy in the supplied illustration. Isolate ONLY the full-body boy as an individual transparent PNG sprite, standing in the same three-quarter profile facing right. Same tousled black hair, child face, pale blue short-sleeve shirt, khaki shorts, olive green backpack, socks and brown boots, same painterly storybook lighting. Preserve identity and body proportions. No squirrel, no scenery, no floor, no large cast shadow, no text. Tight full-body framing with a small transparent margin. Actual alpha transparency."
+    },
+    {
+      "file": "squirrel.png",
+      "reference": "tower",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Isolate ONLY the small orange squirrel in the supplied illustration, as a separate full-body transparent sprite, same three-quarter pose facing right, bright gentle expression, fluffy curled orange tail and cream belly, same painterly storybook style. No boy, no scenery, no floor, no text or large cast shadow. Tight framing with a small transparent margin. Actual alpha transparency."
+    },
+    {
+      "file": "chest.png",
+      "reference": "roof",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Isolate ONLY the closed wooden treasure chest with gold star and brass bands from supplied illustration as a separate transparent sprite. Keep exact front three-quarter perspective, painterly texture, proportions and lighting. No characters, pedestal, scenery, floor, text or large cast shadow. Tight complete-object framing with small transparent margin, actual alpha transparency."
+    },
+    {
+      "file": "door.png",
+      "reference": "tower",
+      "transparent": true,
+      "prompt": "Use case: background-extraction. Isolate ONLY the central closed arched wooden door from supplied tower illustration, including gold star, metal bands and handle. Exclude the stone arch/frame. Front-on perspective, same painterly texture and warm lighting. Door itself should fill the image with a tight transparent margin, its arch silhouette clearly transparent above corners. No people, animals, scene, text, floor or stone walls. Actual alpha transparency."
+    }
+  ]
+}

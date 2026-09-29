@@ -1,0 +1,1553 @@
+{
+  "font": "Bpmf GenRyu Min H (local render only)",
+  "fontSize": 192,
+  "labels": {
+    "title": {
+      "text": "阿通與星光寶箱",
+      "parts": [
+        {
+          "src": "title-0.png",
+          "text": "阿通與星光寶",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "title-1.png",
+          "text": "箱",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "world": {
+      "text": "阿通的冒險世界",
+      "parts": [
+        {
+          "src": "world-0.png",
+          "text": "阿通的冒險世",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "world-1.png",
+          "text": "界",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "subject": {
+      "text": "今天一起玩數學",
+      "parts": [
+        {
+          "src": "subject-0.png",
+          "text": "今天一起玩數",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "subject-1.png",
+          "text": "學",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "setup": {
+      "text": "準備探險紙",
+      "parts": [
+        {
+          "src": "setup-0.png",
+          "text": "準備探險紙",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "code": {
+      "text": "題卷碼",
+      "parts": [
+        {
+          "src": "code-0.png",
+          "text": "題卷碼",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "code-help": {
+      "text": "輸入紙上的題卷碼，就會得到同一組題目。",
+      "parts": [
+        {
+          "src": "code-help-0.png",
+          "text": "輸入紙上的題",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "code-help-1.png",
+          "text": "卷碼，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "code-help-2.png",
+          "text": "就會得到同一",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "code-help-3.png",
+          "text": "組題目。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "code-example": {
+      "text": "只用英文字母和數字。",
+      "parts": [
+        {
+          "src": "code-example-0.png",
+          "text": "只用英文字母",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "code-example-1.png",
+          "text": "和數字。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "use-code": {
+      "text": "使用這組題目",
+      "parts": [
+        {
+          "src": "use-code-0.png",
+          "text": "使用這組題目",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "new-code": {
+      "text": "產生新題卷",
+      "parts": [
+        {
+          "src": "new-code-0.png",
+          "text": "產生新題卷",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "invalid-code": {
+      "text": "請輸入一到二十四個英文字母或數字。",
+      "parts": [
+        {
+          "src": "invalid-code-0.png",
+          "text": "請輸入一到二",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "invalid-code-1.png",
+          "text": "十四個英文字",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "invalid-code-2.png",
+          "text": "母或數字。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "current-code": {
+      "text": "這次的題卷碼",
+      "parts": [
+        {
+          "src": "current-code-0.png",
+          "text": "這次的題卷碼",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "change": {
+      "text": "更換題卷",
+      "parts": [
+        {
+          "src": "change-0.png",
+          "text": "更換題卷",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "confirm-change": {
+      "text": "更換題卷會重新開始故事。原來的紙本請保留題卷碼。",
+      "parts": [
+        {
+          "src": "confirm-change-0.png",
+          "text": "更換題卷會重",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "confirm-change-1.png",
+          "text": "新開始故事。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "confirm-change-2.png",
+          "text": "原來的紙本請",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "confirm-change-3.png",
+          "text": "保留題卷碼。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "yes-change": {
+      "text": "更換並重新開始",
+      "parts": [
+        {
+          "src": "yes-change-0.png",
+          "text": "更換並重新開",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "yes-change-1.png",
+          "text": "始",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "cancel": {
+      "text": "取消",
+      "parts": [
+        {
+          "src": "cancel-0.png",
+          "text": "取消",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "print": {
+      "text": "列印這組練習紙",
+      "parts": [
+        {
+          "src": "print-0.png",
+          "text": "列印這組練習",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "print-1.png",
+          "text": "紙",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "print-now": {
+      "text": "列印",
+      "parts": [
+        {
+          "src": "print-now-0.png",
+          "text": "列印",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "print-help": {
+      "text": "選擇 A4、直向、單面、實際大小。關閉頁首頁尾。",
+      "parts": [
+        {
+          "src": "print-help-0.png",
+          "text": "選擇 A4、",
+          "width": 1192,
+          "height": 214
+        },
+        {
+          "src": "print-help-1.png",
+          "text": "直向、單面、",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "print-help-2.png",
+          "text": "實際大小。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "print-help-3.png",
+          "text": "關閉頁首頁尾。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "paper-instruction": {
+      "text": "算一算，把答案寫進右邊的格子。",
+      "parts": [
+        {
+          "src": "paper-instruction-0.png",
+          "text": "算一算，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "paper-instruction-1.png",
+          "text": "把答案寫進右",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "paper-instruction-2.png",
+          "text": "邊的格子。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "paper-order": {
+      "text": "從上往下，一格寫一個數字。",
+      "parts": [
+        {
+          "src": "paper-order-0.png",
+          "text": "從上往下，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "paper-order-1.png",
+          "text": "一格寫一個數",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "paper-order-2.png",
+          "text": "字。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "paper-subtract": {
+      "text": "減法的圓點，請自己劃掉再算。",
+      "parts": [
+        {
+          "src": "paper-subtract-0.png",
+          "text": "減法的圓點，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "paper-subtract-1.png",
+          "text": "請自己劃掉再",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "paper-subtract-2.png",
+          "text": "算。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "password-box": {
+      "text": "密碼格",
+      "parts": [
+        {
+          "src": "password-box-0.png",
+          "text": "密碼格",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "gate1-name": {
+      "text": "星星石門",
+      "parts": [
+        {
+          "src": "gate1-name-0.png",
+          "text": "星星石門",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "gate2-name": {
+      "text": "螢火蟲門",
+      "parts": [
+        {
+          "src": "gate2-name-0.png",
+          "text": "螢火蟲門",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "gate3-name": {
+      "text": "塔頂寶庫門",
+      "parts": [
+        {
+          "src": "gate3-name-0.png",
+          "text": "塔頂寶庫門",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "gate1-label": {
+      "text": "第一道門",
+      "parts": [
+        {
+          "src": "gate1-label-0.png",
+          "text": "第一道門",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "gate2-label": {
+      "text": "第二道門",
+      "parts": [
+        {
+          "src": "gate2-label-0.png",
+          "text": "第二道門",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "gate3-label": {
+      "text": "第三道門",
+      "parts": [
+        {
+          "src": "gate3-label-0.png",
+          "text": "第三道門",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "start": {
+      "text": "開始冒險",
+      "parts": [
+        {
+          "src": "start-0.png",
+          "text": "開始冒險",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "resume": {
+      "text": "繼續冒險",
+      "parts": [
+        {
+          "src": "resume-0.png",
+          "text": "繼續冒險",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "continue": {
+      "text": "繼續",
+      "parts": [
+        {
+          "src": "continue-0.png",
+          "text": "繼續",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "home": {
+      "text": "返回首頁",
+      "parts": [
+        {
+          "src": "home-0.png",
+          "text": "返回首頁",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "cover-line": {
+      "text": "三張探險紙，三道神祕的門。一起找回森林的星光！",
+      "parts": [
+        {
+          "src": "cover-line-0.png",
+          "text": "三張探險紙，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "cover-line-1.png",
+          "text": "三道神祕的門。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "cover-line-2.png",
+          "text": "一起找回森林",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "cover-line-3.png",
+          "text": "的星光！",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "intro-title": {
+      "text": "森林的燈暗了",
+      "parts": [
+        {
+          "src": "intro-title-0.png",
+          "text": "森林的燈暗了",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "intro-line": {
+      "text": "指路的星燈不亮了。阿通和小松鼠帶著探險紙，前往老星塔。",
+      "parts": [
+        {
+          "src": "intro-line-0.png",
+          "text": "指路的星燈不",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "intro-line-1.png",
+          "text": "亮了。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "intro-line-2.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "intro-line-3.png",
+          "text": "帶著探險紙，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "intro-line-4.png",
+          "text": "前往老星塔。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "gate1-line": {
+      "text": "石門的密碼有六個數字。算完第一張紙，把答案依序放進來。",
+      "parts": [
+        {
+          "src": "gate1-line-0.png",
+          "text": "石門的密碼有",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate1-line-1.png",
+          "text": "六個數字。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "gate1-line-2.png",
+          "text": "算完第一張紙，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "gate1-line-3.png",
+          "text": "把答案依序放",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate1-line-4.png",
+          "text": "進來。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "gate2-line": {
+      "text": "螢火蟲照亮通道。第二張紙的七個答案，能打開前面的門。",
+      "parts": [
+        {
+          "src": "gate2-line-0.png",
+          "text": "螢火蟲照亮通",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate2-line-1.png",
+          "text": "道。第二張紙",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate2-line-2.png",
+          "text": "的七個答案，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate2-line-3.png",
+          "text": "能打開前面的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate2-line-4.png",
+          "text": "門。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "gate3-line": {
+      "text": "最後一道門就在眼前。完成第三張紙，一起找到星光寶箱。",
+      "parts": [
+        {
+          "src": "gate3-line-0.png",
+          "text": "最後一道門就",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-1.png",
+          "text": "在眼前。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-2.png",
+          "text": "完成第三張紙，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-3.png",
+          "text": "一起找到星光",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-4.png",
+          "text": "寶箱。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "answer-help": {
+      "text": "點一個格子，輸入紙上寫的答案。",
+      "parts": [
+        {
+          "src": "answer-help-0.png",
+          "text": "點一個格子，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "answer-help-1.png",
+          "text": "輸入紙上寫的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "answer-help-2.png",
+          "text": "答案。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "check": {
+      "text": "試試密碼",
+      "parts": [
+        {
+          "src": "check-0.png",
+          "text": "試試密碼",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "empty": {
+      "text": "還有空格。沒有剩下時，要填零。",
+      "parts": [
+        {
+          "src": "empty-0.png",
+          "text": "還有空格。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "empty-1.png",
+          "text": "沒有剩下時，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-2.png",
+          "text": "要填零。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "incorrect": {
+      "text": "再看看標記的題目。其他答案已經保留。",
+      "parts": [
+        {
+          "src": "incorrect-0.png",
+          "text": "再看看標記的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "incorrect-1.png",
+          "text": "題目。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "incorrect-2.png",
+          "text": "其他答案已經",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "incorrect-3.png",
+          "text": "保留。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "hint": {
+      "text": "看看這題",
+      "parts": [
+        {
+          "src": "hint-0.png",
+          "text": "看看這題",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "hint-add": {
+      "text": "把兩群圓點合起來，算算共有幾個。",
+      "parts": [
+        {
+          "src": "hint-add-0.png",
+          "text": "把兩群圓點合",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-add-1.png",
+          "text": "起來，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "hint-add-2.png",
+          "text": "算算共有幾個。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "hint-subtract": {
+      "text": "自己點掉要拿走的圓點，再看看剩下幾個。",
+      "parts": [
+        {
+          "src": "hint-subtract-0.png",
+          "text": "自己點掉要拿",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-subtract-1.png",
+          "text": "走的圓點，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "hint-subtract-2.png",
+          "text": "再看看剩下幾",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-subtract-3.png",
+          "text": "個。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "erase": {
+      "text": "清除這格",
+      "parts": [
+        {
+          "src": "erase-0.png",
+          "text": "清除這格",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "close": {
+      "text": "關閉",
+      "parts": [
+        {
+          "src": "close-0.png",
+          "text": "關閉",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "success": {
+      "text": "密碼對了！門打開了！",
+      "parts": [
+        {
+          "src": "success-0.png",
+          "text": "密碼對了！",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "success-1.png",
+          "text": "門打開了！",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "passage-title": {
+      "text": "跟著亮光走",
+      "parts": [
+        {
+          "src": "passage-title-0.png",
+          "text": "跟著亮光走",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "passage-line": {
+      "text": "阿通走進星塔。小松鼠抬起頭，看見通道裡的螢火蟲。",
+      "parts": [
+        {
+          "src": "passage-line-0.png",
+          "text": "阿通走進星塔。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "passage-line-1.png",
+          "text": "小松鼠抬起頭，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "passage-line-2.png",
+          "text": "看見通道裡的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "passage-line-3.png",
+          "text": "螢火蟲。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "window-title": {
+      "text": "塔內的小窗",
+      "parts": [
+        {
+          "src": "window-title-0.png",
+          "text": "塔內的小窗",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "window-line": {
+      "text": "小窗吹來涼涼的風。樓梯通往塔頂。阿通抬頭看了看。",
+      "parts": [
+        {
+          "src": "window-line-0.png",
+          "text": "小窗吹來涼涼",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "window-line-1.png",
+          "text": "的風。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "window-line-2.png",
+          "text": "樓梯通往塔頂。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "window-line-3.png",
+          "text": "阿通抬頭看了",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "window-line-4.png",
+          "text": "看。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "upstairs": {
+      "text": "走上樓梯",
+      "parts": [
+        {
+          "src": "upstairs-0.png",
+          "text": "走上樓梯",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "look": {
+      "text": "看看這裡",
+      "parts": [
+        {
+          "src": "look-0.png",
+          "text": "看看這裡",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "wood-found": {
+      "text": "這塊木片很特別，先收進背包吧。",
+      "parts": [
+        {
+          "src": "wood-found-0.png",
+          "text": "這塊木片很特",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "wood-found-1.png",
+          "text": "別，先收進背",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "wood-found-2.png",
+          "text": "包吧。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "wood": {
+      "text": "星形木片",
+      "parts": [
+        {
+          "src": "wood-0.png",
+          "text": "星形木片",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "seed": {
+      "text": "星燈種子",
+      "parts": [
+        {
+          "src": "seed-0.png",
+          "text": "星燈種子",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "chest-title": {
+      "text": "星光寶箱",
+      "parts": [
+        {
+          "src": "chest-title-0.png",
+          "text": "星光寶箱",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "chest-line": {
+      "text": "三道門都打開了！寶箱就在眼前。",
+      "parts": [
+        {
+          "src": "chest-line-0.png",
+          "text": "三道門都打開",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "chest-line-1.png",
+          "text": "了！寶箱就在",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "chest-line-2.png",
+          "text": "眼前。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "open-chest": {
+      "text": "打開寶箱",
+      "parts": [
+        {
+          "src": "open-chest-0.png",
+          "text": "打開寶箱",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "seed-found": {
+      "text": "寶箱裡有一顆星燈種子。我們帶它回森林吧！",
+      "parts": [
+        {
+          "src": "seed-found-0.png",
+          "text": "寶箱裡有一顆",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "seed-found-1.png",
+          "text": "星燈種子。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "seed-found-2.png",
+          "text": "我們帶它回森",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "seed-found-3.png",
+          "text": "林吧！",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "roof-title": {
+      "text": "塔頂平台",
+      "parts": [
+        {
+          "src": "roof-title-0.png",
+          "text": "塔頂平台",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "roof-line": {
+      "text": "風吹過塔頂。森林就在山下，大家等著星燈亮起來。",
+      "parts": [
+        {
+          "src": "roof-line-0.png",
+          "text": "風吹過塔頂。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "roof-line-1.png",
+          "text": "森林就在山下，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "roof-line-2.png",
+          "text": "大家等著星燈",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "roof-line-3.png",
+          "text": "亮起來。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "go-home": {
+      "text": "帶種子回森林",
+      "parts": [
+        {
+          "src": "go-home-0.png",
+          "text": "帶種子回森林",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "placed": {
+      "text": "木片剛好放進去了！",
+      "parts": [
+        {
+          "src": "placed-0.png",
+          "text": "木片剛好放進",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "placed-1.png",
+          "text": "去了！",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "ordinary-title": {
+      "text": "森林重新亮了",
+      "parts": [
+        {
+          "src": "ordinary-title-0.png",
+          "text": "森林重新亮了",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "ordinary-line": {
+      "text": "阿通把種子放進星燈。柔柔的光照亮小路，大家都能安心回家了！",
+      "parts": [
+        {
+          "src": "ordinary-line-0.png",
+          "text": "阿通把種子放",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "ordinary-line-1.png",
+          "text": "進星燈。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "ordinary-line-2.png",
+          "text": "柔柔的光照亮",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "ordinary-line-3.png",
+          "text": "小路，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "ordinary-line-4.png",
+          "text": "大家都能安心",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "ordinary-line-5.png",
+          "text": "回家了！",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "secret-title": {
+      "text": "星空的禮物",
+      "parts": [
+        {
+          "src": "secret-title-0.png",
+          "text": "星空的禮物",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "secret-line": {
+      "text": "木片亮了起來。星星連成動物的模樣，小松鼠看見自己的星座！",
+      "parts": [
+        {
+          "src": "secret-line-0.png",
+          "text": "木片亮了起來。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "secret-line-1.png",
+          "text": "星星連成動物",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "secret-line-2.png",
+          "text": "的模樣，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "secret-line-3.png",
+          "text": "小松鼠看見自",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "secret-line-4.png",
+          "text": "己的星座！",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "secret-home-line": {
+      "text": "阿通帶著種子回到森林。小路亮了，天空也亮了。大家一起看星星。",
+      "parts": [
+        {
+          "src": "secret-home-line-0.png",
+          "text": "阿通帶著種子",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "secret-home-line-1.png",
+          "text": "回到森林。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "secret-home-line-2.png",
+          "text": "小路亮了，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "secret-home-line-3.png",
+          "text": "天空也亮了。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "secret-home-line-4.png",
+          "text": "大家一起看星",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "secret-home-line-5.png",
+          "text": "星。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "replay": {
+      "text": "再玩這組題目",
+      "parts": [
+        {
+          "src": "replay-0.png",
+          "text": "再玩這組題目",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "replay-confirm": {
+      "text": "要從頭再玩嗎？這組題目會保留。",
+      "parts": [
+        {
+          "src": "replay-confirm-0.png",
+          "text": "要從頭再玩嗎？",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "replay-confirm-1.png",
+          "text": "這組題目會保",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "replay-confirm-2.png",
+          "text": "留。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "yes-replay": {
+      "text": "從頭開始",
+      "parts": [
+        {
+          "src": "yes-replay-0.png",
+          "text": "從頭開始",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "storage-warning": {
+      "text": "這個瀏覽器無法保存進度。請先記下題卷碼。",
+      "parts": [
+        {
+          "src": "storage-warning-0.png",
+          "text": "這個瀏覽器無",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "storage-warning-1.png",
+          "text": "法保存進度。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "storage-warning-2.png",
+          "text": "請先記下題卷",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "storage-warning-3.png",
+          "text": "碼。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "stale": {
+      "text": "另一個頁面已更換題卷。請重新開啟目前的故事。",
+      "parts": [
+        {
+          "src": "stale-0.png",
+          "text": "另一個頁面已",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "stale-1.png",
+          "text": "更換題卷。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "stale-2.png",
+          "text": "請重新開啟目",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "stale-3.png",
+          "text": "前的故事。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "reload": {
+      "text": "重新開啟",
+      "parts": [
+        {
+          "src": "reload-0.png",
+          "text": "重新開啟",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "answers": {
+      "text": "查看解答",
+      "parts": [
+        {
+          "src": "answers-0.png",
+          "text": "查看解答",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "answers-title": {
+      "text": "解答與密碼",
+      "parts": [
+        {
+          "src": "answers-title-0.png",
+          "text": "解答與密碼",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "answers-warning": {
+      "text": "這是解答頁，請與孩子的練習紙分開。",
+      "parts": [
+        {
+          "src": "answers-warning-0.png",
+          "text": "這是解答頁，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "answers-warning-1.png",
+          "text": "請與孩子的練",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "answers-warning-2.png",
+          "text": "習紙分開。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "back": {
+      "text": "返回故事",
+      "parts": [
+        {
+          "src": "back-0.png",
+          "text": "返回故事",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "copied": {
+      "text": "題卷連結已複製。",
+      "parts": [
+        {
+          "src": "copied-0.png",
+          "text": "題卷連結已複",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "copied-1.png",
+          "text": "製。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "copy": {
+      "text": "複製題卷連結",
+      "parts": [
+        {
+          "src": "copy-0.png",
+          "text": "複製題卷連結",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "copy-failed": {
+      "text": "請記下上面的題卷碼，在另一台裝置輸入。",
+      "parts": [
+        {
+          "src": "copy-failed-0.png",
+          "text": "請記下上面的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "copy-failed-1.png",
+          "text": "題卷碼，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "copy-failed-2.png",
+          "text": "在另一台裝置",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "copy-failed-3.png",
+          "text": "輸入。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "loading": {
+      "text": "正在準備冒險。",
+      "parts": [
+        {
+          "src": "loading-0.png",
+          "text": "正在準備冒險。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "load-error": {
+      "text": "暫時無法開啟，請重新整理。",
+      "parts": [
+        {
+          "src": "load-error-0.png",
+          "text": "暫時無法開啟，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "load-error-1.png",
+          "text": "請重新整理。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    }
+  }
+}

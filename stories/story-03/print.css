@@ -1,0 +1,26 @@
+.print-view{background:#e5e8eb;color:#171717;padding:20px;--text-scale:1}
+#print-tools{max-width:794px;margin:0 auto 20px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+#print-tools .bpmf{font-size:18px}
+.paper{position:relative;box-sizing:border-box;background:white;width:210mm;height:297mm;margin:0 auto 20px;overflow:hidden;box-shadow:0 2px 14px #0002;color:#111;break-after:page;page-break-after:always}
+.paper:last-child{break-after:auto;page-break-after:auto}
+.paper h1{position:absolute;left:14mm;top:10mm;margin:0;font-size:9mm}
+.paper h2{position:absolute;left:14mm;top:25mm;margin:0;display:flex;gap:8mm;font-size:6mm}
+.paper-code{position:absolute;left:14mm;top:36mm;display:flex;align-items:center;gap:5mm;font-size:5mm}
+.paper-code strong{font:700 5mm ui-monospace,monospace;letter-spacing:.5mm}
+.paper-instructions{position:absolute;left:14mm;top:46mm;display:grid;gap:1mm;font-size:4.3mm}
+.paper .bpmf img{height:1.3em}
+.paper-row{position:absolute;left:14mm;width:182mm;height:28mm;border-bottom:.2mm solid #ccc}
+.question-number{position:absolute;left:0;top:2mm;font:4mm ui-monospace,monospace;color:#555}
+.equation{position:absolute;left:12mm;top:0;font:700 9mm Arial,sans-serif;display:flex;align-items:center;gap:4mm}
+.math-symbol{width:6mm;height:6mm;display:inline-block;flex-shrink:0}
+.paper-dots .math-symbol{width:3mm;height:3mm}
+.paper-dots{position:absolute;left:12mm;top:16mm;display:flex;gap:3mm;align-items:center;height:10mm}
+.dot-group{display:grid;grid-template-columns:repeat(5,3mm);gap:1.4mm;width:max-content}
+.dot{width:2.6mm;height:2.6mm;border:.4mm solid black;border-radius:50%;display:block;box-sizing:border-box}
+.paper-dots b{font-size:5mm}
+.answer-box{position:absolute;left:144mm;top:0;width:28mm;height:28mm;box-sizing:border-box;border:.5mm solid black;background:white;display:grid;place-items:center;font:700 14mm Arial,sans-serif}
+.marker{position:absolute;width:2mm;height:2mm;background:#000;print-color-adjust:exact;-webkit-print-color-adjust:exact}
+.paper footer{position:absolute;left:14mm;right:14mm;bottom:9mm;font:3mm ui-monospace,monospace;text-align:right}
+@page{size:A4 portrait;margin:0}
+@media print{html,body.print-view{margin:0;padding:0;background:#fff}#print-tools{display:none!important}.paper{margin:0;box-shadow:none}.paper .bpmf{filter:grayscale(1)}body{min-width:0}}
+@media screen and (max-width:830px){.print-view{padding:10px}#pages{overflow-x:auto}.paper{margin-left:0}}

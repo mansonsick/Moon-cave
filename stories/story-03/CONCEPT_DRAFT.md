@@ -1,5 +1,7 @@
 # Story 03《阿通與星光寶箱》故事草案
 
+> 2026-09-29 追加：使用者已要求網頁故事、固定題卷碼及分層素材。最新工程行為以 [STORY_SPEC.md](STORY_SPEC.md) 為準；下文固定 20 題保留為最初紙本範例，不代表新版所有題卷。鏡頭辨識仍待獨立驗證。
+
 日期：2026-09-29；狀態：使用者已確認本稿方向並要求製作紙本，已完成 [三頁練習紙與獨立解答](worksheets/README.md)。正式場景圖片、故事程式與鏡頭辨識尚未製作或發布。
 
 本次核對 GitHub `main`：`4a6569f8bde760c65ae153089761cf49bc223eb7`。一年級課程整理仍位於 [PR #8](https://github.com/mansonsick/Moon-cave/pull/8)，不是已合併的 main 文件。新故事遵循 [製作 SOP](../../INTERACTIVE_STORY_SOP.md) 與 [協作流程](../../CHATGPT_DESKTOP_COLLABORATION_SOP.md)。
