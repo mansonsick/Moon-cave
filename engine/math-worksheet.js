@@ -1,10 +1,13 @@
 // Published worksheet-v1 is immutable. New algorithms must use a new version.
 // The code, not the date/device/save progress, determines every question.
+import {decodeCode,createV2,calculate,randomCode} from './math-worksheet-v2.js';
+export {DEFAULT_CONFIG,OPERATORS,operatorSign} from './math-worksheet-v2.js';
 export const VERSION = 'story03-math-v1';
 export const GATE_SIZES = [6, 7, 7];
 export function normalizeCode(value) {
   if (typeof value !== 'string') return null;
   const code = value.trim().toLowerCase();
+  if(code.startsWith('m2-')) return decodeCode(code) ? code : null;
   return /^[a-z0-9]{1,24}$/.test(code) ? code : null;
 }
 function randomFor(code) {
@@ -26,11 +29,12 @@ function shuffle(list, random) {
   return list;
 }
 export function resultOf(question) {
-  return question.op === '+' ? question.a + question.b : question.a - question.b;
+  return calculate(question);
 }
 export function createWorksheet(value) {
   const code = normalizeCode(value);
   if (!code) throw new Error('Invalid worksheet code');
+  if(code.startsWith('m2-')) return createV2(code);
   const random = randomFor(code), add = [], subtract = [];
   // One handwritten digit per answer box in v1. Includes minuends of 10.
   for (let a = 1; a <= 8; a++) for (let b = 1; b <= 9 - a; b++) add.push({ a, b, op: '+' });
@@ -50,9 +54,5 @@ export function gateAnswers(worksheet, gate) {
 export function checkAnswers(worksheet, gate, entries) {
   return gateAnswers(worksheet, gate).map((expected, i) => entries[i] === expected);
 }
-export function newCode() {
-  const alphabet = '23456789abcdefghjkmnpqrstuvwxyz';
-  const values = new Uint32Array(9);
-  globalThis.crypto.getRandomValues(values);
-  return [...values].map(v => alphabet[v % alphabet.length]).join('');
-}
+export const newCode = randomCode;
+export const answerCapacity = gate => gate.answerDigits || 1;

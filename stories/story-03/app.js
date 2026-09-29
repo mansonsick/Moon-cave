@@ -1,4 +1,4 @@
-import {createWorksheet,normalizeCode,newCode,checkAnswers} from '../../engine/math-worksheet.js';
+import {createWorksheet,normalizeCode,newCode,checkAnswers,DEFAULT_CONFIG,OPERATORS,operatorSign,answerCapacity} from '../../engine/math-worksheet.js';
 import {createStorage} from '../../engine/storage.js';
 import {AudioManager} from '../../engine/audio-manager.js';
 import {bindDrag,place} from '../../engine/interactions.js';
@@ -13,7 +13,7 @@ const seed=`<svg viewBox="0 0 100 100" aria-hidden="true"><ellipse cx="50" cy="5
 try {
   const text=await loadText();
   const store=createStorage('story-03',()=>fresh(newCode()),validate);
-  let state=store.load(), worksheet=createWorksheet(state.code), selected=0, cleanup=()=>{}, stale=false;
+  let state=store.load(), worksheet=createWorksheet(state.code), selected=0, selectedDigit=0, cleanup=()=>{}, stale=false;
   let expectedCode=state.code, blocked=false;
   const manifest=Object.fromEntries(['found-item','success','fail-soft','drag-lock'].map(id=>[id,{category:'sfx',available:true,src:`../story-02/assets/audio/sfx/${id}.wav`,volume:.48}]));
   const audio=new AudioManager(manifest,import.meta.url,store.sound());
@@ -22,14 +22,14 @@ try {
   const line=(id,tag='p')=>{const n=el(tag);n.append(text(id));return n;};
   const link=(id,url,blank=false)=>{const n=el('a');n.href=url;n.append(text(id));if(blank){n.target='_blank';n.rel='noopener';}return n;};
   function persist(){const ok=store.save(state);if(!ok){blocked=true;document.querySelector('#storage-note')?.replaceChildren(text('storage-warning'));}return ok;}
-  function go(scene){state.scene=scene;selected=0;persist();render();window.scrollTo({top:0,behavior:'instant'});}
+  function go(scene){state.scene=scene;selected=0;selectedDigit=0;persist();render();window.scrollTo({top:0,behavior:'instant'});}
   function closeDialog(){document.querySelector('dialog')?.close();document.querySelector('dialog')?.remove();}
   function modal(label,buttons){
     closeDialog();const d=el('dialog');d.append(line(label));const bar=el('div','actions');
     for(const [id,fn] of buttons)bar.append(action(id,()=>{closeDialog();fn();}));d.append(bar);document.body.append(d);d.showModal();return d;
   }
   function reward(label,next,sfx='found-item'){void audio.playSfx(sfx);modal(label,[['continue',next]]);}
-  function reset(code){state=fresh(code);expectedCode=code;worksheet=createWorksheet(code);persist();stale=false;history.replaceState(null,'',`?code=${code}`);render();}
+  function reset(code){state=fresh(code);selected=0;selectedDigit=0;expectedCode=code;worksheet=createWorksheet(code);persist();stale=false;history.replaceState(null,'',`?code=${code}`);render();}
   function changeCode(code){
     if(code===state.code)return;
     const progressed=state.scene!=='cover'||state.entries.some(row=>row.some(v=>v!==''));
@@ -80,11 +80,34 @@ try {
   function setupForm(){
     const area=el('div','setup');area.append(line('code-help'));
     const form=el('form','code-form'),label=el('label');label.append(text('code'));
-    const input=el('input');input.value=state.code;input.maxLength=24;input.autocomplete='off';input.autocapitalize='none';input.spellcheck=false;input.name='code';input.setAttribute('aria-label','題卷碼');label.append(input);
+    const input=el('input');input.value=state.code;input.maxLength=40;input.autocomplete='off';input.autocapitalize='none';input.spellcheck=false;input.name='code';input.setAttribute('aria-label','題卷碼');label.append(input);
     const submit=el('button');submit.type='submit';submit.append(text('use-code'));submit.dataset.action='use-code';
     const error=el('p','feedback');error.setAttribute('role','alert');form.append(label,submit,error);
     form.onsubmit=event=>{event.preventDefault();const code=normalizeCode(input.value);if(!code){error.replaceChildren(text('invalid-code'));return;}closeDialog();changeCode(code);};
-    area.append(form,action('new-code',()=>{closeDialog();changeCode(newCode());}),link('print',`print.html?code=${state.code}`,true));return area;
+    const settings=el('div','difficulty-settings');settings.append(line('difficulty-help'));
+    const config=structuredClone(worksheet.config||DEFAULT_CONFIG);
+    config.forEach((c,g)=>{
+      const field=el('fieldset','gate-settings');field.dataset.gate=g;const legend=el('legend');legend.append(text(`gate${g+1}-label`));field.append(legend);
+      const limits=el('div','operand-settings');
+      const within=el('input');within.type='checkbox';within.checked=c.within10;within.name=`within-${g}`;
+      const withinLabel=el('label','within-setting');withinLabel.append(within,text('within-ten'));
+      for(const [key,labelId]of[['leftDigits','first-number'],['rightDigits','second-number']]){
+        const label=el('label');label.append(text(labelId));const select=el('select');select.name=`${key}-${g}`;
+        select.setAttribute('aria-label',`${g+1}：${key==='leftDigits'?'前':'後'}一個數的位數`);
+        for(const value of[1,2]){const option=el('option');option.value=value;option.textContent=value;select.append(option);}select.value=c[key];
+        select.onchange=()=>{c[key]=Number(select.value);const available=c.leftDigits===1&&c.rightDigits===1;within.disabled=!available;if(!available){c.within10=false;within.checked=false;}};
+        label.append(select,text('digits'));limits.append(label);
+      }
+      within.disabled=c.leftDigits!==1||c.rightDigits!==1;within.onchange=()=>{c.within10=within.checked;};
+      const operations=el('div','operation-settings');
+      for(const op of OPERATORS){const label=el('label'),check=el('input');check.type='checkbox';check.value=op;check.name=`ops-${g}`;check.checked=c.ops.includes(op);check.setAttribute('aria-label',`第 ${g+1} 關 ${operatorSign(op)}`);check.onchange=()=>{c.ops=OPERATORS.filter(v=>[...operations.querySelectorAll('input:checked')].some(n=>n.value===v));};const sign=el('span');sign.textContent=operatorSign(op);label.append(check,sign);operations.append(label);}
+      field.append(limits,operations,withinLabel);settings.append(field);
+    });
+    const settingsError=el('p','feedback');settingsError.setAttribute('role','alert');
+    area.append(form,settings,settingsError,action('new-code',()=>{
+      let code;try{code=newCode(config);}catch{settingsError.replaceChildren(text('settings-error'));return;}
+      closeDialog();changeCode(code);
+    }),link('print',`print.html?code=${state.code}`,true));return area;
   }
   function setupDialog(){const d=modal('setup',[['cancel',()=>{}]]);d.insertBefore(setupForm(),d.lastChild);}
   function inventory(){
@@ -95,6 +118,10 @@ try {
   }
   function nextScene(){return {gate1:'passage',gate2:'window',gate3:'chest'}[state.scene];}
   function hint(g,i){
+    if(worksheet.config){
+      const q=worksheet.gates[g].questions[i],id={'+':'hint-place-add','-':'hint-place-subtract','*':'hint-multiply','/':'hint-divide'}[q.op];
+      const d=modal(id,[['close',()=>{}]]),math=el('p','hint-math');math.textContent=`${q.id}.  ${q.a} ${operatorSign(q.op)} ${q.b} = ?`;d.prepend(math);return;
+    }
     const q=worksheet.gates[g].questions[i],d=modal(q.op==='+'?'hint-add':'hint-subtract',[['close',()=>{}]]);
     const math=el('p','hint-math');math.textContent=`${q.id}.  ${q.a} ${q.op==='-'?'−':'+'} ${q.b} = ?`;d.prepend(math);
     const dots=el('div','hint-dots');
@@ -102,6 +129,7 @@ try {
     dots.append(group(q.a));if(q.op==='+'){const plus=el('b');plus.textContent='+';dots.append(plus,group(q.b));}d.insertBefore(dots,d.lastChild);
   }
   function gatePanel(g,panel,stage){
+    if(worksheet.config){multiGatePanel(g,panel,stage);return;}
     const fields=el('div','answer-fields');fields.style.setProperty('--count',worksheet.gates[g].questions.length);
     const inputs=[],results=checkAnswers(worksheet,g,state.entries[g]);
     const show=(input,i)=>{
@@ -133,6 +161,48 @@ try {
       persist();render();document.querySelector('.feedback').replaceChildren(text(state.entries[g].some(v=>v==='')?'empty':'incorrect'));void audio.playSfx('fail-soft');
     });
     inputs[selected].classList.add('selected');panel.append(keypad,feedback,check);
+  }
+  function multiGatePanel(g,panel,stage){
+    const gate=worksheet.gates[g],capacity=answerCapacity(gate),fields=el('div','multi-answer-fields'),cards=[];
+    const select=(i,d)=>{selected=i;selectedDigit=d;fields.querySelectorAll('.symbol-slot').forEach(n=>n.classList.toggle('selected',Number(n.dataset.answer)===i&&Number(n.dataset.position)===d));};
+    const paint=(i)=>{
+      const entry=state.entries[g][i],checked=state.checked[g][i],correct=checkAnswers(worksheet,g,state.entries[g])[i],card=cards[i];
+      card.classList.toggle('correct',checked&&correct);card.classList.toggle('wrong',checked&&!correct);
+      card.querySelector('.answer-mark').textContent=checked?(correct?'✓':'×'):'';
+      card.querySelectorAll('.symbol-slot').forEach((slot,d)=>{
+        const value=entry[d]?.trim()||'';slot.innerHTML=symbolMarkup(value);slot.dataset.value=value;
+        slot.setAttribute('aria-label',`第 ${gate.questions[i].id} 題，第 ${d+1} 格，${value===''?'空白':symbolName(value)}${checked?(correct?'，正確':'，再看看'):''}`);
+      });
+    };
+    gate.questions.forEach((q,i)=>{
+      const card=el('div','multi-answer-card');card.dataset.question=q.id;
+      const heading=el('div','answer-heading'),label=el('b');label.textContent=String(q.id).padStart(2,'0');
+      const mark=el('span','answer-mark');mark.setAttribute('aria-hidden','true');heading.append(label,mark);
+      if(!state.solved[g]){const help=el('button','hint-button');help.textContent='?';help.setAttribute('aria-label',`看看第 ${q.id} 題`);help.onclick=()=>hint(g,i);heading.append(help);}
+      const row=el('div','digit-slots');
+      for(let d=0;d<capacity;d++){const slot=el('button','symbol-slot');slot.type='button';slot.dataset.answer=i;slot.dataset.position=d;slot.disabled=state.solved[g];slot.onclick=()=>select(i,d);row.append(slot);}
+      card.append(heading,row);cards.push(card);fields.append(card);paint(i);
+    });
+    panel.append(line('multi-answer-help'),fields);
+    if(state.solved[g]){panel.append(line('success'),action('continue',()=>go(nextScene())));stage.classList.add('unlocked');return;}
+    const legend=el('details','on-screen-legend'),summary=el('summary');summary.append(text('code-table'));legend.append(summary,codeLegend());panel.append(legend);
+    const dock=el('div','symbol-dock'),keypad=el('div','keypad');
+    const enter=value=>{
+      const digits=state.entries[g][selected].padEnd(capacity,' ').split('');digits[selectedDigit]=value||' ';
+      state.entries[g][selected]=digits.join('').trimEnd();state.checked[g][selected]=false;paint(selected);persist();
+      if(value!==''){if(selectedDigit<capacity-1)select(selected,selectedDigit+1);else select(Math.min(gate.questions.length-1,selected+1),0);}
+    };
+    for(let digit=0;digit<=9;digit++){const key=el('button','symbol-key');key.innerHTML=symbolMarkup(digit);key.setAttribute('aria-label',symbolName(digit));key.dataset.digit=digit;key.onclick=()=>enter(String(digit));keypad.append(key);}
+    const controls=el('div','actions');controls.append(action('erase',()=>enter('')),action('next-answer',()=>select(Math.min(gate.questions.length-1,selected+1),0)));
+    const feedback=el('p','feedback');feedback.setAttribute('role','status');
+    const message=()=>state.entries[g].some(v=>!v||v.includes(' '))?'empty-multi':'incorrect';
+    if(state.checked[g].some(Boolean))feedback.append(text(message()));
+    const check=action('check',()=>{
+      const results=checkAnswers(worksheet,g,state.entries[g]);state.checked[g].fill(true);
+      if(results.every(Boolean)){state.solved[g]=true;persist();void audio.playSfx('success');render();return;}
+      persist();cards.forEach((_,i)=>paint(i));feedback.replaceChildren(text(message()));void audio.playSfx('fail-soft');
+    });
+    controls.append(check);dock.append(keypad,controls);panel.append(feedback,dock);select(Math.min(selected,cards.length-1),Math.min(selectedDigit,capacity-1));
   }
   function render(){
     cleanup();cleanup=()=>{};closeDialog();app.replaceChildren(header());

@@ -105,18 +105,18 @@
       ]
     },
     "code-example": {
-      "text": "只用英文字母和數字。",
+      "text": "請完整輸入紙上的題卷碼。",
       "parts": [
         {
           "src": "code-example-0.png",
-          "text": "只用英文字母",
+          "text": "請完整輸入紙",
           "width": 1752,
           "height": 214
         },
         {
           "src": "code-example-1.png",
-          "text": "和數字。",
-          "width": 1176,
+          "text": "上的題卷碼。",
+          "width": 1752,
           "height": 214
         }
       ]
@@ -144,24 +144,30 @@
       ]
     },
     "invalid-code": {
-      "text": "請輸入一到二十四個英文字母或數字。",
+      "text": "請檢查題卷碼，字母、數字和短橫線都要相同。",
       "parts": [
         {
           "src": "invalid-code-0.png",
-          "text": "請輸入一到二",
-          "width": 1752,
+          "text": "請檢查題卷碼，",
+          "width": 2040,
           "height": 214
         },
         {
           "src": "invalid-code-1.png",
-          "text": "十四個英文字",
+          "text": "字母、數字和",
           "width": 1752,
           "height": 214
         },
         {
           "src": "invalid-code-2.png",
-          "text": "母或數字。",
-          "width": 1464,
+          "text": "短橫線都要相",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "invalid-code-3.png",
+          "text": "同。",
+          "width": 600,
           "height": 214
         }
       ]
@@ -326,46 +332,376 @@
       ]
     },
     "paper-order": {
-      "text": "從上往下，一格寫一個數字。",
+      "text": "每題靠左寫，一格一個數字，多的格子留白。",
       "parts": [
         {
           "src": "paper-order-0.png",
-          "text": "從上往下，",
-          "width": 1464,
-          "height": 214
-        },
-        {
-          "src": "paper-order-1.png",
-          "text": "一格寫一個數",
+          "text": "每題靠左寫，",
           "width": 1752,
           "height": 214
         },
         {
+          "src": "paper-order-1.png",
+          "text": "一格一個數字，",
+          "width": 2040,
+          "height": 214
+        },
+        {
           "src": "paper-order-2.png",
-          "text": "字。",
+          "text": "多的格子留白。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "difficulty-help": {
+      "text": "每道門可選位數和加減乘除。選好後產生新題卷。舊題卷碼的題目不會改變。",
+      "parts": [
+        {
+          "src": "difficulty-help-0.png",
+          "text": "每道門可選位",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "difficulty-help-1.png",
+          "text": "數和加減乘除。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "difficulty-help-2.png",
+          "text": "選好後產生新",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "difficulty-help-3.png",
+          "text": "題卷。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "difficulty-help-4.png",
+          "text": "舊題卷碼的題",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "difficulty-help-5.png",
+          "text": "目不會改變。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "first-number": {
+      "text": "前一個數",
+      "parts": [
+        {
+          "src": "first-number-0.png",
+          "text": "前一個數",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "second-number": {
+      "text": "後一個數",
+      "parts": [
+        {
+          "src": "second-number-0.png",
+          "text": "後一個數",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "digits": {
+      "text": "位數",
+      "parts": [
+        {
+          "src": "digits-0.png",
+          "text": "位數",
           "width": 600,
           "height": 214
         }
       ]
     },
-    "paper-subtract": {
-      "text": "減法的圓點，請自己劃掉再算。",
+    "within-ten": {
+      "text": "答案在十以內",
       "parts": [
         {
-          "src": "paper-subtract-0.png",
-          "text": "減法的圓點，",
+          "src": "within-ten-0.png",
+          "text": "答案在十以內",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "settings-error": {
+      "text": "每關至少選一種運算。減法與除法的前一個數，位數不可比後一個數少。",
+      "parts": [
+        {
+          "src": "settings-error-0.png",
+          "text": "每關至少選一",
           "width": 1752,
           "height": 214
         },
         {
-          "src": "paper-subtract-1.png",
-          "text": "請自己劃掉再",
+          "src": "settings-error-1.png",
+          "text": "種運算。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "settings-error-2.png",
+          "text": "減法與除法的",
           "width": 1752,
           "height": 214
         },
         {
-          "src": "paper-subtract-2.png",
-          "text": "算。",
+          "src": "settings-error-3.png",
+          "text": "前一個數，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "settings-error-4.png",
+          "text": "位數不可比後",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "settings-error-5.png",
+          "text": "一個數少。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "multi-answer-help": {
+      "text": "每題從左邊開始，一個數字換一個圖案。多的格子留白，再點下一題。",
+      "parts": [
+        {
+          "src": "multi-answer-help-0.png",
+          "text": "每題從左邊開",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "multi-answer-help-1.png",
+          "text": "始，一個數字",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "multi-answer-help-2.png",
+          "text": "換一個圖案。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "multi-answer-help-3.png",
+          "text": "多的格子留白，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "multi-answer-help-4.png",
+          "text": "再點下一題。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "next-answer": {
+      "text": "下一題",
+      "parts": [
+        {
+          "src": "next-answer-0.png",
+          "text": "下一題",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "empty-multi": {
+      "text": "還有題目沒填好。答案靠左填，多的格子留白。答案是零時也要選圖案。",
+      "parts": [
+        {
+          "src": "empty-multi-0.png",
+          "text": "還有題目沒填",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-multi-1.png",
+          "text": "好。答案靠左",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-multi-2.png",
+          "text": "填，多的格子",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-multi-3.png",
+          "text": "留白。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "empty-multi-4.png",
+          "text": "答案是零時也",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-multi-5.png",
+          "text": "要選圖案。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "hint-place-add": {
+      "text": "把個位和十位對齊，先從個位算起。湊滿十個，就向左進一。",
+      "parts": [
+        {
+          "src": "hint-place-add-0.png",
+          "text": "把個位和十位",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-place-add-1.png",
+          "text": "對齊，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "hint-place-add-2.png",
+          "text": "先從個位算起。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "hint-place-add-3.png",
+          "text": "湊滿十個，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "hint-place-add-4.png",
+          "text": "就向左進一。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "hint-place-subtract": {
+      "text": "把個位和十位對齊，從個位開始減。不夠減時，向左邊借一個十。",
+      "parts": [
+        {
+          "src": "hint-place-subtract-0.png",
+          "text": "把個位和十位",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-place-subtract-1.png",
+          "text": "對齊，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "hint-place-subtract-2.png",
+          "text": "從個位開始減。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "hint-place-subtract-3.png",
+          "text": "不夠減時，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "hint-place-subtract-4.png",
+          "text": "向左邊借一個",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-place-subtract-5.png",
+          "text": "十。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "hint-multiply": {
+      "text": "想一想有幾組一樣多的東西，也可以用重複相加來幫忙。",
+      "parts": [
+        {
+          "src": "hint-multiply-0.png",
+          "text": "想一想有幾組",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-multiply-1.png",
+          "text": "一樣多的東西，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "hint-multiply-2.png",
+          "text": "也可以用重複",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-multiply-3.png",
+          "text": "相加來幫忙。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "hint-divide": {
+      "text": "把東西平均分組。試著用乘法檢查，能不能剛好分完。",
+      "parts": [
+        {
+          "src": "hint-divide-0.png",
+          "text": "把東西平均分",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-divide-1.png",
+          "text": "組。試著用乘",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-divide-2.png",
+          "text": "法檢查，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "hint-divide-3.png",
+          "text": "能不能剛好分",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hint-divide-4.png",
+          "text": "完。",
           "width": 600,
           "height": 214
         }
