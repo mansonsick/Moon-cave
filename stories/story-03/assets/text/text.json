@@ -303,24 +303,24 @@
       ]
     },
     "paper-instruction": {
-      "text": "算一算，把答案寫進右邊的格子。",
+      "text": "算出數字寫進格子，再查表找圖案。",
       "parts": [
         {
           "src": "paper-instruction-0.png",
-          "text": "算一算，",
-          "width": 1176,
-          "height": 214
-        },
-        {
-          "src": "paper-instruction-1.png",
-          "text": "把答案寫進右",
+          "text": "算出數字寫進",
           "width": 1752,
           "height": 214
         },
         {
+          "src": "paper-instruction-1.png",
+          "text": "格子，",
+          "width": 888,
+          "height": 214
+        },
+        {
           "src": "paper-instruction-2.png",
-          "text": "邊的格子。",
-          "width": 1464,
+          "text": "再查表找圖案。",
+          "width": 2040,
           "height": 214
         }
       ]
@@ -568,42 +568,36 @@
       ]
     },
     "gate1-line": {
-      "text": "石門的密碼有六個數字。算完第一張紙，把答案依序放進來。",
+      "text": "先算完第一張紙，再把六個答案依序換成圖案。",
       "parts": [
         {
           "src": "gate1-line-0.png",
-          "text": "石門的密碼有",
+          "text": "先算完第一張",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate1-line-1.png",
-          "text": "六個數字。",
-          "width": 1464,
-          "height": 214
-        },
-        {
-          "src": "gate1-line-2.png",
-          "text": "算完第一張紙，",
-          "width": 2040,
-          "height": 214
-        },
-        {
-          "src": "gate1-line-3.png",
-          "text": "把答案依序放",
+          "text": "紙，再把六個",
           "width": 1752,
           "height": 214
         },
         {
-          "src": "gate1-line-4.png",
-          "text": "進來。",
+          "src": "gate1-line-2.png",
+          "text": "答案依序換成",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate1-line-3.png",
+          "text": "圖案。",
           "width": 888,
           "height": 214
         }
       ]
     },
     "gate2-line": {
-      "text": "螢火蟲照亮通道。第二張紙的七個答案，能打開前面的門。",
+      "text": "螢火蟲照亮通道。第二張紙的七個答案，換成圖案就能開門。",
       "parts": [
         {
           "src": "gate2-line-0.png",
@@ -625,14 +619,14 @@
         },
         {
           "src": "gate2-line-3.png",
-          "text": "能打開前面的",
+          "text": "換成圖案就能",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate2-line-4.png",
-          "text": "門。",
-          "width": 600,
+          "text": "開門。",
+          "width": 888,
           "height": 214
         }
       ]
@@ -673,23 +667,46 @@
       ]
     },
     "answer-help": {
-      "text": "點一個格子，輸入紙上寫的答案。",
+      "text": "查紙上的對照表。點格子，再選答案對應的圖案。",
       "parts": [
         {
           "src": "answer-help-0.png",
-          "text": "點一個格子，",
+          "text": "查紙上的對照",
           "width": 1752,
           "height": 214
         },
         {
           "src": "answer-help-1.png",
-          "text": "輸入紙上寫的",
+          "text": "表。點格子，",
           "width": 1752,
           "height": 214
         },
         {
           "src": "answer-help-2.png",
-          "text": "答案。",
+          "text": "再選答案對應",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "answer-help-3.png",
+          "text": "的圖案。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "code-table": {
+      "text": "看看數字圖案對照表",
+      "parts": [
+        {
+          "src": "code-table-0.png",
+          "text": "看看數字圖案",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "code-table-1.png",
+          "text": "對照表",
           "width": 888,
           "height": 214
         }
@@ -707,7 +724,7 @@
       ]
     },
     "empty": {
-      "text": "還有空格。沒有剩下時，要填零。",
+      "text": "還有空格。沒有剩下時，選零對應的圖案。",
       "parts": [
         {
           "src": "empty-0.png",
@@ -723,37 +740,43 @@
         },
         {
           "src": "empty-2.png",
-          "text": "要填零。",
-          "width": 1176,
+          "text": "選零對應的圖",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "empty-3.png",
+          "text": "案。",
+          "width": 600,
           "height": 214
         }
       ]
     },
     "incorrect": {
-      "text": "再看看標記的題目。其他答案已經保留。",
+      "text": "再看看紅色叉號的題目和圖案。綠色勾勾已經答對了。",
       "parts": [
         {
           "src": "incorrect-0.png",
-          "text": "再看看標記的",
+          "text": "再看看紅色叉",
           "width": 1752,
           "height": 214
         },
         {
           "src": "incorrect-1.png",
-          "text": "題目。",
-          "width": 888,
+          "text": "號的題目和圖",
+          "width": 1752,
           "height": 214
         },
         {
           "src": "incorrect-2.png",
-          "text": "其他答案已經",
+          "text": "案。綠色勾勾",
           "width": 1752,
           "height": 214
         },
         {
           "src": "incorrect-3.png",
-          "text": "保留。",
-          "width": 888,
+          "text": "已經答對了。",
+          "width": 1752,
           "height": 214
         }
       ]

@@ -22,11 +22,14 @@ def ready(page):
     page.wait_for_selector('body[data-ready="true"]')
     page.evaluate('Promise.all([...document.images].map(i=>i.decode()))')
 def state(page): return page.evaluate('(key)=>JSON.parse(localStorage.getItem(key))',KEY)
+def enter(page,i,digit):
+    page.locator(f'[data-answer="{i}"]').click();page.locator(f'[data-digit="{digit}"]').click()
 def solve(page,g):
-    for i,digit in enumerate(ANSWERS[g]): page.locator(f'[data-answer="{i}"]').fill(digit)
+    for i,digit in enumerate(ANSWERS[g]): enter(page,i,digit)
     act(page,'check')
     assert state(page)['solved'][g]
-    assert page.locator('[data-answer]').count()==0
+    assert page.locator('.symbol-slot.correct').count()==len(ANSWERS[g])
+    assert page.locator('.answer-mark').all_text_contents()==['✓']*len(ANSWERS[g])
     assert page.locator('[data-layer="door"]').count()==0
 def to_roof(page,wood=False):
     act(page,'start'); act(page,'continue'); solve(page,0);act(page,'continue')
@@ -72,15 +75,21 @@ def main():
         act(page,'sound');assert page.evaluate("localStorage.getItem('adventure.settings.sound')")=='false'
         act(page,'start');act(page,'continue');scene(page,'gate1')
         act(page,'check');assert state(page)['solved']==[False]*3
-        page.locator('[data-answer="0"]').fill('1');page.locator('[data-answer="1"]').fill('4');act(page,'check')
-        assert page.locator('[data-answer="1"]').input_value()=='4'
-        page.reload();ready(page);scene(page,'gate1');assert page.locator('[data-answer="0"]').input_value()=='1'
+        enter(page,0,'1');enter(page,1,'4');act(page,'check')
+        assert page.locator('[data-answer="1"]').get_attribute('data-value')=='4'
+        assert page.locator('[data-answer="1"].correct .answer-mark').inner_text()=='✓'
+        assert page.locator('[data-answer="0"].wrong .answer-mark').inner_text()=='×'
+        assert page.locator('.symbol-key .code-symbol').count()==10
+        page.reload();ready(page);scene(page,'gate1');assert page.locator('[data-answer="0"]').get_attribute('data-value')=='1'
+        assert page.locator('[data-answer="1"].correct').count()==1
+        assert page.locator('.feedback img').count()>0
+        page.screenshot(path=str(args.output/'symbol-feedback.png'),full_page=True)
         page.locator('.hint-button').first.click();assert page.locator('.crossed').count()==0
         page.locator('.count-dot').first.click();assert page.locator('.crossed').count()==1;act(page,'close')
         solve(page,0);page.reload();ready(page);scene(page,'gate1');assert page.locator('[data-action="continue"]').count()==1
         act(page,'continue');act(page,'continue');solve(page,1);act(page,'continue');act(page,'upstairs');solve(page,2);act(page,'continue');act(page,'open-chest');act(page,'continue');act(page,'go-home');scene(page,'ordinary')
         page.screenshot(path=str(args.output/'ordinary.png'),full_page=True)
-        record('ordinary route muted; 20 answers, valid zero, correction retention, refresh, persistent rewards, manual subtraction dots')
+        record('symbol input, green check/red cross, ordinary route muted, 20 answers, valid zero, correction retention, refresh, persistent rewards, manual subtraction dots')
         act(page,'replay');act(page,'yes-replay');scene(page,'cover');assert state(page)['code']==CODE
         assert page.evaluate("localStorage.getItem('moonCaveV3Save')")=='keep'
         assert page.evaluate("localStorage.getItem('adventure.story-02.state')")=='keep02'
@@ -101,6 +110,9 @@ def main():
         assert printing.locator('.paper').count()==3
         assert printing.locator('.answer-box').all_text_contents()==['']*20
         assert printing.locator('.packet-code').all_text_contents()==[CODE]*3
+        assert printing.locator('.code-legend').count()==3
+        assert printing.locator('.legend-cell b').all_text_contents()==list('0123456789')*3
+        assert printing.locator('.code-legend .code-symbol').count()==30
         dims=printing.locator('.answer-box').first.evaluate('(e)=>[e.offsetWidth,e.offsetHeight]');assert all(abs(v-28*96/25.4)<1 for v in dims)
         assert state(page)==before
         printing.pdf(path=str(args.output/'generated-print.pdf'),prefer_css_page_size=True,print_background=True)
@@ -126,7 +138,7 @@ def main():
         no_store=browser.new_context();no_store.add_init_script("Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked')}})")
         fallback=no_store.new_page();fallback.goto(url+'?code='+CODE);ready(fallback);assert fallback.locator('#storage-note img').count()>0
         act(fallback,'start');act(fallback,'continue')
-        for i,d in enumerate(ANSWERS[0]):fallback.locator(f'[data-answer="{i}"]').fill(d)
+        for i,d in enumerate(ANSWERS[0]):enter(fallback,i,d)
         act(fallback,'check');assert fallback.locator('[data-action="continue"]').count()==1
         no_store.close();record('blocked storage retains a playable in-memory session and visible reminder')
         assert not errors,errors;assert not missing,missing

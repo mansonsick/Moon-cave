@@ -3,7 +3,7 @@ export const KEY = 'adventure.story-03.state';
 const scenes = ['cover','intro','gate1','passage','gate2','window','gate3','chest','roof','ordinary','secret','secret-home'];
 export function fresh(code) {
   return { schema: 1, version: VERSION, code: normalizeCode(code), scene: 'cover',
-    entries: GATE_SIZES.map(n => Array(n).fill('')), solved: [false,false,false],
+    entries: GATE_SIZES.map(n => Array(n).fill('')), checked: GATE_SIZES.map(n => Array(n).fill(false)), solved: [false,false,false],
     wood: false, seed: false, placed: false, scale: 1 };
 }
 export function validate(value) {
@@ -12,6 +12,7 @@ export function validate(value) {
   state.entries = GATE_SIZES.map((n, g) => Array.from({length:n}, (_,i) =>
     /^\d$/.test(value.entries?.[g]?.[i]) ? String(value.entries[g][i]) : ''));
   state.solved = state.entries.map((entries,g) => checkAnswers(worksheet,g,entries).every(Boolean));
+  state.checked = GATE_SIZES.map((n,g)=>Array.from({length:n},(_,i)=>value.checked?.[g]?.[i]===true||state.solved[g]));
   state.wood = value.wood === true;
   state.seed = value.seed === true && state.solved.every(Boolean);
   state.placed = value.placed === true && state.wood && state.seed;

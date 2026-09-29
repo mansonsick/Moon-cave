@@ -1,5 +1,6 @@
 import {createWorksheet, normalizeCode, resultOf, VERSION} from '../../engine/math-worksheet.js';
 import {loadText,button,readyImages} from './text.js';
+import {codeLegend} from '../../engine/symbol-code.js';
 
 // Draw mathematical signs as paths: stable black-and-white print output,
 // independent of the printer/PDF viewer's font subsetting.
@@ -36,8 +37,9 @@ try {
       packet.append(stamp); page.append(packet);
       const instructions = document.createElement('div'); instructions.className='paper-instructions';
       instructions.append(text(answers?'answers-warning':'paper-instruction'),text(answers?'paper-order':'paper-subtract')); page.append(instructions);
+      page.append(codeLegend());
       gate.questions.forEach((q,i) => {
-        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${67+i*29}mm`;
+        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${79+i*29}mm`;
         const number=document.createElement('span'); number.className='question-number'; number.textContent=String(q.id).padStart(2,'0');
         const equation=document.createElement('div'); equation.className='equation';
         equation.append(String(q.a),symbol(q.op),String(q.b),symbol('='));
@@ -49,7 +51,7 @@ try {
         if(answers) box.textContent=resultOf(q);
         row.append(number,equation,picture,box); page.append(row);
       });
-      for(const [x,y] of [[153,63],[190,63],[153,67+gate.questions.length*29],[190,67+gate.questions.length*29]]){
+      for(const [x,y] of [[153,75],[190,75],[153,79+gate.questions.length*29],[190,79+gate.questions.length*29]]){
         const marker=document.createElement('i');marker.className='marker';marker.style.left=`${x}mm`;marker.style.top=`${y}mm`;page.append(marker);
       }
       const footer=document.createElement('footer'); footer.textContent=`${VERSION} · ${code} · ${g+1}/3`; page.append(footer);

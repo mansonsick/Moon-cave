@@ -5,6 +5,7 @@ import {bindDrag,place} from '../../engine/interactions.js';
 import {sceneLayers} from '../../engine/scene-layers.js';
 import {fresh,validate,KEY} from './state.js';
 import {loadText,button} from './text.js';
+import {symbolMarkup,symbolName,codeLegend} from '../../engine/symbol-code.js';
 
 const app=document.querySelector('#app');
 const star=`<svg viewBox="0 0 100 100" aria-hidden="true"><path d="M50 5 62 35 95 38 70 60 78 94 50 76 22 94 30 60 5 38 38 35Z" fill="#a77a40" stroke="#594326" stroke-width="5"/><path d="m47 25 7 42m-21-17 34 9" stroke="#79562e" stroke-width="3"/></svg>`;
@@ -101,26 +102,37 @@ try {
     dots.append(group(q.a));if(q.op==='+'){const plus=el('b');plus.textContent='+';dots.append(plus,group(q.b));}d.insertBefore(dots,d.lastChild);
   }
   function gatePanel(g,panel,stage){
-    if(state.solved[g]){panel.append(line('success'),action('continue',()=>go(nextScene())));stage.classList.add('unlocked');return;}
     const fields=el('div','answer-fields');fields.style.setProperty('--count',worksheet.gates[g].questions.length);
-    const inputs=[];
+    const inputs=[],results=checkAnswers(worksheet,g,state.entries[g]);
+    const show=(input,i)=>{
+      const value=state.entries[g][i], checked=state.checked[g][i];
+      input.innerHTML=symbolMarkup(value);input.dataset.value=value;
+      input.setAttribute('aria-label',`第 ${worksheet.gates[g].questions[i].id} 題，${value===''?'空白':symbolName(value)}${checked?(results[i]?'，正確':'，再看看'):''}`);
+      input.classList.toggle('correct',checked&&results[i]);input.classList.toggle('wrong',checked&&!results[i]);
+      if(checked){const mark=el('span','answer-mark');mark.textContent=results[i]?'✓':'×';mark.setAttribute('aria-hidden','true');input.append(mark);}
+    };
     worksheet.gates[g].questions.forEach((q,i)=>{
-      const column=el('div','answer-column'),label=el('label');label.textContent=String(q.id).padStart(2,'0');
-      const input=el('input');input.inputMode='numeric';input.autocomplete='off';input.maxLength=1;input.pattern='[0-9]';input.value=state.entries[g][i];input.dataset.answer=i;input.setAttribute('aria-label',`第 ${q.id} 題`);
-      input.onfocus=()=>{selected=i;inputs.forEach((n,j)=>n.classList.toggle('selected',j===i));};
-      input.oninput=()=>{if(stale){input.value=state.entries[g][i];return;}input.value=input.value.replace(/[^0-9]/g,'').slice(-1);state.entries[g][i]=input.value;input.classList.remove('wrong');persist();};
-      inputs.push(input);label.append(input);const help=el('button','hint-button');help.textContent='?';help.setAttribute('aria-label',`看看第 ${q.id} 題`);help.onclick=()=>hint(g,i);column.append(label,help);fields.append(column);
+      const column=el('div','answer-column'),label=el('span','answer-number');label.textContent=String(q.id).padStart(2,'0');
+      const input=el('button','symbol-slot');input.type='button';input.dataset.answer=i;input.disabled=state.solved[g];show(input,i);
+      input.onclick=()=>{selected=i;inputs.forEach((n,j)=>n.classList.toggle('selected',j===i));};
+      inputs.push(input);const help=el('button','hint-button');help.textContent='?';help.setAttribute('aria-label',`看看第 ${q.id} 題`);help.onclick=()=>hint(g,i);column.append(label,input);if(!state.solved[g])column.append(help);fields.append(column);
     });
+    panel.append(fields);
+    if(state.solved[g]){panel.append(line('success'),action('continue',()=>go(nextScene())));stage.classList.add('unlocked');return;}
+    const legend=el('details','on-screen-legend');const summary=el('summary');summary.append(text('code-table'));legend.append(summary,codeLegend());panel.append(line('answer-help'),legend);
     const keypad=el('div','keypad');
-    for(let digit=0;digit<=9;digit++){const key=el('button');key.textContent=digit;key.dataset.digit=digit;key.onclick=()=>{const input=inputs[selected];input.value=String(digit);state.entries[g][selected]=String(digit);input.classList.remove('wrong');persist();selected=Math.min(inputs.length-1,selected+1);inputs.forEach((n,i)=>n.classList.toggle('selected',i===selected));};keypad.append(key);}
-    keypad.append(action('erase',()=>{state.entries[g][selected]='';inputs[selected].value='';persist();}));
+    const enter=(value)=>{state.entries[g][selected]=value;state.checked[g][selected]=false;show(inputs[selected],selected);persist();if(value!=='')selected=Math.min(inputs.length-1,selected+1);inputs.forEach((n,i)=>n.classList.toggle('selected',i===selected));};
+    for(let digit=0;digit<=9;digit++){const key=el('button','symbol-key');key.innerHTML=symbolMarkup(digit);key.setAttribute('aria-label',symbolName(digit));key.dataset.digit=digit;key.onclick=()=>enter(String(digit));keypad.append(key);}
+    keypad.append(action('erase',()=>enter('')));
     const feedback=el('p','feedback');feedback.setAttribute('role','status');
+    if(state.checked[g].some(Boolean))feedback.append(text(state.entries[g].some(v=>v==='')?'empty':'incorrect'));
     const check=action('check',()=>{
       const results=checkAnswers(worksheet,g,state.entries[g]);
+      state.checked[g].fill(true);
       if(results.every(Boolean)){state.solved[g]=true;persist();void audio.playSfx('success');render();return;}
-      inputs.forEach((input,i)=>input.classList.toggle('wrong',!results[i]));feedback.replaceChildren(text(state.entries[g].some(v=>v==='')?'empty':'incorrect'));void audio.playSfx('fail-soft');
+      persist();render();document.querySelector('.feedback').replaceChildren(text(state.entries[g].some(v=>v==='')?'empty':'incorrect'));void audio.playSfx('fail-soft');
     });
-    inputs[selected].classList.add('selected');panel.append(line('answer-help'),fields,keypad,feedback,check);
+    inputs[selected].classList.add('selected');panel.append(keypad,feedback,check);
   }
   function render(){
     cleanup();cleanup=()=>{};closeDialog();app.replaceChildren(header());
