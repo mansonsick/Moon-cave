@@ -77,7 +77,7 @@ def main():
           const legacy={...s.fresh(customCode),schema:1,scene:'secret',seed:true,wood:true,placed:true};
           legacy.entries=[0,1,2].map(g=>m.gateAnswers(m.createWorksheet(customCode),g));
           const migrated=s.validate(legacy);
-          if(migrated.scene!=='secret'||!migrated.solved.every(Boolean)||migrated.schema!==2)throw Error('legacy completion lost');
+          if(migrated.scene!=='secret'||!migrated.solved.every(Boolean)||migrated.schema!==3)throw Error('legacy completion lost');
           if(JSON.stringify(migrated.passwords)!==JSON.stringify([0,1,2].map(g=>m.gatePasswords(m.createWorksheet(customCode),g))))throw Error('legacy password migration');
           legacy.entries[1][0]='';const partial=s.validate(legacy);
           if(partial.scene!=='gate2'||partial.passwords[1].join('')!==''||partial.solved[1])throw Error('partial work unlocked');
@@ -187,7 +187,7 @@ def main():
             'checked':[[True]*len(gate['questions']) for gate in props['custom']['gates']]}
         migration=browser.new_context();migration.add_init_script("localStorage.setItem('adventure.story-03.state',"+json.dumps(json.dumps(legacy_save))+ ")")
         upgraded=migration.new_page();upgraded.goto(url+'?code='+props['customCode']);ready(upgraded);scene(upgraded,'secret')
-        assert state(upgraded)['schema']==2
+        assert state(upgraded)['schema']==3
         assert state(upgraded)['passwords']==[passwords(gate) for gate in props['custom']['gates']]
         assert state(upgraded)['placed'] and state(upgraded)['seed']
         migration.close();record('browser startup upgrades a completed schema-1 save without losing the secret ending or items')

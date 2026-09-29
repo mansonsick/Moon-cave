@@ -1,0 +1,38 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-09-29",
+  "assets": [
+    {
+      "file": "atong-balance.png",
+      "prompt": "Use case: identity-preserve. Create ONE full-body transparent PNG character sprite for a children's illustrated adventure game. Reference image is the existing protagonist Atong: preserve exactly the same young boy, face, tousled dark brown hair, light blue short sleeve shirt, tan shorts, gray socks, brown hiking boots, olive green canvas backpack and painterly anime storybook rendering with warm golden rim light. Do not change costume. No scenery, no floor, no text, no duplicate figures, no opaque or checkerboard background. Keep entire silhouette within frame including hands and boots, generous transparent margin. Facing mostly camera, angled slightly to the right. Pose: standing on his left foot, right knee bent with right foot lifted off ground, both arms extended sideways for balance, focused friendly face.",
+      "refs": [
+        "atong.png"
+      ],
+      "transparent": true
+    },
+    {
+      "file": "atong-jump.png",
+      "prompt": "Use case: identity-preserve. Create ONE full-body transparent PNG character sprite for a children's illustrated adventure game. Reference image is the existing protagonist Atong: preserve exactly the same young boy, face, tousled dark brown hair, light blue short sleeve shirt, tan shorts, gray socks, brown hiking boots, olive green canvas backpack and painterly anime storybook rendering with warm golden rim light. Do not change costume. No scenery, no floor, no text, no duplicate figures, no opaque or checkerboard background. Keep entire silhouette within frame including hands and boots, generous transparent margin. Facing mostly camera, angled slightly to the right. Pose: joyful small vertical jump, both boots visibly lifted with knees slightly bent, arms raised loosely to shoulder height, cheerful face. No ball.",
+      "refs": [
+        "atong.png"
+      ],
+      "transparent": true
+    },
+    {
+      "file": "atong-catch.png",
+      "prompt": "Use case: identity-preserve. Create ONE full-body transparent PNG character sprite for a children's illustrated adventure game. Reference image is the existing protagonist Atong: preserve exactly the same young boy, face, tousled dark brown hair, light blue short sleeve shirt, tan shorts, gray socks, brown hiking boots, olive green canvas backpack and painterly anime storybook rendering with warm golden rim light. Do not change costume. No scenery, no floor, no text, no duplicate figures, no opaque or checkerboard background. Keep entire silhouette within frame including hands and boots, generous transparent margin. Facing mostly camera, angled slightly to the right. Pose: head looking up, both open hands cupped together just in front of chest to catch a small glowing warm gold ball hovering a short distance above the hands. Include exactly one ball in this transparent sprite, hands clearly visible and anatomically sensible.",
+      "refs": [
+        "atong.png"
+      ],
+      "transparent": true
+    },
+    {
+      "file": "courtyard-bg.png",
+      "prompt": "Use case: illustration-story. Create a new landscape 16:9 children's fantasy storybook background for the SAME old star tower as the reference. Reference is STYLE/WORLD ONLY. New scene: spacious sheltered inner courtyard at dusk, worn stone floor with a few flush star shaped inlays, low mossy walls and covered arches, small fountain at far right, fireflies drifting in warm lantern light, dark blue starry sky glimpsed overhead. Foreground broad open level stone paving for a child character placed separately later. Safe enclosed calm magical space, no peril, no cliff or raised stepping stones. Rich painterly anime storybook detail, same warm gold stone and blue sky palette. Camera medium-wide front view, floor visible lower 40 percent. Do not copy reference composition. No people, animals, doors needing unlocking, treasure chest, ball, writing, numbers, typography or UI.",
+      "refs": [
+        "tower-bg.png"
+      ],
+      "transparent": false
+    }
+  ]
+}

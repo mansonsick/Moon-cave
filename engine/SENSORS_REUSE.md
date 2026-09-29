@@ -47,3 +47,8 @@
 - `tests/story_02_test.py`：既有故事的按鈕、觸控、存檔與完整路線基準。
 
 工程自動測試使用合成影像／事件；後續每本仍要在目標平板測站位距離、光線、鏡頭方向、權限及操作手感。Story 02 的詳細實作／歷史測試見 [CAMERA_LANES.md](../stories/story-02/CAMERA_LANES.md)。
+
+
+## 2026-09-29：Story 03 鏡頭動作試玩
+
+新增獨立 [camera-actions 實驗頁](../experiments/camera-actions/index.html)，單腳站、跳躍、拋接球採同一 `mountCameraAction` 接進 Story 03。共用既有 MediaPipe runtime/model，不改 Story 02 的 camera-lanes 模組。球另採本機選色追蹤，不聲稱通用球模型或手指抓握辨識。方法、參數、相機生命週期、fallback 與真機限制完整記於 [CAMERA_ACTIONS.md](CAMERA_ACTIONS.md)。

@@ -1,16 +1,16 @@
 import { createWorksheet, normalizeCode, GATE_SIZES, checkAnswers, answerCapacity, gatePasswords, checkPasswords } from '../../engine/math-worksheet.js';
 export const KEY = 'adventure.story-03.state';
 export const PASSWORD_RULE = 'extremes-v1';
-const scenes = ['cover','intro','gate1','passage','gate2','window','gate3','chest','roof','ordinary','secret','secret-home'];
+const scenes = ['cover','intro','gate1','passage','balance','gate2','window','jump','gate3','catch','chest','roof','ordinary','secret','secret-home'];
 export function fresh(code) {
-  return { schema: 2, passwordRule: PASSWORD_RULE, version: createWorksheet(code).version, code: normalizeCode(code), scene: 'cover',
+  return { schema: 3, passwordRule: PASSWORD_RULE, version: createWorksheet(code).version, code: normalizeCode(code), scene: 'cover',
     entries: GATE_SIZES.map(n => Array(n).fill('')), checked: GATE_SIZES.map(n => Array(n).fill(false)), solved: [false,false,false],
     passwords: GATE_SIZES.map(()=>['','']), passwordChecked: GATE_SIZES.map(()=>[false,false]),
-    wood: false, seed: false, placed: false, scale: 1 };
+    actions: {balance:false,jump:false,catch:false}, wood: false, seed: false, placed: false, scale: 1 };
 }
 export function validate(value) {
-  if (!value || ![1,2].includes(value.schema) || !normalizeCode(value.code)) return null;
-  if(value.schema===2&&value.passwordRule!==PASSWORD_RULE)return null;
+  if (!value || ![1,2,3].includes(value.schema) || !normalizeCode(value.code)) return null;
+  if(value.schema>=2&&value.passwordRule!==PASSWORD_RULE)return null;
   const state = fresh(value.code), worksheet = createWorksheet(state.code);
   if(value.version!==worksheet.version)return null;
   const digits=(entry,g)=>typeof entry==='string'&&new RegExp(`^[0-9]{0,${answerCapacity(worksheet.gates[g])}}$`).test(entry.trimEnd())?entry.trimEnd():'';
@@ -34,11 +34,18 @@ export function validate(value) {
   state.placed = value.placed === true && state.wood && state.seed;
   state.scale = Math.min(1.5, Math.max(.85, Number(value.scale) || 1));
   state.scene = scenes.includes(value.scene) ? value.scene : 'cover';
-  const required = {passage:1,gate2:1,window:2,gate3:2,chest:3,roof:3,ordinary:3,secret:3,'secret-home':3};
+  // Legacy saves keep already-passed sections. A new replay gets all three actions.
+  for(const [kind,after,gate]of [['balance','gate2',0],['jump','gate3',1],['catch','chest',2]]){
+    state.actions[kind]=state.solved[gate]&&(value.schema===3?value.actions?.[kind]===true:scenes.indexOf(state.scene)>=scenes.indexOf(after));
+  }
+  const required = {passage:1,balance:1,gate2:1,window:2,jump:2,gate3:2,catch:3,chest:3,roof:3,ordinary:3,secret:3,'secret-home':3};
   const count = required[state.scene] || 0;
   const incomplete = state.solved.slice(0,count).findIndex(s => !s);
   if (incomplete >= 0) state.scene = `gate${incomplete+1}`;
   if (['roof','ordinary','secret','secret-home'].includes(state.scene) && !state.seed) state.scene = 'chest';
   if (['secret','secret-home'].includes(state.scene) && !state.placed) state.scene = 'roof';
+  for(const [kind,after]of [['balance','gate2'],['jump','gate3'],['catch','chest']]){
+    if(scenes.indexOf(state.scene)>=scenes.indexOf(after)&&!state.actions[kind]){state.scene=kind;break;}
+  }
   return state;
 }

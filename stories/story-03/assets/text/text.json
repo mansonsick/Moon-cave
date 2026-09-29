@@ -1492,30 +1492,42 @@
       ]
     },
     "passage-line": {
-      "text": "阿通走進星塔。小松鼠抬起頭，看見通道裡的螢火蟲。",
+      "text": "通道盡頭傳來叮叮聲。小松鼠說：先到庭院，叫醒守路的星光吧！",
       "parts": [
         {
           "src": "passage-line-0.png",
-          "text": "阿通走進星塔。",
-          "width": 2040,
-          "height": 214
-        },
-        {
-          "src": "passage-line-1.png",
-          "text": "小松鼠抬起頭，",
-          "width": 2040,
-          "height": 214
-        },
-        {
-          "src": "passage-line-2.png",
-          "text": "看見通道裡的",
+          "text": "通道盡頭傳來",
           "width": 1752,
           "height": 214
         },
         {
-          "src": "passage-line-3.png",
-          "text": "螢火蟲。",
+          "src": "passage-line-1.png",
+          "text": "叮叮聲。",
           "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "passage-line-2.png",
+          "text": "小松鼠說：",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "passage-line-3.png",
+          "text": "先到庭院，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "passage-line-4.png",
+          "text": "叫醒守路的星",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "passage-line-5.png",
+          "text": "光吧！",
+          "width": 888,
           "height": 214
         }
       ]
@@ -1532,7 +1544,7 @@
       ]
     },
     "window-line": {
-      "text": "小窗吹來涼涼的風。樓梯通往塔頂。阿通抬頭看了看。",
+      "text": "小窗吹來涼涼的風。樓梯旁的星星暗了，阿通決定去庭院喚醒它們。",
       "parts": [
         {
           "src": "window-line-0.png",
@@ -1548,20 +1560,26 @@
         },
         {
           "src": "window-line-2.png",
-          "text": "樓梯通往塔頂。",
-          "width": 2040,
-          "height": 214
-        },
-        {
-          "src": "window-line-3.png",
-          "text": "阿通抬頭看了",
+          "text": "樓梯旁的星星",
           "width": 1752,
           "height": 214
         },
         {
+          "src": "window-line-3.png",
+          "text": "暗了，",
+          "width": 888,
+          "height": 214
+        },
+        {
           "src": "window-line-4.png",
-          "text": "看。",
-          "width": 600,
+          "text": "阿通決定去庭",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "window-line-5.png",
+          "text": "院喚醒它們。",
+          "width": 1752,
           "height": 214
         }
       ]
@@ -2165,6 +2183,970 @@
           "src": "load-error-1.png",
           "text": "請重新整理。",
           "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "balance-title": {
+      "text": "穩穩的星光",
+      "parts": [
+        {
+          "src": "balance-title-0.png",
+          "text": "穩穩的星光",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "balance-line": {
+      "text": "庭院的星光輕輕搖晃。阿通張開雙手，單腳站穩，星光就會安靜地照亮通道。",
+      "parts": [
+        {
+          "src": "balance-line-0.png",
+          "text": "庭院的星光輕",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "balance-line-1.png",
+          "text": "輕搖晃。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "balance-line-2.png",
+          "text": "阿通張開雙手，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "balance-line-3.png",
+          "text": "單腳站穩，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "balance-line-4.png",
+          "text": "星光就會安靜",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "balance-line-5.png",
+          "text": "地照亮通道。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "jump-title": {
+      "text": "叫醒小星星",
+      "parts": [
+        {
+          "src": "jump-title-0.png",
+          "text": "叫醒小星星",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "jump-line": {
+      "text": "五顆小星星睡著了。阿通輕輕跳，小松鼠幫忙數。一起跳五下，讓樓梯亮起來！",
+      "parts": [
+        {
+          "src": "jump-line-0.png",
+          "text": "五顆小星星睡",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "jump-line-1.png",
+          "text": "著了。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "jump-line-2.png",
+          "text": "阿通輕輕跳，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "jump-line-3.png",
+          "text": "小松鼠幫忙數。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "jump-line-4.png",
+          "text": "一起跳五下，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "jump-line-5.png",
+          "text": "讓樓梯亮起來！",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "catch-title": {
+      "text": "接住星光球",
+      "parts": [
+        {
+          "src": "catch-title-0.png",
+          "text": "接住星光球",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "catch-line": {
+      "text": "寶庫前，一顆星光球跳到阿通手裡。把球輕輕拋起，再接住三次，請它帶我們找寶箱。",
+      "parts": [
+        {
+          "src": "catch-line-0.png",
+          "text": "寶庫前，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "catch-line-1.png",
+          "text": "一顆星光球跳",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "catch-line-2.png",
+          "text": "到阿通手裡。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "catch-line-3.png",
+          "text": "把球輕輕拋起，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "catch-line-4.png",
+          "text": "再接住三次，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "catch-line-5.png",
+          "text": "請它帶我們找",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "catch-line-6.png",
+          "text": "寶箱。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "action-balance-help": {
+      "text": "把平板放穩，讓全身入鏡。先雙腳站好兩秒，再抬起一隻腳，站穩八秒。",
+      "parts": [
+        {
+          "src": "action-balance-help-0.png",
+          "text": "把平板放穩，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-balance-help-1.png",
+          "text": "讓全身入鏡。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-balance-help-2.png",
+          "text": "先雙腳站好兩",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-balance-help-3.png",
+          "text": "秒，再抬起一",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-balance-help-4.png",
+          "text": "隻腳，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "action-balance-help-5.png",
+          "text": "站穩八秒。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "action-jump-help": {
+      "text": "把平板放穩，讓全身入鏡。先站好兩秒，再在空地輕輕跳五下。每次落地站好再跳。",
+      "parts": [
+        {
+          "src": "action-jump-help-0.png",
+          "text": "把平板放穩，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-1.png",
+          "text": "讓全身入鏡。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-2.png",
+          "text": "先站好兩秒，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-3.png",
+          "text": "再在空地輕輕",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-4.png",
+          "text": "跳五下。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-5.png",
+          "text": "每次落地站好",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-jump-help-6.png",
+          "text": "再跳。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "action-catch-help": {
+      "text": "準備一顆顏色鮮明的軟球。讓球和雙手入鏡，點畫面中的球選顏色。輕輕往上拋，再用雙手接住三次。",
+      "parts": [
+        {
+          "src": "action-catch-help-0.png",
+          "text": "準備一顆顏色",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-1.png",
+          "text": "鮮明的軟球。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-2.png",
+          "text": "讓球和雙手入",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-3.png",
+          "text": "鏡，點畫面中",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-4.png",
+          "text": "的球選顏色。",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-5.png",
+          "text": "輕輕往上拋，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-6.png",
+          "text": "再用雙手接住",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-catch-help-7.png",
+          "text": "三次。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "action-camera": {
+      "text": "用鏡頭開始",
+      "parts": [
+        {
+          "src": "action-camera-0.png",
+          "text": "用鏡頭開始",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "action-manual": {
+      "text": "改用手動完成",
+      "parts": [
+        {
+          "src": "action-manual-0.png",
+          "text": "改用手動完成",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "action-manual-start": {
+      "text": "準備好了，開始",
+      "parts": [
+        {
+          "src": "action-manual-start-0.png",
+          "text": "準備好了，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "action-manual-start-1.png",
+          "text": "開始",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "action-manual-rep": {
+      "text": "完成一次",
+      "parts": [
+        {
+          "src": "action-manual-rep-0.png",
+          "text": "完成一次",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "action-manual-help": {
+      "text": "這是手動模式。請大人幫忙確認動作；站穩看倒數，跳躍和接球每完成一次就按一次。",
+      "parts": [
+        {
+          "src": "action-manual-help-0.png",
+          "text": "這是手動模式。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-1.png",
+          "text": "請大人幫忙確",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-2.png",
+          "text": "認動作；站穩",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-3.png",
+          "text": "看倒數，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-4.png",
+          "text": "跳躍和接球每",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-5.png",
+          "text": "完成一次就按",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-manual-help-6.png",
+          "text": "一次。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "action-stop": {
+      "text": "暫停挑戰",
+      "parts": [
+        {
+          "src": "action-stop-0.png",
+          "text": "暫停挑戰",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "action-success": {
+      "text": "完成了！準備好再按繼續。",
+      "parts": [
+        {
+          "src": "action-success-0.png",
+          "text": "完成了！",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "action-success-1.png",
+          "text": "準備好再按繼",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-success-2.png",
+          "text": "續。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "action-test-title": {
+      "text": "鏡頭動作小挑戰",
+      "parts": [
+        {
+          "src": "action-test-title-0.png",
+          "text": "鏡頭動作小挑",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "action-test-title-1.png",
+          "text": "戰",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "camera-local": {
+      "text": "影像只在這台裝置即時處理，不錄影。鏡頭還在試玩中，辨識不順可改用手動完成。",
+      "parts": [
+        {
+          "src": "camera-local-0.png",
+          "text": "影像只在這台",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-local-1.png",
+          "text": "裝置即時處理，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-local-2.png",
+          "text": "不錄影。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-local-3.png",
+          "text": "鏡頭還在試玩",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-local-4.png",
+          "text": "中，辨識不順",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-local-5.png",
+          "text": "可改用手動完",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-local-6.png",
+          "text": "成。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "camera-ready": {
+      "text": "準備好空間，再選開始方式。",
+      "parts": [
+        {
+          "src": "camera-ready-0.png",
+          "text": "準備好空間，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-ready-1.png",
+          "text": "再選開始方式。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-loading": {
+      "text": "正在準備鏡頭，第一次可能要等一下。",
+      "parts": [
+        {
+          "src": "camera-loading-0.png",
+          "text": "正在準備鏡頭，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-loading-1.png",
+          "text": "第一次可能要",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-loading-2.png",
+          "text": "等一下。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-calibrate": {
+      "text": "先雙腳站好，讓頭和腳都出現在畫面裡。",
+      "parts": [
+        {
+          "src": "camera-calibrate-0.png",
+          "text": "先雙腳站好，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-calibrate-1.png",
+          "text": "讓頭和腳都出",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-calibrate-2.png",
+          "text": "現在畫面裡。",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "camera-body": {
+      "text": "請讓畫面裡只有一個人，並讓需要的身體部位完整入鏡。",
+      "parts": [
+        {
+          "src": "camera-body-0.png",
+          "text": "請讓畫面裡只",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-body-1.png",
+          "text": "有一個人，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-body-2.png",
+          "text": "並讓需要的身",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-body-3.png",
+          "text": "體部位完整入",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-body-4.png",
+          "text": "鏡。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "camera-hold": {
+      "text": "很好，繼續單腳站穩！",
+      "parts": [
+        {
+          "src": "camera-hold-0.png",
+          "text": "很好，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-hold-1.png",
+          "text": "繼續單腳站穩！",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-pause": {
+      "text": "先穩住，計時暫停一下。",
+      "parts": [
+        {
+          "src": "camera-pause-0.png",
+          "text": "先穩住，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-pause-1.png",
+          "text": "計時暫停一下。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-reset": {
+      "text": "沒關係，再抬起一隻腳，重新站穩。",
+      "parts": [
+        {
+          "src": "camera-reset-0.png",
+          "text": "沒關係，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-reset-1.png",
+          "text": "再抬起一隻腳，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-reset-2.png",
+          "text": "重新站穩。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "camera-center": {
+      "text": "回到原來的位置，再試一次。",
+      "parts": [
+        {
+          "src": "camera-center-0.png",
+          "text": "回到原來的位",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-center-1.png",
+          "text": "置，再試一次。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-jump": {
+      "text": "輕輕跳起，再用雙腳落地。",
+      "parts": [
+        {
+          "src": "camera-jump-0.png",
+          "text": "輕輕跳起，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-jump-1.png",
+          "text": "再用雙腳落地。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-land": {
+      "text": "很好，落地站穩再跳。",
+      "parts": [
+        {
+          "src": "camera-land-0.png",
+          "text": "很好，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-land-1.png",
+          "text": "落地站穩再跳。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-pick": {
+      "text": "先拿好球，點畫面中球的中央。選顏色鮮明、和衣服背景不同的球。",
+      "parts": [
+        {
+          "src": "camera-pick-0.png",
+          "text": "先拿好球，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-1.png",
+          "text": "點畫面中球的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-2.png",
+          "text": "中央。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-3.png",
+          "text": "選顏色鮮明、",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-4.png",
+          "text": "和衣服背景不",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-5.png",
+          "text": "同的球。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-pick-wait": {
+      "text": "正在確認球的顏色。",
+      "parts": [
+        {
+          "src": "camera-pick-wait-0.png",
+          "text": "正在確認球的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-pick-wait-1.png",
+          "text": "顏色。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "camera-ball": {
+      "text": "暫時看不清球。請拿回畫面裡，或重新選球的顏色。",
+      "parts": [
+        {
+          "src": "camera-ball-0.png",
+          "text": "暫時看不清球。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-1.png",
+          "text": "請拿回畫面裡，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-2.png",
+          "text": "或重新選球的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-3.png",
+          "text": "顏色。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "camera-repick": {
+      "text": "重新選球的顏色",
+      "parts": [
+        {
+          "src": "camera-repick-0.png",
+          "text": "重新選球的顏",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-repick-1.png",
+          "text": "色",
+          "width": 312,
+          "height": 214
+        }
+      ]
+    },
+    "camera-toss": {
+      "text": "雙手拿穩球，再輕輕往上拋。",
+      "parts": [
+        {
+          "src": "camera-toss-0.png",
+          "text": "雙手拿穩球，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-toss-1.png",
+          "text": "再輕輕往上拋。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "camera-catch": {
+      "text": "看著球，用雙手接住，再停一下。",
+      "parts": [
+        {
+          "src": "camera-catch-0.png",
+          "text": "看著球，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-catch-1.png",
+          "text": "用雙手接住，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-catch-2.png",
+          "text": "再停一下。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "camera-fallback": {
+      "text": "鏡頭暫時不能辨識。可以重試，或按開始，用手動方式完成。",
+      "parts": [
+        {
+          "src": "camera-fallback-0.png",
+          "text": "鏡頭暫時不能",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-fallback-1.png",
+          "text": "辨識。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-fallback-2.png",
+          "text": "可以重試，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-fallback-3.png",
+          "text": "或按開始，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-fallback-4.png",
+          "text": "用手動方式完",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-fallback-5.png",
+          "text": "成。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "camera-stopped": {
+      "text": "已暫停。準備好後可以重新開始。",
+      "parts": [
+        {
+          "src": "camera-stopped-0.png",
+          "text": "已暫停。",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-stopped-1.png",
+          "text": "準備好後可以",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-stopped-2.png",
+          "text": "重新開始。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "camera-paused": {
+      "text": "畫面切換時已暫停並關閉鏡頭。回來後再按開始。",
+      "parts": [
+        {
+          "src": "camera-paused-0.png",
+          "text": "畫面切換時已",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-paused-1.png",
+          "text": "暫停並關閉鏡",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-paused-2.png",
+          "text": "頭。回來後再",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-paused-3.png",
+          "text": "按開始。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-hold-ball": {
+      "text": "接到了，雙手拿穩，停一下。",
+      "parts": [
+        {
+          "src": "camera-hold-ball-0.png",
+          "text": "接到了，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-hold-ball-1.png",
+          "text": "雙手拿穩，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-hold-ball-2.png",
+          "text": "停一下。",
+          "width": 1176,
           "height": 214
         }
       ]

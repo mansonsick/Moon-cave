@@ -3,6 +3,7 @@ import {createStorage} from '../../engine/storage.js';
 import {AudioManager} from '../../engine/audio-manager.js';
 import {bindDrag,place} from '../../engine/interactions.js';
 import {sceneLayers} from '../../engine/scene-layers.js';
+import {mountCameraAction} from '../../engine/camera-action-panel.js';
 import {fresh,validate,KEY} from './state.js';
 import {loadText,button} from './text.js';
 import {labelledSymbolMarkup,symbolName,codeLegend} from '../../engine/symbol-code.js';
@@ -16,7 +17,7 @@ try {
   let state=store.load(), worksheet=createWorksheet(state.code), selected=0, cleanup=()=>{}, stale=false;
   let expectedCode=state.code, blocked=false;
   const manifest=Object.fromEntries(['found-item','success','fail-soft','drag-lock'].map(id=>[id,{category:'sfx',available:true,src:`../story-02/assets/audio/sfx/${id}.wav`,volume:.48}]));
-  const audio=new AudioManager(manifest,import.meta.url,store.sound());
+  let audio=new AudioManager(manifest,import.meta.url,store.sound());
   const el=(tag,cls='')=>{const node=document.createElement(tag);node.className=cls;return node;};
   const action=(id,handler,name=id)=>button(text,id,handler,name);
   const line=(id,tag='p')=>{const n=el(tag);n.append(text(id));return n;};
@@ -35,7 +36,7 @@ try {
     const progressed=state.scene!=='cover'||state.entries.some(row=>row.some(v=>v!==''))||state.passwords.some(row=>row.some(v=>v!==''));
     if(progressed)modal('confirm-change',[['yes-change',()=>reset(code)],['cancel',()=>{}]]);else reset(code);
   }
-  function staleWarning(){if(stale)return;stale=true;modal('stale',[['reload',()=>location.replace('./')]]);}
+  function staleWarning(){if(stale)return;stale=true;cleanup();modal('stale',[['reload',()=>location.replace('./')]]);}
   document.addEventListener('click',event=>{
     if(event.target.closest('dialog'))return;
     try {const saved=JSON.parse(localStorage.getItem(KEY));if(saved&&saved.code!==expectedCode){event.preventDefault();event.stopImmediatePropagation();staleWarning();}}
@@ -45,15 +46,23 @@ try {
   document.addEventListener('visibilitychange',()=>audio.setHidden(document.hidden));
   document.addEventListener('pointerdown',()=>{if(state.scene!=='cover'&&!audio.unlocked)void audio.unlock();});
   window.addEventListener('pagehide',()=>{cleanup();audio.dispose();});
+  window.addEventListener('pageshow',event=>{if(event.persisted){audio=new AudioManager(manifest,import.meta.url,store.sound());render();}});
   const imageURL=new URL('./assets/images/',import.meta.url);
   function stageFor(scene){
     const forest=['cover','intro','ordinary','secret-home'].includes(scene);
-    const roof=['chest','roof','secret'].includes(scene);
+    const roof=['catch','chest','roof','secret'].includes(scene);
+    const courtyard=['balance','jump'].includes(scene);
     const layers=[{id:'atong',src:'atong.png',box:[12,35,20,49],z:3},{id:'squirrel',src:'squirrel.png',box:[30,61,11,23],z:4}];
     if(roof){layers[0].box=[8,37,19,49];layers[1].box=[26,63,10,23];}
+    if(courtyard){layers[0].src=`atong-${scene}.png`;layers[0].box=scene==='balance'?[33,28,27,59]:[49,18,25,57];layers[1].box=scene==='balance'?[65,60,13,27]:[21,56,14,28];}
+    if(scene==='catch'){layers[0].src='atong-catch.png';layers[0].box=[25,26,27,61];layers[1].box=[57,60,13,27];}
+    if(scene==='passage'){layers[0].box=[32,37,18,45];layers[1].box=[51,63,10,22];}
+    if(scene==='window'){layers[0].box=[59,35,20,49];layers[1].box=[42,60,11,23];}
+    if(scene==='gate2'){layers[0].box=[65,36,20,49];layers[1].box=[18,58,12,26];}
+    if(scene==='gate3'){layers[0].box=[18,29,24,59];layers[1].box=[61,60,13,26];}
     if(scene.startsWith('gate')&&!state.solved[Number(scene.at(-1))-1])layers.unshift({id:'door',src:scene==='gate1'?'door-stone.png':'door.png',box:[38.6,17.5,22.3,55.2],z:1});
     if(scene==='chest')layers.unshift({id:'chest',src:state.seed?'chest-open.png':'chest.png',box:state.seed?[30,37,27,42]:[31,45,24,33],z:2});
-    const stage=sceneLayers({background:forest?'forest-bg.png':roof?'roof-bg.png':'tower-bg.png',layers,baseURL:imageURL});
+    const stage=sceneLayers({background:forest?'forest-bg.png':roof?'roof-bg.png':courtyard?'courtyard-bg.png':'tower-bg.png',layers,baseURL:imageURL});
     if(['ordinary','secret-home'].includes(scene)){
       const glow=el('div','lantern-light');glow.setAttribute('aria-hidden','true');stage.append(glow);
     }
@@ -116,7 +125,7 @@ try {
     if(state.seed&&!['ordinary','secret-home'].includes(state.scene)){const item=el('div','inventory-item');item.innerHTML=seed;item.append(text('seed'));bag.append(item);}
     return bag;
   }
-  function nextScene(){return {gate1:'passage',gate2:'window',gate3:'chest'}[state.scene];}
+  function nextScene(){return {gate1:'passage',gate2:'window',gate3:'catch'}[state.scene];}
   function paintNumber(node,value){
     node.replaceChildren();node.dataset.value=value;
     if(value==='')node.append(text('tap-symbols'));
@@ -205,17 +214,23 @@ try {
     main.append(packetTools(),stage,panel);app.append(main);
     const scene=state.scene;
     const names={cover:'title',intro:'intro-title',passage:'passage-title',window:'window-title',chest:'chest-title',roof:'roof-title',ordinary:'ordinary-title',secret:'secret-title','secret-home':'ordinary-title'};
-    panel.append(line(scene.startsWith('gate')?`${scene}-name`:names[scene],'h1'));
+    const physical=['balance','jump','catch'].includes(scene);
+    panel.append(line(physical?`${scene}-title`:scene.startsWith('gate')?`${scene}-name`:names[scene],'h1'));
     const lines={cover:'cover-line',intro:'intro-line',passage:'passage-line',window:'window-line',chest:'chest-line',roof:'roof-line',ordinary:'ordinary-line',secret:'secret-line','secret-home':'secret-home-line'};
-    panel.append(line(scene.startsWith('gate')?`${scene}-line`:lines[scene]));
+    panel.append(line(physical?`${scene}-line`:scene.startsWith('gate')?`${scene}-line`:lines[scene]));
     if(scene==='cover'){
       const start=action('start',()=>{void audio.unlock();go('intro');});start.className='primary';bar.append(start);panel.append(bar);
       const prep=el('details','prepare');const summary=el('summary');summary.append(text('setup'));prep.append(summary,setupForm());panel.append(prep);
     } else if(scene==='intro')bar.append(action('continue',()=>go('gate1')));
     else if(scene.startsWith('gate'))gatePanel(Number(scene.at(-1))-1,panel,stage);
-    else if(scene==='passage')bar.append(action('continue',()=>go('gate2')));
+    else if(physical){
+      cleanup=mountCameraAction(panel,{kind:scene,text,button,completed:state.actions[scene],
+        onComplete:()=>{state.actions[scene]=true;persist();void audio.playSfx('success');},
+        onContinue:()=>go({balance:'gate2',jump:'gate3',catch:'chest'}[scene])});
+    }
+    else if(scene==='passage')bar.append(action('continue',()=>go('balance')));
     else if(scene==='window'){
-      bar.append(action('upstairs',()=>go('gate3')));
+      bar.append(action('upstairs',()=>go('jump')));
       if(!state.wood){const wood=el('button','hidden-object');wood.dataset.action='find-wood';wood.setAttribute('aria-label','看看這裡');wood.innerHTML=star;place(wood,[79.5,71,5.3,7]);wood.onclick=()=>{state.wood=true;persist();render();reward('wood-found',()=>{});};stage.append(wood);}
     } else if(scene==='chest'){
       if(state.seed){panel.append(line('seed-found'));bar.append(action('continue',()=>go('roof')));}

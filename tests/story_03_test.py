@@ -17,9 +17,21 @@ PASSWORDS = [('8','0'),('9','1'),('8','0')]
 RESULTS=[]
 def record(name):
     print('PASS',name,flush=True); RESULTS.append(name)
+def complete_action(page):
+    kind=page.locator('body').get_attribute('data-scene')
+    if kind not in ['balance','jump','catch']:return
+    page.locator('[data-action="action-manual"]').click()
+    page.locator('[data-action="action-manual-start"]').click()
+    if kind!='balance':
+        for _ in range(5 if kind=='jump' else 3):page.locator('[data-action="action-manual-rep"]').click()
+    page.wait_for_selector('.camera-action[data-mode="done"]',timeout=12000)
+    assert state(page)['actions'][kind]
+    page.locator('.camera-action [data-action="continue"]').click()
+
 def act(page,name):
     root=page.locator('dialog[open]') if page.locator('dialog[open]').count() else page
     root.locator(f'[data-action="{name}"]').click()
+    if name in ['continue','upstairs']:complete_action(page)
 def scene(page,name): page.wait_for_selector(f'body[data-scene="{name}"]')
 def ready(page):
     page.wait_for_selector('body[data-ready="true"]')
@@ -121,9 +133,8 @@ def main():
         assert printing.locator('.paper').count()==3
         assert printing.locator('.answer-box').all_text_contents()==['']*20
         assert printing.locator('.packet-code').all_text_contents()==[CODE]*3
-        assert printing.locator('.code-legend').count()==3
-        assert printing.locator('.legend-cell b').all_text_contents()==list('0123456789')*3
-        assert printing.locator('.code-legend .code-symbol').count()==30
+        assert printing.locator('.code-legend').count()==0
+        assert printing.locator('[aria-label*="不用補零"]').count()==0
         dims=printing.locator('.answer-box').first.evaluate('(e)=>[e.offsetWidth,e.offsetHeight]');assert all(abs(v-mm*96/25.4)<1 for v,mm in zip(dims,[86,23]))
         assert printing.locator('.paper-password-answer').all_text_contents()==['']*6
         assert state(page)==before
@@ -131,6 +142,7 @@ def main():
         for i in range(3):printing.locator('.paper').nth(i).screenshot(path=str(args.output/f'paper-{i+1}.png'))
         printing.goto(url+'print.html?code='+CODE+'&mode=answers');ready(printing)
         assert printing.locator('.answer-box').all_text_contents()==list(''.join(ANSWERS))
+        assert printing.locator('.code-legend,[aria-label*="不用補零"]').count()==0
         assert printing.locator('.paper-password-answer').all_text_contents()==[v for row in PASSWORDS for v in row]
         assert state(page)==before
         record('three A4 sheets, unsegmented wide answer areas, max/min summary, separate answer page, printing does not alter saved play')

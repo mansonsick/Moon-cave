@@ -1,6 +1,5 @@
 import {createWorksheet, normalizeCode, resultOf, gatePasswords, operatorSign} from '../../engine/math-worksheet.js';
 import {loadText,button,readyImages} from './text.js';
-import {codeLegend} from '../../engine/symbol-code.js';
 
 // Draw mathematical signs as paths: stable black-and-white print output,
 // independent of the printer/PDF viewer's font subsetting.
@@ -36,10 +35,10 @@ try {
       const stamp = document.createElement('strong'); stamp.className='packet-code'; stamp.textContent=code;
       packet.append(stamp); page.append(packet);
       const instructions = document.createElement('div'); instructions.className='paper-instructions';
-      instructions.append(text(answers?'answers-warning':'paper-instruction'),text('paper-order')); page.append(instructions);
-      page.append(codeLegend());
+      instructions.append(text(answers?'answers-warning':'paper-instruction'));
+      page.append(instructions);
       gate.questions.forEach((q,i) => {
-        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${79+i*24}mm`;
+        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${62+i*26}mm`;
         const number=document.createElement('span'); number.className='question-number'; number.textContent=String(q.id).padStart(2,'0');
         const equation=document.createElement('div'); equation.className='equation';
         equation.append(String(q.a),symbol(q.op),String(q.b),symbol('='));
