@@ -6,7 +6,7 @@ export function fresh(code) {
   return { schema: 3, passwordRule: PASSWORD_RULE, version: createWorksheet(code).version, code: normalizeCode(code), scene: 'cover',
     entries: GATE_SIZES.map(n => Array(n).fill('')), checked: GATE_SIZES.map(n => Array(n).fill(false)), solved: [false,false,false],
     passwords: GATE_SIZES.map(()=>['','']), passwordChecked: GATE_SIZES.map(()=>[false,false]),
-    actions: {balance:false,jump:false,catch:false}, wood: false, seed: false, placed: false, scale: 1 };
+    resumeScene: null, actions: {balance:false,jump:false,catch:false}, wood: false, seed: false, placed: false, scale: 1 };
 }
 export function validate(value) {
   if (!value || ![1,2,3].includes(value.schema) || !normalizeCode(value.code)) return null;
@@ -46,6 +46,9 @@ export function validate(value) {
   if (['secret','secret-home'].includes(state.scene) && !state.placed) state.scene = 'roof';
   for(const [kind,after]of [['balance','gate2'],['jump','gate3'],['catch','chest']]){
     if(scenes.indexOf(state.scene)>=scenes.indexOf(after)&&!state.actions[kind]){state.scene=kind;break;}
+  }
+  if(state.scene==='cover'&&scenes.includes(value.resumeScene)&&value.resumeScene!=='cover'){
+    state.resumeScene=validate({...value,scene:value.resumeScene,resumeScene:null}).scene;
   }
   return state;
 }

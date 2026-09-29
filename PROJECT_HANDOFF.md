@@ -1,9 +1,9 @@
 # 互動兒童冒險繪本｜工程與 GitHub 維護交接
 
 - 交接日期：2026-09-24
-- 最近更新：2026-09-28（Story 02 成品確認、首頁第二本入口、共用方法及未來改善紀錄）
+- 最近更新：2026-09-29（Story 03、首頁第三本入口、故事選單及使用者授權發布）
 - 專案性質：長期維護的低年級兒童平板互動冒險繪本
-- 目前故事：《月光洞的祕密》v3、Story 02《逃出虎姑婆的山屋》（本階段成品已確認）
+- 目前故事：《月光洞的祕密》v3、Story 02《逃出虎姑婆的山屋》（已確認成品）、Story 03《阿通與星光寶箱》（使用者授權先發布，平板鏡頭待實測）
 
 ## 1. 正式來源與文件職責
 
@@ -12,7 +12,8 @@
 - GitHub Pages 根入口：[阿通的冒險世界](https://mansonsick.github.io/Moon-cave/)
 - 《月光洞》入口：[月光洞的祕密](https://mansonsick.github.io/Moon-cave/stories/moon-cave/)
 - Story 02 入口：[陌生山路的冒險](https://mansonsick.github.io/Moon-cave/stories/story-02/)；首頁第二張故事卡使用不破梗的開場名稱。
-- 平台入口：root `index.html`；故事入口：`stories/moon-cave/index.html`。
+- Story 03 入口：`stories/story-03/`，首頁第三張卡《阿通與星光寶箱》。
+- 平台入口：root `index.html`；每本故事保留獨立目錄。
 - 部署方式：GitHub Pages，`main` 分支、`/(root)`。
 
 以上路徑已於 2026-09-28 正式生效。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已依使用者指示合併，[GitHub Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)；root 提供冒險首頁，《月光洞》v3 保留在自己的故事目錄。
@@ -282,3 +283,16 @@ localStorage 依 origin 隔離，不依 URL path 隔離。兩個路徑都在 `ht
 5. 測試新舊 key 共存、重複執行、字級優先順序與失敗回復。若仍需支援舊故事頁或版本回退，另行確定過渡期同步策略，避免新舊進度分歧。
 
 **以上僅為提案；本 PR 沒有執行 migration。**
+
+
+## 2026-09-29：Story 03 發布交接
+
+使用者明確指示「目前沒辦法測試，直接先上 git、部署」，授權將 Story 03 及新增首頁入口發布，不再等待本輪平板驗收。工程先在 `feature/story-03-foundation` 完成測試並提交，再推進 main。
+
+第三本正式工程規格見 `stories/story-03/STORY_SPEC.md`；更早的概念／PDF 文件僅為歷史提案。20 題與三道門、最大／最小圖案密碼、固定題卷碼與可調難度、網頁列印、雙結局均已實作。字型仍只在本機渲染，字型檔不公開。
+
+每道門後加單腳站 8 秒、跳 5 下、拋接球 3 次。鏡頭採本機辨識，始終可手動完成；拋接需鮮明單色軟球和點選球色，不保證任意環境／球種／姿勢準確，平板實測仍待回饋。共用方法見 `engine/CAMERA_ACTIONS.md`。
+
+第三本工具列分成「返回首頁」和「故事選單」：前者挑故事，後者返回本書的準備頁；`resumeScene` 保存目前場景，題卷、已輸入答案、道具、挑戰與結局保留。從選單按「繼續冒險」恢復；返回選單時關閉鏡頭，恢復後不自動開啟。
+
+首頁新增第三張故事卡，沿用分層圖與注音文字圖。月光洞與 Story 02 的故事檔案、玩法和存檔維持原樣。測試及已知限制記於 Story 03 QA／DEVLOG。

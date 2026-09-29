@@ -51,6 +51,11 @@
     /* Match the PNG widths so all three lines use the same character size. */
     .description img:nth-child(2) { width: calc(100% * 1752 / 2616); }
     .story-card[data-story="story-02"] .description img:nth-child(2) { width: calc(100% * 1464 / 2616); }
+    .story-card[data-story="story-03"] .description img:nth-child(2) { width: 100%; }
+    .hub-stage { width: 100%; position: relative; aspect-ratio: 16/9; overflow: hidden; }
+    .hub-stage .hub-background { width: 100%; height: 100%; max-height: none; object-fit: fill; }
+    .hub-stage .hub-person { position: absolute; left: 37%; top: 21%; width: 26%; height: 65%; object-fit: contain; }
+    .hub-stage .hub-squirrel { position: absolute; left: 66%; top: 58%; width: 13%; height: 28%; object-fit: contain; }
     .start {
       display: inline-flex;
       align-items: center;
@@ -126,6 +131,21 @@
         <h2 id="story-02-title"><img class="text-image" src="./assets/hub-text/story-02-title.png" alt="陌生山路的冒險" width="2040" height="207"></h2>
         <p class="description"><img class="text-image" src="./assets/hub-text/description-first.png" alt="跟著阿通和小松鼠，" width="2616" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-second.png" alt="觀察山屋，" width="1464" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-third.png" alt="找出安全回家的路。" width="2616" height="207"></p>
         <a class="start" href="./stories/story-02/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="story-card" data-story="story-03" aria-labelledby="story-03-title">
+      <a class="cover-link" href="./stories/story-03/" aria-label="進入阿通與星光寶箱">
+        <div class="hub-stage">
+          <img class="hub-background" src="./stories/story-03/assets/images/courtyard-bg.png" width="1672" height="941" alt="阿通和小松鼠在星塔庭院，一起喚醒星光。" loading="lazy" decoding="async">
+          <img class="hub-person" src="./stories/story-03/assets/images/atong-jump.png" alt="" loading="lazy" decoding="async">
+          <img class="hub-squirrel" src="./stories/story-03/assets/images/squirrel.png" alt="" loading="lazy" decoding="async">
+        </div>
+      </a>
+      <div class="story-info">
+        <p class="chapter"><img class="text-image" src="./assets/hub-text/story-03-hub-chapter.png" alt="阿通的第三場冒險" width="2328" height="207"></p>
+        <h2 id="story-03-title"><img class="text-image" src="./assets/hub-text/story-03-title.png" alt="阿通與星光寶箱" width="2040" height="207"></h2>
+        <p class="description"><img class="text-image" src="./assets/hub-text/story-03-hub-description-first.png" alt="算一算，解開星塔的門，" width="3192" height="207"><img class="text-image" src="./assets/hub-text/story-03-hub-description-second.png" alt="動一動，找回森林星光。" width="3192" height="207"></p>
+        <a class="start" href="./stories/story-03/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
   </main>

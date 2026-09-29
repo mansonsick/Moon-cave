@@ -3150,6 +3150,68 @@
           "height": 214
         }
       ]
+    },
+    "story-menu": {
+      "text": "故事選單",
+      "parts": [
+        {
+          "src": "story-menu-0.png",
+          "text": "故事選單",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "hub-chapter": {
+      "text": "阿通的第三場冒險",
+      "parts": [
+        {
+          "src": "hub-chapter-0.png",
+          "text": "阿通的第三場",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "hub-chapter-1.png",
+          "text": "冒險",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "hub-description-first": {
+      "text": "算一算，解開星塔的門，",
+      "parts": [
+        {
+          "src": "hub-description-first-0.png",
+          "text": "算一算，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "hub-description-first-1.png",
+          "text": "解開星塔的門，",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "hub-description-second": {
+      "text": "動一動，找回森林星光。",
+      "parts": [
+        {
+          "src": "hub-description-second-0.png",
+          "text": "動一動，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "hub-description-second-1.png",
+          "text": "找回森林星光。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
     }
   }
 }
