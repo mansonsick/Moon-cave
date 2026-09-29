@@ -13,7 +13,7 @@ export class CameraActionSource {
     this.video = video; this.onFault = onFault;
     try {
       // Called directly by the camera button. Never ask for microphone access.
-      const permission = navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 }, frameRate: { ideal: 15, max: 20 } } });
+      const permission = navigator.mediaDevices.getUserMedia({ audio: false, video: { facingMode: 'user', width: { ideal: 640 }, height: { ideal: 480 }, frameRate: { ideal: 30, max: 30 } } });
       permission.then(stream => { if (ticket !== this.generation) stopTracks(stream); }, () => {});
       const stream = await timeout(permission, 15000);
       if (ticket !== this.generation) { stopTracks(stream); return false; }
@@ -24,7 +24,7 @@ export class CameraActionSource {
       this.canvas = document.createElement('canvas'); this.canvas.width = 480; this.canvas.height = 360;
       this.ctx = this.canvas.getContext('2d', { alpha: false });
       if (!this.ctx) throw new Error('camera-canvas');
-      const worker = new Worker(new URL('./camera-action-worker.js?v=actions-1', import.meta.url)); this.worker = worker;
+      const worker = new Worker(new URL('./camera-action-worker.js?v=actions-2', import.meta.url)); this.worker = worker;
       await timeout(new Promise((resolve, reject) => {
         worker.onerror = () => { reject(new Error('camera-worker')); if (this.active) this.fail(); };
         worker.onmessage = ({ data }) => {
@@ -33,18 +33,17 @@ export class CameraActionSource {
           else if (data.type === 'error') { reject(new Error('camera-model')); if (this.active) this.fail(); }
           else if (data.type === 'pose') {
             this.busy = false;
-            this.sample = data;
-            this.sampleAt = data.at;
+            if (!this.paused) { this.sample = data; this.sampleAt = performance.now(); }
           }
         };
         worker.postMessage({ type: 'init' });
       }), 30000);
       if (ticket !== this.generation) return false;
-      this.active = true; this.busy = false; this.lastCapture = 0; this.lastVideoTime = -1;
+      this.active = true; this.paused = false; this.busy = false; this.lastCapture = 0; this.lastVideoTime = -1;
       const tick = async now => {
         if (!this.active || ticket !== this.generation) return;
         this.frame = requestAnimationFrame(tick);
-        if (this.busy || document.hidden || now - this.lastCapture < 100 || video.readyState < 2 || video.currentTime === this.lastVideoTime) return;
+        if (this.paused || this.busy || document.hidden || now - this.lastCapture < 50 || video.readyState < 2 || video.currentTime === this.lastVideoTime) return;
         this.busy = true; this.lastCapture = now; this.lastVideoTime = video.currentTime;
         try {
           const ratio = Math.min(480 / video.videoWidth, 480 / video.videoHeight);
@@ -61,9 +60,20 @@ export class CameraActionSource {
       return true;
     } catch { if (ticket === this.generation) this.stop(); return false; }
   }
-  pickColour(point) { this.worker?.postMessage({type:'pick',point}); }
+  pause(value) { this.paused = value; this.sample = null; }
+  setColour(colour) { this.sample = null; this.worker?.postMessage({type:'colour',colour}); }
+  capturePhoto(canvas) {
+    if (!this.active || this.video.readyState < 2 || !this.video.videoWidth) return false;
+    const ratio = 480 / Math.max(this.video.videoWidth, this.video.videoHeight);
+    canvas.width = Math.round(this.video.videoWidth * ratio); canvas.height = Math.round(this.video.videoHeight * ratio);
+    const ctx = canvas.getContext('2d', {willReadFrequently:true});
+    if (!ctx) return false;
+    ctx.drawImage(this.video, 0, 0, canvas.width, canvas.height); return true;
+  }
   read(now = performance.now()) {
-    return this.active && this.sample && now - this.sampleAt < 600 ? this.sample : null;
+    // Freshness uses delivery time; inference latency must not make every result
+    // instantly stale. Old captures and repeated timestamps still cannot earn credit.
+    return this.active && !this.paused && this.sample && now - this.sampleAt < 1000 && now - this.sample.at < 2000 ? this.sample : null;
   }
   fail() { const callback = this.onFault; this.stop(); callback?.(); }
   stop() {
