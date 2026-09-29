@@ -129,7 +129,7 @@ def student_pdf(data, font, out):
         sheet.zh(gate['label'] + '　' + gate['title'], 16, 25, 24, max_width=153)
         sheet.zh('算一算，把答案寫進右邊的格子。', 16, 44, 14, max_width=177)
         sheet.zh('從上往下，一格寫一個數字。', 16, 53, 13, max_width=177)
-        sheet.zh('圓點可用來算題，劃掉的表示拿走。', 16, 62, 11.5, max_width=132)
+        sheet.zh('減法的圓點，請自己劃掉再算。', 16, 62, 11.5, max_width=132)
         sheet.zh('密碼格', 160, 64, 13, max_width=28)
         qr_payload = '|'.join(['aton', data['story_id'], data['worksheet_id'], gate['id']])
         sheet.qr(qr_payload, 174, 12, 21)
@@ -156,7 +156,7 @@ def student_pdf(data, font, out):
                 sheet.dots(q['a'], 39, top+20)
                 sheet.dots(q['b'], 87, top+20)
             else:
-                sheet.dots(q['a'], 39, top+20, crossed=q['b'])
+                sheet.dots(q['a'], 39, top+20)
             sheet.rect(BOX_X, top, BOX_SIZE, BOX_SIZE, width=1.15)
             page_meta['slots'].append({'question_id': q['id'], 'position': i+1,
                 'box_mm': [BOX_X, top, BOX_SIZE, BOX_SIZE],
