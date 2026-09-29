@@ -6,3 +6,5 @@ engine/vendor/mediapipe/vision_bundle.mjs -whitespace
 # Project-owned documentation follows ordinary text normalization.
 engine/vendor/mediapipe/manifest.json text eol=lf
 engine/vendor/mediapipe/README.md text eol=lf
+# PDF byte offsets must survive checkout without newline conversion.
+*.pdf binary
