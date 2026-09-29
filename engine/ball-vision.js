@@ -1,5 +1,6 @@
 // A selected saturated colour + compact connected component, not a general object model.
-// ImageData stays in the worker and is discarded after each frame.
+// Tracking pixels stay in the worker. The opt-in setup photo is read locally in
+// the panel, then discarded; only its selected colour is sent to the worker.
 export function hsv(r,g,b){
   r/=255;g/=255;b/=255;const max=Math.max(r,g,b),min=Math.min(r,g,b),d=max-min;
   let h=!d?0:max===r?((g-b)/d+6)%6:max===g?(b-r)/d+2:(r-g)/d+4;

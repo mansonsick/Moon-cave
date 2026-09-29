@@ -2438,35 +2438,35 @@
       ]
     },
     "action-catch-help": {
-      "text": "準備一顆顏色鮮明的軟球。讓球和雙手入鏡，點畫面中的球選顏色。輕輕往上拋，再用雙手接住三次。",
+      "text": "準備顏色鮮明的軟球。先拍照，在照片裡點球，再退後準備。輕輕往上拋，用雙手接住三次。",
       "parts": [
         {
           "src": "action-catch-help-0.png",
-          "text": "準備一顆顏色",
+          "text": "準備顏色鮮明",
           "width": 1752,
           "height": 214
         },
         {
           "src": "action-catch-help-1.png",
-          "text": "鮮明的軟球。",
-          "width": 1752,
+          "text": "的軟球。",
+          "width": 1176,
           "height": 214
         },
         {
           "src": "action-catch-help-2.png",
-          "text": "讓球和雙手入",
-          "width": 1752,
+          "text": "先拍照，",
+          "width": 1176,
           "height": 214
         },
         {
           "src": "action-catch-help-3.png",
-          "text": "鏡，點畫面中",
-          "width": 1752,
+          "text": "在照片裡點球，",
+          "width": 2040,
           "height": 214
         },
         {
           "src": "action-catch-help-4.png",
-          "text": "的球選顏色。",
+          "text": "再退後準備。",
           "width": 1752,
           "height": 214
         },
@@ -2478,14 +2478,14 @@
         },
         {
           "src": "action-catch-help-6.png",
-          "text": "再用雙手接住",
+          "text": "用雙手接住三",
           "width": 1752,
           "height": 214
         },
         {
           "src": "action-catch-help-7.png",
-          "text": "三次。",
-          "width": 888,
+          "text": "次。",
+          "width": 600,
           "height": 214
         }
       ]
@@ -2892,42 +2892,42 @@
       ]
     },
     "camera-pick": {
-      "text": "先拿好球，點畫面中球的中央。選顏色鮮明、和衣服背景不同的球。",
+      "text": "照片停好了，慢慢點球的中央。現在不用站好，也不會開始計算。",
       "parts": [
         {
           "src": "camera-pick-0.png",
-          "text": "先拿好球，",
-          "width": 1464,
+          "text": "照片停好了，",
+          "width": 1752,
           "height": 214
         },
         {
           "src": "camera-pick-1.png",
-          "text": "點畫面中球的",
+          "text": "慢慢點球的中",
           "width": 1752,
           "height": 214
         },
         {
           "src": "camera-pick-2.png",
-          "text": "中央。",
-          "width": 888,
-          "height": 214
-        },
-        {
-          "src": "camera-pick-3.png",
-          "text": "選顏色鮮明、",
+          "text": "央。現在不用",
           "width": 1752,
           "height": 214
         },
         {
+          "src": "camera-pick-3.png",
+          "text": "站好，",
+          "width": 888,
+          "height": 214
+        },
+        {
           "src": "camera-pick-4.png",
-          "text": "和衣服背景不",
+          "text": "也不會開始計",
           "width": 1752,
           "height": 214
         },
         {
           "src": "camera-pick-5.png",
-          "text": "同的球。",
-          "width": 1176,
+          "text": "算。",
+          "width": 600,
           "height": 214
         }
       ]
@@ -3147,6 +3147,214 @@
           "src": "camera-hold-ball-2.png",
           "text": "停一下。",
           "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-ball-wait": {
+      "text": "繼續接球，短暫看不到沒關係。接住後，讓球再出現在手邊。",
+      "parts": [
+        {
+          "src": "camera-ball-wait-0.png",
+          "text": "繼續接球，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-wait-1.png",
+          "text": "短暫看不到沒",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-wait-2.png",
+          "text": "關係。",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-wait-3.png",
+          "text": "接住後，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-wait-4.png",
+          "text": "讓球再出現在",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-ball-wait-5.png",
+          "text": "手邊。",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "camera-photo": {
+      "text": "拍照選球",
+      "parts": [
+        {
+          "src": "camera-photo-0.png",
+          "text": "拍照選球",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-photo-help": {
+      "text": "先把球拿到鏡頭前，再按拍照。不用全身入鏡，球要和衣服背景不同色。",
+      "parts": [
+        {
+          "src": "camera-photo-help-0.png",
+          "text": "先把球拿到鏡",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-help-1.png",
+          "text": "頭前，",
+          "width": 888,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-help-2.png",
+          "text": "再按拍照。",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-help-3.png",
+          "text": "不用全身入鏡，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-help-4.png",
+          "text": "球要和衣服背",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-help-5.png",
+          "text": "景不同色。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "camera-photo-ready": {
+      "text": "選好了，開始準備",
+      "parts": [
+        {
+          "src": "camera-photo-ready-0.png",
+          "text": "選好了，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-ready-1.png",
+          "text": "開始準備",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-retake": {
+      "text": "重新拍照",
+      "parts": [
+        {
+          "src": "camera-retake-0.png",
+          "text": "重新拍照",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-photo-selected": {
+      "text": "球選好了！按開始準備後，有五秒可以退到空地。",
+      "parts": [
+        {
+          "src": "camera-photo-selected-0.png",
+          "text": "球選好了！",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-selected-1.png",
+          "text": "按開始準備後，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-selected-2.png",
+          "text": "有五秒可以退",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-selected-3.png",
+          "text": "到空地。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-photo-retry": {
+      "text": "請再點球中央，避開亮亮的反光。也可以重新拍照。",
+      "parts": [
+        {
+          "src": "camera-photo-retry-0.png",
+          "text": "請再點球中央，",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-retry-1.png",
+          "text": "避開亮亮的反",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-retry-2.png",
+          "text": "光。也可以重",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-photo-retry-3.png",
+          "text": "新拍照。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "camera-step-back": {
+      "text": "慢慢退到鏡頭看得到的空地。等倒數完，再開始動作。",
+      "parts": [
+        {
+          "src": "camera-step-back-0.png",
+          "text": "慢慢退到鏡頭",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "camera-step-back-1.png",
+          "text": "看得到的空地。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "camera-step-back-2.png",
+          "text": "等倒數完，",
+          "width": 1464,
+          "height": 214
+        },
+        {
+          "src": "camera-step-back-3.png",
+          "text": "再開始動作。",
+          "width": 1752,
           "height": 214
         }
       ]
