@@ -24,6 +24,7 @@
 - [ADVENTURE_HUB_QA.md](ADVENTURE_HUB_QA.md)：本機、正式網站驗證結果與待實機項目。
 - [engine/SENSORS_REUSE.md](engine/SENSORS_REUSE.md)：已驗收的鏡頭／動作感測方法及後續接法。
 - [FUTURE_IMPROVEMENTS.md](FUTURE_IMPROVEMENTS.md)：背景音改善方向與成品回饋。
+- [一年級學習設計依據](curriculum/GRADE_1_GUIDE.md)／[課程資料來源](curriculum/SOURCES.md)：採各版本知識點聯集，先小一上，再小一下；孩子尚未入學，從圖像、聽說與實物數量開始。
 
 GitHub `main` 最新內容是正式來源。修改在分支完成並建立 PR，使用者確認前不合併或發布。
 
