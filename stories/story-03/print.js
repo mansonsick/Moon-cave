@@ -1,4 +1,4 @@
-import {createWorksheet, normalizeCode, resultOf, answerCapacity, operatorSign} from '../../engine/math-worksheet.js';
+import {createWorksheet, normalizeCode, resultOf, gatePasswords, operatorSign} from '../../engine/math-worksheet.js';
 import {loadText,button,readyImages} from './text.js';
 import {codeLegend} from '../../engine/symbol-code.js';
 
@@ -39,19 +39,24 @@ try {
       instructions.append(text(answers?'answers-warning':'paper-instruction'),text('paper-order')); page.append(instructions);
       page.append(codeLegend());
       gate.questions.forEach((q,i) => {
-        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${79+i*29}mm`;
+        const row=document.createElement('div'); row.className='paper-row'; row.style.top=`${79+i*24}mm`;
         const number=document.createElement('span'); number.className='question-number'; number.textContent=String(q.id).padStart(2,'0');
         const equation=document.createElement('div'); equation.className='equation';
         equation.append(String(q.a),symbol(q.op),String(q.b),symbol('='));
         const boxes=document.createElement('div');boxes.className='answer-boxes';boxes.dataset.question=q.id;
-        const capacity=answerCapacity(gate);boxes.style.setProperty('--box-width',capacity>3?'24mm':'28mm');
-        for(let d=0;d<capacity;d++){
-          const box=document.createElement('div'); box.className='answer-box';box.dataset.question=q.id;
-          if(answers)box.textContent=String(resultOf(q))[d]||'';boxes.append(box);
-        }
+        const box=document.createElement('div');box.className='answer-box';box.dataset.question=q.id;
+        if(answers)box.textContent=String(resultOf(q));boxes.append(box);
         row.append(number,equation,boxes); page.append(row);
       });
-      const footer=document.createElement('footer'); footer.textContent=`${worksheet.version} · ${code} · ${g+1}/3`; page.append(footer);
+      const summary=document.createElement('div');summary.className='paper-passwords';
+      const passwords=gatePasswords(worksheet,g);
+      ['maximum-answer','minimum-answer'].forEach((id,i)=>{
+        const section=document.createElement('div');section.className='paper-password';section.append(text(id));
+        const box=document.createElement('div');box.className='paper-password-answer';
+        if(answers)box.textContent=passwords[i];section.append(box);summary.append(section);
+      });
+      page.append(summary);
+      const footer=document.createElement('footer'); footer.textContent=`${worksheet.version} · ${code} · max/min · ${g+1}/3`; page.append(footer);
       pages.append(page);
     }
     await readyImages(); print.disabled=false; document.body.dataset.ready='true';

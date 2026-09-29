@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 from story_test_support import serve
-from story_03_test import act, ready, scene, state
+from story_03_test import act, ready, scene, state, enter
 
 RESULTS = []
 DEFAULT_EQUATIONS = ['7+2','7+3','5-3','9-6','4+4','6-1','97-5','21+4','34-1','68+9','55-2','99+7','20+3','71+47','56+29','70-36','86+61','68+38','77-74','80-45']
@@ -20,16 +20,15 @@ def answer(q):
     a,b,op=q['a'],q['b'],q['op']
     return str({'+':lambda:a+b,'-':lambda:a-b,'*':lambda:a*b,'/':lambda:a//b}[op]())
 
-def enter(page,i,value):
-    for d,digit in enumerate(value):
-        page.locator(f'[data-answer="{i}"][data-position="{d}"]').click()
-        page.locator(f'[data-digit="{digit}"]').click()
+def passwords(gate):
+    values=[int(answer(q)) for q in gate['questions']]
+    return [str(max(values)),str(min(values))]
 
 def solve(page,gate):
-    for i,q in enumerate(gate['questions']): enter(page,i,answer(q))
+    for i,value in enumerate(passwords(gate)): enter(page,i,value)
     act(page,'check')
-    assert page.locator('.multi-answer-card.correct').count()==len(gate['questions'])
-    assert page.locator('.multi-answer-card .answer-mark').all_text_contents()==['✓']*len(gate['questions'])
+    assert page.locator('.password-card.correct').count()==2
+    assert page.locator('.password-card .answer-mark').all_text_contents()==['✓']*2
     assert page.locator('[data-layer="door"]').count()==0
 
 def main():
@@ -73,7 +72,21 @@ def main():
           const custom=[{leftDigits:2,rightDigits:2,ops:['*'],within10:false},{leftDigits:2,rightDigits:1,ops:['/'],within10:false},{leftDigits:2,rightDigits:2,ops:['+','-','*','/'],within10:false}];
           const customCode=v.encodeCode(custom,'test0002');
           const s=await import('./state.js'),save=s.fresh(customCode);save.entries[0][0]='9 01';save.entries[0][1]='9801';save.entries[0][2]='12345';
-          const loaded=s.validate(save);if(loaded.entries[0].join('|')!=='9 01|9801||||')throw Error('multidigit save');
+          const loaded=s.validate(save);if(loaded.entries[0].join('|')!=='|9801||||')throw Error('multidigit save');
+          // Old completed gates/endings migrate, while partial answers remain optional review only.
+          const legacy={...s.fresh(customCode),schema:1,scene:'secret',seed:true,wood:true,placed:true};
+          legacy.entries=[0,1,2].map(g=>m.gateAnswers(m.createWorksheet(customCode),g));
+          const migrated=s.validate(legacy);
+          if(migrated.scene!=='secret'||!migrated.solved.every(Boolean)||migrated.schema!==2)throw Error('legacy completion lost');
+          if(JSON.stringify(migrated.passwords)!==JSON.stringify([0,1,2].map(g=>m.gatePasswords(m.createWorksheet(customCode),g))))throw Error('legacy password migration');
+          legacy.entries[1][0]='';const partial=s.validate(legacy);
+          if(partial.scene!=='gate2'||partial.passwords[1].join('')!==''||partial.solved[1])throw Error('partial work unlocked');
+          if(JSON.stringify(partial.entries[1])!==JSON.stringify(legacy.entries[1]))throw Error('partial review lost');
+          const reviewOnly=s.fresh(customCode);reviewOnly.entries=legacy.entries;
+          if(s.validate(reviewOnly).solved.some(Boolean))throw Error('review unlocked door');
+          const repeated={gates:[{questions:[{a:4,b:3,op:'-'},{a:2,b:1,op:'-'}]}]};
+          if(m.gatePasswords(repeated,0).join()!=='1,1'||!m.checkPasswords(repeated,0,['1','1']).every(Boolean))throw Error('tied extrema');
+          if(m.checkPasswords(repeated,0,['01','01']).some(Boolean))throw Error('padded values');
           const newCodes=new Set(Array.from({length:50},()=>m.newCode(custom)));
           if(newCodes.size!==50||[...newCodes].some(c=>JSON.stringify(v.decodeCode(c))!==JSON.stringify(custom)))throw Error('new code');
           return {code,w,customCode,custom:m.createWorksheet(customCode),cases:valid.length*8};
@@ -97,35 +110,36 @@ def main():
         assert page.locator('.setup [role="alert"] img').count()>0
         page.reload();ready(page)
         act(page,'sound');act(page,'start');act(page,'continue')
-        qs=props['w']['gates'][0]['questions']
-        enter(page,0,'9' if answer(qs[0])!='9' else '8');enter(page,1,answer(qs[1]));act(page,'check')
-        assert page.locator('.multi-answer-card').nth(0).get_attribute('class').endswith('wrong')
-        assert page.locator('.multi-answer-card').nth(1).get_attribute('class').endswith('correct')
-        page.reload();ready(page);assert page.locator('.multi-answer-card.correct').count()==1
-        # The single-digit answer leaves a spare slot blank; it must still validate.
+        expected=passwords(props['w']['gates'][0])
+        enter(page,0,'9' if expected[0]!='9' else '8');enter(page,1,expected[1]);act(page,'check')
+        assert page.locator('.password-card').nth(0).get_attribute('class').endswith('wrong')
+        assert page.locator('.password-card').nth(1).get_attribute('class').endswith('correct')
+        assert page.locator('[data-answer="1"] .numbered-symbol').count()==len(expected[1])
+        page.reload();ready(page);assert page.locator('.password-card.correct').count()==1
+        # Single-digit values need no zero padding or extra empty slots.
         solve(page,props['w']['gates'][0]);page.reload();ready(page)
         act(page,'continue');act(page,'continue');solve(page,props['w']['gates'][1]);act(page,'continue')
         act(page,'upstairs');solve(page,props['w']['gates'][2]);act(page,'continue');act(page,'open-chest');act(page,'continue');act(page,'go-home');scene(page,'ordinary')
-        record('default progressive 20-question ordinary route, per-question green/red feedback, trailing blank slots, refresh and muted play')
+        record('20 unchanged questions, just two extrema per gate, variable-length entries without padding, green/red feedback, refresh and muted ordinary route')
         # Import a custom packet and solve all four operations without changing the old packet.
         page.goto(url+'?code='+props['customCode']);ready(page);act(page,'yes-change');scene(page,'cover')
         page.locator('.prepare summary').click()
         assert page.locator('[name="ops-0"]:checked').input_value()=='*'
         act(page,'start');act(page,'continue');scene(page,'gate1')
-        assert page.locator('.digit-slots').first.locator('button').count()==4
-        enter(page,0,'9801');page.reload();ready(page);assert state(page)['entries'][0][0]=='9801'
-        # Clear all four slots before solving, including possible trailing symbols.
-        for d in range(4):page.locator(f'[data-answer="0"][data-position="{d}"]').click();act(page,'erase')
-        page.locator('[data-answer="0"][data-position="1"]').click();page.locator('[data-digit="2"]').click();act(page,'check')
-        assert page.locator('.multi-answer-card.wrong').count()==6
-        page.locator('[data-answer="0"][data-position="1"]').click();act(page,'erase')
-        page.locator('.hint-button').first.click();assert page.locator('.count-dot').count()==0;act(page,'close')
+        assert page.locator('[data-answer]').count()==2
+        assert page.locator('[data-answer] .numbered-symbol').count()==0
+        enter(page,0,'9801');page.reload();ready(page);assert state(page)['passwords'][0][0]=='9801'
+        act(page,'erase');assert page.locator('[data-answer="0"] .numbered-symbol').count()==3
+        act(page,'clear-answer');act(page,'check');assert page.locator('.password-card.wrong').count()==2
+        enter(page,0,'0007');assert state(page)['passwords'][0][0]=='7'
+        act(page,'clear-answer')
+        act(page,'review-questions');assert page.locator('.count-dot').count()==0;act(page,'close')
         solve(page,props['custom']['gates'][0]);act(page,'continue');act(page,'continue');solve(page,props['custom']['gates'][1]);act(page,'continue')
         act(page,'find-wood');act(page,'continue');act(page,'upstairs');solve(page,props['custom']['gates'][2]);act(page,'continue');act(page,'open-chest');act(page,'continue')
         # Same accessible drag target path as the legacy pointer-drag test.
         page.locator('[data-item="wood"]').focus();page.keyboard.press('Enter');page.keyboard.press('Enter')
         assert state(page)['placed'];act(page,'continue');scene(page,'secret');act(page,'continue');scene(page,'secret-home')
-        record('four-digit multiplication, division, all four operations, internal gaps rejected, corrected answers and complete secret route')
+        record('four-digit extrema, automatic removal of leading zeros, backspace, legacy migration, tied extrema, all operations and secret route')
         before=state(page);printing=context.new_page()
         for name,packet in [('default',props['w']),('custom',props['custom'])]:
             printing.goto(url+'print.html?code='+packet['code']);ready(printing)
@@ -133,6 +147,8 @@ def main():
             assert printing.locator('.paper-dots,.dot,.marker').count()==0
             assert printing.locator('[aria-label*="劃掉"]').count()==0
             assert all(v=='' for v in printing.locator('.answer-box').all_text_contents())
+            assert printing.locator('.answer-box').count()==20
+            assert printing.locator('.paper-password-answer').all_text_contents()==['']*6
             assert printing.locator('.packet-code').all_text_contents()==[packet['code']]*3
             assert printing.locator('.paper-row').evaluate_all('''rows=>rows.every(r=>{
               const eq=r.querySelector('.equation').getBoundingClientRect(),box=r.querySelector('.answer-boxes').getBoundingClientRect();
@@ -142,6 +158,7 @@ def main():
             for g in range(3):printing.locator('.paper').nth(g).screenshot(path=str(out/f'{name}-paper-{g+1}.png'))
             printing.goto(url+'print.html?code='+packet['code']+'&mode=answers');ready(printing)
             assert printing.locator('.answer-boxes').all_text_contents()==[answer(q) for gate in packet['gates'] for q in gate['questions']]
+            assert printing.locator('.paper-password-answer').all_text_contents()==[v for gate in packet['gates'] for v in passwords(gate)]
         assert state(page)==before
         record('3 A4 pages for default/four-digit packets, no circles or subtraction note, separate answers, consistent code, no overlap or storage mutation')
         for width,height in [(390,844),(820,1180),(1180,820)]:
@@ -151,7 +168,7 @@ def main():
             assert mobile.evaluate('document.documentElement.scrollWidth<=innerWidth')
             act(mobile,'start');act(mobile,'continue');ready(mobile)
             assert mobile.evaluate('document.documentElement.scrollWidth<=innerWidth')
-            enter(mobile,0,'9801');assert state(mobile)['entries'][0][0]=='9801'
+            enter(mobile,0,'9801');assert state(mobile)['passwords'][0][0]=='9801'
             mobile.screenshot(path=str(out/f'multi-{width}.png'),full_page=True);mobile.close()
         record('phone/tablet portrait and landscape with maximum A+, four-symbol entry and settings without horizontal overflow')
         # Generate a new packet from chosen settings and restore it independently via URL.
@@ -165,6 +182,15 @@ def main():
         assert restored.locator('[name="leftDigits-0"]').input_value()=='2'
         assert restored.locator('[name="ops-0"]:checked').input_value()=='*'
         record('parent settings create a new code; code alone restores settings on another device/session')
+        legacy_save={'schema':1,'version':props['custom']['version'],'code':props['customCode'],'scene':'secret','seed':True,'wood':True,'placed':True,'scale':1,
+            'entries':[[answer(q) for q in gate['questions']] for gate in props['custom']['gates']],
+            'checked':[[True]*len(gate['questions']) for gate in props['custom']['gates']]}
+        migration=browser.new_context();migration.add_init_script("localStorage.setItem('adventure.story-03.state',"+json.dumps(json.dumps(legacy_save))+ ")")
+        upgraded=migration.new_page();upgraded.goto(url+'?code='+props['customCode']);ready(upgraded);scene(upgraded,'secret')
+        assert state(upgraded)['schema']==2
+        assert state(upgraded)['passwords']==[passwords(gate) for gate in props['custom']['gates']]
+        assert state(upgraded)['placed'] and state(upgraded)['seed']
+        migration.close();record('browser startup upgrades a completed schema-1 save without losing the secret ending or items')
         assert not errors,errors;assert not missing,missing
         browser.close()
     server.shutdown();(out/'results.json').write_text(json.dumps({'passed':RESULTS},ensure_ascii=False,indent=2),encoding='utf-8')

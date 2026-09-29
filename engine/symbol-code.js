@@ -19,6 +19,10 @@ export function symbolMarkup(digit){
   const [name,paths]=icons[Number(digit)];
   return `<svg class="code-symbol" viewBox="0 0 64 64" role="img" aria-label="${name}" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round">${paths}</svg>`;
 }
+export function labelledSymbolMarkup(digit){
+  if(!/^[0-9]$/.test(String(digit)))return '';
+  return `<span class="numbered-symbol">${symbolMarkup(digit)}<span class="symbol-digit" aria-hidden="true">${digit}</span></span>`;
+}
 export function codeLegend(){
   const table=document.createElement('div');table.className='code-legend';table.setAttribute('aria-label','數字圖案對照表');
   for(let digit=0;digit<10;digit++){

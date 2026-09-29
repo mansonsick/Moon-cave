@@ -13,23 +13,27 @@ CODE = '5a2vgas12'
 KEY = 'adventure.story-03.state'
 EXPECTED = ['9-9','2+2','7-6','9-3','3+5','5+1','5-1','6-3','4+2','6+2','4-3','3+4','8+1','10-6','10-10','6+1','3+2','6-6','1+7','10-3']
 ANSWERS = ['041686', '4368179', '4075087']
+PASSWORDS = [('8','0'),('9','1'),('8','0')]
 RESULTS=[]
 def record(name):
     print('PASS',name,flush=True); RESULTS.append(name)
-def act(page,name): page.locator(f'[data-action="{name}"]').click()
+def act(page,name):
+    root=page.locator('dialog[open]') if page.locator('dialog[open]').count() else page
+    root.locator(f'[data-action="{name}"]').click()
 def scene(page,name): page.wait_for_selector(f'body[data-scene="{name}"]')
 def ready(page):
     page.wait_for_selector('body[data-ready="true"]')
     page.evaluate('Promise.all([...document.images].map(i=>i.decode()))')
 def state(page): return page.evaluate('(key)=>JSON.parse(localStorage.getItem(key))',KEY)
-def enter(page,i,digit):
-    page.locator(f'[data-answer="{i}"]').click();page.locator(f'[data-digit="{digit}"]').click()
+def enter(page,i,value):
+    page.locator(f'[data-answer="{i}"]').click();act(page,'clear-answer')
+    for digit in value:page.locator(f'[data-digit="{digit}"]').click()
 def solve(page,g):
-    for i,digit in enumerate(ANSWERS[g]): enter(page,i,digit)
+    for i,value in enumerate(PASSWORDS[g]): enter(page,i,value)
     act(page,'check')
     assert state(page)['solved'][g]
-    assert page.locator('.symbol-slot.correct').count()==len(ANSWERS[g])
-    assert page.locator('.answer-mark').all_text_contents()==['✓']*len(ANSWERS[g])
+    assert page.locator('.password-card.correct').count()==2
+    assert page.locator('.answer-mark').all_text_contents()==['✓']*2
     assert page.locator('[data-layer="door"]').count()==0
 def to_roof(page,wood=False):
     act(page,'start'); act(page,'continue'); solve(page,0);act(page,'continue')
@@ -75,21 +79,28 @@ def main():
         act(page,'sound');assert page.evaluate("localStorage.getItem('adventure.settings.sound')")=='false'
         act(page,'start');act(page,'continue');scene(page,'gate1')
         act(page,'check');assert state(page)['solved']==[False]*3
-        enter(page,0,'1');enter(page,1,'4');act(page,'check')
-        assert page.locator('[data-answer="1"]').get_attribute('data-value')=='4'
-        assert page.locator('[data-answer="1"].correct .answer-mark').inner_text()=='✓'
-        assert page.locator('[data-answer="0"].wrong .answer-mark').inner_text()=='×'
+        enter(page,0,'1');enter(page,1,'0');act(page,'check')
+        assert page.locator('[data-answer="1"]').get_attribute('data-value')=='0'
+        assert page.locator('.password-card').nth(1).locator('.answer-mark').inner_text()=='✓'
+        assert page.locator('.password-card').nth(0).locator('.answer-mark').inner_text()=='×'
         assert page.locator('.symbol-key .code-symbol').count()==10
+        assert page.locator('.symbol-key .symbol-digit').all_text_contents()==list('0123456789')
         page.reload();ready(page);scene(page,'gate1');assert page.locator('[data-answer="0"]').get_attribute('data-value')=='1'
-        assert page.locator('[data-answer="1"].correct').count()==1
+        assert page.locator('.password-card.correct').count()==1
         assert page.locator('.feedback img').count()>0
         page.screenshot(path=str(args.output/'symbol-feedback.png'),full_page=True)
-        page.locator('.hint-button').first.click();assert page.locator('.crossed').count()==0
-        page.locator('.count-dot').first.click();assert page.locator('.crossed').count()==1;act(page,'close')
+        before_passwords=state(page)['passwords']
+        act(page,'review-questions');page.locator('dialog [data-digit="1"]').click();act(page,'check-question')
+        assert page.locator('.review-feedback.wrong').count()==1
+        act(page,'clear-answer');page.locator('dialog [data-digit="0"]').click();act(page,'check-question')
+        assert page.locator('.review-feedback.correct').count()==1
+        assert state(page)['passwords']==before_passwords
+        assert state(page)['solved']==[False]*3
+        act(page,'close')
         solve(page,0);page.reload();ready(page);scene(page,'gate1');assert page.locator('[data-action="continue"]').count()==1
         act(page,'continue');act(page,'continue');solve(page,1);act(page,'continue');act(page,'upstairs');solve(page,2);act(page,'continue');act(page,'open-chest');act(page,'continue');act(page,'go-home');scene(page,'ordinary')
         page.screenshot(path=str(args.output/'ordinary.png'),full_page=True)
-        record('symbol input, green check/red cross, ordinary route muted, 20 answers, valid zero, correction retention, refresh, persistent rewards, manual subtraction dots')
+        record('two extrema passwords, numeric badges, green/red feedback, optional single-question review, muted ordinary route, valid zero and refresh')
         act(page,'replay');act(page,'yes-replay');scene(page,'cover');assert state(page)['code']==CODE
         assert page.evaluate("localStorage.getItem('moonCaveV3Save')")=='keep'
         assert page.evaluate("localStorage.getItem('adventure.story-02.state')")=='keep02'
@@ -113,14 +124,16 @@ def main():
         assert printing.locator('.code-legend').count()==3
         assert printing.locator('.legend-cell b').all_text_contents()==list('0123456789')*3
         assert printing.locator('.code-legend .code-symbol').count()==30
-        dims=printing.locator('.answer-box').first.evaluate('(e)=>[e.offsetWidth,e.offsetHeight]');assert all(abs(v-28*96/25.4)<1 for v in dims)
+        dims=printing.locator('.answer-box').first.evaluate('(e)=>[e.offsetWidth,e.offsetHeight]');assert all(abs(v-mm*96/25.4)<1 for v,mm in zip(dims,[86,23]))
+        assert printing.locator('.paper-password-answer').all_text_contents()==['']*6
         assert state(page)==before
         printing.pdf(path=str(args.output/'generated-print.pdf'),prefer_css_page_size=True,print_background=True)
         for i in range(3):printing.locator('.paper').nth(i).screenshot(path=str(args.output/f'paper-{i+1}.png'))
         printing.goto(url+'print.html?code='+CODE+'&mode=answers');ready(printing)
         assert printing.locator('.answer-box').all_text_contents()==list(''.join(ANSWERS))
+        assert printing.locator('.paper-password-answer').all_text_contents()==[v for row in PASSWORDS for v in row]
         assert state(page)==before
-        record('three A4 sheets, 28 mm empty boxes, per-page code, separate answer page, printing does not alter saved play')
+        record('three A4 sheets, unsegmented wide answer areas, max/min summary, separate answer page, printing does not alter saved play')
         page.locator('.packet-tools summary').click();act(page,'change');page.locator('dialog input[name=code]').fill('another123');act(page,'use-code')
         assert state(page)['code']==CODE;act(page,'cancel');assert state(page)['code']==CODE
         act(page,'change');page.locator('dialog input[name=code]').fill('another123');act(page,'use-code');act(page,'yes-change');assert state(page)['code']=='another123'
@@ -138,7 +151,7 @@ def main():
         no_store=browser.new_context();no_store.add_init_script("Object.defineProperty(window,'localStorage',{get(){throw new Error('blocked')}})")
         fallback=no_store.new_page();fallback.goto(url+'?code='+CODE);ready(fallback);assert fallback.locator('#storage-note img').count()>0
         act(fallback,'start');act(fallback,'continue')
-        for i,d in enumerate(ANSWERS[0]):enter(fallback,i,d)
+        for i,d in enumerate(PASSWORDS[0]):enter(fallback,i,d)
         act(fallback,'check');assert fallback.locator('[data-action="continue"]').count()==1
         no_store.close();record('blocked storage retains a playable in-memory session and visible reminder')
         assert not errors,errors;assert not missing,missing

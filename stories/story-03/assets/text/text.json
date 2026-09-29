@@ -309,47 +309,314 @@
       ]
     },
     "paper-instruction": {
-      "text": "算出數字寫進格子，再查表找圖案。",
+      "text": "先算完所有題目，再找最大和最小的答案。",
       "parts": [
         {
           "src": "paper-instruction-0.png",
-          "text": "算出數字寫進",
+          "text": "先算完所有題",
           "width": 1752,
           "height": 214
         },
         {
           "src": "paper-instruction-1.png",
-          "text": "格子，",
-          "width": 888,
+          "text": "目，再找最大",
+          "width": 1752,
           "height": 214
         },
         {
           "src": "paper-instruction-2.png",
-          "text": "再查表找圖案。",
+          "text": "和最小的答案。",
           "width": 2040,
           "height": 214
         }
       ]
     },
     "paper-order": {
-      "text": "每題靠左寫，一格一個數字，多的格子留白。",
+      "text": "每題寫完整答案，不用補零。",
       "parts": [
         {
           "src": "paper-order-0.png",
-          "text": "每題靠左寫，",
+          "text": "每題寫完整答",
           "width": 1752,
           "height": 214
         },
         {
           "src": "paper-order-1.png",
-          "text": "一格一個數字，",
+          "text": "案，不用補零。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "maximum-answer": {
+      "text": "最大的答案",
+      "parts": [
+        {
+          "src": "maximum-answer-0.png",
+          "text": "最大的答案",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "minimum-answer": {
+      "text": "最小的答案",
+      "parts": [
+        {
+          "src": "minimum-answer-0.png",
+          "text": "最小的答案",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "password-help": {
+      "text": "找出這張紙最大和最小的答案。點選一組，再依序點圖案，不用補零。",
+      "parts": [
+        {
+          "src": "password-help-0.png",
+          "text": "找出這張紙最",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-help-1.png",
+          "text": "大和最小的答",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-help-2.png",
+          "text": "案。點選一組，",
           "width": 2040,
           "height": 214
         },
         {
-          "src": "paper-order-2.png",
-          "text": "多的格子留白。",
+          "src": "password-help-3.png",
+          "text": "再依序點圖案，",
           "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "password-help-4.png",
+          "text": "不用補零。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "tap-symbols": {
+      "text": "點圖案輸入",
+      "parts": [
+        {
+          "src": "tap-symbols-0.png",
+          "text": "點圖案輸入",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "password-empty": {
+      "text": "請填入最大和最小兩組答案。答案是零時，也要點零。",
+      "parts": [
+        {
+          "src": "password-empty-0.png",
+          "text": "請填入最大和",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-empty-1.png",
+          "text": "最小兩組答案。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "password-empty-2.png",
+          "text": "答案是零時，",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-empty-3.png",
+          "text": "也要點零。",
+          "width": 1464,
+          "height": 214
+        }
+      ]
+    },
+    "password-incorrect": {
+      "text": "再看看紅色那組。可以按逐題檢查，找出需要再算的題目。",
+      "parts": [
+        {
+          "src": "password-incorrect-0.png",
+          "text": "再看看紅色那",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-incorrect-1.png",
+          "text": "組。可以按逐",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-incorrect-2.png",
+          "text": "題檢查，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "password-incorrect-3.png",
+          "text": "找出需要再算",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "password-incorrect-4.png",
+          "text": "的題目。",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "entry-limit": {
+      "text": "先刪掉一個圖案，再輸入看看。",
+      "parts": [
+        {
+          "src": "entry-limit-0.png",
+          "text": "先刪掉一個圖",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "entry-limit-1.png",
+          "text": "案，再輸入看",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "entry-limit-2.png",
+          "text": "看。",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "clear-answer": {
+      "text": "清空這組",
+      "parts": [
+        {
+          "src": "clear-answer-0.png",
+          "text": "清空這組",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "review-questions": {
+      "text": "逐題檢查",
+      "parts": [
+        {
+          "src": "review-questions-0.png",
+          "text": "逐題檢查",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "review-title": {
+      "text": "一起檢查紙上的答案",
+      "parts": [
+        {
+          "src": "review-title-0.png",
+          "text": "一起檢查紙上",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "review-title-1.png",
+          "text": "的答案",
+          "width": 888,
+          "height": 214
+        }
+      ]
+    },
+    "review-help": {
+      "text": "選一題，輸入紙上的答案，就能檢查。不用全部輸入。",
+      "parts": [
+        {
+          "src": "review-help-0.png",
+          "text": "選一題，",
+          "width": 1176,
+          "height": 214
+        },
+        {
+          "src": "review-help-1.png",
+          "text": "輸入紙上的答",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "review-help-2.png",
+          "text": "案，就能檢查。",
+          "width": 2040,
+          "height": 214
+        },
+        {
+          "src": "review-help-3.png",
+          "text": "不用全部輸入。",
+          "width": 2040,
+          "height": 214
+        }
+      ]
+    },
+    "question-number": {
+      "text": "題號",
+      "parts": [
+        {
+          "src": "question-number-0.png",
+          "text": "題號",
+          "width": 600,
+          "height": 214
+        }
+      ]
+    },
+    "check-question": {
+      "text": "檢查這題",
+      "parts": [
+        {
+          "src": "check-question-0.png",
+          "text": "檢查這題",
+          "width": 1176,
+          "height": 214
+        }
+      ]
+    },
+    "review-correct": {
+      "text": "這題算對了！",
+      "parts": [
+        {
+          "src": "review-correct-0.png",
+          "text": "這題算對了！",
+          "width": 1752,
+          "height": 214
+        }
+      ]
+    },
+    "review-incorrect": {
+      "text": "再算一次這題看看。",
+      "parts": [
+        {
+          "src": "review-incorrect-0.png",
+          "text": "再算一次這題",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "review-incorrect-1.png",
+          "text": "看看。",
+          "width": 888,
           "height": 214
         }
       ]
@@ -904,36 +1171,36 @@
       ]
     },
     "gate1-line": {
-      "text": "先算完第一張紙，再把六個答案依序換成圖案。",
+      "text": "算完第一張紙，再找最大的答案和最小的答案。",
       "parts": [
         {
           "src": "gate1-line-0.png",
-          "text": "先算完第一張",
-          "width": 1752,
+          "text": "算完第一張紙，",
+          "width": 2040,
           "height": 214
         },
         {
           "src": "gate1-line-1.png",
-          "text": "紙，再把六個",
+          "text": "再找最大的答",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate1-line-2.png",
-          "text": "答案依序換成",
+          "text": "案和最小的答",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate1-line-3.png",
-          "text": "圖案。",
-          "width": 888,
+          "text": "案。",
+          "width": 600,
           "height": 214
         }
       ]
     },
     "gate2-line": {
-      "text": "螢火蟲照亮通道。第二張紙的七個答案，換成圖案就能開門。",
+      "text": "螢火蟲照亮通道。找出第二張紙最大和最小的答案吧！",
       "parts": [
         {
           "src": "gate2-line-0.png",
@@ -943,61 +1210,55 @@
         },
         {
           "src": "gate2-line-1.png",
-          "text": "道。第二張紙",
+          "text": "道。找出第二",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate2-line-2.png",
-          "text": "的七個答案，",
+          "text": "張紙最大和最",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate2-line-3.png",
-          "text": "換成圖案就能",
+          "text": "小的答案吧！",
           "width": 1752,
-          "height": 214
-        },
-        {
-          "src": "gate2-line-4.png",
-          "text": "開門。",
-          "width": 888,
           "height": 214
         }
       ]
     },
     "gate3-line": {
-      "text": "最後一道門就在眼前。完成第三張紙，一起找到星光寶箱。",
+      "text": "最後一道門！找出第三張紙最大和最小的答案，就能找到寶箱。",
       "parts": [
         {
           "src": "gate3-line-0.png",
-          "text": "最後一道門就",
+          "text": "最後一道門！",
           "width": 1752,
           "height": 214
         },
         {
           "src": "gate3-line-1.png",
-          "text": "在眼前。",
-          "width": 1176,
-          "height": 214
-        },
-        {
-          "src": "gate3-line-2.png",
-          "text": "完成第三張紙，",
-          "width": 2040,
-          "height": 214
-        },
-        {
-          "src": "gate3-line-3.png",
-          "text": "一起找到星光",
+          "text": "找出第三張紙",
           "width": 1752,
           "height": 214
         },
         {
-          "src": "gate3-line-4.png",
-          "text": "寶箱。",
+          "src": "gate3-line-2.png",
+          "text": "最大和最小的",
+          "width": 1752,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-3.png",
+          "text": "答案，",
           "width": 888,
+          "height": 214
+        },
+        {
+          "src": "gate3-line-4.png",
+          "text": "就能找到寶箱。",
+          "width": 2040,
           "height": 214
         }
       ]
@@ -1181,12 +1442,12 @@
       ]
     },
     "erase": {
-      "text": "清除這格",
+      "text": "刪掉最後一個",
       "parts": [
         {
           "src": "erase-0.png",
-          "text": "清除這格",
-          "width": 1176,
+          "text": "刪掉最後一個",
+          "width": 1752,
           "height": 214
         }
       ]

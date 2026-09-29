@@ -56,3 +56,11 @@ export function checkAnswers(worksheet, gate, entries) {
 }
 export const newCode = randomCode;
 export const answerCapacity = gate => gate.answerDigits || 1;
+// Unlocking is independent of the frozen question generator.
+export function gatePasswords(worksheet, gate) {
+  const values=worksheet.gates[gate].questions.map(resultOf);
+  return [String(Math.max(...values)),String(Math.min(...values))];
+}
+export function checkPasswords(worksheet, gate, entries) {
+  return gatePasswords(worksheet,gate).map((expected,i)=>entries[i]===expected);
+}
