@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes, viewport-fit=cover">
   <meta name="theme-color" content="#f5eddc">
-  <meta name="description" content="跟著阿通，一起走進故事裡。選一本冒險繪本，仔細觀察，發現藏在畫面中的祕密。">
+  <meta name="description" content="跟著阿通，選國文、數學或英文冒險，讀故事、做練習，發現藏在畫面中的祕密。">
   <title>阿通的冒險世界</title>
   <style>
     :root {
@@ -29,6 +29,23 @@
     h1 img { width: min(100%, 42rem); margin: auto; }
     .welcome p { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 12px; margin: 0; }
     .welcome p img { width: auto; max-width: 100%; height: 38px; object-fit: contain; }
+    .subject-nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 28px 0 48px; }
+    .subject-entry { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; min-height: 156px; padding: 22px 12px; border: 2px solid #bacab5; border-radius: 22px; background: #e9f1e1; text-decoration: none; color: #284c3e; touch-action: manipulation; }
+    .subject-entry[data-subject="math"] { background: #fff0c9; border-color: #d8c18c; color: #6b4b20; }
+    .subject-entry[data-subject="english"] { background: #e6eff7; border-color: #b2c8dc; color: #284b65; }
+    .subject-entry svg { width: 46px; height: 46px; }
+    .subject-entry .text-image { width: min(100%, 122px); }
+    .subject-entry:active { transform: translateY(2px); }
+    .subject-section { margin-top: 42px; scroll-margin-top: 20px; }
+    .subject-heading { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 24px; margin-bottom: 24px; }
+    .subject-heading h2 { width: auto; }
+    .subject-heading h2 img { width: 132px; }
+    .subject-heading p { margin: 0; }
+    .subject-heading p img { width: min(100%, 330px); }
+    .subject-return { display: inline-flex; min-height: 56px; align-items: center; justify-content: center; margin-top: 20px; padding: 12px 18px; border: 1px solid #a7b89c; border-radius: 14px; background: #e9f1e1; touch-action: manipulation; }
+    .subject-return img { width: 156px; }
+    .empty-subject { display: grid; justify-items: center; gap: 16px; padding: 38px 24px; border: 2px dashed #b2c8dc; border-radius: 22px; background: #eef4f9; }
+    .empty-subject img { width: min(100%, 340px); }
     .story-card {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -96,6 +113,10 @@
       .story-info { padding: 22px 18px 26px; }
       .start { min-height: 68px; font-size: 26px; }
       .welcome p img { height: 32px; }
+      .subject-nav { gap: 8px; margin-bottom: 30px; }
+      .subject-entry { min-height: 128px; padding: 16px 8px; border-radius: 16px; }
+      .subject-entry svg { width: 36px; height: 36px; }
+      .subject-heading { gap: 12px; }
     }
   </style>
 </head>
@@ -109,8 +130,24 @@
         </svg>
       </span>
       <h1><img class="text-image" src="./assets/hub-text/world-title.png" alt="阿通的冒險世界" width="2040" height="207"></h1>
-      <p><img class="text-image" src="./assets/hub-text/welcome-first.png" alt="選一本故事，" width="1752" height="207"><img class="text-image" src="./assets/hub-text/welcome-second.png" alt="一起出發吧！" width="1752" height="207"></p>
+      <p><img class="text-image" src="./assets/hub-text/subject-help-first.png" alt="今天想學什麼？"><img class="text-image" src="./assets/hub-text/subject-help-second.png" alt="選一個入口吧！"></p>
     </header>
+    <nav class="subject-nav" id="subjects" aria-label="選擇科目">
+      <a class="subject-entry" data-subject="chinese" href="#chinese">
+        <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"><path d="M24 11C17 6 9 7 4 9v30c7-2 14-2 20 2 6-4 13-4 20-2V9c-5-2-13-3-20 2Z"/><path d="M24 11v30M10 16l8 1M10 24l8 1M30 17l8-1M30 25l8-1"/></svg>
+        <img class="text-image" src="./assets/hub-text/subject-chinese.png" alt="國文">
+      </a>
+      <a class="subject-entry" data-subject="math" href="#math">
+        <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><path d="M8 14h14M15 7v14M31 10l10 10M41 10L31 20M8 34h14M29 31h14M29 38h14"/></svg>
+        <img class="text-image" src="./assets/hub-text/subject-math.png" alt="數學">
+      </a>
+      <a class="subject-entry" data-subject="english" href="#english">
+        <svg aria-hidden="true" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M7 35 15 9l8 26M10 26h10M29 10v25h8c10 0 10-12 0-12h-8M29 10h7c9 0 9 13 0 13"/></svg>
+        <img class="text-image" src="./assets/hub-text/subject-english.png" alt="英文">
+      </a>
+    </nav>
+    <section class="subject-section" id="chinese" aria-labelledby="chinese-title">
+      <header class="subject-heading"><h2 id="chinese-title"><img class="text-image" src="./assets/hub-text/subject-chinese.png" alt="國文"></h2><p><img class="text-image" src="./assets/hub-text/chinese-caption.png" alt="讀故事，練習國語。"></p></header>
     <article class="story-card" data-story="moon-cave" aria-labelledby="moon-cave-title">
       <a class="cover-link" href="./stories/moon-cave/" aria-label="進入月光洞的祕密">
         <img src="./assets/moon-cave-cover.webp" width="1055" height="1491" alt="月光照進古老洞穴，石階、蜘蛛網與寶箱藏在其中。" fetchpriority="high">
@@ -133,6 +170,10 @@
         <a class="start" href="./stories/story-02/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
+      <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>
+    </section>
+    <section class="subject-section" id="math" aria-labelledby="math-title">
+      <header class="subject-heading"><h2 id="math-title"><img class="text-image" src="./assets/hub-text/subject-math.png" alt="數學"></h2><p><img class="text-image" src="./assets/hub-text/math-caption.png" alt="算一算，解開謎題。"></p></header>
     <article class="story-card" data-story="story-03" aria-labelledby="story-03-title">
       <a class="cover-link" href="./stories/story-03/" aria-label="進入阿通與星光寶箱">
         <div class="hub-stage">
@@ -148,6 +189,13 @@
         <a class="start" href="./stories/story-03/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
+      <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>
+    </section>
+    <section class="subject-section" id="english" aria-labelledby="english-title">
+      <header class="subject-heading"><h2 id="english-title"><img class="text-image" src="./assets/hub-text/subject-english.png" alt="英文"></h2></header>
+      <div class="empty-subject"><img class="text-image" src="./assets/hub-text/english-empty-first.png" alt="英文冒險準備中。"><img class="text-image" src="./assets/hub-text/english-empty-second.png" alt="先選其他故事吧！"></div>
+      <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>
+    </section>
   </main>
 </body>
 </html>

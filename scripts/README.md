@@ -30,6 +30,14 @@ python scripts/render_story_text.py --font "/private/path/BpmfGenRyuMin-H.ttf"
 
 ## Story 03 可列印練習紙
 
+首頁的科目入口使用獨立 `assets/hub-text/subject-text.json`，避免新增文字時連帶重算既有故事文字圖的共同高度：
+
+```sh
+python scripts/render_zhuyin.py --font /private/path/BpmfGenRyuMin-H.ttf --manifest assets/hub-text/subject-text.json
+```
+
+只會更新這份 manifest 的科目標籤與說明；原字型仍留在本機。
+
 另有 Story 03 列印檔產生工具 `build_story03_worksheets.py`，從題卷 JSON 輸出三頁 A4 練習紙、獨立解答及答案格座標。中文仍使用本機指定字型渲染，PDF 不嵌入字型；重建方式與驗證見 [列印說明](../stories/story-03/worksheets/README.md)。
 
 ## Story 02 原創合成音訊
