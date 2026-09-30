@@ -14,6 +14,7 @@
 - Story 02 入口：[陌生山路的冒險](https://mansonsick.github.io/Moon-cave/stories/story-02/)；首頁第二張故事卡使用不破梗的開場名稱。
 - Story 03 入口：`stories/story-03/`，首頁第三張卡《阿通與星光寶箱》。
 - 平台入口：root `index.html`；每本故事保留獨立目錄。
+- 首頁以國文、數學、英文三個入口分組；國文先收錄兩本閱讀冒險、數學收錄第三本，英文在故事就緒前顯示準備中。科目是分類，不依日期鎖定遊玩。
 - 部署方式：GitHub Pages，`main` 分支、`/(root)`。
 
 以上路徑已於 2026-09-28 正式生效。[PR #1](https://github.com/mansonsick/Moon-cave/pull/1) 已依使用者指示合併，[GitHub Pages 部署成功](https://github.com/mansonsick/Moon-cave/actions/runs/36401343293)；root 提供冒險首頁，《月光洞》v3 保留在自己的故事目錄。

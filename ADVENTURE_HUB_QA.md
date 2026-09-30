@@ -87,3 +87,12 @@ Chromium 自動化中，使用原生模擬觸控拖曳、進入結局並重新�
 - 原 v3 的「拖曳 → 結局 → 重新整理」觸控模擬限制仍存在，沒有藉發布修改玩法；實體 Android／iPad 及雙指手勢仍待使用者驗收。
 
 本機驗證輸出：`hub-review/release-20260928/test-results.json`；正式網址驗證輸出及截圖：`hub-review/release-20260928-live/`（位於本機 repository 的同層資料夾，未加入公開 repository）。
+## 2026-09-30 科目入口
+
+首頁以「國文、數學、英文」三個大入口跳至同頁分類，無 JavaScript 或額外存檔。國文收錄兩本既有閱讀冒險，數學收錄第三本；英文清楚標示準備中，不製造不存在的故事連結。分類內可重新選科目，保留全部既有故事卡及直達路徑。
+
+`python tests/subject_hub_test.py` 通過：390／820／1180 px 觸控、三個分類與返回、三本連結、關閉 JavaScript 仍可使用入口、無橫向溢出／字型下載／破梗，首頁不讀寫含損壞資料的既有存檔。`python tests/story_03_navigation_test.py` 通過原故事選單／恢復／相機退出。平板直向截圖已目視檢查；實體觸控仍待使用者回測。
+
+新增科目文字採指定私有字型本機渲染，使用獨立 `subject-text.json`；原故事程式與既有 PNG 未改。
+
+`python tests/adventure_hub_test.py --only hub --output ../hub-review/subject-hub-legacy` 的 preservation、responsive-navigation、legacy-storage 三組通過：五種尺寸、兩本原故事往返、舊根入口存檔能從月光洞子路徑延續。

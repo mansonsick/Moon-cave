@@ -275,15 +275,15 @@ def hub_and_legacy_storage(browser, base, out):
         font_requests = []
         page.on('request', lambda r: font_requests.append(r.url) if re.search(r'\.(ttf|otf|woff2?)(?:\?|$)', r.url) else None)
         page.goto(base + '/Moon-cave/')
-        page.locator('[data-story="story-02"]').scroll_into_view_if_needed()
+        for card in page.locator('.story-card').all(): card.scroll_into_view_if_needed()
         page.wait_for_function('Array.from(document.images).every(i => i.complete && i.naturalWidth > 0)')
         page.evaluate('Promise.all(Array.from(document.images, image => image.decode()))')
         page.evaluate('scrollTo(0,0)')
         assert page.title() == '阿通的冒險世界'
-        assert page.locator('.text-image').count() == 15
+        assert page.locator('.subject-entry .text-image').count() == 3
         assert page.get_by_role('heading', name='阿通的冒險世界').is_visible()
-        assert page.get_by_role('link', name='開始冒險', exact=False).count() == 2
-        assert page.locator('article').count() == 2
+        assert page.get_by_role('link', name='開始冒險', exact=False).count() == 3
+        assert page.locator('article').count() == 3
         assert '虎姑婆' not in page.content(), 'Hub must not reveal the identity before the story clues'
         assert page.locator('[data-story="moon-cave"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1055')
         assert page.locator('[data-story="story-02"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1672')
@@ -317,7 +317,7 @@ def hub_and_legacy_storage(browser, base, out):
         assert stored(page) == before
         assert not font_requests, 'No raw font should be served to the browser'
         context.close()
-    record('responsive-navigation', 'Two stacked story cards at 5 portrait/landscape/phone sizes; both covers and CTAs enter the correct story and return; Zhuyin, no spoilers, no storage changes or overflow.')
+    record('responsive-navigation', 'Three story cards with subject entries at 5 portrait/landscape/phone sizes; existing story covers and CTAs enter the correct story and return; Zhuyin, no spoilers, no storage changes or overflow.')
 
     context = browser.new_context(viewport={'width': 820, 'height': 1180}, has_touch=True)
     page = context.new_page()

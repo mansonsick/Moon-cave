@@ -1,0 +1,57 @@
+{
+  "font": "BpmfGenRyuMin-H.ttf",
+  "font_size": 192,
+  "padding": 12,
+  "labels": [
+    {
+      "id": "subject-chinese",
+      "text": "國文",
+      "color": "#284c3e"
+    },
+    {
+      "id": "subject-math",
+      "text": "數學",
+      "color": "#6b4b20"
+    },
+    {
+      "id": "subject-english",
+      "text": "英文",
+      "color": "#284b65"
+    },
+    {
+      "id": "subject-help-first",
+      "text": "今天想學什麼？",
+      "color": "#665f50"
+    },
+    {
+      "id": "subject-help-second",
+      "text": "選一個入口吧！",
+      "color": "#665f50"
+    },
+    {
+      "id": "subject-back",
+      "text": "重新選科目",
+      "color": "#284c3e"
+    },
+    {
+      "id": "chinese-caption",
+      "text": "讀故事，練習國語。",
+      "color": "#645a49"
+    },
+    {
+      "id": "math-caption",
+      "text": "算一算，解開謎題。",
+      "color": "#645a49"
+    },
+    {
+      "id": "english-empty-first",
+      "text": "英文冒險準備中。",
+      "color": "#645a49"
+    },
+    {
+      "id": "english-empty-second",
+      "text": "先選其他故事吧！",
+      "color": "#645a49"
+    }
+  ]
+}
