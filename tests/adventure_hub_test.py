@@ -129,7 +129,8 @@ def key_challenge(page):
 def finish_after_touch_reload(page):
     # In baseline Chromium emulation, the first tap after raw CDP dragging +
     # reload can produce touch events without a click. Record it, do not hide
-    # it with a blanket retry, and require the relocated version to match.
+    # it with a blanket retry. Counts are diagnostic: the same untouched v3
+    # sometimes needs one tap and sometimes two in raw CDP touch emulation.
     action(page, "go('final')")
     page.wait_for_timeout(250)
     taps = 1
@@ -282,8 +283,8 @@ def hub_and_legacy_storage(browser, base, out):
         assert page.title() == '阿通的冒險世界'
         assert page.locator('.subject-entry .text-image').count() == 3
         assert page.get_by_role('heading', name='阿通的冒險世界').is_visible()
-        assert page.get_by_role('link', name='開始冒險', exact=False).count() == 3
-        assert page.locator('article').count() == 3
+        assert page.get_by_role('link', name='開始冒險', exact=False).count() == 4
+        assert page.locator('article').count() == 4
         assert '虎姑婆' not in page.content(), 'Hub must not reveal the identity before the story clues'
         assert page.locator('[data-story="moon-cave"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1055')
         assert page.locator('[data-story="story-02"] .cover-link img').evaluate('i => i.complete && i.naturalWidth === 1672')
@@ -317,7 +318,7 @@ def hub_and_legacy_storage(browser, base, out):
         assert stored(page) == before
         assert not font_requests, 'No raw font should be served to the browser'
         context.close()
-    record('responsive-navigation', 'Three story cards with subject entries at 5 portrait/landscape/phone sizes; existing story covers and CTAs enter the correct story and return; Zhuyin, no spoilers, no storage changes or overflow.')
+    record('responsive-navigation', 'Four story cards with subject entries at 5 portrait/landscape/phone sizes; existing story covers and CTAs enter the correct story and return; Zhuyin, no spoilers, no storage changes or overflow.')
 
     context = browser.new_context(viewport={'width': 820, 'height': 1180}, has_touch=True)
     page = context.new_page()
@@ -374,12 +375,13 @@ def main():
                 if args.only in ['all', 'relocated']:
                     after = story_regression(browser, base, '/Moon-cave/stories/moon-cave/', 'relocated-v3', out)
                 if args.only == 'all':
-                    assert before == after
-                    record('baseline-parity', 'The same complete UI journeys produce identical persisted state before and after relocation.')
+                    assert before['storage'] == after['storage']
+                    record('baseline-parity', 'The same complete UI journeys produce identical persisted state before and after relocation; raw CDP touch tap counts are recorded separately because emulation is variable.')
             except Exception:
-                failed_page = browser.contexts[-1].pages[-1]
-                failed_page.screenshot(path=str(out / 'failure.png'), full_page=True)
-                print('Failure state:', failed_page.evaluate('typeof state === "undefined" ? location.pathname : JSON.stringify(state)'), flush=True)
+                if browser.contexts and browser.contexts[-1].pages:
+                    failed_page = browser.contexts[-1].pages[-1]
+                    failed_page.screenshot(path=str(out / 'failure.png'), full_page=True)
+                    print('Failure state:', failed_page.evaluate('typeof state === "undefined" ? location.pathname : JSON.stringify(state)'), flush=True)
                 raise
             browser.close()
     finally:

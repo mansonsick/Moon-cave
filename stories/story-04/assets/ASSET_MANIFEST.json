@@ -1,0 +1,4428 @@
+{
+  "created": "2026-10-01",
+  "generatedImages": 37,
+  "practiceSVGs": 27,
+  "textLabels": 320,
+  "fixedSceneNotices": 4,
+  "fontFilesPublished": false,
+  "generatedOriginalsPreserved": true,
+  "promptSets": [
+    "assets/images/PROMPTS.json",
+    "assets/images/VISUAL_FIX_PROMPTS.json"
+  ],
+  "assets": [
+    {
+      "path": "assets/images/anchor.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-delivering.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-gardening.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-leaf.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-looking.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-reading.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/atong-walking.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/bear-room.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/bear.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/big-tree.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/bird.png",
+      "width": 1374,
+      "height": 1145,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/bridge-fork.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-above.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-arrive-garden.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-below.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-bird-mail.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-garden-together.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-place-letter.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-rabbit-door.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-read-then-place.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-take-letter.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-who-holds-what.png",
+      "width": 1671,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/garden.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/leaf-path.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/mouse-postman.png",
+      "width": 1154,
+      "height": 1363,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/old-mailbox-open.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/old-mailbox.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/postoffice-inside.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/postoffice-opening.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/postoffice-outside.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/badge-painted.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/envelope-painted.png",
+      "width": 1900,
+      "height": 828,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/note-paper.png",
+      "width": 1448,
+      "height": 1086,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/wood-card.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/rabbit-door.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/rabbit.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/squirrel-pointing.png",
+      "width": 1159,
+      "height": 1358,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/practice/badge.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/bird-above.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/bird.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/cookies.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/door.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/envelope.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/flower.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/leaf-marked.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/leaf.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/mailbag.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/moon-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/moon.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/mountain-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/mountain.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/mouth-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/mouth.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/placing.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/sun-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/sun.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/table-top.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/taking.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/tray-below.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/tree-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/tree.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/water-shape.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/water.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/practice/wood.svg",
+      "kind": "original code-native teaching picture or prop"
+    },
+    {
+      "path": "assets/text/adult-confirm-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/adult-confirm-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/adult-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/adult-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/adult-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/adult-help-3.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/all-mode-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/all-mode-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answer-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answer-title-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answer-warning-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answer-warning-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answer-warning-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/answers-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/apply-code-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/apply-code-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/atong-name-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/back-office-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bad-code-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bad-code-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bad-code-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/badge-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bag-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bear-note-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bear-note-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-break-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-break-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-break-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-note-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-note-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bird-note-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/break-done-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/bridge-road-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/cancel-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/card-picture-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/card-read-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/card-shape-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/change-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/change-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/change-help-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/check-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/choose-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/choose-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/clap-break-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/clap-break-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/code-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/code-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/code-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/code-help-2.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/continue-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/correct-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/delivered-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/door-tray-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-0-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-2-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-line-3-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-title-0.png",
+      "width": 1222,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-title-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E01-title-2.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-0-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-2-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-2-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-line-3-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E02-title-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-0-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-2-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-4-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-4-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-line-4-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-title-0.png",
+      "width": 1222,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-title-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/E03-title-2.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/empty-answer-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/empty-answer-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/ending-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/ending-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/finish-practice-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/got-leaf-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/got-leaf-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-0-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-2-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-line-3-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/H01-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hint-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/home-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-chapter-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-chapter-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-first-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-first-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-second-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-second-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/hub-second-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/into-office-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/leaf-name-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-0-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-0-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-0-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-1-help-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-1-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-1-help-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-1-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-2-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-2-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-2-help-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-2-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-3-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-3-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-3-help-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-3-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-4-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-4-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-4-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-4-help-3.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-4-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-5-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-5-help-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0-5-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-0-help-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-0-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-0-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-0-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-1-help-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-1-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-1-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-1-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-2-help-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-2-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-2-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-3-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-3-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-3-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-4-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-4-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-4-help-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-4-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-5-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-5-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-1-5-word-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-0-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-0-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-0-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-0-help-3.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-0-word-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-1-help-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-1-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-1-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-1-help-3.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-1-word-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-2-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-2-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-2-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-2-help-3.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-2-word-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-3-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-3-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-3-help-2.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-3-word-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-3.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-4.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-help-5.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-2-4-word-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-done-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-done-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-help-2.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-stages-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-stages-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-stages-2.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-unfinished-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-unfinished-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/learn-unfinished-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/letters-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/load-error-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/load-error-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/load-error-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/loading-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/menu-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/mountain-road-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/name-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/nest-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/new-paper-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/next-card-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/next-question-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/no-printer-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/no-printer-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/no-printer-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/not-all-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/not-all-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/not-all-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/not-all-3.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/observe-box-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/observe-box-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/optional-break-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/optional-break-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-help-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-help-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-warning-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/paper-warning-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/passage-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/passage-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/practice-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/prepared-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/previous-card-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/print-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q01-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q02-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q03-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q04-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q05-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q06-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q07-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q08-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q09-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q10-prompt-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q11-prompt-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q12-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-hint-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q13-prompt-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-choice-0-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-choice-1-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-choice-2-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-passage-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-passage-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q14-prompt-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-choice-0-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-choice-1-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-choice-2-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-passage-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-passage-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-passage-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q15-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-choice-0-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-choice-1-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-choice-2-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-passage-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-passage-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q16-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-choice-0-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-choice-1-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-choice-2-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-passage-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-passage-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-passage-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q17-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-choice-0-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-choice-1-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-choice-2-0.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-passage-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-passage-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-passage-2.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-passage-3.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-passage-4.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q18-prompt-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-choice-0-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-choice-1-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-choice-2-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-passage-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-passage-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-passage-2.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-passage-3.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-passage-4.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q19-prompt-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-choice-0-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-choice-1-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-choice-2-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-hint-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-hint-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-hint-2.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-passage-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-passage-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-passage-2.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-passage-3.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-passage-4.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-prompt-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/Q20-prompt-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/replay-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/representative-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/representative-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/reread-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/reread-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/reread-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/reset-help-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/reset-help-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/resume-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/return-story-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/review-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/root-tray-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-1-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-2-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-line-3-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S01-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-0-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-1-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-2-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-line-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S02-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-0-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-1-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-2-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-line-3-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S03-title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-0-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-1-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-2-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-line-3-1.png",
+      "width": 2040,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S04-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-0-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-1-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-2-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-line-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S05-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-1-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-2-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-2-2.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-line-3-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S06-title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-0-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-1-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-2-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-line-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S07-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-2-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-line-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S08-title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-0-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-1-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-2-0.png",
+      "width": 2040,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-line-3-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S09-title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-0-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-1-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-2-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-line-3-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S10-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-0-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-0-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-1-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-2-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-line-3-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/S11-title-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sample-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sample-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/saved-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-bear-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-bird-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-secret-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-sign-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/secret-note-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/secret-note-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-1-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-1-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-2-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-2-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-3-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sheet-3-1.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sign-note-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/sign-note-1.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/squirrel-name-0.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/stage-ready-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/start-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/station-done-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/station-done-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/table-top-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/title-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/title-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/together-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/tree-basket-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/try-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/try-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/try-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/two-mode-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/two-mode-1.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/under-table-0.png",
+      "width": 600,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/visit-tree-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/walk-tree-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/word-cards-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/word-cards-1.png",
+      "width": 312,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/writing-0.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/writing-1.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-place-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-place-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-place-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-road-0.png",
+      "width": 1752,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-road-1.png",
+      "width": 1464,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/wrong-road-2.png",
+      "width": 888,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/yes-replay-0.png",
+      "width": 1176,
+      "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    }
+  ]
+}

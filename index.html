@@ -73,6 +73,12 @@
     .hub-stage .hub-background { width: 100%; height: 100%; max-height: none; object-fit: fill; }
     .hub-stage .hub-person { position: absolute; left: 37%; top: 21%; width: 26%; height: 65%; object-fit: contain; }
     .hub-stage .hub-squirrel { position: absolute; left: 66%; top: 58%; width: 13%; height: 28%; object-fit: contain; }
+    .story-card[data-story="story-04"] .hub-person { left: 16%; top: 20%; width: 26%; height: 74%; }
+    .story-card[data-story="story-04"] .hub-squirrel { left: 2%; top: 62%; width: 18%; height: 30%; }
+    .story-card[data-story="story-04"] .reading-hub-text { font-size: 24px; line-height: 1.7; }
+    .story-card[data-story="story-04"] h2.reading-hub-text { font-size: 30px; }
+    .story-card[data-story="story-04"] .chapter.reading-hub-text { font-size: 20px; }
+    .story-card[data-story="story-04"] .reading-hub-text img { display: inline; width: auto; height: 1.12em; max-width: 100%; vertical-align: middle; }
     .start {
       display: inline-flex;
       align-items: center;
@@ -168,6 +174,21 @@
         <h2 id="story-02-title"><img class="text-image" src="./assets/hub-text/story-02-title.png" alt="陌生山路的冒險" width="2040" height="207"></h2>
         <p class="description"><img class="text-image" src="./assets/hub-text/description-first.png" alt="跟著阿通和小松鼠，" width="2616" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-second.png" alt="觀察山屋，" width="1464" height="207"><img class="text-image" src="./assets/hub-text/story-02-description-third.png" alt="找出安全回家的路。" width="2616" height="207"></p>
         <a class="start" href="./stories/story-02/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="story-card" data-story="story-04" aria-labelledby="story-04-title">
+      <a class="cover-link" href="./stories/story-04/" aria-label="進入阿通與森林郵局">
+        <div class="hub-stage">
+          <img class="hub-background" src="./stories/story-04/assets/images/postoffice-opening.png" width="1672" height="941" alt="阿通和小松鼠走到森林郵局，準備幫朋友送信。" loading="lazy" decoding="async">
+          <img class="hub-person" src="./stories/story-04/assets/images/atong-walking.png" alt="" loading="lazy" decoding="async">
+          <img class="hub-squirrel" src="./stories/story-04/assets/images/squirrel-pointing.png" alt="" loading="lazy" decoding="async">
+        </div>
+      </a>
+      <div class="story-info">
+        <p class="chapter reading-hub-text" role="img" aria-label="阿通的第四場冒險"><img src="./stories/story-04/assets/text/hub-chapter-0.png" alt=""><img src="./stories/story-04/assets/text/hub-chapter-1.png" alt=""></p>
+        <h2 id="story-04-title" class="reading-hub-text" aria-label="阿通與森林郵局"><img src="./stories/story-04/assets/text/title-0.png" alt="阿通與森林"><img src="./stories/story-04/assets/text/title-1.png" alt="郵局"></h2>
+        <p class="description reading-hub-text"><span role="img" aria-label="看看圖，讀一讀，"><img src="./stories/story-04/assets/text/hub-first-0.png" alt=""><img src="./stories/story-04/assets/text/hub-first-1.png" alt=""></span><span role="img" aria-label="一起把信送到森林朋友手中。"><img src="./stories/story-04/assets/text/hub-second-0.png" alt=""><img src="./stories/story-04/assets/text/hub-second-1.png" alt=""><img src="./stories/story-04/assets/text/hub-second-2.png" alt=""></span></p>
+        <a class="start" href="./stories/story-04/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
       <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>

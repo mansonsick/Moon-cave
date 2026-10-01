@@ -1,0 +1,5094 @@
+{
+  "font": "Bpmf GenRyu Min H (local rendered images only)",
+  "fontSize": 192,
+  "contextReadings": {
+    "背": "ㄅㄟ",
+    "還": "ㄏㄞˊ",
+    "郵差": "ㄧㄡˊ ㄔㄞ",
+    "種子": "ㄓㄨㄥˇ ㄗˇ",
+    "種花": "ㄓㄨㄥˋ ㄏㄨㄚ"
+  },
+  "labels": {
+    "title": {
+      "text": "阿通與森林郵局",
+      "parts": [
+        {
+          "src": "title-0.png",
+          "text": "阿通與森林",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "title-1.png",
+          "text": "郵局",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "start": {
+      "text": "開始冒險",
+      "parts": [
+        {
+          "src": "start-0.png",
+          "text": "開始冒險",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "resume": {
+      "text": "繼續冒險",
+      "parts": [
+        {
+          "src": "resume-0.png",
+          "text": "繼續冒險",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "continue": {
+      "text": "繼續",
+      "parts": [
+        {
+          "src": "continue-0.png",
+          "text": "繼續",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "home": {
+      "text": "回首頁",
+      "parts": [
+        {
+          "src": "home-0.png",
+          "text": "回首頁",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "menu": {
+      "text": "回本書選單",
+      "parts": [
+        {
+          "src": "menu-0.png",
+          "text": "回本書選單",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "replay": {
+      "text": "再玩一次",
+      "parts": [
+        {
+          "src": "replay-0.png",
+          "text": "再玩一次",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "cancel": {
+      "text": "先不要",
+      "parts": [
+        {
+          "src": "cancel-0.png",
+          "text": "先不要",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "yes-replay": {
+      "text": "重新開始",
+      "parts": [
+        {
+          "src": "yes-replay-0.png",
+          "text": "重新開始",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "reset-help": {
+      "text": "只重新開始這一本故事。",
+      "parts": [
+        {
+          "src": "reset-help-0.png",
+          "text": "只重新開始",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "reset-help-1.png",
+          "text": "這一本故事。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "code": {
+      "text": "題卷碼",
+      "parts": [
+        {
+          "src": "code-0.png",
+          "text": "題卷碼",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "apply-code": {
+      "text": "使用這份題卷",
+      "parts": [
+        {
+          "src": "apply-code-0.png",
+          "text": "使用這份題",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "apply-code-1.png",
+          "text": "卷",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "new-paper": {
+      "text": "產生新題卷",
+      "parts": [
+        {
+          "src": "new-paper-0.png",
+          "text": "產生新題卷",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "paper": {
+      "text": "列印練習紙",
+      "parts": [
+        {
+          "src": "paper-0.png",
+          "text": "列印練習紙",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "answers": {
+      "text": "家長解答",
+      "parts": [
+        {
+          "src": "answers-0.png",
+          "text": "家長解答",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "print": {
+      "text": "列印",
+      "parts": [
+        {
+          "src": "print-0.png",
+          "text": "列印",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "code-help": {
+      "text": "紙本和平板要用相同的題卷碼。",
+      "parts": [
+        {
+          "src": "code-help-0.png",
+          "text": "紙本和平板",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "code-help-1.png",
+          "text": "要用相同的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "code-help-2.png",
+          "text": "題卷碼。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "bad-code": {
+      "text": "題卷碼不正確，請再看一次。",
+      "parts": [
+        {
+          "src": "bad-code-0.png",
+          "text": "題卷碼不正",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bad-code-1.png",
+          "text": "確，請再看",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bad-code-2.png",
+          "text": "一次。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "change-help": {
+      "text": "換題卷會重新開始這一本。",
+      "parts": [
+        {
+          "src": "change-help-0.png",
+          "text": "換題卷會重",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "change-help-1.png",
+          "text": "新開始這一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "change-help-2.png",
+          "text": "本。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "paper-help": {
+      "text": "先學圖卡，再完成紙本練習。",
+      "parts": [
+        {
+          "src": "paper-help-0.png",
+          "text": "先學圖卡，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "paper-help-1.png",
+          "text": "再完成紙本",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "paper-help-2.png",
+          "text": "練習。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "no-printer": {
+      "text": "沒有紙本，也能在平板練習。",
+      "parts": [
+        {
+          "src": "no-printer-0.png",
+          "text": "沒有紙本，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "no-printer-1.png",
+          "text": "也能在平板",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "no-printer-2.png",
+          "text": "練習。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn": {
+      "text": "一起學習",
+      "parts": [
+        {
+          "src": "learn-0.png",
+          "text": "一起學習",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "practice": {
+      "text": "練習看看",
+      "parts": [
+        {
+          "src": "practice-0.png",
+          "text": "練習看看",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "learn-help": {
+      "text": "大人陪孩子一起念，也看看圖。",
+      "parts": [
+        {
+          "src": "learn-help-0.png",
+          "text": "大人陪孩子",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-help-1.png",
+          "text": "一起念，也",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-help-2.png",
+          "text": "看看圖。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "next-card": {
+      "text": "下一張圖卡",
+      "parts": [
+        {
+          "src": "next-card-0.png",
+          "text": "下一張圖卡",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "previous-card": {
+      "text": "上一張圖卡",
+      "parts": [
+        {
+          "src": "previous-card-0.png",
+          "text": "上一張圖卡",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-done": {
+      "text": "學完了，來練習",
+      "parts": [
+        {
+          "src": "learn-done-0.png",
+          "text": "學完了，來",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-done-1.png",
+          "text": "練習",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "review": {
+      "text": "回看學習卡",
+      "parts": [
+        {
+          "src": "review-0.png",
+          "text": "回看學習卡",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "check": {
+      "text": "核對答案",
+      "parts": [
+        {
+          "src": "check-0.png",
+          "text": "核對答案",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "correct": {
+      "text": "答對了！",
+      "parts": [
+        {
+          "src": "correct-0.png",
+          "text": "答對了！",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "try": {
+      "text": "再看一次，也可以回學習卡。",
+      "parts": [
+        {
+          "src": "try-0.png",
+          "text": "再看一次，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "try-1.png",
+          "text": "也可以回學",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "try-2.png",
+          "text": "習卡。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "hint": {
+      "text": "看看提示",
+      "parts": [
+        {
+          "src": "hint-0.png",
+          "text": "看看提示",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "together": {
+      "text": "一起讀一讀",
+      "parts": [
+        {
+          "src": "together-0.png",
+          "text": "一起讀一讀",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "adult-confirm": {
+      "text": "大人確認共同完成",
+      "parts": [
+        {
+          "src": "adult-confirm-0.png",
+          "text": "大人確認共",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "adult-confirm-1.png",
+          "text": "同完成",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "adult-help": {
+      "text": "請大人陪孩子讀題、指圖，再確認完成。",
+      "parts": [
+        {
+          "src": "adult-help-0.png",
+          "text": "請大人陪孩",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "adult-help-1.png",
+          "text": "子讀題、指",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "adult-help-2.png",
+          "text": "圖，再確認",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "adult-help-3.png",
+          "text": "完成。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "station-done": {
+      "text": "這一站完成了！",
+      "parts": [
+        {
+          "src": "station-done-0.png",
+          "text": "這一站完成",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "station-done-1.png",
+          "text": "了！",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "representative": {
+      "text": "核對這兩題，再繼續送信。",
+      "parts": [
+        {
+          "src": "representative-0.png",
+          "text": "核對這兩題，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "representative-1.png",
+          "text": "再繼續送信。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "not-all": {
+      "text": "這裡核對兩題，其他紙本題請大人核對。",
+      "parts": [
+        {
+          "src": "not-all-0.png",
+          "text": "這裡核對兩",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "not-all-1.png",
+          "text": "題，其他紙",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "not-all-2.png",
+          "text": "本題請大人",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "not-all-3.png",
+          "text": "核對。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "all-mode": {
+      "text": "平板練習全部題目",
+      "parts": [
+        {
+          "src": "all-mode-0.png",
+          "text": "平板練習全",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "all-mode-1.png",
+          "text": "部題目",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "two-mode": {
+      "text": "核對紙本代表題",
+      "parts": [
+        {
+          "src": "two-mode-0.png",
+          "text": "核對紙本代",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "two-mode-1.png",
+          "text": "表題",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "next-question": {
+      "text": "下一題",
+      "parts": [
+        {
+          "src": "next-question-0.png",
+          "text": "下一題",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "finish-practice": {
+      "text": "完成練習",
+      "parts": [
+        {
+          "src": "finish-practice-0.png",
+          "text": "完成練習",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "bag": {
+      "text": "郵差包",
+      "parts": [
+        {
+          "src": "bag-0.png",
+          "text": "郵差包",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "leaf-name": {
+      "text": "金色葉片",
+      "parts": [
+        {
+          "src": "leaf-name-0.png",
+          "text": "金色葉片",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "badge": {
+      "text": "郵差徽章",
+      "parts": [
+        {
+          "src": "badge-0.png",
+          "text": "郵差徽章",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "letters": {
+      "text": "送信進度",
+      "parts": [
+        {
+          "src": "letters-0.png",
+          "text": "送信進度",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "got-leaf": {
+      "text": "阿通把葉片收好了！",
+      "parts": [
+        {
+          "src": "got-leaf-0.png",
+          "text": "阿通把葉片",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "got-leaf-1.png",
+          "text": "收好了！",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "delivered": {
+      "text": "信送到了！",
+      "parts": [
+        {
+          "src": "delivered-0.png",
+          "text": "信送到了！",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "wrong-place": {
+      "text": "再看看小紙，找出正確的位置。",
+      "parts": [
+        {
+          "src": "wrong-place-0.png",
+          "text": "再看看小紙，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "wrong-place-1.png",
+          "text": "找出正確的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "wrong-place-2.png",
+          "text": "位置。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "wrong-road": {
+      "text": "這裡是山邊。小兔在木橋那邊。",
+      "parts": [
+        {
+          "src": "wrong-road-0.png",
+          "text": "這裡是山邊。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "wrong-road-1.png",
+          "text": "小兔在木橋",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "wrong-road-2.png",
+          "text": "那邊。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "observe-box": {
+      "text": "箱上刻著一片葉。",
+      "parts": [
+        {
+          "src": "observe-box-0.png",
+          "text": "箱上刻著一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "observe-box-1.png",
+          "text": "片葉。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "into-office": {
+      "text": "走進郵局",
+      "parts": [
+        {
+          "src": "into-office-0.png",
+          "text": "走進郵局",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "prepared": {
+      "text": "準備好了",
+      "parts": [
+        {
+          "src": "prepared-0.png",
+          "text": "準備好了",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "mountain-road": {
+      "text": "往山邊走",
+      "parts": [
+        {
+          "src": "mountain-road-0.png",
+          "text": "往山邊走",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "bridge-road": {
+      "text": "往木橋走",
+      "parts": [
+        {
+          "src": "bridge-road-0.png",
+          "text": "往木橋走",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "door-tray": {
+      "text": "門口的信盤",
+      "parts": [
+        {
+          "src": "door-tray-0.png",
+          "text": "門口的信盤",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "tree-basket": {
+      "text": "樹下的籃子",
+      "parts": [
+        {
+          "src": "tree-basket-0.png",
+          "text": "樹下的籃子",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "table-top": {
+      "text": "桌上",
+      "parts": [
+        {
+          "src": "table-top-0.png",
+          "text": "桌上",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "under-table": {
+      "text": "桌下",
+      "parts": [
+        {
+          "src": "under-table-0.png",
+          "text": "桌下",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "walk-tree": {
+      "text": "往大樹走",
+      "parts": [
+        {
+          "src": "walk-tree-0.png",
+          "text": "往大樹走",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "root-tray": {
+      "text": "樹下的信盤",
+      "parts": [
+        {
+          "src": "root-tray-0.png",
+          "text": "樹下的信盤",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "nest": {
+      "text": "樹上的鳥巢",
+      "parts": [
+        {
+          "src": "nest-0.png",
+          "text": "樹上的鳥巢",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "back-office": {
+      "text": "回郵局",
+      "parts": [
+        {
+          "src": "back-office-0.png",
+          "text": "回郵局",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "visit-tree": {
+      "text": "到樹下看看",
+      "parts": [
+        {
+          "src": "visit-tree-0.png",
+          "text": "到樹下看看",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "ending": {
+      "text": "我們把話送到了！",
+      "parts": [
+        {
+          "src": "ending-0.png",
+          "text": "我們把話送",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "ending-1.png",
+          "text": "到了！",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "optional-break": {
+      "text": "休息一下，動一動。",
+      "parts": [
+        {
+          "src": "optional-break-0.png",
+          "text": "休息一下，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "optional-break-1.png",
+          "text": "動一動。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "bird-break": {
+      "text": "張開雙手，像小鳥飛一下。",
+      "parts": [
+        {
+          "src": "bird-break-0.png",
+          "text": "張開雙手，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bird-break-1.png",
+          "text": "像小鳥飛一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bird-break-2.png",
+          "text": "下。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "clap-break": {
+      "text": "拍手三下，再出發。",
+      "parts": [
+        {
+          "src": "clap-break-0.png",
+          "text": "拍手三下，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "clap-break-1.png",
+          "text": "再出發。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "break-done": {
+      "text": "休息好了",
+      "parts": [
+        {
+          "src": "break-done-0.png",
+          "text": "休息好了",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "paper-title": {
+      "text": "森林郵局探險紙",
+      "parts": [
+        {
+          "src": "paper-title-0.png",
+          "text": "森林郵局探",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "paper-title-1.png",
+          "text": "險紙",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "answer-title": {
+      "text": "森林郵局家長解答",
+      "parts": [
+        {
+          "src": "answer-title-0.png",
+          "text": "森林郵局家",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "answer-title-1.png",
+          "text": "長解答",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "choose-help": {
+      "text": "讀一讀，圈選一個答案。",
+      "parts": [
+        {
+          "src": "choose-help-0.png",
+          "text": "讀一讀，圈",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "choose-help-1.png",
+          "text": "選一個答案。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "name": {
+      "text": "姓名",
+      "parts": [
+        {
+          "src": "name-0.png",
+          "text": "姓名",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "passage-title": {
+      "text": "一起讀小段落",
+      "parts": [
+        {
+          "src": "passage-title-0.png",
+          "text": "一起讀小段",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "passage-title-1.png",
+          "text": "落",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "sheet-1": {
+      "text": "第一站：看圖認字",
+      "parts": [
+        {
+          "src": "sheet-1-0.png",
+          "text": "第一站：看",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "sheet-1-1.png",
+          "text": "圖認字",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "sheet-2": {
+      "text": "第二站：讀懂詞語",
+      "parts": [
+        {
+          "src": "sheet-2-0.png",
+          "text": "第二站：讀",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "sheet-2-1.png",
+          "text": "懂詞語",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "sheet-3": {
+      "text": "第三站：短句找線索",
+      "parts": [
+        {
+          "src": "sheet-3-0.png",
+          "text": "第三站：短",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "sheet-3-1.png",
+          "text": "句找線索",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "writing": {
+      "text": "想寫寫看，也可以練習。",
+      "parts": [
+        {
+          "src": "writing-0.png",
+          "text": "想寫寫看，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "writing-1.png",
+          "text": "也可以練習。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "card-picture": {
+      "text": "看看圖",
+      "parts": [
+        {
+          "src": "card-picture-0.png",
+          "text": "看看圖",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "card-shape": {
+      "text": "記住形狀",
+      "parts": [
+        {
+          "src": "card-shape-0.png",
+          "text": "記住形狀",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "card-read": {
+      "text": "讀一讀",
+      "parts": [
+        {
+          "src": "card-read-0.png",
+          "text": "讀一讀",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "word-cards": {
+      "text": "再看一次圖卡",
+      "parts": [
+        {
+          "src": "word-cards-0.png",
+          "text": "再看一次圖",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "word-cards-1.png",
+          "text": "卡",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-stages": {
+      "text": "先看圖，再讀詞，最後讀短句。",
+      "parts": [
+        {
+          "src": "learn-stages-0.png",
+          "text": "先看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-stages-1.png",
+          "text": "讀詞，最後",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-stages-2.png",
+          "text": "讀短句。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "paper-warning": {
+      "text": "練習紙不含解答。",
+      "parts": [
+        {
+          "src": "paper-warning-0.png",
+          "text": "練習紙不含",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "paper-warning-1.png",
+          "text": "解答。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "answer-warning": {
+      "text": "這份是大人核對用的解答。",
+      "parts": [
+        {
+          "src": "answer-warning-0.png",
+          "text": "這份是大人",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "answer-warning-1.png",
+          "text": "核對用的解",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "answer-warning-2.png",
+          "text": "答。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "load-error": {
+      "text": "故事暫時沒有載入。請重新整理。",
+      "parts": [
+        {
+          "src": "load-error-0.png",
+          "text": "故事暫時沒",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "load-error-1.png",
+          "text": "有載入。請",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "load-error-2.png",
+          "text": "重新整理。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "loading": {
+      "text": "故事準備中。",
+      "parts": [
+        {
+          "src": "loading-0.png",
+          "text": "故事準備中。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "saved": {
+      "text": "進度已保留。",
+      "parts": [
+        {
+          "src": "saved-0.png",
+          "text": "進度已保留。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "return-story": {
+      "text": "回故事",
+      "parts": [
+        {
+          "src": "return-story-0.png",
+          "text": "回故事",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "sample": {
+      "text": "先一起看一個例子。",
+      "parts": [
+        {
+          "src": "sample-0.png",
+          "text": "先一起看一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "sample-1.png",
+          "text": "個例子。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "reread": {
+      "text": "讀句子，找出裡面的線索。",
+      "parts": [
+        {
+          "src": "reread-0.png",
+          "text": "讀句子，找",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "reread-1.png",
+          "text": "出裡面的線",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "reread-2.png",
+          "text": "索。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "empty-answer": {
+      "text": "先選一個答案吧。",
+      "parts": [
+        {
+          "src": "empty-answer-0.png",
+          "text": "先選一個答",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "empty-answer-1.png",
+          "text": "案吧。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-unfinished": {
+      "text": "先把這一站的圖卡看完吧。",
+      "parts": [
+        {
+          "src": "learn-unfinished-0.png",
+          "text": "先把這一站",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-unfinished-1.png",
+          "text": "的圖卡看完",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-unfinished-2.png",
+          "text": "吧。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "stage-ready": {
+      "text": "路牌修好了！",
+      "parts": [
+        {
+          "src": "stage-ready-0.png",
+          "text": "路牌修好了！",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "sign-note": {
+      "text": "請把信放在門口。",
+      "parts": [
+        {
+          "src": "sign-note-0.png",
+          "text": "請把信放在",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "sign-note-1.png",
+          "text": "門口。",
+          "width": 888,
+          "height": 215
+        }
+      ],
+      "scene": {
+        "src": "scene-sign-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "請把信",
+          "放在門口。"
+        ]
+      }
+    },
+    "bear-note": {
+      "text": "把信放在桌上。",
+      "parts": [
+        {
+          "src": "bear-note-0.png",
+          "text": "把信放在桌",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bear-note-1.png",
+          "text": "上。",
+          "width": 600,
+          "height": 215
+        }
+      ],
+      "scene": {
+        "src": "scene-bear-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "把信放在",
+          "桌上。"
+        ]
+      }
+    },
+    "bird-note": {
+      "text": "我在樹上。請把信放在樹下。",
+      "parts": [
+        {
+          "src": "bird-note-0.png",
+          "text": "我在樹上。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bird-note-1.png",
+          "text": "請把信放在",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "bird-note-2.png",
+          "text": "樹下。",
+          "width": 888,
+          "height": 215
+        }
+      ],
+      "scene": {
+        "src": "scene-bird-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "我在樹上。",
+          "請把信",
+          "放在樹下。"
+        ]
+      }
+    },
+    "secret-note": {
+      "text": "請來樹下。一起種花。",
+      "parts": [
+        {
+          "src": "secret-note-0.png",
+          "text": "請來樹下。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "secret-note-1.png",
+          "text": "一起種花。",
+          "width": 1464,
+          "height": 215
+        }
+      ],
+      "scene": {
+        "src": "scene-secret-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "請來樹下。",
+          "一起種花。"
+        ]
+      }
+    },
+    "atong-name": {
+      "text": "阿通",
+      "parts": [
+        {
+          "src": "atong-name-0.png",
+          "text": "阿通",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "squirrel-name": {
+      "text": "小松鼠",
+      "parts": [
+        {
+          "src": "squirrel-name-0.png",
+          "text": "小松鼠",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "hub-chapter": {
+      "text": "阿通的第四場冒險",
+      "parts": [
+        {
+          "src": "hub-chapter-0.png",
+          "text": "阿通的第四",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-chapter-1.png",
+          "text": "場冒險",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "hub-first": {
+      "text": "看看圖，讀一讀，",
+      "parts": [
+        {
+          "src": "hub-first-0.png",
+          "text": "看看圖，讀",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-first-1.png",
+          "text": "一讀，",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "hub-second": {
+      "text": "一起把信送到森林朋友手中。",
+      "parts": [
+        {
+          "src": "hub-second-0.png",
+          "text": "一起把信送",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-second-1.png",
+          "text": "到森林朋友",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-second-2.png",
+          "text": "手中。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S01-title": {
+      "text": "郵局的早晨",
+      "parts": [
+        {
+          "src": "S01-title-0.png",
+          "text": "郵局的早晨",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-0": {
+      "text": "森林裡有一間小郵局。",
+      "parts": [
+        {
+          "src": "S01-line-0-0.png",
+          "text": "森林裡有一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S01-line-0-1.png",
+          "text": "間小郵局。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-1": {
+      "text": "昨晚的風好大。",
+      "parts": [
+        {
+          "src": "S01-line-1-0.png",
+          "text": "昨晚的風好",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S01-line-1-1.png",
+          "text": "大。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-2": {
+      "text": "路牌上的字卡掉下來了。",
+      "parts": [
+        {
+          "src": "S01-line-2-0.png",
+          "text": "路牌上的字",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S01-line-2-1.png",
+          "text": "卡掉下來了。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-3": {
+      "text": "桌上還有三封信。",
+      "parts": [
+        {
+          "src": "S01-line-3-0.png",
+          "text": "桌上還有三",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S01-line-3-1.png",
+          "text": "封信。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S02-title": {
+      "text": "今天當小郵差",
+      "parts": [
+        {
+          "src": "S02-title-0.png",
+          "text": "今天當小郵",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-title-1.png",
+          "text": "差",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-0": {
+      "text": "小兔、小熊和小鳥在等信。",
+      "parts": [
+        {
+          "src": "S02-line-0-0.png",
+          "text": "小兔、小熊",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-0-1.png",
+          "text": "和小鳥在等",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-0-2.png",
+          "text": "信。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-1": {
+      "text": "阿通背起郵差包。",
+      "parts": [
+        {
+          "src": "S02-line-1-0.png",
+          "text": "阿通背起郵",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-1-1.png",
+          "text": "差包。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-2": {
+      "text": "先看清字，再走對路。",
+      "parts": [
+        {
+          "src": "S02-line-2-0.png",
+          "text": "先看清字，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-2-1.png",
+          "text": "再走對路。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-3": {
+      "text": "小松鼠說：我陪你！",
+      "parts": [
+        {
+          "src": "S02-line-3-0.png",
+          "text": "小松鼠說：",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-3-1.png",
+          "text": "我陪你！",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S03-title": {
+      "text": "讀懂郵局的圖卡",
+      "parts": [
+        {
+          "src": "S03-title-0.png",
+          "text": "讀懂郵局的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-title-1.png",
+          "text": "圖卡",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-0": {
+      "text": "山、水、日、月、木、口。",
+      "parts": [
+        {
+          "src": "S03-line-0-0.png",
+          "text": "山、水、日",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-1.png",
+          "text": "、月、木、",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-2.png",
+          "text": "口。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-1": {
+      "text": "郵局的圖卡有字也有圖。",
+      "parts": [
+        {
+          "src": "S03-line-1-0.png",
+          "text": "郵局的圖卡",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-1-1.png",
+          "text": "有字也有圖。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-2": {
+      "text": "看看圖，也讀讀字。",
+      "parts": [
+        {
+          "src": "S03-line-2-0.png",
+          "text": "看看圖，也",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-2-1.png",
+          "text": "讀讀字。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-3": {
+      "text": "找到字，就能修好路牌！",
+      "parts": [
+        {
+          "src": "S03-line-3-0.png",
+          "text": "找到字，就",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-3-1.png",
+          "text": "能修好路牌！",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S04-title": {
+      "text": "木橋前的小路",
+      "parts": [
+        {
+          "src": "S04-title-0.png",
+          "text": "木橋前的小",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-title-1.png",
+          "text": "路",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-0": {
+      "text": "一條路走向山邊。",
+      "parts": [
+        {
+          "src": "S04-line-0-0.png",
+          "text": "一條路走向",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-line-0-1.png",
+          "text": "山邊。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-1": {
+      "text": "一條路通往木橋。",
+      "parts": [
+        {
+          "src": "S04-line-1-0.png",
+          "text": "一條路通往",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-line-1-1.png",
+          "text": "木橋。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-2": {
+      "text": "小兔住在木橋那一邊。",
+      "parts": [
+        {
+          "src": "S04-line-2-0.png",
+          "text": "小兔住在木",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-line-2-1.png",
+          "text": "橋那一邊。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-3": {
+      "text": "找找看，哪張牌是『木』？",
+      "parts": [
+        {
+          "src": "S04-line-3-0.png",
+          "text": "找找看，哪",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-line-3-1.png",
+          "text": "張牌是『木』？",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "S05-title": {
+      "text": "小兔的門口",
+      "parts": [
+        {
+          "src": "S05-title-0.png",
+          "text": "小兔的門口",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-0": {
+      "text": "小兔在門口等阿通。",
+      "parts": [
+        {
+          "src": "S05-line-0-0.png",
+          "text": "小兔在門口",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S05-line-0-1.png",
+          "text": "等阿通。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-1": {
+      "text": "她留下了一張小紙。",
+      "parts": [
+        {
+          "src": "S05-line-1-0.png",
+          "text": "她留下了一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S05-line-1-1.png",
+          "text": "張小紙。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-2": {
+      "text": "『請把信放在門口。』",
+      "parts": [
+        {
+          "src": "S05-line-2-0.png",
+          "text": "『請把信放",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S05-line-2-1.png",
+          "text": "在門口。』",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-3": {
+      "text": "先讀一讀，再放好。",
+      "parts": [
+        {
+          "src": "S05-line-3-0.png",
+          "text": "先讀一讀，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S05-line-3-1.png",
+          "text": "再放好。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S06-title": {
+      "text": "橋邊的詞語小站",
+      "parts": [
+        {
+          "src": "S06-title-0.png",
+          "text": "橋邊的詞語",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-title-1.png",
+          "text": "小站",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-0": {
+      "text": "小松鼠找到幾張圖卡。",
+      "parts": [
+        {
+          "src": "S06-line-0-0.png",
+          "text": "小松鼠找到",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-0-1.png",
+          "text": "幾張圖卡。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-1": {
+      "text": "『上』和『下』不一樣。",
+      "parts": [
+        {
+          "src": "S06-line-1-0.png",
+          "text": "『上』和『",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-1-1.png",
+          "text": "下』不一樣。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-2": {
+      "text": "『拿』和『放』也不一樣。",
+      "parts": [
+        {
+          "src": "S06-line-2-0.png",
+          "text": "『拿』和『",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-2-1.png",
+          "text": "放』也不一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-2-2.png",
+          "text": "樣。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-3": {
+      "text": "讀懂詞，就知道怎麼做。",
+      "parts": [
+        {
+          "src": "S06-line-3-0.png",
+          "text": "讀懂詞，就",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-3-1.png",
+          "text": "知道怎麼做。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S07-title": {
+      "text": "小熊的桌子",
+      "parts": [
+        {
+          "src": "S07-title-0.png",
+          "text": "小熊的桌子",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-0": {
+      "text": "小熊打開門。",
+      "parts": [
+        {
+          "src": "S07-line-0-0.png",
+          "text": "小熊打開門。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-1": {
+      "text": "『請進，我在做點心。』",
+      "parts": [
+        {
+          "src": "S07-line-1-0.png",
+          "text": "『請進，我",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S07-line-1-1.png",
+          "text": "在做點心。』",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-2": {
+      "text": "阿通又讀了一次小紙。",
+      "parts": [
+        {
+          "src": "S07-line-2-0.png",
+          "text": "阿通又讀了",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S07-line-2-1.png",
+          "text": "一次小紙。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-3": {
+      "text": "『把信放在桌上。』",
+      "parts": [
+        {
+          "src": "S07-line-3-0.png",
+          "text": "『把信放在",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S07-line-3-1.png",
+          "text": "桌上。』",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S08-title": {
+      "text": "葉子落下的小路",
+      "parts": [
+        {
+          "src": "S08-title-0.png",
+          "text": "葉子落下的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S08-title-1.png",
+          "text": "小路",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-0": {
+      "text": "第三封信要送給小鳥。",
+      "parts": [
+        {
+          "src": "S08-line-0-0.png",
+          "text": "第三封信要",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S08-line-0-1.png",
+          "text": "送給小鳥。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-1": {
+      "text": "她住在前面的大樹上。",
+      "parts": [
+        {
+          "src": "S08-line-1-0.png",
+          "text": "她住在前面",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S08-line-1-1.png",
+          "text": "的大樹上。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-2": {
+      "text": "風吹過草叢。",
+      "parts": [
+        {
+          "src": "S08-line-2-0.png",
+          "text": "風吹過草叢。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-3": {
+      "text": "一片葉子輕輕落下。",
+      "parts": [
+        {
+          "src": "S08-line-3-0.png",
+          "text": "一片葉子輕",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S08-line-3-1.png",
+          "text": "輕落下。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "H01-title": {
+      "text": "葉背的小圖案",
+      "parts": [
+        {
+          "src": "H01-title-0.png",
+          "text": "葉背的小圖",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H01-title-1.png",
+          "text": "案",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-0": {
+      "text": "這片葉子厚厚的。",
+      "parts": [
+        {
+          "src": "H01-line-0-0.png",
+          "text": "這片葉子厚",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H01-line-0-1.png",
+          "text": "厚的。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-1": {
+      "text": "葉背上有一個小圖案。",
+      "parts": [
+        {
+          "src": "H01-line-1-0.png",
+          "text": "葉背上有一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H01-line-1-1.png",
+          "text": "個小圖案。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-2": {
+      "text": "阿通把它翻過來看。",
+      "parts": [
+        {
+          "src": "H01-line-2-0.png",
+          "text": "阿通把它翻",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H01-line-2-1.png",
+          "text": "過來看。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-3": {
+      "text": "阿通把它收進郵差包。",
+      "parts": [
+        {
+          "src": "H01-line-3-0.png",
+          "text": "阿通把它收",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H01-line-3-1.png",
+          "text": "進郵差包。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S09-title": {
+      "text": "讀小鳥留下的話",
+      "parts": [
+        {
+          "src": "S09-title-0.png",
+          "text": "讀小鳥留下",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S09-title-1.png",
+          "text": "的話",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-0": {
+      "text": "小鳥在高高的樹上。",
+      "parts": [
+        {
+          "src": "S09-line-0-0.png",
+          "text": "小鳥在高高",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S09-line-0-1.png",
+          "text": "的樹上。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-1": {
+      "text": "樹幹上貼著一張小紙。",
+      "parts": [
+        {
+          "src": "S09-line-1-0.png",
+          "text": "樹幹上貼著",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S09-line-1-1.png",
+          "text": "一張小紙。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-2": {
+      "text": "『我在樹上。』",
+      "parts": [
+        {
+          "src": "S09-line-2-0.png",
+          "text": "『我在樹上。』",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-3": {
+      "text": "『請把信放在樹下。』",
+      "parts": [
+        {
+          "src": "S09-line-3-0.png",
+          "text": "『請把信放",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S09-line-3-1.png",
+          "text": "在樹下。』",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S10-title": {
+      "text": "樹下的小信盤",
+      "parts": [
+        {
+          "src": "S10-title-0.png",
+          "text": "樹下的小信",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S10-title-1.png",
+          "text": "盤",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-0": {
+      "text": "阿通把信放在樹下。",
+      "parts": [
+        {
+          "src": "S10-line-0-0.png",
+          "text": "阿通把信放",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S10-line-0-1.png",
+          "text": "在樹下。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-1": {
+      "text": "小鳥飛下來收信。",
+      "parts": [
+        {
+          "src": "S10-line-1-0.png",
+          "text": "小鳥飛下來",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-1.png",
+          "text": "收信。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-2": {
+      "text": "『謝謝你，我等到了！』",
+      "parts": [
+        {
+          "src": "S10-line-2-0.png",
+          "text": "『謝謝你，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S10-line-2-1.png",
+          "text": "我等到了！』",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-3": {
+      "text": "三封信都送到了。",
+      "parts": [
+        {
+          "src": "S10-line-3-0.png",
+          "text": "三封信都送",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S10-line-3-1.png",
+          "text": "到了。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S11-title": {
+      "text": "草邊的老信箱",
+      "parts": [
+        {
+          "src": "S11-title-0.png",
+          "text": "草邊的老信",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S11-title-1.png",
+          "text": "箱",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S11-line-0": {
+      "text": "回郵局的小路很安靜。",
+      "parts": [
+        {
+          "src": "S11-line-0-0.png",
+          "text": "回郵局的小",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S11-line-0-1.png",
+          "text": "路很安靜。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S11-line-1": {
+      "text": "草邊有一個老信箱。",
+      "parts": [
+        {
+          "src": "S11-line-1-0.png",
+          "text": "草邊有一個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S11-line-1-1.png",
+          "text": "老信箱。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S11-line-2": {
+      "text": "箱上刻著一片葉。",
+      "parts": [
+        {
+          "src": "S11-line-2-0.png",
+          "text": "箱上刻著一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S11-line-2-1.png",
+          "text": "片葉。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S11-line-3": {
+      "text": "小松鼠停下來看了看。",
+      "parts": [
+        {
+          "src": "S11-line-3-0.png",
+          "text": "小松鼠停下",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S11-line-3-1.png",
+          "text": "來看了看。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "E01-title": {
+      "text": "普通結局 小郵差的一天",
+      "parts": [
+        {
+          "src": "E01-title-0.png",
+          "text": "普通結局 ",
+          "width": 1222,
+          "height": 215
+        },
+        {
+          "src": "E01-title-1.png",
+          "text": "小郵差的一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-title-2.png",
+          "text": "天",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-0": {
+      "text": "阿通回到森林郵局。",
+      "parts": [
+        {
+          "src": "E01-line-0-0.png",
+          "text": "阿通回到森",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-line-0-1.png",
+          "text": "林郵局。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-1": {
+      "text": "三位朋友都收到了信。",
+      "parts": [
+        {
+          "src": "E01-line-1-0.png",
+          "text": "三位朋友都",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-line-1-1.png",
+          "text": "收到了信。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-2": {
+      "text": "小松鼠幫阿通戴上徽章。",
+      "parts": [
+        {
+          "src": "E01-line-2-0.png",
+          "text": "小松鼠幫阿",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-line-2-1.png",
+          "text": "通戴上徽章。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-3": {
+      "text": "今天，我們把話送到了！",
+      "parts": [
+        {
+          "src": "E01-line-3-0.png",
+          "text": "今天，我們",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-line-3-1.png",
+          "text": "把話送到了！",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E02-title": {
+      "text": "祕密信件",
+      "parts": [
+        {
+          "src": "E02-title-0.png",
+          "text": "祕密信件",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-0": {
+      "text": "老信箱輕輕打開。",
+      "parts": [
+        {
+          "src": "E02-line-0-0.png",
+          "text": "老信箱輕輕",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E02-line-0-1.png",
+          "text": "打開。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-1": {
+      "text": "裡面有一封小小的信。",
+      "parts": [
+        {
+          "src": "E02-line-1-0.png",
+          "text": "裡面有一封",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E02-line-1-1.png",
+          "text": "小小的信。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-2": {
+      "text": "『請來樹下。一起種花。』",
+      "parts": [
+        {
+          "src": "E02-line-2-0.png",
+          "text": "『請來樹下。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E02-line-2-1.png",
+          "text": "一起種花。』",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-3": {
+      "text": "阿通和小松鼠對看一眼。",
+      "parts": [
+        {
+          "src": "E02-line-3-0.png",
+          "text": "阿通和小松",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E02-line-3-1.png",
+          "text": "鼠對看一眼。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E03-title": {
+      "text": "祕密結局 老朋友的花園",
+      "parts": [
+        {
+          "src": "E03-title-0.png",
+          "text": "祕密結局 ",
+          "width": 1222,
+          "height": 215
+        },
+        {
+          "src": "E03-title-1.png",
+          "text": "老朋友的花",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-title-2.png",
+          "text": "園",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "E03-line-0": {
+      "text": "老郵差正在樹下等大家。",
+      "parts": [
+        {
+          "src": "E03-line-0-0.png",
+          "text": "老郵差正在",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-0-1.png",
+          "text": "樹下等大家。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E03-line-1": {
+      "text": "他拿出一小袋花種子。",
+      "parts": [
+        {
+          "src": "E03-line-1-0.png",
+          "text": "他拿出一小",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-1-1.png",
+          "text": "袋花種子。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "E03-line-2": {
+      "text": "也把郵差徽章交給阿通。",
+      "parts": [
+        {
+          "src": "E03-line-2-0.png",
+          "text": "也把郵差徽",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-2-1.png",
+          "text": "章交給阿通。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "E03-line-3": {
+      "text": "大家一起種下小花。",
+      "parts": [
+        {
+          "src": "E03-line-3-0.png",
+          "text": "大家一起種",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-3-1.png",
+          "text": "下小花。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "E03-line-4": {
+      "text": "明天，郵局旁會有新顏色！",
+      "parts": [
+        {
+          "src": "E03-line-4-0.png",
+          "text": "明天，郵局",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-4-1.png",
+          "text": "旁會有新顏",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E03-line-4-2.png",
+          "text": "色！",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-0-word": {
+      "text": "山",
+      "parts": [
+        {
+          "src": "learn-0-0-word-0.png",
+          "text": "山",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-0-help": {
+      "text": "山，像高高低低的山峰。",
+      "parts": [
+        {
+          "src": "learn-0-0-help-0.png",
+          "text": "山，像高高",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-0-help-1.png",
+          "text": "低低的山峰。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-1-word": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "learn-0-1-word-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-1-help": {
+      "text": "小溪裡有水。看看流動的水。",
+      "parts": [
+        {
+          "src": "learn-0-1-help-0.png",
+          "text": "小溪裡有水。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-0-1-help-1.png",
+          "text": "看看流動的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-1-help-2.png",
+          "text": "水。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-2-word": {
+      "text": "日",
+      "parts": [
+        {
+          "src": "learn-0-2-word-0.png",
+          "text": "日",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-2-help": {
+      "text": "日是太陽。先看圓圓的太陽。",
+      "parts": [
+        {
+          "src": "learn-0-2-help-0.png",
+          "text": "日是太陽。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-2-help-1.png",
+          "text": "先看圓圓的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-2-help-2.png",
+          "text": "太陽。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-3-word": {
+      "text": "月",
+      "parts": [
+        {
+          "src": "learn-0-3-word-0.png",
+          "text": "月",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-3-help": {
+      "text": "月是月亮。看看彎彎的月亮。",
+      "parts": [
+        {
+          "src": "learn-0-3-help-0.png",
+          "text": "月是月亮。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-3-help-1.png",
+          "text": "看看彎彎的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-3-help-2.png",
+          "text": "月亮。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-4-word": {
+      "text": "木",
+      "parts": [
+        {
+          "src": "learn-0-4-word-0.png",
+          "text": "木",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-4-help": {
+      "text": "木有樹幹、樹枝和樹根。木也可以是木頭。",
+      "parts": [
+        {
+          "src": "learn-0-4-help-0.png",
+          "text": "木有樹幹、",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-4-help-1.png",
+          "text": "樹枝和樹根。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-0-4-help-2.png",
+          "text": "木也可以是",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-4-help-3.png",
+          "text": "木頭。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-5-word": {
+      "text": "口",
+      "parts": [
+        {
+          "src": "learn-0-5-word-0.png",
+          "text": "口",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-0-5-help": {
+      "text": "口，像張開的小嘴。",
+      "parts": [
+        {
+          "src": "learn-0-5-help-0.png",
+          "text": "口，像張開",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-0-5-help-1.png",
+          "text": "的小嘴。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-0-word": {
+      "text": "上",
+      "parts": [
+        {
+          "src": "learn-1-0-word-0.png",
+          "text": "上",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-0-help": {
+      "text": "小鳥在樹上。上，在比較高的位置。",
+      "parts": [
+        {
+          "src": "learn-1-0-help-0.png",
+          "text": "小鳥在樹上。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-1-0-help-1.png",
+          "text": "上，在比較",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-0-help-2.png",
+          "text": "高的位置。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-1-word": {
+      "text": "下",
+      "parts": [
+        {
+          "src": "learn-1-1-word-0.png",
+          "text": "下",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-1-help": {
+      "text": "信盤在樹下。下，在比較低的位置。",
+      "parts": [
+        {
+          "src": "learn-1-1-help-0.png",
+          "text": "信盤在樹下。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-1-1-help-1.png",
+          "text": "下，在比較",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-1-help-2.png",
+          "text": "低的位置。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-2-word": {
+      "text": "拿",
+      "parts": [
+        {
+          "src": "learn-1-2-word-0.png",
+          "text": "拿",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-2-help": {
+      "text": "把信拿起來，信在手裡。",
+      "parts": [
+        {
+          "src": "learn-1-2-help-0.png",
+          "text": "把信拿起來，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-1-2-help-1.png",
+          "text": "信在手裡。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-3-word": {
+      "text": "放",
+      "parts": [
+        {
+          "src": "learn-1-3-word-0.png",
+          "text": "放",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-3-help": {
+      "text": "把信放好，信留在信盤。",
+      "parts": [
+        {
+          "src": "learn-1-3-help-0.png",
+          "text": "把信放好，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-3-help-1.png",
+          "text": "信留在信盤。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-4-word": {
+      "text": "隻",
+      "parts": [
+        {
+          "src": "learn-1-4-word-0.png",
+          "text": "隻",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-4-help": {
+      "text": "一隻小鳥。說小鳥時，用隻。",
+      "parts": [
+        {
+          "src": "learn-1-4-help-0.png",
+          "text": "一隻小鳥。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-4-help-1.png",
+          "text": "說小鳥時，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-4-help-2.png",
+          "text": "用隻。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-5-word": {
+      "text": "朵",
+      "parts": [
+        {
+          "src": "learn-1-5-word-0.png",
+          "text": "朵",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "learn-1-5-help": {
+      "text": "一朵花。說花時，用朵。",
+      "parts": [
+        {
+          "src": "learn-1-5-help-0.png",
+          "text": "一朵花。說",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-1-5-help-1.png",
+          "text": "花時，用朵。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-0-word": {
+      "text": "門口",
+      "parts": [
+        {
+          "src": "learn-2-0-word-0.png",
+          "text": "門口",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-0-help": {
+      "text": "小兔在門口等信。找一找地點：門口。",
+      "parts": [
+        {
+          "src": "learn-2-0-help-0.png",
+          "text": "小兔在門口",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-0-help-1.png",
+          "text": "等信。找一",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-0-help-2.png",
+          "text": "找地點：門",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-0-help-3.png",
+          "text": "口。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-1-word": {
+      "text": "樹下",
+      "parts": [
+        {
+          "src": "learn-2-1-word-0.png",
+          "text": "樹下",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-1-help": {
+      "text": "小鳥在樹上。信要放在樹下。找的是信的位置。",
+      "parts": [
+        {
+          "src": "learn-2-1-help-0.png",
+          "text": "小鳥在樹上。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-2-1-help-1.png",
+          "text": "信要放在樹",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-1-help-2.png",
+          "text": "下。找的是",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-1-help-3.png",
+          "text": "信的位置。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-2-word": {
+      "text": "阿通",
+      "parts": [
+        {
+          "src": "learn-2-2-word-0.png",
+          "text": "阿通",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-2-help": {
+      "text": "阿通拿信，小松鼠拿花。找一找，誰拿信？",
+      "parts": [
+        {
+          "src": "learn-2-2-help-0.png",
+          "text": "阿通拿信，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-2-help-1.png",
+          "text": "小松鼠拿花。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-2-2-help-2.png",
+          "text": "找一找，誰",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-2-help-3.png",
+          "text": "拿信？",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-3-word": {
+      "text": "先讀，再放",
+      "parts": [
+        {
+          "src": "learn-2-3-word-0.png",
+          "text": "先讀，再放",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-3-help": {
+      "text": "先讀小紙，再把信放好。先讀，再放。",
+      "parts": [
+        {
+          "src": "learn-2-3-help-0.png",
+          "text": "先讀小紙，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-3-help-1.png",
+          "text": "再把信放好。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-2-3-help-2.png",
+          "text": "先讀，再放。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-4-word": {
+      "text": "一起種花",
+      "parts": [
+        {
+          "src": "learn-2-4-word-0.png",
+          "text": "一起種花",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "learn-2-4-help": {
+      "text": "小兔帶花，小熊拿水。大家一起種花。讀一讀，再找人和動作。",
+      "parts": [
+        {
+          "src": "learn-2-4-help-0.png",
+          "text": "小兔帶花，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-4-help-1.png",
+          "text": "小熊拿水。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-4-help-2.png",
+          "text": "大家一起種",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-4-help-3.png",
+          "text": "花。讀一讀，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-2-4-help-4.png",
+          "text": "再找人和動",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learn-2-4-help-5.png",
+          "text": "作。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q01-choice-0": {
+      "text": "山",
+      "parts": [
+        {
+          "src": "Q01-choice-0-0.png",
+          "text": "山",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q01-choice-1": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "Q01-choice-1-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q01-choice-2": {
+      "text": "木",
+      "parts": [
+        {
+          "src": "Q01-choice-2-0.png",
+          "text": "木",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q01-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q01-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q01-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q01-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q01-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q01-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q01-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q02-choice-0": {
+      "text": "月",
+      "parts": [
+        {
+          "src": "Q02-choice-0-0.png",
+          "text": "月",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q02-choice-1": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "Q02-choice-1-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q02-choice-2": {
+      "text": "日",
+      "parts": [
+        {
+          "src": "Q02-choice-2-0.png",
+          "text": "日",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q02-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q02-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q02-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q02-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q02-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q02-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q02-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q03-choice-0": {
+      "text": "月",
+      "parts": [
+        {
+          "src": "Q03-choice-0-0.png",
+          "text": "月",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q03-choice-1": {
+      "text": "日",
+      "parts": [
+        {
+          "src": "Q03-choice-1-0.png",
+          "text": "日",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q03-choice-2": {
+      "text": "口",
+      "parts": [
+        {
+          "src": "Q03-choice-2-0.png",
+          "text": "口",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q03-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q03-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q03-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q03-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q03-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q03-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q03-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q04-choice-0": {
+      "text": "月",
+      "parts": [
+        {
+          "src": "Q04-choice-0-0.png",
+          "text": "月",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q04-choice-1": {
+      "text": "山",
+      "parts": [
+        {
+          "src": "Q04-choice-1-0.png",
+          "text": "山",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q04-choice-2": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "Q04-choice-2-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q04-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q04-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q04-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q04-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q04-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q04-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q04-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q05-choice-0": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "Q05-choice-0-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q05-choice-1": {
+      "text": "口",
+      "parts": [
+        {
+          "src": "Q05-choice-1-0.png",
+          "text": "口",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q05-choice-2": {
+      "text": "木",
+      "parts": [
+        {
+          "src": "Q05-choice-2-0.png",
+          "text": "木",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q05-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q05-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q05-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q05-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q05-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q05-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q05-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q06-choice-0": {
+      "text": "日",
+      "parts": [
+        {
+          "src": "Q06-choice-0-0.png",
+          "text": "日",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q06-choice-1": {
+      "text": "口",
+      "parts": [
+        {
+          "src": "Q06-choice-1-0.png",
+          "text": "口",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q06-choice-2": {
+      "text": "山",
+      "parts": [
+        {
+          "src": "Q06-choice-2-0.png",
+          "text": "山",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q06-prompt": {
+      "text": "圈出圖中的字。",
+      "parts": [
+        {
+          "src": "Q06-prompt-0.png",
+          "text": "圈出圖中的",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q06-prompt-1.png",
+          "text": "字。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q06-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q06-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q06-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q06-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q07-choice-0": {
+      "text": "上",
+      "parts": [
+        {
+          "src": "Q07-choice-0-0.png",
+          "text": "上",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q07-choice-1": {
+      "text": "下",
+      "parts": [
+        {
+          "src": "Q07-choice-1-0.png",
+          "text": "下",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q07-choice-2": {
+      "text": "裡",
+      "parts": [
+        {
+          "src": "Q07-choice-2-0.png",
+          "text": "裡",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q07-prompt": {
+      "text": "小鳥在樹＿＿。",
+      "parts": [
+        {
+          "src": "Q07-prompt-0.png",
+          "text": "小鳥在樹＿",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q07-prompt-1.png",
+          "text": "＿。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q07-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q07-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q07-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q07-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q08-choice-0": {
+      "text": "上",
+      "parts": [
+        {
+          "src": "Q08-choice-0-0.png",
+          "text": "上",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q08-choice-1": {
+      "text": "下",
+      "parts": [
+        {
+          "src": "Q08-choice-1-0.png",
+          "text": "下",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q08-choice-2": {
+      "text": "裡",
+      "parts": [
+        {
+          "src": "Q08-choice-2-0.png",
+          "text": "裡",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q08-prompt": {
+      "text": "信盤在樹＿＿。",
+      "parts": [
+        {
+          "src": "Q08-prompt-0.png",
+          "text": "信盤在樹＿",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q08-prompt-1.png",
+          "text": "＿。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q08-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q08-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q08-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q08-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q09-choice-0": {
+      "text": "吃",
+      "parts": [
+        {
+          "src": "Q09-choice-0-0.png",
+          "text": "吃",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q09-choice-1": {
+      "text": "放",
+      "parts": [
+        {
+          "src": "Q09-choice-1-0.png",
+          "text": "放",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q09-choice-2": {
+      "text": "拿",
+      "parts": [
+        {
+          "src": "Q09-choice-2-0.png",
+          "text": "拿",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q09-prompt": {
+      "text": "阿通＿＿起信。",
+      "parts": [
+        {
+          "src": "Q09-prompt-0.png",
+          "text": "阿通＿＿起",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q09-prompt-1.png",
+          "text": "信。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q09-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q09-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q09-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q09-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q10-choice-0": {
+      "text": "放",
+      "parts": [
+        {
+          "src": "Q10-choice-0-0.png",
+          "text": "放",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q10-choice-1": {
+      "text": "飛",
+      "parts": [
+        {
+          "src": "Q10-choice-1-0.png",
+          "text": "飛",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q10-choice-2": {
+      "text": "喝",
+      "parts": [
+        {
+          "src": "Q10-choice-2-0.png",
+          "text": "喝",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q10-prompt": {
+      "text": "阿通把信＿＿好。",
+      "parts": [
+        {
+          "src": "Q10-prompt-0.png",
+          "text": "阿通把信＿",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q10-prompt-1.png",
+          "text": "＿好。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q10-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q10-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q10-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q10-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q11-choice-0": {
+      "text": "本",
+      "parts": [
+        {
+          "src": "Q11-choice-0-0.png",
+          "text": "本",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q11-choice-1": {
+      "text": "隻",
+      "parts": [
+        {
+          "src": "Q11-choice-1-0.png",
+          "text": "隻",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q11-choice-2": {
+      "text": "朵",
+      "parts": [
+        {
+          "src": "Q11-choice-2-0.png",
+          "text": "朵",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q11-prompt": {
+      "text": "一＿＿小鳥。",
+      "parts": [
+        {
+          "src": "Q11-prompt-0.png",
+          "text": "一＿＿小鳥。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q11-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q11-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q11-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q11-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q12-choice-0": {
+      "text": "隻",
+      "parts": [
+        {
+          "src": "Q12-choice-0-0.png",
+          "text": "隻",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q12-choice-1": {
+      "text": "個",
+      "parts": [
+        {
+          "src": "Q12-choice-1-0.png",
+          "text": "個",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q12-choice-2": {
+      "text": "朵",
+      "parts": [
+        {
+          "src": "Q12-choice-2-0.png",
+          "text": "朵",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q12-prompt": {
+      "text": "一＿＿花。",
+      "parts": [
+        {
+          "src": "Q12-prompt-0.png",
+          "text": "一＿＿花。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q12-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q12-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q12-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q12-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q13-choice-0": {
+      "text": "下",
+      "parts": [
+        {
+          "src": "Q13-choice-0-0.png",
+          "text": "下",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q13-choice-1": {
+      "text": "裡",
+      "parts": [
+        {
+          "src": "Q13-choice-1-0.png",
+          "text": "裡",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q13-choice-2": {
+      "text": "上",
+      "parts": [
+        {
+          "src": "Q13-choice-2-0.png",
+          "text": "上",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q13-prompt": {
+      "text": "把信放在桌＿＿。",
+      "parts": [
+        {
+          "src": "Q13-prompt-0.png",
+          "text": "把信放在桌",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q13-prompt-1.png",
+          "text": "＿＿。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q13-hint": {
+      "text": "看看圖，再讀一讀每個選項。",
+      "parts": [
+        {
+          "src": "Q13-hint-0.png",
+          "text": "看看圖，再",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q13-hint-1.png",
+          "text": "讀一讀每個",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q13-hint-2.png",
+          "text": "選項。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-choice-0": {
+      "text": "樹上",
+      "parts": [
+        {
+          "src": "Q14-choice-0-0.png",
+          "text": "樹上",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-choice-1": {
+      "text": "門口",
+      "parts": [
+        {
+          "src": "Q14-choice-1-0.png",
+          "text": "門口",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-choice-2": {
+      "text": "桌下",
+      "parts": [
+        {
+          "src": "Q14-choice-2-0.png",
+          "text": "桌下",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-prompt": {
+      "text": "小兔在哪裡？",
+      "parts": [
+        {
+          "src": "Q14-prompt-0.png",
+          "text": "小兔在哪裡？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-passage": {
+      "text": "小兔在門口等信。",
+      "parts": [
+        {
+          "src": "Q14-passage-0.png",
+          "text": "小兔在門口",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q14-passage-1.png",
+          "text": "等信。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q14-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q14-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q14-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q14-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-choice-0": {
+      "text": "樹下",
+      "parts": [
+        {
+          "src": "Q15-choice-0-0.png",
+          "text": "樹下",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-choice-1": {
+      "text": "樹上",
+      "parts": [
+        {
+          "src": "Q15-choice-1-0.png",
+          "text": "樹上",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-choice-2": {
+      "text": "門口",
+      "parts": [
+        {
+          "src": "Q15-choice-2-0.png",
+          "text": "門口",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-prompt": {
+      "text": "信要放在哪裡？",
+      "parts": [
+        {
+          "src": "Q15-prompt-0.png",
+          "text": "信要放在哪",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q15-prompt-1.png",
+          "text": "裡？",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-passage": {
+      "text": "小鳥在樹上。請把信放在樹下。",
+      "parts": [
+        {
+          "src": "Q15-passage-0.png",
+          "text": "小鳥在樹上。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q15-passage-1.png",
+          "text": "請把信放在",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q15-passage-2.png",
+          "text": "樹下。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q15-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q15-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q15-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q15-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-choice-0": {
+      "text": "小松鼠",
+      "parts": [
+        {
+          "src": "Q16-choice-0-0.png",
+          "text": "小松鼠",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-choice-1": {
+      "text": "小鳥",
+      "parts": [
+        {
+          "src": "Q16-choice-1-0.png",
+          "text": "小鳥",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-choice-2": {
+      "text": "阿通",
+      "parts": [
+        {
+          "src": "Q16-choice-2-0.png",
+          "text": "阿通",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-prompt": {
+      "text": "誰拿著信？",
+      "parts": [
+        {
+          "src": "Q16-prompt-0.png",
+          "text": "誰拿著信？",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-passage": {
+      "text": "阿通拿信，小松鼠拿花。",
+      "parts": [
+        {
+          "src": "Q16-passage-0.png",
+          "text": "阿通拿信，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q16-passage-1.png",
+          "text": "小松鼠拿花。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q16-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q16-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q16-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q16-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-choice-0": {
+      "text": "放好信",
+      "parts": [
+        {
+          "src": "Q17-choice-0-0.png",
+          "text": "放好信",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-choice-1": {
+      "text": "讀小紙",
+      "parts": [
+        {
+          "src": "Q17-choice-1-0.png",
+          "text": "讀小紙",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-choice-2": {
+      "text": "吃點心",
+      "parts": [
+        {
+          "src": "Q17-choice-2-0.png",
+          "text": "吃點心",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-prompt": {
+      "text": "先做什麼？",
+      "parts": [
+        {
+          "src": "Q17-prompt-0.png",
+          "text": "先做什麼？",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-passage": {
+      "text": "阿通先讀小紙，再把信放好。",
+      "parts": [
+        {
+          "src": "Q17-passage-0.png",
+          "text": "阿通先讀小",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q17-passage-1.png",
+          "text": "紙，再把信",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q17-passage-2.png",
+          "text": "放好。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q17-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q17-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q17-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q17-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-choice-0": {
+      "text": "花",
+      "parts": [
+        {
+          "src": "Q18-choice-0-0.png",
+          "text": "花",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-choice-1": {
+      "text": "水",
+      "parts": [
+        {
+          "src": "Q18-choice-1-0.png",
+          "text": "水",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-choice-2": {
+      "text": "信",
+      "parts": [
+        {
+          "src": "Q18-choice-2-0.png",
+          "text": "信",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-prompt": {
+      "text": "小兔帶了什麼？",
+      "parts": [
+        {
+          "src": "Q18-prompt-0.png",
+          "text": "小兔帶了什",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q18-prompt-1.png",
+          "text": "麼？",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-passage": {
+      "text": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+      "parts": [
+        {
+          "src": "Q18-passage-0.png",
+          "text": "小兔帶著花，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q18-passage-1.png",
+          "text": "先到樹下。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q18-passage-2.png",
+          "text": "小熊拿著水，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q18-passage-3.png",
+          "text": "也來了。大",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q18-passage-4.png",
+          "text": "家一起種花。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q18-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q18-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q18-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q18-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-choice-0": {
+      "text": "小熊",
+      "parts": [
+        {
+          "src": "Q19-choice-0-0.png",
+          "text": "小熊",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-choice-1": {
+      "text": "小兔",
+      "parts": [
+        {
+          "src": "Q19-choice-1-0.png",
+          "text": "小兔",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-choice-2": {
+      "text": "小鳥",
+      "parts": [
+        {
+          "src": "Q19-choice-2-0.png",
+          "text": "小鳥",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-prompt": {
+      "text": "誰先到樹下？",
+      "parts": [
+        {
+          "src": "Q19-prompt-0.png",
+          "text": "誰先到樹下？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-passage": {
+      "text": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+      "parts": [
+        {
+          "src": "Q19-passage-0.png",
+          "text": "小兔帶著花，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q19-passage-1.png",
+          "text": "先到樹下。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q19-passage-2.png",
+          "text": "小熊拿著水，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q19-passage-3.png",
+          "text": "也來了。大",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q19-passage-4.png",
+          "text": "家一起種花。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q19-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q19-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q19-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q19-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-choice-0": {
+      "text": "喝水",
+      "parts": [
+        {
+          "src": "Q20-choice-0-0.png",
+          "text": "喝水",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-choice-1": {
+      "text": "睡覺",
+      "parts": [
+        {
+          "src": "Q20-choice-1-0.png",
+          "text": "睡覺",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-choice-2": {
+      "text": "種花",
+      "parts": [
+        {
+          "src": "Q20-choice-2-0.png",
+          "text": "種花",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-prompt": {
+      "text": "最後大家做什麼？",
+      "parts": [
+        {
+          "src": "Q20-prompt-0.png",
+          "text": "最後大家做",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q20-prompt-1.png",
+          "text": "什麼？",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-passage": {
+      "text": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+      "parts": [
+        {
+          "src": "Q20-passage-0.png",
+          "text": "小兔帶著花，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q20-passage-1.png",
+          "text": "先到樹下。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q20-passage-2.png",
+          "text": "小熊拿著水，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "Q20-passage-3.png",
+          "text": "也來了。大",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q20-passage-4.png",
+          "text": "家一起種花。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "Q20-hint": {
+      "text": "再讀一次句子，找題目問的線索。",
+      "parts": [
+        {
+          "src": "Q20-hint-0.png",
+          "text": "再讀一次句",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q20-hint-1.png",
+          "text": "子，找題目",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "Q20-hint-2.png",
+          "text": "問的線索。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    }
+  }
+}
