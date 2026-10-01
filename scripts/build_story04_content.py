@@ -1,6 +1,7 @@
 """Build Story 04 data from its approved prose and original practice plan."""
 import json, re
 from pathlib import Path
+from PIL import Image
 ROOT=Path(__file__).resolve().parents[1]
 STORY=ROOT/'stories/story-04'
 labels={}
@@ -66,11 +67,17 @@ learning=[
  ("一起種花","flower","小兔帶花，小熊拿水。大家一起種花。讀一讀，再找人和動作。")]
 ]
 cards=[]
+card_art={
+ (1,0):'card-bird-mail',(1,1):'card-bird-mail',(1,2):'card-take-letter',(1,3):'card-place-letter',
+ (2,0):'card-rabbit-door',(2,1):'card-bird-mail',(2,2):'card-who-holds-what',
+ (2,3):'card-read-then-place',(2,4):'card-garden-together',
+}
 for stage,entries in enumerate(learning):
     group=[]
     for i,(word,picture,help_text) in enumerate(entries):
         group.append({'word':label(f'learn-{stage}-{i}-word',word),'picture':picture,'help':label(f'learn-{stage}-{i}-help',help_text),
-          'shape':picture+'-shape' if stage==0 else None})
+          'shape':picture+'-shape' if stage==0 else None,
+          'illustration':card_art[(stage,i)]+'.png' if (stage,i) in card_art else None})
     cards.append(group)
 
 prompts=['圈出圖中的字。']*6+['小鳥在樹＿＿。','信盤在樹＿＿。','阿通＿＿起信。','阿通把信＿＿好。','一＿＿小鳥。','一＿＿花。','把信放在桌＿＿。',
@@ -79,6 +86,9 @@ pics=['mountain','water','sun','moon','wood','mouth','bird-above','tray-below','
 passages={14:'小兔在門口等信。',15:'小鳥在樹上。請把信放在樹下。',16:'阿通拿信，小松鼠拿花。',17:'阿通先讀小紙，再把信放好。'}
 shared='小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。'
 questions=[]
+question_art={7:'card-bird-mail',8:'card-bird-mail',9:'card-take-letter',10:'card-place-letter',
+ 14:'card-rabbit-door',15:'card-bird-mail',16:'card-who-holds-what',17:'card-read-then-place',
+ 18:'card-arrive-garden',19:'card-arrive-garden',20:'card-garden-together'}
 for row in re.findall(r'^\| Q\d{2} \|.*$',(STORY/'PRACTICE_PLAN.md').read_text(encoding='utf-8'),re.M):
     cells=[x.strip() for x in row.split('|')[1:-1]]
     qid,_,choices_text,answer_text=cells
@@ -88,10 +98,28 @@ for row in re.findall(r'^\| Q\d{2} \|.*$',(STORY/'PRACTICE_PLAN.md').read_text(e
     options=[label(f'{qid}-choice-{i}',x) for i,x in enumerate(choices)]
     questions.append({'id':qid,'stage':0 if n<=6 else 1 if n<=13 else 2,'prompt':label(qid+'-prompt',prompts[n-1]),
       'choices':options,'answer':options[choices.index(answer)],'picture':pics[n-1],
+      'illustration':question_art[n]+'.png' if n in question_art else None,
       'passage':label(qid+'-passage',passages[n] if n in passages else shared) if n>=14 else None,
       'hint':label(qid+'-hint', '看看圖，再讀一讀每個選項。' if n<=13 else '再讀一次句子，找題目問的線索。')})
 assert len(questions)==20
-data={'id':'story-04','poolVersion':'forest-v1','title':'title','scenes':scenes,'labels':labels,'learning':cards,'questions':questions,
+scene_text={'sign-note':['請把信','放在門口。'],'bear-note':['把信放在','桌上。'],
+ 'bird-note':['我在樹上。','請把信','放在樹下。'],'secret-note':['請來樹下。','一起種花。']}
+# Preserve the approved words; only their visual line breaks change.
+assert all(''.join(lines)==labels[key] for key,lines in scene_text.items())
+props={}
+for name,filename in {'envelope':'envelope-painted.png','badge':'badge-painted.png','note-paper':'note-paper.png','wood-card':'wood-card.png'}.items():
+    path=STORY/'assets/images/props'/filename
+    crop=[0,0,1,1]
+    if path.exists():
+        with Image.open(path) as image:
+            if 'A' not in image.getbands():raise ValueError('Prop requires transparent background: '+filename)
+            bounds=image.getchannel('A').point(lambda a:255 if a>=24 else 0).getbbox()
+            if not bounds:raise ValueError('Empty painted prop: '+filename)
+            left,top,right,bottom=bounds
+            crop=[left/image.width,top/image.height,(right-left)/image.width,(bottom-top)/image.height]
+    props[name]={'src':filename,'crop':crop}
+data={'id':'story-04','poolVersion':'forest-v1','title':'title','scenes':scenes,'labels':labels,'learning':cards,'questions':questions,'sceneText':scene_text,
+ 'props':props,
  'representatives':[['Q02','Q05'],['Q08','Q13'],['Q15','Q18']],
  'audio':{name:{'category':'sfx','available':True,'src':'../story-02/assets/audio/sfx/'+name+'.wav','volume':.3} for name in ['success','found-item','fail-soft','drag-lock']}}
 (STORY/'story.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')

@@ -1,10 +1,15 @@
 {
   "created": "2026-10-01",
-  "generatedImages": 23,
+  "generatedImages": 35,
   "practiceSVGs": 27,
   "textLabels": 320,
+  "fixedSceneNotices": 4,
   "fontFilesPublished": false,
   "generatedOriginalsPreserved": true,
+  "promptSets": [
+    "assets/images/PROMPTS.json",
+    "assets/images/VISUAL_FIX_PROMPTS.json"
+  ],
   "assets": [
     {
       "path": "assets/images/anchor.png",
@@ -91,6 +96,62 @@
       "kind": "generated illustration"
     },
     {
+      "path": "assets/images/cards/card-arrive-garden.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-bird-mail.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-garden-together.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-place-letter.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-rabbit-door.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-read-then-place.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-take-letter.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-who-holds-what.png",
+      "width": 1671,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
       "path": "assets/images/garden.png",
       "width": 1672,
       "height": 941,
@@ -144,6 +205,34 @@
       "width": 1672,
       "height": 941,
       "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/badge-painted.png",
+      "width": 1330,
+      "height": 1182,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/envelope-painted.png",
+      "width": 1900,
+      "height": 828,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/note-paper.png",
+      "width": 1448,
+      "height": 1086,
+      "transparent": true,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/props/wood-card.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
       "kind": "generated illustration"
     },
     {
@@ -4017,6 +4106,34 @@
       "path": "assets/text/saved-0.png",
       "width": 1752,
       "height": 215,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-bear-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-bird-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-secret-note.png",
+      "width": 1488,
+      "height": 741,
+      "transparent": true,
+      "kind": "local rendered zhuyin text"
+    },
+    {
+      "path": "assets/text/scene-sign-note.png",
+      "width": 1488,
+      "height": 741,
       "transparent": true,
       "kind": "local rendered zhuyin text"
     },

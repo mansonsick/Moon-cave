@@ -1430,7 +1430,16 @@
           "width": 888,
           "height": 215
         }
-      ]
+      ],
+      "scene": {
+        "src": "scene-sign-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "請把信",
+          "放在門口。"
+        ]
+      }
     },
     "bear-note": {
       "text": "把信放在桌上。",
@@ -1447,7 +1456,16 @@
           "width": 600,
           "height": 215
         }
-      ]
+      ],
+      "scene": {
+        "src": "scene-bear-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "把信放在",
+          "桌上。"
+        ]
+      }
     },
     "bird-note": {
       "text": "我在樹上。請把信放在樹下。",
@@ -1470,7 +1488,17 @@
           "width": 888,
           "height": 215
         }
-      ]
+      ],
+      "scene": {
+        "src": "scene-bird-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "我在樹上。",
+          "請把信",
+          "放在樹下。"
+        ]
+      }
     },
     "secret-note": {
       "text": "請來樹下。一起種花。",
@@ -1487,7 +1515,16 @@
           "width": 1464,
           "height": 215
         }
-      ]
+      ],
+      "scene": {
+        "src": "scene-secret-note.png",
+        "width": 1488,
+        "height": 741,
+        "lines": [
+          "請來樹下。",
+          "一起種花。"
+        ]
+      }
     },
     "atong-name": {
       "text": "阿通",

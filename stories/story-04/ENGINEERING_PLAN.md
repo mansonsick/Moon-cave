@@ -29,7 +29,11 @@
 
 `scripts/build_story04_content.py` 和 `build_story04_graphics.py` 產生資料及原創 SVG，`render_reading_text.py --font <本機字型路徑>` 用 Pillow／fontTools 產 PNG。指定字型的替代字形處理背、還、郵差、種子；臨時字型結束後刪除，不提交字型。manifest 保留文字、切片尺寸及語境讀音。
 
-23 張 imagegen 圖（含角色 anchor、底圖和透明角色），原始生成檔在本機保留；郵局開場桌子版、信箱開門版另存，沒有覆蓋底圖。PROMPTS.json 保留指令；ASSET_MANIFEST.json 記尺寸與透明性。圖片位置按同一未裁切的 16:9 畫面定位。
+35 張 imagegen 圖：原 23 張角色／場景，加八張情境卡和四張透明道具。原始生成檔在本機保留；沒有覆蓋底圖。PROMPTS.json 與 VISUAL_FIX_PROMPTS.json 保留指令；ASSET_MANIFEST.json 記尺寸與透明性，可由 build_story04_manifest.py 重建。圖片位置按同一未裁切的 16:9 畫面定位。
+
+第二、三站以單張完整圖卡呈現情境；第一站保留物象／形狀／字並排。網頁長句練習使用相符的情境圖，紙本維持三張 A4 的原有圖示／閱讀段落配置。題目及解答不改，題池版本與既有保存進度不需遷移。
+
+場景小紙由 sceneText 定義視覺斷行，原文必須與 label 相同；指定字型、統一畫布和字級產出四張深色注音 PNG，text.scene 以完整圖置中容納。透明道具 crop 是量測 alpha 範圍的定位資料，不裁切或重畫原始 PNG。徽章分姿勢定位，信封按背景桌面／信盤的實際表面落點，小鳥不與已送出的信重疊。
 
 使用既有 AudioManager 和 Story 02 已公開原創 WAV：found-item、success、fail-soft、drag-lock，音量 0.3。首次開始冒險才解鎖，共用 `adventure.settings.sound`；聲音關閉／載入失敗不影響故事。尚無新環境音或朗讀，沒有下載未授權音效，也不改既有音效檔。
 

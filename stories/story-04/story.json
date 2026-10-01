@@ -588,37 +588,43 @@
         "word": "learn-0-0-word",
         "picture": "mountain",
         "help": "learn-0-0-help",
-        "shape": "mountain-shape"
+        "shape": "mountain-shape",
+        "illustration": null
       },
       {
         "word": "learn-0-1-word",
         "picture": "water",
         "help": "learn-0-1-help",
-        "shape": "water-shape"
+        "shape": "water-shape",
+        "illustration": null
       },
       {
         "word": "learn-0-2-word",
         "picture": "sun",
         "help": "learn-0-2-help",
-        "shape": "sun-shape"
+        "shape": "sun-shape",
+        "illustration": null
       },
       {
         "word": "learn-0-3-word",
         "picture": "moon",
         "help": "learn-0-3-help",
-        "shape": "moon-shape"
+        "shape": "moon-shape",
+        "illustration": null
       },
       {
         "word": "learn-0-4-word",
         "picture": "tree",
         "help": "learn-0-4-help",
-        "shape": "tree-shape"
+        "shape": "tree-shape",
+        "illustration": null
       },
       {
         "word": "learn-0-5-word",
         "picture": "mouth",
         "help": "learn-0-5-help",
-        "shape": "mouth-shape"
+        "shape": "mouth-shape",
+        "illustration": null
       }
     ],
     [
@@ -626,37 +632,43 @@
         "word": "learn-1-0-word",
         "picture": "bird-above",
         "help": "learn-1-0-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-bird-mail.png"
       },
       {
         "word": "learn-1-1-word",
         "picture": "tray-below",
         "help": "learn-1-1-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-bird-mail.png"
       },
       {
         "word": "learn-1-2-word",
         "picture": "taking",
         "help": "learn-1-2-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-take-letter.png"
       },
       {
         "word": "learn-1-3-word",
         "picture": "placing",
         "help": "learn-1-3-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-place-letter.png"
       },
       {
         "word": "learn-1-4-word",
         "picture": "bird",
         "help": "learn-1-4-help",
-        "shape": null
+        "shape": null,
+        "illustration": null
       },
       {
         "word": "learn-1-5-word",
         "picture": "flower",
         "help": "learn-1-5-help",
-        "shape": null
+        "shape": null,
+        "illustration": null
       }
     ],
     [
@@ -664,31 +676,36 @@
         "word": "learn-2-0-word",
         "picture": "door",
         "help": "learn-2-0-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-rabbit-door.png"
       },
       {
         "word": "learn-2-1-word",
         "picture": "tray-below",
         "help": "learn-2-1-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-bird-mail.png"
       },
       {
         "word": "learn-2-2-word",
         "picture": "taking",
         "help": "learn-2-2-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-who-holds-what.png"
       },
       {
         "word": "learn-2-3-word",
         "picture": "placing",
         "help": "learn-2-3-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-read-then-place.png"
       },
       {
         "word": "learn-2-4-word",
         "picture": "flower",
         "help": "learn-2-4-help",
-        "shape": null
+        "shape": null,
+        "illustration": "card-garden-together.png"
       }
     ]
   ],
@@ -704,6 +721,7 @@
       ],
       "answer": "Q01-choice-0",
       "picture": "mountain",
+      "illustration": null,
       "passage": null,
       "hint": "Q01-hint"
     },
@@ -718,6 +736,7 @@
       ],
       "answer": "Q02-choice-1",
       "picture": "water",
+      "illustration": null,
       "passage": null,
       "hint": "Q02-hint"
     },
@@ -732,6 +751,7 @@
       ],
       "answer": "Q03-choice-1",
       "picture": "sun",
+      "illustration": null,
       "passage": null,
       "hint": "Q03-hint"
     },
@@ -746,6 +766,7 @@
       ],
       "answer": "Q04-choice-0",
       "picture": "moon",
+      "illustration": null,
       "passage": null,
       "hint": "Q04-hint"
     },
@@ -760,6 +781,7 @@
       ],
       "answer": "Q05-choice-2",
       "picture": "wood",
+      "illustration": null,
       "passage": null,
       "hint": "Q05-hint"
     },
@@ -774,6 +796,7 @@
       ],
       "answer": "Q06-choice-1",
       "picture": "mouth",
+      "illustration": null,
       "passage": null,
       "hint": "Q06-hint"
     },
@@ -788,6 +811,7 @@
       ],
       "answer": "Q07-choice-0",
       "picture": "bird-above",
+      "illustration": "card-bird-mail.png",
       "passage": null,
       "hint": "Q07-hint"
     },
@@ -802,6 +826,7 @@
       ],
       "answer": "Q08-choice-1",
       "picture": "tray-below",
+      "illustration": "card-bird-mail.png",
       "passage": null,
       "hint": "Q08-hint"
     },
@@ -816,6 +841,7 @@
       ],
       "answer": "Q09-choice-2",
       "picture": "taking",
+      "illustration": "card-take-letter.png",
       "passage": null,
       "hint": "Q09-hint"
     },
@@ -830,6 +856,7 @@
       ],
       "answer": "Q10-choice-0",
       "picture": "placing",
+      "illustration": "card-place-letter.png",
       "passage": null,
       "hint": "Q10-hint"
     },
@@ -844,6 +871,7 @@
       ],
       "answer": "Q11-choice-1",
       "picture": "bird",
+      "illustration": null,
       "passage": null,
       "hint": "Q11-hint"
     },
@@ -858,6 +886,7 @@
       ],
       "answer": "Q12-choice-2",
       "picture": "flower",
+      "illustration": null,
       "passage": null,
       "hint": "Q12-hint"
     },
@@ -872,6 +901,7 @@
       ],
       "answer": "Q13-choice-2",
       "picture": "table-top",
+      "illustration": null,
       "passage": null,
       "hint": "Q13-hint"
     },
@@ -886,6 +916,7 @@
       ],
       "answer": "Q14-choice-1",
       "picture": null,
+      "illustration": "card-rabbit-door.png",
       "passage": "Q14-passage",
       "hint": "Q14-hint"
     },
@@ -900,6 +931,7 @@
       ],
       "answer": "Q15-choice-0",
       "picture": null,
+      "illustration": "card-bird-mail.png",
       "passage": "Q15-passage",
       "hint": "Q15-hint"
     },
@@ -914,6 +946,7 @@
       ],
       "answer": "Q16-choice-2",
       "picture": null,
+      "illustration": "card-who-holds-what.png",
       "passage": "Q16-passage",
       "hint": "Q16-hint"
     },
@@ -928,6 +961,7 @@
       ],
       "answer": "Q17-choice-1",
       "picture": null,
+      "illustration": "card-read-then-place.png",
       "passage": "Q17-passage",
       "hint": "Q17-hint"
     },
@@ -942,6 +976,7 @@
       ],
       "answer": "Q18-choice-0",
       "picture": null,
+      "illustration": "card-arrive-garden.png",
       "passage": "Q18-passage",
       "hint": "Q18-hint"
     },
@@ -956,6 +991,7 @@
       ],
       "answer": "Q19-choice-1",
       "picture": null,
+      "illustration": "card-arrive-garden.png",
       "passage": "Q19-passage",
       "hint": "Q19-hint"
     },
@@ -970,10 +1006,68 @@
       ],
       "answer": "Q20-choice-2",
       "picture": null,
+      "illustration": "card-garden-together.png",
       "passage": "Q20-passage",
       "hint": "Q20-hint"
     }
   ],
+  "sceneText": {
+    "sign-note": [
+      "請把信",
+      "放在門口。"
+    ],
+    "bear-note": [
+      "把信放在",
+      "桌上。"
+    ],
+    "bird-note": [
+      "我在樹上。",
+      "請把信",
+      "放在樹下。"
+    ],
+    "secret-note": [
+      "請來樹下。",
+      "一起種花。"
+    ]
+  },
+  "props": {
+    "envelope": {
+      "src": "envelope-painted.png",
+      "crop": [
+        0.011578947368421053,
+        0.06159420289855073,
+        0.9773684210526316,
+        0.8985507246376812
+      ]
+    },
+    "badge": {
+      "src": "badge-painted.png",
+      "crop": [
+        0.1631578947368421,
+        0.10744500846023688,
+        0.6759398496240602,
+        0.7732656514382402
+      ]
+    },
+    "note-paper": {
+      "src": "note-paper.png",
+      "crop": [
+        0.026243093922651933,
+        0.04511970534069982,
+        0.949585635359116,
+        0.9079189686924494
+      ]
+    },
+    "wood-card": {
+      "src": "wood-card.png",
+      "crop": [
+        0.06575520833333333,
+        0.1474609375,
+        0.8763020833333334,
+        0.7568359375
+      ]
+    }
+  },
   "representatives": [
     [
       "Q02",

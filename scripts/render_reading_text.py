@@ -43,6 +43,27 @@ def main():
                 name=f'{key}-{n}.png';image.save(out/name,optimize=True)
                 parts.append({'src':name,'text':chunk,'width':image.width,'height':image.height})
             manifest['labels'][key]={'text':text,'parts':parts}
+        # Scene notices are complete, fixed-line images, not flow-layout chunks.
+        # A shared canvas and font size keep ink consistent across all notices.
+        notes=config.get('sceneText',{})
+        note_width=math.ceil(max(sum(selected(config['labels'][key],sum(map(len,lines[:n]))+i).getlength(c)
+          for i,c in enumerate(line)) for key,lines in notes.items() for n,line in enumerate(lines)))+pad*4
+        line_height=bottom-top+pad*2;gap=36;note_height=line_height*3+gap*2+pad*2
+        for key,lines in notes.items():
+            original=config['labels'][key]
+            if ''.join(lines)!=original:raise ValueError('Scene note changed approved text: '+key)
+            image=Image.new('RGBA',(note_width,note_height),(0,0,0,0));draw=ImageDraw.Draw(image)
+            y=(note_height-len(lines)*line_height-(len(lines)-1)*gap)/2;offset=0
+            for line in lines:
+                items=[(selected(original,offset+i),c) for i,c in enumerate(line)]
+                advances=[f.getlength(c) for f,c in items];x=(note_width-sum(advances))/2
+                for (chosen,c),advance in zip(items,advances):
+                    draw.text((x,y+pad-top),c,font=chosen,fill='#211b12');x+=advance
+                y+=line_height+gap;offset+=len(line)
+            bounds=image.getbbox()
+            if not bounds or not(0<bounds[0]<bounds[2]<image.width and 0<bounds[1]<bounds[3]<image.height):raise ValueError('Cropped scene notice '+key)
+            name='scene-'+key+'.png';image.save(out/name,optimize=True)
+            manifest['labels'][key]['scene']={'src':name,'width':image.width,'height':image.height,'lines':lines}
         (out/'text.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Rendered',len(manifest['labels']),'labels with contextual zhuyin; private fonts removed.')
 
