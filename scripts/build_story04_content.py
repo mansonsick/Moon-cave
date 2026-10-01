@@ -68,7 +68,7 @@ learning=[
 ]
 cards=[]
 card_art={
- (1,0):'card-bird-mail',(1,1):'card-bird-mail',(1,2):'card-take-letter',(1,3):'card-place-letter',
+ (1,0):'card-above',(1,1):'card-below',(1,2):'card-take-letter',(1,3):'card-place-letter',
  (2,0):'card-rabbit-door',(2,1):'card-bird-mail',(2,2):'card-who-holds-what',
  (2,3):'card-read-then-place',(2,4):'card-garden-together',
 }
@@ -86,7 +86,7 @@ pics=['mountain','water','sun','moon','wood','mouth','bird-above','tray-below','
 passages={14:'小兔在門口等信。',15:'小鳥在樹上。請把信放在樹下。',16:'阿通拿信，小松鼠拿花。',17:'阿通先讀小紙，再把信放好。'}
 shared='小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。'
 questions=[]
-question_art={7:'card-bird-mail',8:'card-bird-mail',9:'card-take-letter',10:'card-place-letter',
+question_art={7:'card-above',8:'card-below',9:'card-take-letter',10:'card-place-letter',
  14:'card-rabbit-door',15:'card-bird-mail',16:'card-who-holds-what',17:'card-read-then-place',
  18:'card-arrive-garden',19:'card-arrive-garden',20:'card-garden-together'}
 for row in re.findall(r'^\| Q\d{2} \|.*$',(STORY/'PRACTICE_PLAN.md').read_text(encoding='utf-8'),re.M):

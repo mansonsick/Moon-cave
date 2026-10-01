@@ -1,6 +1,6 @@
 {
   "created": "2026-10-01",
-  "generatedImages": 35,
+  "generatedImages": 37,
   "practiceSVGs": 27,
   "textLabels": 320,
   "fixedSceneNotices": 4,
@@ -96,7 +96,21 @@
       "kind": "generated illustration"
     },
     {
+      "path": "assets/images/cards/card-above.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
       "path": "assets/images/cards/card-arrive-garden.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "kind": "generated illustration"
+    },
+    {
+      "path": "assets/images/cards/card-below.png",
       "width": 1672,
       "height": 941,
       "transparent": false,

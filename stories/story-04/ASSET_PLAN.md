@@ -50,4 +50,8 @@
 
 新增 `assets/images/cards/` 八張完整情境卡，對應上下位置、拿信／放信、門口、人物各持何物、先讀再放、到達順序與共同種花。後段學習與網頁短句練習使用完整圖卡，保留第一站原有形狀記憶示意；不把單一花朵圖當作多人種花或拿信的畫面。
 
-`assets/images/props/` 新增透明信封、徽章、空白小紙和木字牌，依原底圖的桌面／信盤及衣服實際位置疊入。小紙較原圖留白大，原底圖保留；文字獨立整張注音 PNG，統一深褐色與字級，完整留在紙內。全套現在 35 張插圖；新的內建 imagegen 指令見 `assets/images/VISUAL_FIX_PROMPTS.json`，清單可由 `scripts/build_story04_manifest.py` 重建。
+`assets/images/props/` 新增透明信封、徽章、空白小紙和木字牌，依原底圖的桌面／信盤及衣服實際位置疊入。小紙較原圖留白大，原底圖保留；文字獨立整張注音 PNG，統一深褐色與字級，完整留在紙內。全套現在 37 張插圖；新的內建 imagegen 指令見 `assets/images/VISUAL_FIX_PROMPTS.json`，清單可由 `scripts/build_story04_manifest.py` 重建。
+
+## 上／下圖卡分開
+
+依使用者試閱回饋，新增 `cards/card-above.png` 和 `cards/card-below.png`。兩張保留同一棵樹、小鳥與樹下信盤作位置比較：上卡阿通與朋友仰望高處小鳥，下卡阿通俯身指向低處信盤、朋友也低頭看信。第二站上／下學習卡及 Q07／Q08 各用對應圖片；原 `card-bird-mail.png` 保留給第三站完整比較句，不覆寫。由內建 imagegen 編輯原圖，完整指令追加至 `VISUAL_FIX_PROMPTS.json`。

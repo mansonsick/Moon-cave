@@ -29,7 +29,7 @@
 
 `scripts/build_story04_content.py` 和 `build_story04_graphics.py` 產生資料及原創 SVG，`render_reading_text.py --font <本機字型路徑>` 用 Pillow／fontTools 產 PNG。指定字型的替代字形處理背、還、郵差、種子；臨時字型結束後刪除，不提交字型。manifest 保留文字、切片尺寸及語境讀音。
 
-35 張 imagegen 圖：原 23 張角色／場景，加八張情境卡和四張透明道具。原始生成檔在本機保留；沒有覆蓋底圖。PROMPTS.json 與 VISUAL_FIX_PROMPTS.json 保留指令；ASSET_MANIFEST.json 記尺寸與透明性，可由 build_story04_manifest.py 重建。圖片位置按同一未裁切的 16:9 畫面定位。
+37 張 imagegen 圖：原 23 張角色／場景，加十張情境卡和四張透明道具。原始生成檔在本機保留；沒有覆蓋底圖。PROMPTS.json 與 VISUAL_FIX_PROMPTS.json 保留指令；ASSET_MANIFEST.json 記尺寸與透明性，可由 build_story04_manifest.py 重建。圖片位置按同一未裁切的 16:9 畫面定位。
 
 第二、三站以單張完整圖卡呈現情境；第一站保留物象／形狀／字並排。網頁長句練習使用相符的情境圖，紙本維持三張 A4 的原有圖示／閱讀段落配置。題目及解答不改，題池版本與既有保存進度不需遷移。
 

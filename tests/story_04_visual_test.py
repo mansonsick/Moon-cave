@@ -3,7 +3,7 @@
 Seeded saves below are layout fixtures, not evidence of successful gameplay.
 The separate story_04_test runs actual complete routes.
 """
-import json
+import hashlib, json
 from pathlib import Path
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -11,6 +11,11 @@ from story_test_support import serve,REPO
 
 OUT=REPO.parent/'hub-review/story-04-visual-qa';OUT.mkdir(parents=True,exist_ok=True)
 DATA=json.loads((REPO/'stories/story-04/story.json').read_text(encoding='utf-8'))
+direction_cards=DATA['learning'][1][:2]
+assert [DATA['labels'][card['word']] for card in direction_cards]==['上','下']
+direction_images=[(REPO/'stories/story-04/assets/images/cards'/card['illustration']).read_bytes() for card in direction_cards]
+assert len({hashlib.sha256(image).digest() for image in direction_images})==2,'Above/below must have distinct illustrations'
+assert [q['illustration'] for q in DATA['questions'][6:8]]==[card['illustration'] for card in direction_cards],'Practice must use the corresponding direction card'
 TEXT=json.loads((REPO/'stories/story-04/assets/text/text.json').read_text(encoding='utf-8'))
 assert len({(TEXT['labels'][key]['scene']['width'],TEXT['labels'][key]['scene']['height']) for key in DATA['sceneText']})==1
 for key,lines in DATA['sceneText'].items():
@@ -83,6 +88,12 @@ try:
                 images(page);assert page.evaluate('document.documentElement.scrollWidth<=innerWidth'),(width,station,index)
                 if width==820:frame.screenshot(path=str(OUT/f'learning-{station}-{index}.png'))
                 if index<len(DATA['learning'][station])-1:click(page,'next-card');images(page)
+            if station==1:
+                click(page,'learn-done');click(page,'all-mode');images(page)
+                for q in DATA['questions'][6:8]:
+                    field=page.locator(f'[data-question="{q["id"]}"]');picture=field.locator('img.illustration')
+                    assert picture.count()==1 and picture.get_attribute('src').endswith(q['illustration'])
+                    if width==820:field.screenshot(path=str(OUT/(q['id']+'.png')))
             if station==2:
                 click(page,'learn-done');click(page,'all-mode');images(page)
                 for q in DATA['questions'][13:]:
@@ -91,6 +102,6 @@ try:
                     if width==820 and q['id'] in ['Q16','Q17']:field.screenshot(path=str(OUT/(q['id']+'.png')))
         assert not errors,errors;context.close()
     browser.close()
- print('PASS contained fixed ink; three seated letters; delivered surface positions; route signs; single contextual cards; Q14-Q20 illustrated; 390/820/1180 and A+')
+ print('PASS contained fixed ink; three seated letters; delivered surface positions; route signs; single contextual cards; distinct above/below teaching and Q07/Q08; Q14-Q20 illustrated; 390/820/1180 and A+')
  (OUT/'results.json').write_text(json.dumps({'passed':True,'viewports':[390,820,1180],'physicalTablet':False,'manualIllustrationReviewRequired':True}),encoding='utf-8')
 finally:server.shutdown()

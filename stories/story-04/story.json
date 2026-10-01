@@ -633,14 +633,14 @@
         "picture": "bird-above",
         "help": "learn-1-0-help",
         "shape": null,
-        "illustration": "card-bird-mail.png"
+        "illustration": "card-above.png"
       },
       {
         "word": "learn-1-1-word",
         "picture": "tray-below",
         "help": "learn-1-1-help",
         "shape": null,
-        "illustration": "card-bird-mail.png"
+        "illustration": "card-below.png"
       },
       {
         "word": "learn-1-2-word",
@@ -811,7 +811,7 @@
       ],
       "answer": "Q07-choice-0",
       "picture": "bird-above",
-      "illustration": "card-bird-mail.png",
+      "illustration": "card-above.png",
       "passage": null,
       "hint": "Q07-hint"
     },
@@ -826,7 +826,7 @@
       ],
       "answer": "Q08-choice-1",
       "picture": "tray-below",
-      "illustration": "card-bird-mail.png",
+      "illustration": "card-below.png",
       "passage": null,
       "hint": "Q08-hint"
     },
