@@ -1,0 +1,1017 @@
+{
+  "id": "story-04",
+  "poolVersion": "forest-v1",
+  "title": "title",
+  "scenes": {
+    "S01": {
+      "title": "S01-title",
+      "lines": [
+        "S01-line-0",
+        "S01-line-1",
+        "S01-line-2",
+        "S01-line-3"
+      ],
+      "background": "postoffice-opening.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        16,
+        20,
+        26,
+        74
+      ]
+    },
+    "S02": {
+      "title": "S02-title",
+      "lines": [
+        "S02-line-0",
+        "S02-line-1",
+        "S02-line-2",
+        "S02-line-3"
+      ],
+      "background": "postoffice-inside.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        10,
+        20,
+        26,
+        72
+      ]
+    },
+    "S03": {
+      "title": "S03-title",
+      "lines": [
+        "S03-line-0",
+        "S03-line-1",
+        "S03-line-2",
+        "S03-line-3"
+      ],
+      "background": "postoffice-inside.png",
+      "pose": "atong-reading.png",
+      "actorBox": [
+        8,
+        22,
+        25,
+        70
+      ]
+    },
+    "S04": {
+      "title": "S04-title",
+      "lines": [
+        "S04-line-0",
+        "S04-line-1",
+        "S04-line-2",
+        "S04-line-3"
+      ],
+      "background": "bridge-fork.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        12,
+        27,
+        24,
+        70
+      ]
+    },
+    "S05": {
+      "title": "S05-title",
+      "lines": [
+        "S05-line-0",
+        "S05-line-1",
+        "S05-line-2",
+        "S05-line-3"
+      ],
+      "background": "rabbit-door.png",
+      "pose": "atong-reading.png",
+      "actorBox": [
+        30,
+        24,
+        26,
+        72
+      ]
+    },
+    "S06": {
+      "title": "S06-title",
+      "lines": [
+        "S06-line-0",
+        "S06-line-1",
+        "S06-line-2",
+        "S06-line-3"
+      ],
+      "background": "bridge-fork.png",
+      "pose": "atong-reading.png",
+      "actorBox": [
+        17,
+        24,
+        24,
+        70
+      ]
+    },
+    "S07": {
+      "title": "S07-title",
+      "lines": [
+        "S07-line-0",
+        "S07-line-1",
+        "S07-line-2",
+        "S07-line-3"
+      ],
+      "background": "bear-room.png",
+      "pose": "atong-reading.png",
+      "actorBox": [
+        8,
+        22,
+        25,
+        72
+      ]
+    },
+    "S08": {
+      "title": "S08-title",
+      "lines": [
+        "S08-line-0",
+        "S08-line-1",
+        "S08-line-2",
+        "S08-line-3"
+      ],
+      "background": "leaf-path.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        35,
+        24,
+        26,
+        72
+      ]
+    },
+    "H01": {
+      "title": "H01-title",
+      "lines": [
+        "H01-line-0",
+        "H01-line-1",
+        "H01-line-2",
+        "H01-line-3"
+      ],
+      "background": "leaf-path.png",
+      "pose": "atong-leaf.png",
+      "actorBox": [
+        31,
+        12,
+        34,
+        83
+      ]
+    },
+    "S09": {
+      "title": "S09-title",
+      "lines": [
+        "S09-line-0",
+        "S09-line-1",
+        "S09-line-2",
+        "S09-line-3"
+      ],
+      "background": "big-tree.png",
+      "pose": "atong-looking.png",
+      "actorBox": [
+        19,
+        20,
+        25,
+        73
+      ]
+    },
+    "S10": {
+      "title": "S10-title",
+      "lines": [
+        "S10-line-0",
+        "S10-line-1",
+        "S10-line-2",
+        "S10-line-3"
+      ],
+      "background": "big-tree.png",
+      "pose": "atong-delivering.png",
+      "actorBox": [
+        31,
+        38,
+        30,
+        55
+      ]
+    },
+    "S11": {
+      "title": "S11-title",
+      "lines": [
+        "S11-line-0",
+        "S11-line-1",
+        "S11-line-2",
+        "S11-line-3"
+      ],
+      "background": "old-mailbox.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        26,
+        24,
+        25,
+        69
+      ]
+    },
+    "E01": {
+      "title": "E01-title",
+      "lines": [
+        "E01-line-0",
+        "E01-line-1",
+        "E01-line-2",
+        "E01-line-3"
+      ],
+      "background": "postoffice-outside.png",
+      "pose": "atong-walking.png",
+      "actorBox": [
+        11,
+        22,
+        25,
+        73
+      ]
+    },
+    "E02": {
+      "title": "E02-title",
+      "lines": [
+        "E02-line-0",
+        "E02-line-1",
+        "E02-line-2",
+        "E02-line-3"
+      ],
+      "background": "old-mailbox-open.png",
+      "pose": "atong-reading.png",
+      "actorBox": [
+        25,
+        22,
+        25,
+        72
+      ]
+    },
+    "E03": {
+      "title": "E03-title",
+      "lines": [
+        "E03-line-0",
+        "E03-line-1",
+        "E03-line-2",
+        "E03-line-3",
+        "E03-line-4"
+      ],
+      "background": "garden.png",
+      "pose": "atong-gardening.png",
+      "actorBox": [
+        31,
+        34,
+        28,
+        57
+      ]
+    }
+  },
+  "labels": {
+    "title": "阿通與森林郵局",
+    "start": "開始冒險",
+    "resume": "繼續冒險",
+    "continue": "繼續",
+    "home": "回首頁",
+    "menu": "回本書選單",
+    "replay": "再玩一次",
+    "cancel": "先不要",
+    "yes-replay": "重新開始",
+    "reset-help": "只重新開始這一本故事。",
+    "code": "題卷碼",
+    "apply-code": "使用這份題卷",
+    "new-paper": "產生新題卷",
+    "paper": "列印練習紙",
+    "answers": "家長解答",
+    "print": "列印",
+    "code-help": "紙本和平板要用相同的題卷碼。",
+    "bad-code": "題卷碼不正確，請再看一次。",
+    "change-help": "換題卷會重新開始這一本。",
+    "paper-help": "先學圖卡，再完成紙本練習。",
+    "no-printer": "沒有紙本，也能在平板練習。",
+    "learn": "一起學習",
+    "practice": "練習看看",
+    "learn-help": "大人陪孩子一起念，也看看圖。",
+    "next-card": "下一張圖卡",
+    "previous-card": "上一張圖卡",
+    "learn-done": "學完了，來練習",
+    "review": "回看學習卡",
+    "check": "核對答案",
+    "correct": "答對了！",
+    "try": "再看一次，也可以回學習卡。",
+    "hint": "看看提示",
+    "together": "一起讀一讀",
+    "adult-confirm": "大人確認共同完成",
+    "adult-help": "請大人陪孩子讀題、指圖，再確認完成。",
+    "station-done": "這一站完成了！",
+    "representative": "核對這兩題，再繼續送信。",
+    "not-all": "這裡核對兩題，其他紙本題請大人核對。",
+    "all-mode": "平板練習全部題目",
+    "two-mode": "核對紙本代表題",
+    "next-question": "下一題",
+    "finish-practice": "完成練習",
+    "bag": "郵差包",
+    "leaf-name": "金色葉片",
+    "badge": "郵差徽章",
+    "letters": "送信進度",
+    "got-leaf": "阿通把葉片收好了！",
+    "delivered": "信送到了！",
+    "wrong-place": "再看看小紙，找出正確的位置。",
+    "wrong-road": "這裡是山邊。小兔在木橋那邊。",
+    "observe-box": "箱上刻著一片葉。",
+    "into-office": "走進郵局",
+    "prepared": "準備好了",
+    "mountain-road": "往山邊走",
+    "bridge-road": "往木橋走",
+    "door-tray": "門口的信盤",
+    "tree-basket": "樹下的籃子",
+    "table-top": "桌上",
+    "under-table": "桌下",
+    "walk-tree": "往大樹走",
+    "root-tray": "樹下的信盤",
+    "nest": "樹上的鳥巢",
+    "back-office": "回郵局",
+    "visit-tree": "到樹下看看",
+    "ending": "我們把話送到了！",
+    "optional-break": "休息一下，動一動。",
+    "bird-break": "張開雙手，像小鳥飛一下。",
+    "clap-break": "拍手三下，再出發。",
+    "break-done": "休息好了",
+    "paper-title": "森林郵局探險紙",
+    "answer-title": "森林郵局家長解答",
+    "choose-help": "讀一讀，圈選一個答案。",
+    "name": "姓名",
+    "passage-title": "一起讀小段落",
+    "sheet-1": "第一站：看圖認字",
+    "sheet-2": "第二站：讀懂詞語",
+    "sheet-3": "第三站：短句找線索",
+    "writing": "想寫寫看，也可以練習。",
+    "card-picture": "看看圖",
+    "card-shape": "記住形狀",
+    "card-read": "讀一讀",
+    "word-cards": "再看一次圖卡",
+    "learn-stages": "先看圖，再讀詞，最後讀短句。",
+    "paper-warning": "練習紙不含解答。",
+    "answer-warning": "這份是大人核對用的解答。",
+    "load-error": "故事暫時沒有載入。請重新整理。",
+    "loading": "故事準備中。",
+    "saved": "進度已保留。",
+    "return-story": "回故事",
+    "sample": "先一起看一個例子。",
+    "reread": "讀句子，找出裡面的線索。",
+    "empty-answer": "先選一個答案吧。",
+    "learn-unfinished": "先把這一站的圖卡看完吧。",
+    "stage-ready": "路牌修好了！",
+    "sign-note": "請把信放在門口。",
+    "bear-note": "把信放在桌上。",
+    "bird-note": "我在樹上。請把信放在樹下。",
+    "secret-note": "請來樹下。一起種花。",
+    "atong-name": "阿通",
+    "squirrel-name": "小松鼠",
+    "hub-chapter": "阿通的第四場冒險",
+    "hub-first": "看看圖，讀一讀，",
+    "hub-second": "一起把信送到森林朋友手中。",
+    "S01-title": "郵局的早晨",
+    "S01-line-0": "森林裡有一間小郵局。",
+    "S01-line-1": "昨晚的風好大。",
+    "S01-line-2": "路牌上的字卡掉下來了。",
+    "S01-line-3": "桌上還有三封信。",
+    "S02-title": "今天當小郵差",
+    "S02-line-0": "小兔、小熊和小鳥在等信。",
+    "S02-line-1": "阿通背起郵差包。",
+    "S02-line-2": "先看清字，再走對路。",
+    "S02-line-3": "小松鼠說：我陪你！",
+    "S03-title": "讀懂郵局的圖卡",
+    "S03-line-0": "山、水、日、月、木、口。",
+    "S03-line-1": "郵局的圖卡有字也有圖。",
+    "S03-line-2": "看看圖，也讀讀字。",
+    "S03-line-3": "找到字，就能修好路牌！",
+    "S04-title": "木橋前的小路",
+    "S04-line-0": "一條路走向山邊。",
+    "S04-line-1": "一條路通往木橋。",
+    "S04-line-2": "小兔住在木橋那一邊。",
+    "S04-line-3": "找找看，哪張牌是『木』？",
+    "S05-title": "小兔的門口",
+    "S05-line-0": "小兔在門口等阿通。",
+    "S05-line-1": "她留下了一張小紙。",
+    "S05-line-2": "『請把信放在門口。』",
+    "S05-line-3": "先讀一讀，再放好。",
+    "S06-title": "橋邊的詞語小站",
+    "S06-line-0": "小松鼠找到幾張圖卡。",
+    "S06-line-1": "『上』和『下』不一樣。",
+    "S06-line-2": "『拿』和『放』也不一樣。",
+    "S06-line-3": "讀懂詞，就知道怎麼做。",
+    "S07-title": "小熊的桌子",
+    "S07-line-0": "小熊打開門。",
+    "S07-line-1": "『請進，我在做點心。』",
+    "S07-line-2": "阿通又讀了一次小紙。",
+    "S07-line-3": "『把信放在桌上。』",
+    "S08-title": "葉子落下的小路",
+    "S08-line-0": "第三封信要送給小鳥。",
+    "S08-line-1": "她住在前面的大樹上。",
+    "S08-line-2": "風吹過草叢。",
+    "S08-line-3": "一片葉子輕輕落下。",
+    "H01-title": "葉背的小圖案",
+    "H01-line-0": "這片葉子厚厚的。",
+    "H01-line-1": "葉背上有一個小圖案。",
+    "H01-line-2": "阿通把它翻過來看。",
+    "H01-line-3": "阿通把它收進郵差包。",
+    "S09-title": "讀小鳥留下的話",
+    "S09-line-0": "小鳥在高高的樹上。",
+    "S09-line-1": "樹幹上貼著一張小紙。",
+    "S09-line-2": "『我在樹上。』",
+    "S09-line-3": "『請把信放在樹下。』",
+    "S10-title": "樹下的小信盤",
+    "S10-line-0": "阿通把信放在樹下。",
+    "S10-line-1": "小鳥飛下來收信。",
+    "S10-line-2": "『謝謝你，我等到了！』",
+    "S10-line-3": "三封信都送到了。",
+    "S11-title": "草邊的老信箱",
+    "S11-line-0": "回郵局的小路很安靜。",
+    "S11-line-1": "草邊有一個老信箱。",
+    "S11-line-2": "箱上刻著一片葉。",
+    "S11-line-3": "小松鼠停下來看了看。",
+    "E01-title": "普通結局 小郵差的一天",
+    "E01-line-0": "阿通回到森林郵局。",
+    "E01-line-1": "三位朋友都收到了信。",
+    "E01-line-2": "小松鼠幫阿通戴上徽章。",
+    "E01-line-3": "今天，我們把話送到了！",
+    "E02-title": "祕密信件",
+    "E02-line-0": "老信箱輕輕打開。",
+    "E02-line-1": "裡面有一封小小的信。",
+    "E02-line-2": "『請來樹下。一起種花。』",
+    "E02-line-3": "阿通和小松鼠對看一眼。",
+    "E03-title": "祕密結局 老朋友的花園",
+    "E03-line-0": "老郵差正在樹下等大家。",
+    "E03-line-1": "他拿出一小袋花種子。",
+    "E03-line-2": "也把郵差徽章交給阿通。",
+    "E03-line-3": "大家一起種下小花。",
+    "E03-line-4": "明天，郵局旁會有新顏色！",
+    "learn-0-0-word": "山",
+    "learn-0-0-help": "山，像高高低低的山峰。",
+    "learn-0-1-word": "水",
+    "learn-0-1-help": "小溪裡有水。看看流動的水。",
+    "learn-0-2-word": "日",
+    "learn-0-2-help": "日是太陽。先看圓圓的太陽。",
+    "learn-0-3-word": "月",
+    "learn-0-3-help": "月是月亮。看看彎彎的月亮。",
+    "learn-0-4-word": "木",
+    "learn-0-4-help": "木有樹幹、樹枝和樹根。木也可以是木頭。",
+    "learn-0-5-word": "口",
+    "learn-0-5-help": "口，像張開的小嘴。",
+    "learn-1-0-word": "上",
+    "learn-1-0-help": "小鳥在樹上。上，在比較高的位置。",
+    "learn-1-1-word": "下",
+    "learn-1-1-help": "信盤在樹下。下，在比較低的位置。",
+    "learn-1-2-word": "拿",
+    "learn-1-2-help": "把信拿起來，信在手裡。",
+    "learn-1-3-word": "放",
+    "learn-1-3-help": "把信放好，信留在信盤。",
+    "learn-1-4-word": "隻",
+    "learn-1-4-help": "一隻小鳥。說小鳥時，用隻。",
+    "learn-1-5-word": "朵",
+    "learn-1-5-help": "一朵花。說花時，用朵。",
+    "learn-2-0-word": "門口",
+    "learn-2-0-help": "小兔在門口等信。找一找地點：門口。",
+    "learn-2-1-word": "樹下",
+    "learn-2-1-help": "小鳥在樹上。信要放在樹下。找的是信的位置。",
+    "learn-2-2-word": "阿通",
+    "learn-2-2-help": "阿通拿信，小松鼠拿花。找一找，誰拿信？",
+    "learn-2-3-word": "先讀，再放",
+    "learn-2-3-help": "先讀小紙，再把信放好。先讀，再放。",
+    "learn-2-4-word": "一起種花",
+    "learn-2-4-help": "小兔帶花，小熊拿水。大家一起種花。讀一讀，再找人和動作。",
+    "Q01-choice-0": "山",
+    "Q01-choice-1": "水",
+    "Q01-choice-2": "木",
+    "Q01-prompt": "圈出圖中的字。",
+    "Q01-hint": "看看圖，再讀一讀每個選項。",
+    "Q02-choice-0": "月",
+    "Q02-choice-1": "水",
+    "Q02-choice-2": "日",
+    "Q02-prompt": "圈出圖中的字。",
+    "Q02-hint": "看看圖，再讀一讀每個選項。",
+    "Q03-choice-0": "月",
+    "Q03-choice-1": "日",
+    "Q03-choice-2": "口",
+    "Q03-prompt": "圈出圖中的字。",
+    "Q03-hint": "看看圖，再讀一讀每個選項。",
+    "Q04-choice-0": "月",
+    "Q04-choice-1": "山",
+    "Q04-choice-2": "水",
+    "Q04-prompt": "圈出圖中的字。",
+    "Q04-hint": "看看圖，再讀一讀每個選項。",
+    "Q05-choice-0": "水",
+    "Q05-choice-1": "口",
+    "Q05-choice-2": "木",
+    "Q05-prompt": "圈出圖中的字。",
+    "Q05-hint": "看看圖，再讀一讀每個選項。",
+    "Q06-choice-0": "日",
+    "Q06-choice-1": "口",
+    "Q06-choice-2": "山",
+    "Q06-prompt": "圈出圖中的字。",
+    "Q06-hint": "看看圖，再讀一讀每個選項。",
+    "Q07-choice-0": "上",
+    "Q07-choice-1": "下",
+    "Q07-choice-2": "裡",
+    "Q07-prompt": "小鳥在樹＿＿。",
+    "Q07-hint": "看看圖，再讀一讀每個選項。",
+    "Q08-choice-0": "上",
+    "Q08-choice-1": "下",
+    "Q08-choice-2": "裡",
+    "Q08-prompt": "信盤在樹＿＿。",
+    "Q08-hint": "看看圖，再讀一讀每個選項。",
+    "Q09-choice-0": "吃",
+    "Q09-choice-1": "放",
+    "Q09-choice-2": "拿",
+    "Q09-prompt": "阿通＿＿起信。",
+    "Q09-hint": "看看圖，再讀一讀每個選項。",
+    "Q10-choice-0": "放",
+    "Q10-choice-1": "飛",
+    "Q10-choice-2": "喝",
+    "Q10-prompt": "阿通把信＿＿好。",
+    "Q10-hint": "看看圖，再讀一讀每個選項。",
+    "Q11-choice-0": "本",
+    "Q11-choice-1": "隻",
+    "Q11-choice-2": "朵",
+    "Q11-prompt": "一＿＿小鳥。",
+    "Q11-hint": "看看圖，再讀一讀每個選項。",
+    "Q12-choice-0": "隻",
+    "Q12-choice-1": "個",
+    "Q12-choice-2": "朵",
+    "Q12-prompt": "一＿＿花。",
+    "Q12-hint": "看看圖，再讀一讀每個選項。",
+    "Q13-choice-0": "下",
+    "Q13-choice-1": "裡",
+    "Q13-choice-2": "上",
+    "Q13-prompt": "把信放在桌＿＿。",
+    "Q13-hint": "看看圖，再讀一讀每個選項。",
+    "Q14-choice-0": "樹上",
+    "Q14-choice-1": "門口",
+    "Q14-choice-2": "桌下",
+    "Q14-prompt": "小兔在哪裡？",
+    "Q14-passage": "小兔在門口等信。",
+    "Q14-hint": "再讀一次句子，找題目問的線索。",
+    "Q15-choice-0": "樹下",
+    "Q15-choice-1": "樹上",
+    "Q15-choice-2": "門口",
+    "Q15-prompt": "信要放在哪裡？",
+    "Q15-passage": "小鳥在樹上。請把信放在樹下。",
+    "Q15-hint": "再讀一次句子，找題目問的線索。",
+    "Q16-choice-0": "小松鼠",
+    "Q16-choice-1": "小鳥",
+    "Q16-choice-2": "阿通",
+    "Q16-prompt": "誰拿著信？",
+    "Q16-passage": "阿通拿信，小松鼠拿花。",
+    "Q16-hint": "再讀一次句子，找題目問的線索。",
+    "Q17-choice-0": "放好信",
+    "Q17-choice-1": "讀小紙",
+    "Q17-choice-2": "吃點心",
+    "Q17-prompt": "先做什麼？",
+    "Q17-passage": "阿通先讀小紙，再把信放好。",
+    "Q17-hint": "再讀一次句子，找題目問的線索。",
+    "Q18-choice-0": "花",
+    "Q18-choice-1": "水",
+    "Q18-choice-2": "信",
+    "Q18-prompt": "小兔帶了什麼？",
+    "Q18-passage": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+    "Q18-hint": "再讀一次句子，找題目問的線索。",
+    "Q19-choice-0": "小熊",
+    "Q19-choice-1": "小兔",
+    "Q19-choice-2": "小鳥",
+    "Q19-prompt": "誰先到樹下？",
+    "Q19-passage": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+    "Q19-hint": "再讀一次句子，找題目問的線索。",
+    "Q20-choice-0": "喝水",
+    "Q20-choice-1": "睡覺",
+    "Q20-choice-2": "種花",
+    "Q20-prompt": "最後大家做什麼？",
+    "Q20-passage": "小兔帶著花，先到樹下。小熊拿著水，也來了。大家一起種花。",
+    "Q20-hint": "再讀一次句子，找題目問的線索。"
+  },
+  "learning": [
+    [
+      {
+        "word": "learn-0-0-word",
+        "picture": "mountain",
+        "help": "learn-0-0-help",
+        "shape": "mountain-shape"
+      },
+      {
+        "word": "learn-0-1-word",
+        "picture": "water",
+        "help": "learn-0-1-help",
+        "shape": "water-shape"
+      },
+      {
+        "word": "learn-0-2-word",
+        "picture": "sun",
+        "help": "learn-0-2-help",
+        "shape": "sun-shape"
+      },
+      {
+        "word": "learn-0-3-word",
+        "picture": "moon",
+        "help": "learn-0-3-help",
+        "shape": "moon-shape"
+      },
+      {
+        "word": "learn-0-4-word",
+        "picture": "tree",
+        "help": "learn-0-4-help",
+        "shape": "tree-shape"
+      },
+      {
+        "word": "learn-0-5-word",
+        "picture": "mouth",
+        "help": "learn-0-5-help",
+        "shape": "mouth-shape"
+      }
+    ],
+    [
+      {
+        "word": "learn-1-0-word",
+        "picture": "bird-above",
+        "help": "learn-1-0-help",
+        "shape": null
+      },
+      {
+        "word": "learn-1-1-word",
+        "picture": "tray-below",
+        "help": "learn-1-1-help",
+        "shape": null
+      },
+      {
+        "word": "learn-1-2-word",
+        "picture": "taking",
+        "help": "learn-1-2-help",
+        "shape": null
+      },
+      {
+        "word": "learn-1-3-word",
+        "picture": "placing",
+        "help": "learn-1-3-help",
+        "shape": null
+      },
+      {
+        "word": "learn-1-4-word",
+        "picture": "bird",
+        "help": "learn-1-4-help",
+        "shape": null
+      },
+      {
+        "word": "learn-1-5-word",
+        "picture": "flower",
+        "help": "learn-1-5-help",
+        "shape": null
+      }
+    ],
+    [
+      {
+        "word": "learn-2-0-word",
+        "picture": "door",
+        "help": "learn-2-0-help",
+        "shape": null
+      },
+      {
+        "word": "learn-2-1-word",
+        "picture": "tray-below",
+        "help": "learn-2-1-help",
+        "shape": null
+      },
+      {
+        "word": "learn-2-2-word",
+        "picture": "taking",
+        "help": "learn-2-2-help",
+        "shape": null
+      },
+      {
+        "word": "learn-2-3-word",
+        "picture": "placing",
+        "help": "learn-2-3-help",
+        "shape": null
+      },
+      {
+        "word": "learn-2-4-word",
+        "picture": "flower",
+        "help": "learn-2-4-help",
+        "shape": null
+      }
+    ]
+  ],
+  "questions": [
+    {
+      "id": "Q01",
+      "stage": 0,
+      "prompt": "Q01-prompt",
+      "choices": [
+        "Q01-choice-0",
+        "Q01-choice-1",
+        "Q01-choice-2"
+      ],
+      "answer": "Q01-choice-0",
+      "picture": "mountain",
+      "passage": null,
+      "hint": "Q01-hint"
+    },
+    {
+      "id": "Q02",
+      "stage": 0,
+      "prompt": "Q02-prompt",
+      "choices": [
+        "Q02-choice-0",
+        "Q02-choice-1",
+        "Q02-choice-2"
+      ],
+      "answer": "Q02-choice-1",
+      "picture": "water",
+      "passage": null,
+      "hint": "Q02-hint"
+    },
+    {
+      "id": "Q03",
+      "stage": 0,
+      "prompt": "Q03-prompt",
+      "choices": [
+        "Q03-choice-0",
+        "Q03-choice-1",
+        "Q03-choice-2"
+      ],
+      "answer": "Q03-choice-1",
+      "picture": "sun",
+      "passage": null,
+      "hint": "Q03-hint"
+    },
+    {
+      "id": "Q04",
+      "stage": 0,
+      "prompt": "Q04-prompt",
+      "choices": [
+        "Q04-choice-0",
+        "Q04-choice-1",
+        "Q04-choice-2"
+      ],
+      "answer": "Q04-choice-0",
+      "picture": "moon",
+      "passage": null,
+      "hint": "Q04-hint"
+    },
+    {
+      "id": "Q05",
+      "stage": 0,
+      "prompt": "Q05-prompt",
+      "choices": [
+        "Q05-choice-0",
+        "Q05-choice-1",
+        "Q05-choice-2"
+      ],
+      "answer": "Q05-choice-2",
+      "picture": "wood",
+      "passage": null,
+      "hint": "Q05-hint"
+    },
+    {
+      "id": "Q06",
+      "stage": 0,
+      "prompt": "Q06-prompt",
+      "choices": [
+        "Q06-choice-0",
+        "Q06-choice-1",
+        "Q06-choice-2"
+      ],
+      "answer": "Q06-choice-1",
+      "picture": "mouth",
+      "passage": null,
+      "hint": "Q06-hint"
+    },
+    {
+      "id": "Q07",
+      "stage": 1,
+      "prompt": "Q07-prompt",
+      "choices": [
+        "Q07-choice-0",
+        "Q07-choice-1",
+        "Q07-choice-2"
+      ],
+      "answer": "Q07-choice-0",
+      "picture": "bird-above",
+      "passage": null,
+      "hint": "Q07-hint"
+    },
+    {
+      "id": "Q08",
+      "stage": 1,
+      "prompt": "Q08-prompt",
+      "choices": [
+        "Q08-choice-0",
+        "Q08-choice-1",
+        "Q08-choice-2"
+      ],
+      "answer": "Q08-choice-1",
+      "picture": "tray-below",
+      "passage": null,
+      "hint": "Q08-hint"
+    },
+    {
+      "id": "Q09",
+      "stage": 1,
+      "prompt": "Q09-prompt",
+      "choices": [
+        "Q09-choice-0",
+        "Q09-choice-1",
+        "Q09-choice-2"
+      ],
+      "answer": "Q09-choice-2",
+      "picture": "taking",
+      "passage": null,
+      "hint": "Q09-hint"
+    },
+    {
+      "id": "Q10",
+      "stage": 1,
+      "prompt": "Q10-prompt",
+      "choices": [
+        "Q10-choice-0",
+        "Q10-choice-1",
+        "Q10-choice-2"
+      ],
+      "answer": "Q10-choice-0",
+      "picture": "placing",
+      "passage": null,
+      "hint": "Q10-hint"
+    },
+    {
+      "id": "Q11",
+      "stage": 1,
+      "prompt": "Q11-prompt",
+      "choices": [
+        "Q11-choice-0",
+        "Q11-choice-1",
+        "Q11-choice-2"
+      ],
+      "answer": "Q11-choice-1",
+      "picture": "bird",
+      "passage": null,
+      "hint": "Q11-hint"
+    },
+    {
+      "id": "Q12",
+      "stage": 1,
+      "prompt": "Q12-prompt",
+      "choices": [
+        "Q12-choice-0",
+        "Q12-choice-1",
+        "Q12-choice-2"
+      ],
+      "answer": "Q12-choice-2",
+      "picture": "flower",
+      "passage": null,
+      "hint": "Q12-hint"
+    },
+    {
+      "id": "Q13",
+      "stage": 1,
+      "prompt": "Q13-prompt",
+      "choices": [
+        "Q13-choice-0",
+        "Q13-choice-1",
+        "Q13-choice-2"
+      ],
+      "answer": "Q13-choice-2",
+      "picture": "table-top",
+      "passage": null,
+      "hint": "Q13-hint"
+    },
+    {
+      "id": "Q14",
+      "stage": 2,
+      "prompt": "Q14-prompt",
+      "choices": [
+        "Q14-choice-0",
+        "Q14-choice-1",
+        "Q14-choice-2"
+      ],
+      "answer": "Q14-choice-1",
+      "picture": null,
+      "passage": "Q14-passage",
+      "hint": "Q14-hint"
+    },
+    {
+      "id": "Q15",
+      "stage": 2,
+      "prompt": "Q15-prompt",
+      "choices": [
+        "Q15-choice-0",
+        "Q15-choice-1",
+        "Q15-choice-2"
+      ],
+      "answer": "Q15-choice-0",
+      "picture": null,
+      "passage": "Q15-passage",
+      "hint": "Q15-hint"
+    },
+    {
+      "id": "Q16",
+      "stage": 2,
+      "prompt": "Q16-prompt",
+      "choices": [
+        "Q16-choice-0",
+        "Q16-choice-1",
+        "Q16-choice-2"
+      ],
+      "answer": "Q16-choice-2",
+      "picture": null,
+      "passage": "Q16-passage",
+      "hint": "Q16-hint"
+    },
+    {
+      "id": "Q17",
+      "stage": 2,
+      "prompt": "Q17-prompt",
+      "choices": [
+        "Q17-choice-0",
+        "Q17-choice-1",
+        "Q17-choice-2"
+      ],
+      "answer": "Q17-choice-1",
+      "picture": null,
+      "passage": "Q17-passage",
+      "hint": "Q17-hint"
+    },
+    {
+      "id": "Q18",
+      "stage": 2,
+      "prompt": "Q18-prompt",
+      "choices": [
+        "Q18-choice-0",
+        "Q18-choice-1",
+        "Q18-choice-2"
+      ],
+      "answer": "Q18-choice-0",
+      "picture": null,
+      "passage": "Q18-passage",
+      "hint": "Q18-hint"
+    },
+    {
+      "id": "Q19",
+      "stage": 2,
+      "prompt": "Q19-prompt",
+      "choices": [
+        "Q19-choice-0",
+        "Q19-choice-1",
+        "Q19-choice-2"
+      ],
+      "answer": "Q19-choice-1",
+      "picture": null,
+      "passage": "Q19-passage",
+      "hint": "Q19-hint"
+    },
+    {
+      "id": "Q20",
+      "stage": 2,
+      "prompt": "Q20-prompt",
+      "choices": [
+        "Q20-choice-0",
+        "Q20-choice-1",
+        "Q20-choice-2"
+      ],
+      "answer": "Q20-choice-2",
+      "picture": null,
+      "passage": "Q20-passage",
+      "hint": "Q20-hint"
+    }
+  ],
+  "representatives": [
+    [
+      "Q02",
+      "Q05"
+    ],
+    [
+      "Q08",
+      "Q13"
+    ],
+    [
+      "Q15",
+      "Q18"
+    ]
+  ],
+  "audio": {
+    "success": {
+      "category": "sfx",
+      "available": true,
+      "src": "../story-02/assets/audio/sfx/success.wav",
+      "volume": 0.3
+    },
+    "found-item": {
+      "category": "sfx",
+      "available": true,
+      "src": "../story-02/assets/audio/sfx/found-item.wav",
+      "volume": 0.3
+    },
+    "fail-soft": {
+      "category": "sfx",
+      "available": true,
+      "src": "../story-02/assets/audio/sfx/fail-soft.wav",
+      "volume": 0.3
+    },
+    "drag-lock": {
+      "category": "sfx",
+      "available": true,
+      "src": "../story-02/assets/audio/sfx/drag-lock.wav",
+      "volume": 0.3
+    }
+  }
+}

@@ -1,0 +1,1505 @@
+{
+  "checkedDate": "2026-10-01",
+  "semester": "115 學年度上學期",
+  "grade": 1,
+  "publishers": [
+    "南一版",
+    "康軒版",
+    "翰林版"
+  ],
+  "listing": "https://pedia.cloud.edu.tw/Bookmark/Textword",
+  "scope": "21 個當期課次頁的單字詞條；索引未列不代表所有學校都不教；只存匹配字與課次來源，不轉載課文、定義或題庫。",
+  "characters": {
+    "一": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "上": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 2 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第一課：小船",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150101"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第一課：拍拍手",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150101"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第五課：七彩滑梯",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150105"
+        }
+      ]
+    },
+    "下": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 2 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第四課：你好",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150104"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第一課：拍拍手",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150101"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第五課：七彩滑梯",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150105"
+        }
+      ]
+    },
+    "中": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "也": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第一課：小船",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150101"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第一課：拍拍手",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150101"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第七課：回音",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150107"
+        }
+      ]
+    },
+    "了": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第七課：紅紅的春",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150107"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第二課：這是誰的?",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第四課：請問",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150104"
+        }
+      ]
+    },
+    "什": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第五課：外星人",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150105"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第五課：比一比",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150105"
+        }
+      ]
+    },
+    "來": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第一課：小船",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150101"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第二課：大風吹",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150102"
+        }
+      ]
+    },
+    "信": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "個": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第五課：外星人",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150105"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第二課：這是誰的?",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "做": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第四課：你好",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "先": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "兔": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "再": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "出": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第二課：印手印",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "到": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第四課：你好",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150104"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第三課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150103"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第七課：回音",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150107"
+        }
+      ]
+    },
+    "口": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "第 1 站先學圖卡",
+      "sources": []
+    },
+    "句": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第六課：小金魚",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150106"
+        }
+      ]
+    },
+    "吃": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "哪": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第五課：外星人",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150105"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第四課：請問",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150104"
+        }
+      ]
+    },
+    "問": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "翰林版",
+          "lesson": "第四課：請問",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150104"
+        }
+      ]
+    },
+    "喝": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "圈": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "圖": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "在": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第二課：印手印",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150102"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第六課：小路",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150106"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第一課：一起走",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150101"
+        }
+      ]
+    },
+    "大": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第三課：吹泡泡",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150103"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第三課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150103"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第二課：大風吹",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150102"
+        }
+      ]
+    },
+    "好": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第三課：吹泡泡",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150103"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第二課：這是誰的?",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第五課：七彩滑梯",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150105"
+        }
+      ]
+    },
+    "子": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第二課：印手印",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150102"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第六課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150106"
+        }
+      ]
+    },
+    "字": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "家": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第三課：吹泡泡",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150103"
+        },
+        {
+          "publisher": "南一版",
+          "lesson": "第七課：紅紅的春",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150107"
+        }
+      ]
+    },
+    "小": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第一課：小船",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150101"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "山": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 1 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第三課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150103"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "帶": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "後": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "心": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第三課：火車過山洞",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150103"
+        }
+      ]
+    },
+    "找": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第六課：秋千",
+          "entryCategory": "認讀字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150106"
+        }
+      ]
+    },
+    "把": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第七課：紅紅的春",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150107"
+        }
+      ]
+    },
+    "拿": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "第 2 站先學圖卡",
+      "sources": []
+    },
+    "放": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "第 2 站先學圖卡",
+      "sources": []
+    },
+    "日": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 1 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        }
+      ]
+    },
+    "最": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "月": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 1 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        }
+      ]
+    },
+    "木": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 1 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        }
+      ]
+    },
+    "本": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "朵": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 2 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第二課：印手印",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150102"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第六課：小路",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150106"
+        }
+      ]
+    },
+    "松": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "桌": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "樹": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "次": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "每": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "水": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 1 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第四課：請問",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150104"
+        }
+      ]
+    },
+    "熊": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "的": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第三課：吹泡泡",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150103"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第二課：這是誰的?",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第二課：大風吹",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150102"
+        }
+      ]
+    },
+    "盤": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "目": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "看": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第五課：七彩滑梯",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150105"
+        }
+      ]
+    },
+    "睡": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "種": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "等": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "紙": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "索": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "線": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "花": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第二課：印手印",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150102"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第六課：小路",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150106"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第五課：七彩滑梯",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150105"
+        }
+      ]
+    },
+    "著": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "裡": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第五課：外星人",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150105"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第五課：比一比",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150105"
+        }
+      ]
+    },
+    "要": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第四課：你好",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150104"
+        }
+      ]
+    },
+    "覺": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "誰": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "康軒版",
+          "lesson": "第二課：這是誰的?",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150102"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第六課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150106"
+        }
+      ]
+    },
+    "請": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第七課：紅紅的春",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150107"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第四課：請問",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150104"
+        }
+      ]
+    },
+    "讀": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "起": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第三課：吹泡泡",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150103"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第三課：秋千",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150103"
+        },
+        {
+          "publisher": "翰林版",
+          "lesson": "第一課：一起走",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0101011150101"
+        }
+      ]
+    },
+    "通": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "選": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "門": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "魔法文字",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150100"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第五課：比一比",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150105"
+        }
+      ]
+    },
+    "阿": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "隻": {
+      "status": "115 小一上索引列字",
+      "introduction": "第 2 站先學圖卡",
+      "sources": [
+        {
+          "publisher": "康軒版",
+          "lesson": "第四課：大個子，小個子",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150104"
+        }
+      ]
+    },
+    "項": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "題": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "飛": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "鳥": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "麼": {
+      "status": "115 小一上索引列字",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": [
+        {
+          "publisher": "南一版",
+          "lesson": "第五課：外星人",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0102011150105"
+        },
+        {
+          "publisher": "康軒版",
+          "lesson": "第五課：比一比",
+          "entryCategory": "生字",
+          "url": "https://pedia.cloud.edu.tw/Bookmark/TCollection?TextNameId=0103011150105"
+        }
+      ]
+    },
+    "點": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    },
+    "鼠": {
+      "status": "本次小一上索引未列，陪讀／延伸",
+      "introduction": "圖像、注音及大人陪讀；非獨立默寫要求",
+      "sources": []
+    }
+  },
+  "questions": [
+    {
+      "id": "Q01",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "圈",
+        "圖",
+        "字",
+        "山",
+        "木",
+        "每",
+        "水",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q02",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "圈",
+        "圖",
+        "字",
+        "日",
+        "月",
+        "每",
+        "水",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q03",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "口",
+        "圈",
+        "圖",
+        "字",
+        "日",
+        "月",
+        "每",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q04",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "圈",
+        "圖",
+        "字",
+        "山",
+        "月",
+        "每",
+        "水",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q05",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "口",
+        "圈",
+        "圖",
+        "字",
+        "木",
+        "每",
+        "水",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q06",
+      "characters": [
+        "一",
+        "中",
+        "個",
+        "再",
+        "出",
+        "口",
+        "圈",
+        "圖",
+        "字",
+        "山",
+        "日",
+        "每",
+        "的",
+        "看",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q07",
+      "characters": [
+        "一",
+        "上",
+        "下",
+        "個",
+        "再",
+        "圖",
+        "在",
+        "小",
+        "樹",
+        "每",
+        "看",
+        "裡",
+        "讀",
+        "選",
+        "項",
+        "鳥"
+      ]
+    },
+    {
+      "id": "Q08",
+      "characters": [
+        "一",
+        "上",
+        "下",
+        "信",
+        "個",
+        "再",
+        "圖",
+        "在",
+        "樹",
+        "每",
+        "盤",
+        "看",
+        "裡",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q09",
+      "characters": [
+        "一",
+        "信",
+        "個",
+        "再",
+        "吃",
+        "圖",
+        "拿",
+        "放",
+        "每",
+        "看",
+        "讀",
+        "起",
+        "通",
+        "選",
+        "阿",
+        "項"
+      ]
+    },
+    {
+      "id": "Q10",
+      "characters": [
+        "一",
+        "信",
+        "個",
+        "再",
+        "喝",
+        "圖",
+        "好",
+        "把",
+        "放",
+        "每",
+        "看",
+        "讀",
+        "通",
+        "選",
+        "阿",
+        "項",
+        "飛"
+      ]
+    },
+    {
+      "id": "Q11",
+      "characters": [
+        "一",
+        "個",
+        "再",
+        "圖",
+        "小",
+        "本",
+        "朵",
+        "每",
+        "看",
+        "讀",
+        "選",
+        "隻",
+        "項",
+        "鳥"
+      ]
+    },
+    {
+      "id": "Q12",
+      "characters": [
+        "一",
+        "個",
+        "再",
+        "圖",
+        "朵",
+        "每",
+        "看",
+        "花",
+        "讀",
+        "選",
+        "隻",
+        "項"
+      ]
+    },
+    {
+      "id": "Q13",
+      "characters": [
+        "一",
+        "上",
+        "下",
+        "信",
+        "個",
+        "再",
+        "圖",
+        "在",
+        "把",
+        "放",
+        "桌",
+        "每",
+        "看",
+        "裡",
+        "讀",
+        "選",
+        "項"
+      ]
+    },
+    {
+      "id": "Q14",
+      "characters": [
+        "一",
+        "上",
+        "下",
+        "信",
+        "兔",
+        "再",
+        "口",
+        "句",
+        "哪",
+        "問",
+        "在",
+        "子",
+        "小",
+        "找",
+        "桌",
+        "樹",
+        "次",
+        "的",
+        "目",
+        "等",
+        "索",
+        "線",
+        "裡",
+        "讀",
+        "門",
+        "題"
+      ]
+    },
+    {
+      "id": "Q15",
+      "characters": [
+        "一",
+        "上",
+        "下",
+        "信",
+        "再",
+        "口",
+        "句",
+        "哪",
+        "問",
+        "在",
+        "子",
+        "小",
+        "找",
+        "把",
+        "放",
+        "樹",
+        "次",
+        "的",
+        "目",
+        "索",
+        "線",
+        "裡",
+        "要",
+        "請",
+        "讀",
+        "門",
+        "題",
+        "鳥"
+      ]
+    },
+    {
+      "id": "Q16",
+      "characters": [
+        "一",
+        "信",
+        "再",
+        "句",
+        "問",
+        "子",
+        "小",
+        "找",
+        "拿",
+        "松",
+        "次",
+        "的",
+        "目",
+        "索",
+        "線",
+        "花",
+        "著",
+        "誰",
+        "讀",
+        "通",
+        "阿",
+        "題",
+        "鳥",
+        "鼠"
+      ]
+    },
+    {
+      "id": "Q17",
+      "characters": [
+        "一",
+        "什",
+        "信",
+        "做",
+        "先",
+        "再",
+        "句",
+        "吃",
+        "問",
+        "好",
+        "子",
+        "小",
+        "心",
+        "找",
+        "把",
+        "放",
+        "次",
+        "的",
+        "目",
+        "紙",
+        "索",
+        "線",
+        "讀",
+        "通",
+        "阿",
+        "題",
+        "麼",
+        "點"
+      ]
+    },
+    {
+      "id": "Q18",
+      "characters": [
+        "一",
+        "下",
+        "也",
+        "了",
+        "什",
+        "來",
+        "信",
+        "先",
+        "兔",
+        "再",
+        "到",
+        "句",
+        "問",
+        "大",
+        "子",
+        "家",
+        "小",
+        "帶",
+        "找",
+        "拿",
+        "樹",
+        "次",
+        "水",
+        "熊",
+        "的",
+        "目",
+        "種",
+        "索",
+        "線",
+        "花",
+        "著",
+        "讀",
+        "起",
+        "題",
+        "麼"
+      ]
+    },
+    {
+      "id": "Q19",
+      "characters": [
+        "一",
+        "下",
+        "也",
+        "了",
+        "來",
+        "先",
+        "兔",
+        "再",
+        "到",
+        "句",
+        "問",
+        "大",
+        "子",
+        "家",
+        "小",
+        "帶",
+        "找",
+        "拿",
+        "樹",
+        "次",
+        "水",
+        "熊",
+        "的",
+        "目",
+        "種",
+        "索",
+        "線",
+        "花",
+        "著",
+        "誰",
+        "讀",
+        "起",
+        "題",
+        "鳥"
+      ]
+    },
+    {
+      "id": "Q20",
+      "characters": [
+        "一",
+        "下",
+        "也",
+        "了",
+        "什",
+        "來",
+        "做",
+        "先",
+        "兔",
+        "再",
+        "到",
+        "句",
+        "問",
+        "喝",
+        "大",
+        "子",
+        "家",
+        "小",
+        "帶",
+        "後",
+        "找",
+        "拿",
+        "最",
+        "樹",
+        "次",
+        "水",
+        "熊",
+        "的",
+        "目",
+        "睡",
+        "種",
+        "索",
+        "線",
+        "花",
+        "著",
+        "覺",
+        "讀",
+        "起",
+        "題",
+        "麼"
+      ]
+    }
+  ]
+}

@@ -56,3 +56,8 @@ python tests/story_03_test.py --output ../hub-review/story03-web
 ```
 
 覆蓋 500 題卷碼、相容性範例、三道門與雙結局、符號輸入／綠勾紅叉、題卷切換、存檔隔離、靜音、三張 A4 空白格／圖案表與分開解答、分層素材及直橫向版面。驗收範圍與待辦見 [Story 03 QA](../stories/story-03/QA.md)。不開啟相機，不宣稱已完成手寫辨識。
+# 第四本：先學再練習
+
+執行 `python tests/story_04_test.py`，需要 Python Playwright 與 Chromium。測試在獨立本機 origin 和瀏覽器 context 中操作，不碰使用者存檔；截圖與列印檢查 PDF 放 repository 外 `../hub-review/story-04-qa`。涵蓋三站先學、回看對應圖卡、二十題／代表題、普通及祕密結局、葉片拖放／存檔隔離、換碼、音效關閉／失敗和 390／820／1180 排版。
+
+孩子紙為三頁 A4 共 6／7／7 題；家長解答為獨立一頁。瀏覽器驗證不代表已完成真實平板、雙指手勢或家庭印表機實測。
