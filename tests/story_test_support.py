@@ -17,7 +17,12 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/favicon.ico':
             self.send_response(204); self.end_headers(); return
-        super().do_GET()
+        try:
+            super().do_GET()
+        except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+            # Fast navigation/closing a browser may abort an in-flight image response.
+            # These are expected client disconnects, not failed story assertions.
+            pass
 
 def serve():
     server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)
