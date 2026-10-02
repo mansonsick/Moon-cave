@@ -2,12 +2,15 @@
   "created": "2026-10-02",
   "stage": "story and illustration only; no game runtime",
   "tool": "built-in image_gen.imagegen",
-  "count": 29,
+  "count": 30,
   "backgrounds": 8,
   "characters": 10,
+  "supersededSprites": 1,
   "props": 8,
   "referenceImages": 3,
   "canonicalReference": "images/anchor-v3.png",
+  "chaseAsset": "images/characters/nabieqi-reaching-v2.png",
+  "monsterChasePose": "open beak, both arms and hands reaching to grab",
   "targetMonsterBodyHeightRelativeToAngel": 1.0,
   "sceneLayoutCalibrated": false,
   "monsterCloak": "aged dark red",
@@ -224,18 +227,18 @@
       ]
     },
     {
-      "file": "characters/nabieqi-reaching.png",
+      "file": "characters/nabieqi-reaching-v2.png",
       "width": 1536,
       "height": 1024,
       "transparent": true,
       "referenceOnly": false,
       "superseded": false,
-      "sha256": "bdb61511a56d14812c03b9a6bcf75fff89f9586017989ad6e4c6da1c2ad46c0c",
+      "sha256": "6ad0700817ed62678a0c1537c5a39e31ce57ba1d9236282350987f6de6757300",
       "visibleBounds": [
-        42,
-        11,
-        1514,
-        1010
+        37,
+        20,
+        1512,
+        1004
       ]
     },
     {
@@ -386,6 +389,21 @@
         11,
         1260,
         1182
+      ]
+    },
+    {
+      "file": "characters/nabieqi-reaching.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "referenceOnly": true,
+      "superseded": true,
+      "sha256": "bdb61511a56d14812c03b9a6bcf75fff89f9586017989ad6e4c6da1c2ad46c0c",
+      "visibleBounds": [
+        42,
+        11,
+        1514,
+        1010
       ]
     }
   ]

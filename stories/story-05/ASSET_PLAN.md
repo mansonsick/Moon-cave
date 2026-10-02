@@ -1,6 +1,6 @@
 # Story 05 美術交付與分層
 
-日期：2026-10-02；對應 [STORY_SPEC.md](STORY_SPEC.md)。本輪以內建 imagegen 製作 29 張 PNG：3 基準圖（含保留的兩次初稿）、8 背景、10 角色姿勢／狀態、8 道具。原圖保留，完整指令收錄 [PROMPTS.json](assets/images/PROMPTS.json)。交付尺寸／透明性以 [ASSET_MANIFEST.json](assets/ASSET_MANIFEST.json) 核對，實際檢查結果見 [QA_RESULTS.md](QA_RESULTS.md)。
+日期：2026-10-02；對應 [STORY_SPEC.md](STORY_SPEC.md)。本輪以內建 imagegen 製作共 30 張 PNG：3 基準圖（含保留的兩次初稿）、8 背景、10 個現行角色姿勢／狀態、8 道具，以及保留的舊追逐圖 1 張。原圖保留，完整指令收錄 [PROMPTS.json](assets/images/PROMPTS.json)。交付尺寸／透明性以 [ASSET_MANIFEST.json](assets/ASSET_MANIFEST.json) 核對，實際檢查結果見 [QA_RESULTS.md](QA_RESULTS.md)。
 
 ## 基準圖
 
@@ -12,10 +12,10 @@
 | --- | --- | --- |
 | night-path.png | S01／S02 | 回村林路、遠處石亭；阿通行走／奔跑與樹後怪物手分層 |
 | stone-shelter.png | S03／L1 學習 | 保護性的石亭、紙張桌面、看得見的出口；小紙和字母後疊 |
-| forest-lamps.png | S04 | 林路與守夜屋出口；答案燈座在中右，主角在左，九盞進度燈另疊 |
-| watch-house.png | S05／S06／L2 學習 | 寬空桌面、門縫、右後出口；四個答案燭台、門葉與怪物分層 |
+| forest-lamps.png | S04 | 林路與守夜屋出口；主角在左，九盞固定進度燈另疊，中央留漂浮字母／怪物活動區 |
+| watch-house.png | S05／S06／L2 學習 | 寬空桌面、門縫、右後出口；九盞固定進度燭台、門葉與怪物分層，字母獨立漂移 |
 | moon-wall.png | S07／H01 | 守夜屋後牆、低處空石塊、通往橋的路；月刻紋後疊且不發光 |
-| bridge-gate.png | S08／S09／S10／H02／H03 | 完整橋面與村口；五處答案燈座、八盞進度燈、五輪怪物位置各留安全區 |
+| bridge-gate.png | S08／S09／S10／H02／H03 | 完整橋面與村口；五個字母活動區、八盞固定進度燈、五輪怪物位置各留安全區 |
 | rock-hideout.png | R01 | 安全石縫、森林出口；完整無傷的兩主角，怪物在外部不抓咬 |
 | dawn-village.png | E01／E02 | 完整成功的晨光村路；普通有兩主角，祕密加天使與月亮石 |
 
@@ -32,18 +32,22 @@
 | squirrel-alert.png | 注意怪物、陪讀、看小紙 |
 | squirrel-running.png | 陪伴逃跑，視線向後確認 |
 | nabieqi-stalking.png | 遠處／門縫／追逐初段，黑破翅懸飛的同一小怪物 |
-| nabieqi-reaching.png | 空中伸手追逐和月光第一、二輪，黑翅動作明確不同 |
+| nabieqi-reaching-v2.png | 正式追逐：張嘴、雙手伸前準備抓人、黑破翅懸飛；三關飄動怪物及月光第一、二輪可用 |
 | nabieqi-cleansing.png | 月光第三、四輪，仍懸飛，紅披布與黑破翅變淡，困惑／怕光 |
 | angel.png | 第五輪後才出現的小天使，保持輪廓特徵連結 |
 
 同場景可共用底圖，但事件不同必須改人物動作、怪物位置、燈／出口／霧狀態，不能只有標題換字。角色完整頭髮、腳、翅膀、尾巴與手指都在圖內，人物不是底圖烘焙的一部分。
 
+`nabieqi-reaching.png` 保留為被取代的舊追逐姿勢，reference only；工程用 v2。基本身份／世界觀仍以 anchor-v3.png 為準，追人動作另外以 v2 為準，不要求安靜觀察和淨化中的怪物也一直張嘴。
+
+答題用獨立的可移動字母光點，燈／燭台是固定進度層；不把英文字母烘焙到道具上。怪物與字母的完整可見形狀要留可點間隔，不用寬展翼遮住答案。透明留白與光暈不可拿來判誤觸；實際飛行、避讓與觸控判定待工程實測。
+
 ## 道具透明 PNG
 
 | 檔案（assets/images/props/） | 用途與約束 |
 | --- | --- |
-| lantern-unlit.png／lantern-lit.png | 答案／進度燈，前方空白牌可疊字母；同一造型、只換燈火與照明 |
-| candle-unlit.png／candle-lit.png | 第二關燭台，同一造型、空白小寫字母牌；不在圖內拼寫字母 |
+| lantern-unlit.png／lantern-lit.png | 固定進度燈，答對漂浮字母後亮一盞；同一造型、只換燈火與照明，空白牌可作學習示意 |
+| candle-unlit.png／candle-lit.png | 第二關固定進度燭台；答案字母獨立移動，同一造型、牌保持空白 |
 | moonstone.png | 圓潤銀藍、內部月牙光，正式名月亮石；可拖曳，光圈由獨立層產生 |
 | watch-note.png | 空白淺色紙，注音／學習文字在後續階段另疊 |
 | moon-mark.png | 灰褐石塊的淺月刻紋，融入後牆，無亮邊／箭頭 |

@@ -105,10 +105,11 @@
       "transparent": true
     },
     {
-      "file": "characters/nabieqi-reaching.png",
-      "prompt": "Use case: illustration-story. Input image role: CANONICAL CHARACTER AND STYLE REFERENCE, not a scene to copy. Produce ONE standalone transparent PNG sprite of Nabieqi from the reference, NO Atong, squirrel or angel. Preserve exactly this small birdlike monster's beaked face, luminous pale eyes, deep crimson RED worn rag cloak, BLACK old ragged crow-like wings attached to its back, very long thin fingers, detailed watercolor/opaque watercolor painterly texture. It must be visibly FLYING / HOVERING IN THE AIR, with claws hanging freely, no ground, no contact shadow, no standing or walking posture. Physical body height is approximately equal to the small angel, not a giant. Wings may be wide but body must stay small; no blood/gore. Complete wings, hands, rag tails and face comfortably inside frame with clear transparent margins, no text, no frame, no other objects. Actual alpha transparency. Pose: dynamic flying lunge LEFT, black wings swept widely upward in a flight upstroke, one long arm extends LEFT to chase, the other bent. Rag cloak streams RIGHT. Keep face identifiable and entire wings in frame. Body is angled diagonally and clearly airborne. More urgent than cautious hovering, without attacking or injuring anybody.",
-      "reference": "anchor-v3.png",
-      "transparent": true
+      "file": "characters/nabieqi-reaching-v2.png",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET: the attached airborne Nabieqi chasing sprite. Change ONLY the chasing expression and hands/arm gesture to make it unmistakably about to grab someone. OPEN its beaked mouth wide in a menacing silent howl: clearly separated upper and lower bird beak, dark open mouth, no blood, gore, wound or human mouth replacement. Extend BOTH long thin arms and fingers forward toward the LEFT / slightly toward viewer, hands open and curled ready to grasp, complete fingers visible. Keep the same small spirit's recognizable birdlike face and glowing eyes, dark crimson RED tattered rag cloak, BLACK old ragged wings, flying/hovering posture, original painterly watercolor style, canvas aspect ratio and overall body scale, approximately angel-sized when placed in a scene. Wings, rag tails, mouth and both hands must all fit comfortably inside the frame with transparent margins. No captured child, no contact with another character, no extra figure, no text, no scene or ground. Preserve genuine transparent alpha; no opaque dark or colored background. This is the active chase pose, not the calming/cleansing pose.",
+      "transparent": true,
+      "reference": "characters/nabieqi-reaching.png",
+      "editTarget": "characters/nabieqi-reaching.png"
     },
     {
       "file": "characters/nabieqi-cleansing.png",
@@ -187,5 +188,22 @@
     "prompt": "Use case: precise-object-edit. EDIT TARGET: the attached canonical character reference. Change ONLY Nabieqi, the small aged dark-red-rag birdlike monster in the middle. Preserve its small physical body height, approximately equal to the little angel at the right; DO NOT make it tall again. Add two BLACK, OLD, RAGGED WINGS on its upper back, crow-like torn flight feathers with irregular worn tips. Lift the whole monster clearly into the air above the ground so it is hovering/flying, both feet/claws no longer touch the forest floor; red cloth hangs and drifts beneath it. Wings must read as black distinct from deep crimson rag cloak and must fit entirely within frame without touching other characters. Preserve the same recognizable beaked face, luminous eyes, slender long fingers, silhouette identity and painterly watercolor style. Keep Atong, squirrel, angel, scene, moon, lighting, canvas, colors and placements exactly unchanged. Monster's wings can widen its silhouette but its body stays the angel's size. No blood, no gore, no text, no new characters.",
     "changes": "Black ragged wings and airborne pose; preserve small body, red cloak, all other actors and background"
   },
-  "retryNote": "One incomplete batch was stopped after only three backgrounds returned; those were copied unchanged. Resubmitted only six unfinished non-monster assets against v3; obsolete pre-wing monster requests discarded."
+  "retryNote": "One incomplete batch was stopped after only three backgrounds returned; those were copied unchanged. Resubmitted only six unfinished non-monster assets against v3; obsolete pre-wing monster requests discarded.",
+  "supersededAssets": [
+    {
+      "file": "characters/nabieqi-reaching.png",
+      "prompt": "Use case: illustration-story. Input image role: CANONICAL CHARACTER AND STYLE REFERENCE, not a scene to copy. Produce ONE standalone transparent PNG sprite of Nabieqi from the reference, NO Atong, squirrel or angel. Preserve exactly this small birdlike monster's beaked face, luminous pale eyes, deep crimson RED worn rag cloak, BLACK old ragged crow-like wings attached to its back, very long thin fingers, detailed watercolor/opaque watercolor painterly texture. It must be visibly FLYING / HOVERING IN THE AIR, with claws hanging freely, no ground, no contact shadow, no standing or walking posture. Physical body height is approximately equal to the small angel, not a giant. Wings may be wide but body must stay small; no blood/gore. Complete wings, hands, rag tails and face comfortably inside frame with clear transparent margins, no text, no frame, no other objects. Actual alpha transparency. Pose: dynamic flying lunge LEFT, black wings swept widely upward in a flight upstroke, one long arm extends LEFT to chase, the other bent. Rag cloak streams RIGHT. Keep face identifiable and entire wings in frame. Body is angled diagonally and clearly airborne. More urgent than cautious hovering, without attacking or injuring anybody.",
+      "reference": "anchor-v3.png",
+      "transparent": true,
+      "referenceOnly": true,
+      "superseded": true,
+      "supersededBy": "characters/nabieqi-reaching-v2.png"
+    }
+  ],
+  "chaseRevision": {
+    "date": "2026-10-02",
+    "file": "characters/nabieqi-reaching-v2.png",
+    "editTarget": "characters/nabieqi-reaching.png",
+    "changes": "Open beak and both arms/hands extended to grab; retain small airborne red-cloaked black-winged identity; old sprite preserved."
+  }
 }

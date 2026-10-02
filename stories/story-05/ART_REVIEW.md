@@ -58,9 +58,11 @@
 | --- | --- |
 | ![松鼠觀察](assets/images/characters/squirrel-alert.png) | ![松鼠奔跑](assets/images/characters/squirrel-running.png) |
 
-| 追逐 | 伸手 | 逐漸淨化 | 小天使 |
+| 安靜觀察 | 張嘴伸手準備抓人 | 逐漸淨化 | 小天使 |
 | --- | --- | --- | --- |
-| ![追逐納別奇](assets/images/characters/nabieqi-stalking.png) | ![伸手納別奇](assets/images/characters/nabieqi-reaching.png) | ![淨化納別奇](assets/images/characters/nabieqi-cleansing.png) | ![小天使](assets/images/characters/angel.png) |
+| ![觀察納別奇](assets/images/characters/nabieqi-stalking.png) | ![張嘴雙手準備抓人的納別奇](assets/images/characters/nabieqi-reaching-v2.png) | ![淨化納別奇](assets/images/characters/nabieqi-cleansing.png) | ![小天使](assets/images/characters/angel.png) |
+
+追逐圖依最新意見更新為張嘴、雙手向前準備抓人；舊 nabieqi-reaching.png 保留但不再使用。答題設計已加入上下左右移動的字母與飄動怪物，孩子須點對字母、避開納別奇，第一關慢、後兩關逐漸加快；學習／重播／成功暫停移動。這是已確認的工程規格，圖片試閱本身尚無動畫遊戲。
 
 ## 道具
 
