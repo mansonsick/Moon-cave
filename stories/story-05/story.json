@@ -1,0 +1,415 @@
+{
+  "id": "story-05",
+  "version": 1,
+  "title": "title",
+  "labels": {
+    "title": "阿通與霧夜的字母門",
+    "start": "開始冒險",
+    "resume": "繼續冒險",
+    "continue": "繼續",
+    "home": "回首頁",
+    "menu": "回本書選單",
+    "previous": "回上一幕",
+    "replay": "再玩一次",
+    "confirm-replay": "只重新開始這一本。",
+    "yes-replay": "重新開始",
+    "cancel": "先不要",
+    "loading": "故事準備中。",
+    "load-error": "故事暫時沒有載入，請重新整理。",
+    "listen": "聽字母",
+    "listen-again": "再聽一次",
+    "listen-first": "先聽聲音，再找字母。",
+    "learning": "一起學大小寫",
+    "next-card": "下一張",
+    "previous-card": "上一張",
+    "start-lamps": "開始點燈",
+    "start-candles": "解開燭台鎖",
+    "start-bridge": "點亮橋上的燈",
+    "review": "回看字母",
+    "learn-done": "字母都學過了，來點燈吧！",
+    "correct": "答對了！一盞燈亮了。",
+    "next-lamp": "下一盞",
+    "wrong": "再聽一次，找出那個字母。",
+    "monster-wrong": "小心，是納別奇！再聽一次。",
+    "timeout": "時間到了，先喘口氣，再聽一次。",
+    "retry-question": "再試一次",
+    "retry-stage": "重新挑戰",
+    "hearts-rule": "有三顆心，點錯字母或怪物會少一顆。",
+    "hearts-reset": "三顆心用完，就從這一關重新點燈。",
+    "listen-help": "先一起聽，再找一找。",
+    "visual-help": "聲音沒有播放。可以看字找一找。",
+    "show-letter": "看看字母",
+    "assisted": "這題有看字幫忙。",
+    "pause": "暫停",
+    "unpause": "繼續點燈",
+    "paused": "休息一下，字母和時間都停住了。",
+    "settings": "家長設定",
+    "close": "回故事",
+    "timer": "限時挑戰",
+    "no-timer": "關閉倒數",
+    "movement": "字母移動",
+    "normal-motion": "一般",
+    "slow-motion": "慢速",
+    "static-motion": "停止",
+    "settings-help": "可關倒數，也可讓字母慢下來。",
+    "sound": "聲音",
+    "fullscreen": "全螢幕",
+    "exit-fullscreen": "離開全螢幕",
+    "fullscreen-help": "這個瀏覽器先用原本畫面。",
+    "walk-ahead": "看看前面的路",
+    "shelter": "躲進石亭",
+    "learn-first": "先一起學字母",
+    "bridge": "往橋走",
+    "village": "回到村裡",
+    "take-stone": "阿通拿出了月亮石！",
+    "moonstone": "月亮石",
+    "purify-help": "把月亮石的光，照向它。",
+    "purify-touch": "也可以先點月亮石，再點它。",
+    "light-hit": "照到了！哭聲變小了。",
+    "next-light": "再照一次",
+    "ordinary-route": "先回到村裡",
+    "angel-success": "黑霧散了，是個小天使！",
+    "ordinary-success": "我們平安回村了！",
+    "secret-success": "月光帶來了一位新朋友！",
+    "stage-1": "第一關：黑森林的燈",
+    "stage-2": "第二關：空屋的燭台",
+    "stage-3": "第三關：霧中的木橋",
+    "stage-1-done": "九盞燈亮了！屋子的門出現了。",
+    "stage-2-done": "燭台都亮了！通往木橋的後門開了。",
+    "stage-3-done": "最後一盞燈，照出了村口！",
+    "cover-first": "聽清字母，點亮霧裡的燈，",
+    "cover-second": "跟著阿通找到回家的路。",
+    "hub-chapter": "阿通的第五場冒險",
+    "ending-learned": "我們一起練習了全部字母！",
+    "lost-hearts": "躲好後，再從這關開始。",
+    "save-help": "前面完成的關卡會保留。",
+    "heard": "聽一聽，再看大小寫。",
+    "ready": "準備好了",
+    "back-learning": "回到學習",
+    "s01-title": "霧裡的哼唱",
+    "s01-line-0": "阿通和小松鼠走在回村的路上。",
+    "s01-line-1": "白霧忽然蓋住了小路。",
+    "s01-line-2": "遠處傳來一段輕輕的哼唱。",
+    "s01-line-3": "小松鼠說：先別靠近。",
+    "s02-title": "樹後的長手",
+    "s02-line-0": "樹後伸出一隻長長的手。",
+    "s02-line-1": "那個影子，張嘴伸手飛過來。",
+    "s02-line-2": "小松鼠喊：是納別奇！",
+    "s02-line-3": "兩人跑到有微光的石亭裡。",
+    "s03-title": "守夜人的小紙",
+    "s03-line-0": "石亭裡有一張舊紙。",
+    "s03-line-1": "點亮字母，沿著燈走。",
+    "s03-line-2": "每聽清一個字母，就亮一盞燈。",
+    "s03-line-3": "阿通說：先一起學，再出發。",
+    "s04-title": "黑森林的九盞燈",
+    "s04-line-0": "燈裡傳出一個字母的聲音。",
+    "s04-line-1": "字母飄來飄去，聽清楚再點。",
+    "s04-line-2": "小心，別點到納別奇。",
+    "s04-line-3": "點對了，一盞燈就亮起來。",
+    "s05-title": "空屋裡的拍翅聲",
+    "s05-line-0": "兩人跑進守夜屋，關上門。",
+    "s05-line-1": "門外響起沙沙的拍翅聲。",
+    "s05-line-2": "桌上寫著：字母也有小寫。",
+    "s05-line-3": "阿通說：我們先看清楚。",
+    "s06-title": "門縫裡的眼睛",
+    "s06-line-0": "一隻眼睛出現在門縫裡。",
+    "s06-line-1": "小松鼠拉住阿通的衣角。",
+    "s06-line-2": "聽清字母，點對飄動的字。",
+    "s06-line-3": "別點到伸手的納別奇。",
+    "s07-title": "哭聲與月亮記號",
+    "s07-line-0": "屋後有一段低低的哭聲。",
+    "s07-line-1": "納別奇好像在找什麼。",
+    "s07-line-2": "阿通說：先到橋上去。",
+    "h01-title": "想起月光洞",
+    "h01-line-0": "牆上的記號，像一彎月亮。",
+    "h01-line-1": "阿通想起月光洞裡的小蝙蝠。",
+    "h01-line-2": "那顆月亮石，還在背包裡。",
+    "h01-line-3": "也許，月光能幫上忙。",
+    "s08-title": "橋邊的最後一張紙",
+    "s08-line-0": "橋的另一頭，就是村口。",
+    "s08-line-1": "紙上是最後八個字母。",
+    "s08-line-2": "先聽清楚，再找大小寫。",
+    "s08-line-3": "小松鼠說：我會陪著你。",
+    "s09-title": "霧中的逃生橋",
+    "s09-line-0": "納別奇張嘴伸手，飛到橋頭。",
+    "s09-line-1": "阿通點亮一盞又一盞燈。",
+    "s09-line-2": "橋面從霧裡慢慢出現。",
+    "s09-line-3": "最後一盞燈，照出了村口！",
+    "r01-title": "躲進石縫",
+    "r01-line-0": "破布遮住了眼前的光。",
+    "r01-line-1": "小松鼠把阿通拉進石縫。",
+    "r01-line-2": "它還在外頭。",
+    "r01-line-3": "別急，我們再聽一次。",
+    "s10-title": "亮光邊界",
+    "s10-line-0": "納別奇停在村口的光外。",
+    "s10-line-1": "阿通和小松鼠終於能喘口氣。",
+    "s10-line-2": "村口的燈，照著回家的路。",
+    "h02-title": "月光追逐",
+    "h02-line-0": "阿通拿出月亮石。",
+    "h02-line-1": "柔柔的月光，穿過黑霧。",
+    "h02-line-2": "納別奇躲開，又換了一個位置。",
+    "h02-line-3": "它的哭聲，好像變小了。",
+    "h03-title": "黑霧散開",
+    "h03-line-0": "黑霧像布一樣，慢慢鬆開。",
+    "h03-line-1": "破布變成一點點星光。",
+    "h03-line-2": "光裡，有個小小的天使。",
+    "h03-line-3": "它說：Thank you.",
+    "e01-title": "平安回村",
+    "e01-line-0": "天亮了，霧也散了。",
+    "e01-line-1": "阿通和小松鼠平安回村。",
+    "e01-line-2": "他們回頭看了一眼。",
+    "e01-line-3": "那個影子，已經不在橋上。",
+    "e02-title": "月光裡的新朋友",
+    "e02-line-0": "小天使飛在阿通身旁。",
+    "e02-line-1": "它把最後一點霧，變成星光。",
+    "e02-line-2": "月亮石又幫上了一個忙。",
+    "e02-line-3": "三個朋友，一起走向晨光。"
+  },
+  "scenes": {
+    "S01": {
+      "title": "s01-title",
+      "lines": [
+        "s01-line-0",
+        "s01-line-1",
+        "s01-line-2",
+        "s01-line-3"
+      ],
+      "background": "night-path",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "S02": {
+      "title": "s02-title",
+      "lines": [
+        "s02-line-0",
+        "s02-line-1",
+        "s02-line-2",
+        "s02-line-3"
+      ],
+      "background": "night-path",
+      "person": "running",
+      "squirrel": "running"
+    },
+    "S03": {
+      "title": "s03-title",
+      "lines": [
+        "s03-line-0",
+        "s03-line-1",
+        "s03-line-2",
+        "s03-line-3"
+      ],
+      "background": "stone-shelter",
+      "person": "listening",
+      "squirrel": "alert"
+    },
+    "S04": {
+      "title": "s04-title",
+      "lines": [
+        "s04-line-0",
+        "s04-line-1",
+        "s04-line-2",
+        "s04-line-3"
+      ],
+      "background": "forest-lamps",
+      "person": "listening",
+      "squirrel": "alert"
+    },
+    "S05": {
+      "title": "s05-title",
+      "lines": [
+        "s05-line-0",
+        "s05-line-1",
+        "s05-line-2",
+        "s05-line-3"
+      ],
+      "background": "watch-house",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "S06": {
+      "title": "s06-title",
+      "lines": [
+        "s06-line-0",
+        "s06-line-1",
+        "s06-line-2",
+        "s06-line-3"
+      ],
+      "background": "watch-house",
+      "person": "listening",
+      "squirrel": "alert"
+    },
+    "S07": {
+      "title": "s07-title",
+      "lines": [
+        "s07-line-0",
+        "s07-line-1",
+        "s07-line-2"
+      ],
+      "background": "moon-wall",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "H01": {
+      "title": "h01-title",
+      "lines": [
+        "h01-line-0",
+        "h01-line-1",
+        "h01-line-2",
+        "h01-line-3"
+      ],
+      "background": "moon-wall",
+      "person": "moonlight",
+      "squirrel": "alert"
+    },
+    "S08": {
+      "title": "s08-title",
+      "lines": [
+        "s08-line-0",
+        "s08-line-1",
+        "s08-line-2",
+        "s08-line-3"
+      ],
+      "background": "bridge-gate",
+      "person": "listening",
+      "squirrel": "alert"
+    },
+    "S09": {
+      "title": "s09-title",
+      "lines": [
+        "s09-line-0",
+        "s09-line-1",
+        "s09-line-2",
+        "s09-line-3"
+      ],
+      "background": "bridge-gate",
+      "person": "listening",
+      "squirrel": "alert"
+    },
+    "R01": {
+      "title": "r01-title",
+      "lines": [
+        "r01-line-0",
+        "r01-line-1",
+        "r01-line-2",
+        "r01-line-3"
+      ],
+      "background": "rock-hideout",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "S10": {
+      "title": "s10-title",
+      "lines": [
+        "s10-line-0",
+        "s10-line-1",
+        "s10-line-2"
+      ],
+      "background": "bridge-gate",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "H02": {
+      "title": "h02-title",
+      "lines": [
+        "h02-line-0",
+        "h02-line-1",
+        "h02-line-2",
+        "h02-line-3"
+      ],
+      "background": "bridge-gate",
+      "person": "moonlight",
+      "squirrel": "alert"
+    },
+    "H03": {
+      "title": "h03-title",
+      "lines": [
+        "h03-line-0",
+        "h03-line-1",
+        "h03-line-2",
+        "h03-line-3"
+      ],
+      "background": "bridge-gate",
+      "person": "moonlight",
+      "squirrel": "alert"
+    },
+    "E01": {
+      "title": "e01-title",
+      "lines": [
+        "e01-line-0",
+        "e01-line-1",
+        "e01-line-2",
+        "e01-line-3"
+      ],
+      "background": "dawn-village",
+      "person": "alert",
+      "squirrel": "alert"
+    },
+    "E02": {
+      "title": "e02-title",
+      "lines": [
+        "e02-line-0",
+        "e02-line-1",
+        "e02-line-2",
+        "e02-line-3"
+      ],
+      "background": "dawn-village",
+      "person": "moonlight",
+      "squirrel": "alert"
+    }
+  },
+  "stages": [
+    {
+      "letters": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "count": 3,
+      "seconds": 0,
+      "scene": "S04",
+      "learn": "S03",
+      "next": "S05"
+    },
+    {
+      "letters": [
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R"
+      ],
+      "count": 4,
+      "seconds": 12,
+      "scene": "S06",
+      "learn": "S05",
+      "next": "S07"
+    },
+    {
+      "letters": [
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z"
+      ],
+      "count": 5,
+      "seconds": 10,
+      "scene": "S09",
+      "learn": "S08",
+      "next": "S10"
+    }
+  ]
+}

@@ -1,0 +1,355 @@
+{
+  "source": "Original procedural ambience/SFX; local installed en-US TTS for letter names, no third-party samples",
+  "entries": {
+    "fog": {
+      "src": "fog.wav",
+      "available": true,
+      "seconds": 12.0,
+      "sha256": "0b03d27aba4a4c1d841c310877ca621f1fd27c4c049ccc3d07b8f444c8a5930e",
+      "category": "ambience",
+      "volume": 0.18
+    },
+    "house": {
+      "src": "house.wav",
+      "available": true,
+      "seconds": 12.0,
+      "sha256": "292c1fe5b88fc40592152c57ccef3379089ed1552d7f22b123729a6750bfe46b",
+      "category": "ambience",
+      "volume": 0.18
+    },
+    "bridge": {
+      "src": "bridge.wav",
+      "available": true,
+      "seconds": 12.0,
+      "sha256": "90fe8da7ba12b747c0489aefe2435766f98625adfb032e0b94d36c878354f68d",
+      "category": "ambience",
+      "volume": 0.18
+    },
+    "dawn": {
+      "src": "dawn.wav",
+      "available": true,
+      "seconds": 12.0,
+      "sha256": "886452039258b58ae6948f29c1c423f4f8297c389124253d9a30f8bc442de423",
+      "category": "ambience",
+      "volume": 0.18
+    },
+    "success": {
+      "src": "success.wav",
+      "available": true,
+      "seconds": 0.9,
+      "sha256": "2144ccba47e6b076c80752bb5a10c79c02e1350856bfbe64377b4b1f02ec93ee",
+      "category": "sfx",
+      "volume": 0.52
+    },
+    "fail-soft": {
+      "src": "fail-soft.wav",
+      "available": true,
+      "seconds": 0.7,
+      "sha256": "bd651b4e938f87ab80637ef3e0cdb306cdcf069f1b9653020db061c0ae259514",
+      "category": "sfx",
+      "volume": 0.52
+    },
+    "wing": {
+      "src": "wing.wav",
+      "available": true,
+      "seconds": 1.0,
+      "sha256": "34ae3ce60d4df98e14e41e09a3192b346215122ef66507986ec7fe42ea2abf22",
+      "category": "sfx",
+      "volume": 0.52
+    },
+    "moonlight": {
+      "src": "moonlight.wav",
+      "available": true,
+      "seconds": 1.5,
+      "sha256": "ac2af7cdd3034467664bbd20e1f25dff5d10555f93fdc991443152dde928a693",
+      "category": "sfx",
+      "volume": 0.52
+    },
+    "letter-A": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "ay",
+      "letter": "A",
+      "src": "letters/a.wav",
+      "sha256": "26d5ecd4eb2ed8561b4bebf228d51b8d3376dae2853002e60bcaf4c08026fba4",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.294421768707483
+    },
+    "letter-B": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "bee",
+      "letter": "B",
+      "src": "letters/b.wav",
+      "sha256": "33c4023b42b95f7f9a7eca98435e4d40e7f7adc12a61a4c99e139d6d329b7e00",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.3994104308390023
+    },
+    "letter-C": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "see",
+      "letter": "C",
+      "src": "letters/c.wav",
+      "sha256": "6b40e8f30987c53b29823a6085af07dcafe047519c117a2e85b49ec244aa2ecf",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4643990929705215
+    },
+    "letter-D": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "dee",
+      "letter": "D",
+      "src": "letters/d.wav",
+      "sha256": "b0ea5f2e5edb95809aa7db2d206541c016de9527debb51cd56f19670cff5bf79",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.3994104308390023
+    },
+    "letter-E": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "ee",
+      "letter": "E",
+      "src": "letters/e.wav",
+      "sha256": "94d903ccaaf07a13edf60eba56dfd050c45028908b302a298a11baecc135403e",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.514421768707483
+    },
+    "letter-F": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "eff",
+      "letter": "F",
+      "src": "letters/f.wav",
+      "sha256": "d13032468acc3e45b1af9c6c0d14890b3bc65396f9aeac6ee6161999badb7ad9",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.8693877551020408
+    },
+    "letter-G": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "gee",
+      "letter": "G",
+      "src": "letters/g.wav",
+      "sha256": "df22dd3e6f9f98b66ed025e178b97f3a94fa999a4aa70b833fc87e67729c4776",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4293877551020409
+    },
+    "letter-H": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "aitch",
+      "letter": "H",
+      "src": "letters/h.wav",
+      "sha256": "c658cb5425d4cc3d11dbfda78c5b9116d58dd346a525aba0634b00b49aa88f89",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.5394104308390022
+    },
+    "letter-I": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "eye",
+      "letter": "I",
+      "src": "letters/i.wav",
+      "sha256": "26d5ecd4eb2ed8561b4bebf228d51b8d3376dae2853002e60bcaf4c08026fba4",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.294421768707483
+    },
+    "letter-J": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "jay",
+      "letter": "J",
+      "src": "letters/j.wav",
+      "sha256": "c36392ce7ee34bd0489ca7688b22ab1ab77e04a9e550ab3741d5342d4bc06674",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4293877551020409
+    },
+    "letter-K": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "kay",
+      "letter": "K",
+      "src": "letters/k.wav",
+      "sha256": "93e9f3ff91af37f72bee7692d8ee880f00317fc4230129d7a87e1f35eb83b9a8",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4043990929705215
+    },
+    "letter-L": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "el",
+      "letter": "L",
+      "src": "letters/l.wav",
+      "sha256": "87b6fdb700c23825b639e4dbd0169e0cef5546c948226a47f4d51c5a2c2ec962",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4443990929705215
+    },
+    "letter-M": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "em",
+      "letter": "M",
+      "src": "letters/m.wav",
+      "sha256": "167d85e4bc390a0b6eff8f4a070faa94a697c9c593390b132554b8646105ace7",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4994104308390022
+    },
+    "letter-N": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "en",
+      "letter": "N",
+      "src": "letters/n.wav",
+      "sha256": "329e2e953f93678d48b573e40dc39edaa0b6ac8b71be8feb63c9b1f7f81b46c7",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4994104308390022
+    },
+    "letter-O": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "oh",
+      "letter": "O",
+      "src": "letters/o.wav",
+      "sha256": "432f0d6b100cd69c521433963c5d755d4ef1892c3be49566f851e8fff84aa7fa",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.294421768707483
+    },
+    "letter-P": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "pee",
+      "letter": "P",
+      "src": "letters/p.wav",
+      "sha256": "e151fc8d4a31f4261963639cea5e9154d7c9dd00513f44e5be2e615e853f8bb9",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.3994104308390023
+    },
+    "letter-Q": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "cue",
+      "letter": "Q",
+      "src": "letters/q.wav",
+      "sha256": "2a95f570ec6fdf9e949669a1d7fd22d8bc7ea206585d89ae25c47bf174d16837",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.5043990929705215
+    },
+    "letter-R": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "ar",
+      "letter": "R",
+      "src": "letters/r.wav",
+      "sha256": "c80297f3291b38704c751a0eee1f3e317d27d433d795a048ac43b129cb1fcf01",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.6493877551020408
+    },
+    "letter-S": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "ess",
+      "letter": "S",
+      "src": "letters/s.wav",
+      "sha256": "50405339e003c5acc749056a6cfadea00f61ced6e7c1c81fa9d55a400ea34bd6",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.5394104308390022
+    },
+    "letter-T": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "tee",
+      "letter": "T",
+      "src": "letters/t.wav",
+      "sha256": "3a01eb81947262cdf2dd784ce7d6f87fe9eef97cab599ec86969cd6051eebfa4",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4043990929705215
+    },
+    "letter-U": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "you",
+      "letter": "U",
+      "src": "letters/u.wav",
+      "sha256": "0d792ba7f6a14c7836a2f7f3fc9ae16087d78c5508d1c450f1a03c1428748d7d",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4043990929705215
+    },
+    "letter-V": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "vee",
+      "letter": "V",
+      "src": "letters/v.wav",
+      "sha256": "07b8a9368bae3e67d4c9fa7470a1c47869e68caf2de347898de99e15bea82381",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.374421768707483
+    },
+    "letter-W": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "double you",
+      "letter": "W",
+      "src": "letters/w.wav",
+      "sha256": "bf9caaa41a018fcc5459480a654551fbf7a6af507f3db212bd374a7d8ca7e24c",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.7243083900226757
+    },
+    "letter-X": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "ex",
+      "letter": "X",
+      "src": "letters/x.wav",
+      "sha256": "873015e9b05ca631744a606136de675ae860011c5e779066bb8501bbf1454b81",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.6093877551020408
+    },
+    "letter-Y": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "why",
+      "letter": "Y",
+      "src": "letters/y.wav",
+      "sha256": "5dea669962a26a90a9935fad2e16451d5d09945d8b8812b6881f8bdf6c928608",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4043990929705215
+    },
+    "letter-Z": {
+      "voice": "Microsoft Zira Desktop",
+      "spoken": "zee",
+      "letter": "Z",
+      "src": "letters/z.wav",
+      "sha256": "9af0469dc321c35ebb6ccc08dd5e62166dadb120c46601e07d7c5aafb687195c",
+      "available": true,
+      "category": "letter",
+      "volume": 0.9,
+      "seconds": 1.4243990929705215
+    }
+  }
+}

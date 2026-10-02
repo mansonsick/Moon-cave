@@ -21,8 +21,8 @@ try:
    assert page.locator('.subject-entry').count()==3
    assert page.locator('#chinese .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['moon-cave','story-02','story-04']
    assert page.locator('#math .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['story-03']
-   assert page.locator('#english .story-card').count()==0
-   assert page.locator('#english .start').count()==0
+   assert page.locator('#english .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['story-05']
+   assert page.locator('#english .start').count()==1
    assert '虎姑婆' not in page.content()
    for subject in ['chinese','math','english']:
     entry=page.locator(f'[data-subject="{subject}"]');assert entry.bounding_box()['height']>=64;entry.tap()
@@ -36,7 +36,7 @@ try:
    # Opaque/damaged saves prove the hub never parses them. Entry checks below use
    # a clean isolated test session so legacy stories do not parse those fixtures.
    page.evaluate('localStorage.clear()')
-   for subject,story in [('chinese','moon-cave'),('chinese','story-02'),('chinese','story-04'),('math','story-03')]:
+   for subject,story in [('chinese','moon-cave'),('chinese','story-02'),('chinese','story-04'),('math','story-03'),('english','story-05')]:
     page.goto(base+'#'+subject);page.locator(f'[data-story="{story}"] .start').tap();page.wait_for_url(base+'stories/'+story+'/')
    assert not errors,errors;assert not bad,bad;assert not fonts,fonts
    context.close()
@@ -44,6 +44,6 @@ try:
   page=context.new_page();page.goto(base);page.locator('[data-subject="math"]').tap();page.wait_for_url(base+'#math')
   page.locator('#math .start').tap();page.wait_for_url(base+'stories/story-03/')
   browser.close()
- print('PASS subject anchors, four stories, truthful English placeholder, all story links, 390/820/1180 touch layouts, no JS or font dependency, saved data preserved')
+ print('PASS subject anchors, five stories, new English entry, all story links, 390/820/1180 touch layouts, no JS or font dependency, saved data preserved')
  (out/'results.json').write_text(json.dumps({'passed':True,'sizes':[390,820,1180],'physical_tablet':False}),encoding='utf-8')
 finally:server.shutdown()

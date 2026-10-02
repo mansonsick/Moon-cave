@@ -79,6 +79,12 @@
     .story-card[data-story="story-04"] h2.reading-hub-text { font-size: 30px; }
     .story-card[data-story="story-04"] .chapter.reading-hub-text { font-size: 20px; }
     .story-card[data-story="story-04"] .reading-hub-text img { display: inline; width: auto; height: 1.12em; max-width: 100%; vertical-align: middle; }
+    .story-card[data-story="story-05"] .hub-person { left: 8%; top: 27%; width: 24%; height: 65%; }
+    .story-card[data-story="story-05"] .hub-squirrel { left: 3%; top: 68%; width: 16%; height: 28%; }
+    .story-card[data-story="story-05"] .reading-hub-text { font-size: 24px; line-height: 1.7; }
+    .story-card[data-story="story-05"] h2.reading-hub-text { font-size: 30px; }
+    .story-card[data-story="story-05"] .chapter.reading-hub-text { font-size: 20px; }
+    .story-card[data-story="story-05"] .reading-hub-text img { display: inline; width: auto; height: 1.12em; max-width: 100%; vertical-align: middle; }
     .start {
       display: inline-flex;
       align-items: center;
@@ -214,7 +220,21 @@
     </section>
     <section class="subject-section" id="english" aria-labelledby="english-title">
       <header class="subject-heading"><h2 id="english-title"><img class="text-image" src="./assets/hub-text/subject-english.png" alt="英文"></h2></header>
-      <div class="empty-subject"><img class="text-image" src="./assets/hub-text/english-empty-first.png" alt="英文冒險準備中。"><img class="text-image" src="./assets/hub-text/english-empty-second.png" alt="先選其他故事吧！"></div>
+      <article class="story-card" data-story="story-05" aria-labelledby="story-05-title">
+        <a class="cover-link" href="./stories/story-05/" aria-label="進入阿通與霧夜的字母門">
+          <div class="hub-stage">
+            <img class="hub-background" src="./stories/story-05/assets/images/backgrounds/night-path.png" alt="霧夜的小路通往微光石亭，阿通和小松鼠一起找回家的路。" loading="lazy" decoding="async">
+            <img class="hub-person" src="./stories/story-05/assets/images/characters/atong-alert.png" alt="" loading="lazy" decoding="async">
+            <img class="hub-squirrel" src="./stories/story-05/assets/images/characters/squirrel-alert.png" alt="" loading="lazy" decoding="async">
+          </div>
+        </a>
+        <div class="story-info">
+          <p class="chapter reading-hub-text" role="img" aria-label="阿通的第五場冒險"><img src="./stories/story-05/assets/text/hub-chapter-0.png" alt=""><img src="./stories/story-05/assets/text/hub-chapter-1.png" alt=""></p>
+          <h2 id="story-05-title" class="reading-hub-text" role="img" aria-label="阿通與霧夜的字母門"><img src="./stories/story-05/assets/text/title-0.png" alt=""><img src="./stories/story-05/assets/text/title-1.png" alt=""></h2>
+          <p class="description reading-hub-text"><span role="img" aria-label="聽清字母，點亮霧裡的燈，"><img src="./stories/story-05/assets/text/cover-first-0.png" alt=""><img src="./stories/story-05/assets/text/cover-first-1.png" alt=""></span><span role="img" aria-label="跟著阿通找到回家的路。"><img src="./stories/story-05/assets/text/cover-second-0.png" alt=""><img src="./stories/story-05/assets/text/cover-second-1.png" alt=""></span></p>
+          <a class="start" href="./stories/story-05/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
+        </div>
+      </article>
       <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>
     </section>
   </main>

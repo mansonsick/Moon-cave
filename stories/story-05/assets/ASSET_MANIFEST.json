@@ -1,6 +1,6 @@
 {
   "created": "2026-10-02",
-  "stage": "story and illustration only; no game runtime",
+  "stage": "complete first playable web implementation; tablet acceptance pending",
   "tool": "built-in image_gen.imagegen",
   "count": 30,
   "backgrounds": 8,
@@ -12,14 +12,14 @@
   "chaseAsset": "images/characters/nabieqi-reaching-v2.png",
   "monsterChasePose": "open beak, both arms and hands reaching to grab",
   "targetMonsterBodyHeightRelativeToAngel": 1.0,
-  "sceneLayoutCalibrated": false,
+  "sceneLayoutCalibrated": true,
   "monsterCloak": "aged dark red",
   "monsterWings": "black old ragged wings",
   "monsterPose": "airborne",
   "originalsPreserved": true,
   "fontFilesPublished": false,
-  "audioDelivered": false,
-  "textImagesDelivered": false,
+  "audioDelivered": true,
+  "textImagesDelivered": true,
   "prompts": "images/PROMPTS.json",
   "assets": [
     {
@@ -406,5 +406,11 @@
         1010
       ]
     }
-  ]
+  ],
+  "layoutViewports": [
+    390,
+    820,
+    1180
+  ],
+  "physicalTabletTested": false
 }
