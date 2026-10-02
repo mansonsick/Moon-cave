@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A–Z audio review and credits</title>
+<style>body{max-width:1000px;margin:auto;padding:24px;background:#f5f3e8;color:#243144;font:18px/1.5 Verdana,sans-serif}a{color:#234b78}#letters{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}article{padding:16px;background:white;border-radius:12px}h2{margin:0 0 8px;font-size:32px}audio{max-width:100%;width:100%}small{display:block;margin-top:12px;font-size:14px}a.back{display:inline-flex;align-items:center;min-height:48px}</style>
+<a class="back" href="../../../">← Story</a><h1>A–Z audio review</h1>
+<p>Human US English letter names. Only one recording plays at a time.</p>
+<p>Story background music: <a href="https://incompetech.com/music/royalty-free/index.html?Search=Search&amp;isrc=USUAN1400042">“Come Play with Me” — Kevin MacLeod (incompetech.com)</a>, <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. The user supplied the Chosic MP3 unchanged; only playback volume is lowered and ducked during letter names.</p>
+<p>Converted to mono WAV, trimmed outside silence with consonant margins, normalized volume and added short silence padding. Each converted recording keeps the license linked below. These recording licenses do not apply to the story code.</p>
+<div id="letters"></div><script type="module">
+const entries=await fetch('./manifest.json').then(r=>r.json());
+const players=[];
+for(const e of entries){
+  const card=document.createElement('article'),h=document.createElement('h2'),audio=document.createElement('audio'),credit=document.createElement('small');
+  h.textContent=e.letter+' '+e.letter.toLowerCase();audio.controls=true;audio.preload='none';audio.src='./'+e.src.split('/').at(-1)+'?v='+e.sha256.slice(0,12);
+  audio.setAttribute('aria-label',e.letter+' letter name');audio.addEventListener('play',()=>{for(const p of players)if(p!==audio)p.pause();});players.push(audio);
+  credit.append(e.author+' · ');const source=document.createElement('a'),license=document.createElement('a');
+  source.href=e.sourcePage;source.textContent=e.sourceFile;license.href=e.licenseUrl;license.textContent=e.license;
+  credit.append(source,' · ',license);card.append(h,audio,credit);document.querySelector('#letters').append(card);
+}
+</script></html>

@@ -1,0 +1,209 @@
+{
+  "mode": "Built-in image_gen.imagegen",
+  "created": "2026-10-02",
+  "main": "25f061fa479bc237cea44d6c9f82f1ba0d908a4e",
+  "originalsPreserved": true,
+  "anchor": {
+    "file": "anchor.png",
+    "reference": [
+      "stories/story-03/assets/images/atong.png",
+      "stories/story-03/assets/images/squirrel.png"
+    ],
+    "referenceOnly": true,
+    "prompt": "Use case: illustration-story. Asset type: one visual anchor and character/world reference illustration, wide landscape 16:9, for an original Taiwanese children's spooky alphabet adventure. Input references: Image 1 is Atong CHARACTER IDENTITY only, Image 2 is orange squirrel CHARACTER IDENTITY only. Preserve the boy's tousled dark brown hair, large dark expressive eyes, blue short sleeve shirt, khaki shorts, rolled white socks, brown boots and olive adventure backpack; no postal satchel. Preserve squirrel orange fluffy fur, cream face/chest and huge curved tail. Detailed watercolor/gouache with fine warm ink outlines, like references, but cool blue-gray moonlit fog and modest warm lantern edge light. Four clearly separated full-body designs on a simple misty forest clearing as a REFERENCE BOARD, not a final playable background: boy brave but worried at left, squirrel beside him, original monster Nabieqi at center-right, purified small angel at far right. Monster is seriously eerie, not cute: charcoal-gray ragged shroud, hunched crow-like narrow head silhouette, deep hollow eyes with tiny pale icy glints, very long thin arms and long fingers, one hand low near ground, crooked posture, cloth strips trailing. Face is shadowed and bird-like rather than a human corpse; no skeleton, exposed anatomy, blood, wounds or body horror. Angel is the SAME hidden spirit freed from this shroud: a small childlike luminous being with short pale-blue wispy hair, two small ivory feather wings, large gentle eyes, modest cream tunic, no religious iconography, floating peacefully. Retain the same tiny curled forehead silhouette and pale-blue eye hue to link forms. A small silvery-blue rounded moonstone with a crescent shimmer is visible near the boy's hand as design reference only. Clearly visible shapes, full feet/wing/tail/cloth tips uncropped. No typography, letters, labels, numbers, UI, boxes, arrows, watermark or caption.",
+    "superseded": true
+  },
+  "assets": [
+    {
+      "file": "backgrounds/night-path.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. A winding forest return path in early moonlit night, twisted roots and dark tall trees at sides, little stone shelter visible ahead at far right, clear trail leads from lower left toward it. A partial pale moon high behind branches, very light distant mist only. Lower-left foreground open for walking boy/squirrel overlays; right-side tree trunks naturally provide a place for a separate monster hand/silhouette later. No figure already in trees.",
+      "transparent": false,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "backgrounds/stone-shelter.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. Inside a small abandoned roadside stone shelter, roof intact, rounded doorway opening to moonlit forest on RIGHT rear, low stone bench and small EMPTY timber shelf/table near middle-right for a separate paper note later. A softly lit safe alcove at left, spacious clear lower-left for two characters. Open right-middle wall provides space for educational objects overlaid later. Stone shapes dark yet readable, eerie outdoors but calm protected interior.",
+      "transparent": false,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "backgrounds/forest-lamps.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. A broad forest trail seen slightly from above at child's eye level. Path runs across foreground and curves to an abandoned timber watch house in upper-right background, full recognizable doorway and roof visible, not obscured by fog. Three modest empty low mossy timber plinths at middle/right, roughly x45%,65%,85% and y65%, for separately overlaid answer lanterns later. Upper path margin has open space for nine small progress lights later, but DO NOT draw the lights. Left foreground x8-30% open for boy/squirrel. A deep gap between trees in far right behind provides room for monster. Real forest setting, no interface panels.",
+      "transparent": false,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "backgrounds/watch-house.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. Inside a deserted wooden night-watch house: wide low timber table and wall shelf on middle-right, broad empty tabletop for four separate answer candle props later. Exit doorway in back RIGHT wall at about x77%, y37%, dark interior passage visible, separate closed door can be added later; do not draw a door leaf. A narrow vertical crack in LEFT rear entrance frame for a monster eye overlay later, but no actual eye. Left foreground uncluttered floor for boy and squirrel. Deep blue moonlight from a small window, timber beams, faded dust, no skulls or bodily remains, no existing lamps/candles/notes. Scenery must be visually different from forest.",
+      "transparent": false,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "backgrounds/moon-wall.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. Behind the same deserted watch house, its weathered exterior timber wall at right and low stone foundations. Forest path from lower-left goes toward distant intact wooden bridge upper-left/center. A modest dark stone patch naturally fitted in the wall near x80%,y73% for separately overlaid subtle crescent engraving later; stone surface currently BLANK, no moon icon or special glowing mark. Room on left middle to overlay boy looking at wall and squirrel. Clear moonlit wall grain and moss, gentle far mist only, no obvious treasure or hidden-item UI.",
+      "transparent": false,
+      "reference": "anchor-v2.png"
+    },
+    {
+      "file": "backgrounds/bridge-gate.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. A complete intact wooden escape bridge with low rails, seen in broad three-quarter side perspective so the wide foreground deck spans across lower-middle from left toward RIGHT and distant stone village gate at upper-right. No missing planks or broken unsafe structure. Bright moon overhead casts enough light to read deck and rails; far village gate and roofs clearly visible and recognizably reachable. Five EMPTY squat stone/wood lamp pedestals spaced in a gently curved line across middle-right foreground deck for separate answer lantern props later; no lamps on them. Upper rail has space for eight smaller progress lights later, not drawn. Left quarter open for boy and squirrel. Right and upper middle clear open silhouettes/background gaps permit monster to appear in five later positions without covering answer letters. Keep horizon/deck geometrically coherent, not a vertical aerial map.",
+      "transparent": false,
+      "reference": "anchor-v2.png"
+    },
+    {
+      "file": "backgrounds/rock-hideout.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. View from within a shallow sheltered natural gap between two large rounded forest boulders. Wide protected left foreground for boy and squirrel unharmed, an open narrow view of the forest path at center-right where a ragged shadow can be overlaid later. Moonlight edges stone, root and ferns visible, no dead ends, no monster baked in. Calm breathing-space lighting, cool blue and tiny warm reflected light, not completely black. This is a brief hiding/retry scene, not death.",
+      "transparent": false,
+      "reference": "anchor-v2.png"
+    },
+    {
+      "file": "backgrounds/dawn-village.png",
+      "prompt": "Use case: illustration-story. Asset type: reusable BACKGROUND ONLY for original spooky children's alphabet adventure, wide landscape 16:9. Reference image is PALETTE, painterly watercolor/gouache fine ink STYLE and WORLD only. Cool moonlit blue-gray forest, modest warm amber highlights, textured stone and weathered timber, eerie but readable. Keep all foreground and interaction surfaces clear and in focus. Fog/darkness that gradually hides the exit will be an independent game layer later; no opaque fog or completely black foreground baked in. No people, boy, squirrel, monster, angel, movable lanterns or candles, moonstone, papers, written text, letters, numerals, typography, UI or symbols. Do not copy the reference characters into scenery. Successful peaceful ending landscape, warm early dawn now replacing blue night. A small forest village beyond an intact wooden bridge, timber cottages and stone gate at RIGHT middle, sunlight shafts and dissipating light mist in distance, flowers and safe clear path. Lower-left/middle spacious for separate boy, squirrel and optional angel; ordinary ending should already feel joyful and complete with two characters. No villagers or angel baked in, no full moon in daytime, no letters or UI.",
+      "transparent": false,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "characters/atong-alert.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY Atong, the same boy at left of reference. Full-body three-quarter facing RIGHT, knees slightly bent, concerned alert expression, looking toward something at upper right, one hand holding backpack strap and other EMPTY hand open near chest. Both boots planted, brave and worried rather than happy grin. Blue short sleeves, khaki shorts, white socks, brown boots, olive backpack, no extra satchel and NO moonstone. All limbs fully framed.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "characters/atong-running.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY same Atong. Full body running toward RIGHT, one leg reaching forward and other bent back, arms pumping naturally, head turned slightly back LEFT with frightened but determined expression. Blue shirt/khaki shorts/white socks/brown boots/olive backpack, no extra satchel, no moonstone, no object held. Whole hair, feet, hands and backpack fit inside transparent margin; grounded anatomically plausible running pose.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "characters/atong-listening.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY same Atong. Full body standing three-quarter toward RIGHT, concentrating with one empty hand cupped beside ear as he listens to an English letter, other hand gently held ready to point toward lantern lower right, eyes attentive and mouth slightly closed. No frightened scream or smile. Blue shirt/khaki shorts/white socks/brown boots/olive backpack, no extra satchel or moonstone. Clear listening action, complete uncropped body.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "characters/atong-moonlight.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY same Atong. Full body three-quarter facing RIGHT, calm brave expression, one arm extended out at chest height presenting ONE small round silvery-blue moonstone with an internal pale crescent, same sphere as anchor; other hand steadies wrist. Stone soft modest blue-white glow, not a huge beam baked in. Legs braced naturally, blue shirt/khaki shorts/white socks/brown boots/olive backpack. No lantern, satchel or other props. All boots, fingers and stone framed.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "characters/squirrel-alert.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY same orange squirrel from anchor, cream face/chest and huge curled fluffy tail. Full body facing RIGHT, eyes wide concerned, one paw slightly lifted in caution, the other near chest. No objects. All tail, ears and feet intact, no other characters.",
+      "transparent": true,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "characters/squirrel-running.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY same orange squirrel. Full body bounding toward RIGHT, front paws forward, back feet lifted in mid-stride, head looking slightly back LEFT with alert worried eyes, giant tail swept upward behind. No objects, no boy or ground. Preserve orange/cream coloring and identity, full tail and paws framed.",
+      "transparent": true,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "characters/nabieqi-stalking.png",
+      "prompt": "Use case: illustration-story. Input image role: CANONICAL CHARACTER AND STYLE REFERENCE, not a scene to copy. Produce ONE standalone transparent PNG sprite of Nabieqi from the reference, NO Atong, squirrel or angel. Preserve exactly this small birdlike monster's beaked face, luminous pale eyes, deep crimson RED worn rag cloak, BLACK old ragged crow-like wings attached to its back, very long thin fingers, detailed watercolor/opaque watercolor painterly texture. It must be visibly FLYING / HOVERING IN THE AIR, with claws hanging freely, no ground, no contact shadow, no standing or walking posture. Physical body height is approximately equal to the small angel, not a giant. Wings may be wide but body must stay small; no blood/gore. Complete wings, hands, rag tails and face comfortably inside frame with clear transparent margins, no text, no frame, no other objects. Actual alpha transparency. Pose: hovering upright with a hunched compact body, black wings in a low downstroke, looking LEFT cautiously toward Atong. Both long hands hang forward and down in the air. Red cloak tatters float back to the right. Readable full silhouette; not the giant crouching floor pose.",
+      "reference": "anchor-v3.png",
+      "transparent": true
+    },
+    {
+      "file": "characters/nabieqi-reaching-v2.png",
+      "prompt": "Use case: precise-object-edit. EDIT TARGET: the attached airborne Nabieqi chasing sprite. Change ONLY the chasing expression and hands/arm gesture to make it unmistakably about to grab someone. OPEN its beaked mouth wide in a menacing silent howl: clearly separated upper and lower bird beak, dark open mouth, no blood, gore, wound or human mouth replacement. Extend BOTH long thin arms and fingers forward toward the LEFT / slightly toward viewer, hands open and curled ready to grasp, complete fingers visible. Keep the same small spirit's recognizable birdlike face and glowing eyes, dark crimson RED tattered rag cloak, BLACK old ragged wings, flying/hovering posture, original painterly watercolor style, canvas aspect ratio and overall body scale, approximately angel-sized when placed in a scene. Wings, rag tails, mouth and both hands must all fit comfortably inside the frame with transparent margins. No captured child, no contact with another character, no extra figure, no text, no scene or ground. Preserve genuine transparent alpha; no opaque dark or colored background. This is the active chase pose, not the calming/cleansing pose.",
+      "transparent": true,
+      "reference": "characters/nabieqi-reaching.png",
+      "editTarget": "characters/nabieqi-reaching.png"
+    },
+    {
+      "file": "characters/nabieqi-cleansing.png",
+      "prompt": "Use case: illustration-story. Input image role: CANONICAL CHARACTER AND STYLE REFERENCE, not a scene to copy. Produce ONE standalone transparent PNG sprite of Nabieqi from the reference, NO Atong, squirrel or angel. Preserve exactly this small birdlike monster's beaked face, luminous pale eyes, deep crimson RED worn rag cloak, BLACK old ragged crow-like wings attached to its back, very long thin fingers, detailed watercolor/opaque watercolor painterly texture. It must be visibly FLYING / HOVERING IN THE AIR, with claws hanging freely, no ground, no contact shadow, no standing or walking posture. Physical body height is approximately equal to the small angel, not a giant. Wings may be wide but body must stay small; no blood/gore. Complete wings, hands, rag tails and face comfortably inside frame with clear transparent margins, no text, no frame, no other objects. Actual alpha transparency. Pose: flying recoil from moonlight arriving from the LEFT, both arms lift partly to shield its eyes, wings tilted back as it hangs in the air. Same monster still has dark beak/eyes and BLACK ragged wings, but cloak fades to dusty rose-red, thin blue-white moonlight highlights its cloth and worn wing tips, with a few restrained star motes. This is partly cleansed, not yet an angel, no extra pale wings or other person. Different calm recoiling pose, all anatomy intact.",
+      "reference": "anchor-v3.png",
+      "transparent": true
+    },
+    {
+      "file": "characters/angel.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE full-body transparent character sprite for original spooky children's alphabet adventure. Reference is CHARACTER IDENTITY and detailed watercolor/gouache fine ink STYLE, cool moonlit lighting with subtle warm edge light. Genuine transparent background, small clear margins around full figure; no forest, floor, cast shadow backdrop, labels, words, letters or other characters. Preserve proportions, colors and clothing exactly. ONLY the small purified angel at far right of anchor. Same pale-blue/white wispy hair with curled forelock, blue gentle expressive eyes, ivory feather wings, modest cream tunic and tiny bare feet. Full body floating gently, three-quarter toward LEFT, arms open in gratitude and warm kind smile, no mouth text. Small ivory-gold rim glow stays near silhouette, not a huge opaque halo/backdrop. Both wings and all fingers/feet in frame. No monster, religious icons, crown, weapons or scenery.",
+      "transparent": true,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "props/lantern-unlit.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE rustic small dark-bronze square lantern on a squat mossy timber foot, viewed three-quarter slightly from above, wide flat front plate at lower front facing camera nearly straight-on, at least 45% of width blank and uncluttered for one English letter added separately. Upper glass chamber and ONE unlit cream candle within, absolutely NO flame or glow. Flat stable base, front plate plain aged cream/brass with high contrast potential. Full lantern handle and base intact. No letter, number or icon on the plate, no background.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "props/candle-unlit.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE short sturdy cream wax candle in a low aged-brass candle holder, viewed slightly from above. Holder includes a broad flat blank aged-ivory vertical rectangular tag at its front lower side, nearly frontal to viewer, spacious for one lowercase letter overlaid later. Candle and wick UNLIT, no flame or glow. Simple physical candle holder looks part of abandoned watch-house furniture, natural material texture, not a UI button. Entire base/handle/tag uncropped, no text.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "props/moonstone.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE small round smooth silvery-blue MOONSTONE exactly like the sphere in boy's hand in anchor. Translucent pale blue-white stone with one delicate visible crescent-shaped internal gleam, gentle silver marbling, no faceted diamond cuts, no jewel setting, no hands. Soft thin blue-white rim light stays near stone edges, not a large opaque glow. Circular complete silhouette, easy to drag as a standalone sprite, no symbols printed outside stone. This is a magic stone from the first adventure, not a new necklace or treasure chest.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "props/watch-note.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE weathered cream paper note with gently irregular edges, fixed by two small dark tacks at top corners, broad CLEAN BLANK central writing space. Landscape 4:3 proportion, facing viewer straight on to accept separately rendered readable text. Subtle parchment grain, thin brown edges, no folds obscuring center, no writing, letters, arrows or symbols. Genuine transparent surroundings.",
+      "transparent": true,
+      "reference": "anchor.png"
+    },
+    {
+      "file": "props/moon-mark.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE small plain gray-brown stone inset with a shallow crescent MOON engraving, nearly frontal, muted weathered low-contrast edges and natural moss at one corner. Not precious metal, not shiny, NO glow, no luminous outline or arrow. Matches a dark stone foundation in the forest watch-house exterior. This inconspicuous physical engraving is a hidden observation target, not a button. No other symbol or text.",
+      "transparent": true,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "props/watch-door.png",
+      "prompt": "Use case: illustration-story. Asset type: ONE isolated physical prop layer for original spooky children's alphabet adventure. Reference is watercolor/gouache texture, fine ink style and moonlit lighting only. Genuine transparent background; tight but complete silhouette with modest margin, readable at tablet size. No scenery, people, hands, animals, monster, UI, labels, lettering or numbers. ONE closed weathered dark-brown timber door leaf for an abandoned watch-house exit, tall rectangle with gently arched top, nearly frontal view with subtle thickness at right edge. Small plain iron latch on left side, three modest cross planks, no surrounding frame, wall or doorway; full door edges visible and genuine transparent outside. Eerie moonlit blue-gray timber with restrained warm edge, no writing or letter locks baked in. Will overlay a separate open doorway in background, so no open gap or cutout hole in this leaf.",
+      "transparent": true,
+      "reference": "anchor-v3.png"
+    },
+    {
+      "file": "props/lantern-lit.png",
+      "reference": "D:\\python\\book project\\Moon-cave\\stories\\story-05\\assets\\images\\props\\lantern-unlit.png",
+      "transparent": true,
+      "prompt": "Edit this exact unlit lantern game sprite into its lit state. Preserve the original canvas size, object scale, silhouette, angle, placement, base, material, colors and especially the perfectly blank letter plaque. Add ONLY a small warm golden candle flame within the lantern glass, a gently illuminated glass chamber, with restrained warm highlights on the existing object. Do not redesign, rotate, resize, crop, or move any part. No letter, word, number, extra object or opaque background. Return the same complete standalone sprite with genuinely transparent alpha background. No broad glow background; future game adds light masks separately. Match this image's detailed painterly watercolor children's adventure storybook style."
+    },
+    {
+      "file": "props/candle-lit.png",
+      "reference": "D:\\python\\book project\\Moon-cave\\stories\\story-05\\assets\\images\\props\\candle-unlit.png",
+      "transparent": true,
+      "prompt": "Edit this exact unlit candle game sprite into its lit state. Preserve the original canvas size, object scale, silhouette, angle, placement, base, material, colors and especially the perfectly blank letter plaque. Add ONLY a small warm golden candle flame on the wick, with restrained warm highlights on the existing object. Do not redesign, rotate, resize, crop, or move any part. No letter, word, number, extra object or opaque background. Return the same complete standalone sprite with genuinely transparent alpha background. No broad glow background; future game adds light masks separately. Match this image's detailed painterly watercolor children's adventure storybook style."
+    }
+  ],
+  "canonicalReference": "anchor-v3.png",
+  "anchorRevision": {
+    "file": "anchor-v2.png",
+    "referenceOnly": true,
+    "editTarget": "anchor.png",
+    "prompt": "Use case: precise-object-edit. Input image: EDIT TARGET. Edit ONLY the monster at center-right of this reference board. The user requests TWO changes: (1) reduce its entire physical height to roughly the same full-body height as the small angel on the right, definitely NOT taller than the boy; compare crown-to-lowest-foot/cloth rather than the angel's floating position. Keep the monster's lower cloth and long fingers near the ground, so it is visibly a SMALL hunched frightening creature; leave clear empty forest above where the tall body used to be. (2) change its ragged shroud and trailing cloth strips from gray to aged deep CRIMSON/brick RED fabric, with visible red cloth even in moonlight, darker brown folds and pale frayed fabric edges. The RED is cloth dye, not blood, no drips or wounds. Preserve its crow-like hooked head outline, curled cloth crest, tiny icy-blue eyes, hunched crooked posture and long thin hands; keep it eerie. Do not reduce it to a cute plush animal. Preserve Atong, his moonstone, orange squirrel, angel, their EXACT sizes/poses/identities/clothes, background, moon, forest, lighting, palette, painterly texture, full 16:9 composition and framing UNCHANGED. No text, lettering, symbols, UI or added objects. Original reference will be retained; this is the corrected canonical reference.",
+    "changes": "User requested monster height comparable to angel and red tattered cloak.",
+    "superseded": true
+  },
+  "flightRevision": {
+    "file": "anchor-v3.png",
+    "referenceOnly": true,
+    "editTarget": "anchor-v2.png",
+    "prompt": "Use case: precise-object-edit. EDIT TARGET: the attached canonical character reference. Change ONLY Nabieqi, the small aged dark-red-rag birdlike monster in the middle. Preserve its small physical body height, approximately equal to the little angel at the right; DO NOT make it tall again. Add two BLACK, OLD, RAGGED WINGS on its upper back, crow-like torn flight feathers with irregular worn tips. Lift the whole monster clearly into the air above the ground so it is hovering/flying, both feet/claws no longer touch the forest floor; red cloth hangs and drifts beneath it. Wings must read as black distinct from deep crimson rag cloak and must fit entirely within frame without touching other characters. Preserve the same recognizable beaked face, luminous eyes, slender long fingers, silhouette identity and painterly watercolor style. Keep Atong, squirrel, angel, scene, moon, lighting, canvas, colors and placements exactly unchanged. Monster's wings can widen its silhouette but its body stays the angel's size. No blood, no gore, no text, no new characters.",
+    "changes": "Black ragged wings and airborne pose; preserve small body, red cloak, all other actors and background"
+  },
+  "retryNote": "One incomplete batch was stopped after only three backgrounds returned; those were copied unchanged. Resubmitted only six unfinished non-monster assets against v3; obsolete pre-wing monster requests discarded.",
+  "supersededAssets": [
+    {
+      "file": "characters/nabieqi-reaching.png",
+      "prompt": "Use case: illustration-story. Input image role: CANONICAL CHARACTER AND STYLE REFERENCE, not a scene to copy. Produce ONE standalone transparent PNG sprite of Nabieqi from the reference, NO Atong, squirrel or angel. Preserve exactly this small birdlike monster's beaked face, luminous pale eyes, deep crimson RED worn rag cloak, BLACK old ragged crow-like wings attached to its back, very long thin fingers, detailed watercolor/opaque watercolor painterly texture. It must be visibly FLYING / HOVERING IN THE AIR, with claws hanging freely, no ground, no contact shadow, no standing or walking posture. Physical body height is approximately equal to the small angel, not a giant. Wings may be wide but body must stay small; no blood/gore. Complete wings, hands, rag tails and face comfortably inside frame with clear transparent margins, no text, no frame, no other objects. Actual alpha transparency. Pose: dynamic flying lunge LEFT, black wings swept widely upward in a flight upstroke, one long arm extends LEFT to chase, the other bent. Rag cloak streams RIGHT. Keep face identifiable and entire wings in frame. Body is angled diagonally and clearly airborne. More urgent than cautious hovering, without attacking or injuring anybody.",
+      "reference": "anchor-v3.png",
+      "transparent": true,
+      "referenceOnly": true,
+      "superseded": true,
+      "supersededBy": "characters/nabieqi-reaching-v2.png"
+    }
+  ],
+  "chaseRevision": {
+    "date": "2026-10-02",
+    "file": "characters/nabieqi-reaching-v2.png",
+    "editTarget": "characters/nabieqi-reaching.png",
+    "changes": "Open beak and both arms/hands extended to grab; retain small airborne red-cloaked black-winged identity; old sprite preserved."
+  }
+}

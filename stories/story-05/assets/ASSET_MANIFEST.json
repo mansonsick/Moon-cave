@@ -1,0 +1,416 @@
+{
+  "created": "2026-10-02",
+  "stage": "complete first playable web implementation; tablet acceptance pending",
+  "tool": "built-in image_gen.imagegen",
+  "count": 30,
+  "backgrounds": 8,
+  "characters": 10,
+  "supersededSprites": 1,
+  "props": 8,
+  "referenceImages": 3,
+  "canonicalReference": "images/anchor-v3.png",
+  "chaseAsset": "images/characters/nabieqi-reaching-v2.png",
+  "monsterChasePose": "open beak, both arms and hands reaching to grab",
+  "targetMonsterBodyHeightRelativeToAngel": 1.0,
+  "sceneLayoutCalibrated": true,
+  "monsterCloak": "aged dark red",
+  "monsterWings": "black old ragged wings",
+  "monsterPose": "airborne",
+  "originalsPreserved": true,
+  "fontFilesPublished": false,
+  "audioDelivered": true,
+  "textImagesDelivered": true,
+  "prompts": "images/PROMPTS.json",
+  "assets": [
+    {
+      "file": "anchor.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": true,
+      "superseded": true,
+      "sha256": "c85a1424e442217d2f738edabd4ebefab43815563cae378678e44bfa9b0be779"
+    },
+    {
+      "file": "anchor-v2.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": true,
+      "superseded": true,
+      "sha256": "ee79e2cecd640b02dd954fa40da0831c6229fe0f593cdbb455b53ad6729cbcb3"
+    },
+    {
+      "file": "anchor-v3.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": true,
+      "superseded": false,
+      "sha256": "0fc8fc48ad9792a31bfcad52de725911860500778b0656394eb59da8b8471a8f"
+    },
+    {
+      "file": "backgrounds/night-path.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "e0d83558d4118bbdc6a0140722d36e4feaa15f5c1c45890cf715d5c24bd0ebcb"
+    },
+    {
+      "file": "backgrounds/stone-shelter.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "5e1b4c3407f04acfe8228e21cbc1a899338eccef5b659edf5c5fa9c3e2412b6b"
+    },
+    {
+      "file": "backgrounds/forest-lamps.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "db5628cf1a18e92ef903f15ed0a3f4394f7bd86255295355de5065a2abdda093"
+    },
+    {
+      "file": "backgrounds/watch-house.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "766e61194950f260aa8740ab391e85849b244f7452b0b2ebae7ebee4417bce8c"
+    },
+    {
+      "file": "backgrounds/moon-wall.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "49b8a6a9340d0cbe48fbb63f410d7353ce7d0095e2bcfe0461f04193f7ddd5f3"
+    },
+    {
+      "file": "backgrounds/bridge-gate.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "a4af62a6a1e1bf680d18a2862360de9e70d9ea8ffbcc12d3962fa6d83b8abf3a"
+    },
+    {
+      "file": "backgrounds/rock-hideout.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "281eb99b3cae8cf3d67b6e7f249a121a0723823bc4234464266cb7de874fe019"
+    },
+    {
+      "file": "backgrounds/dawn-village.png",
+      "width": 1672,
+      "height": 941,
+      "transparent": false,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "de88074660387e6db303eba778f381f5d5ed6ed033b24c84091c7e042294ff2d"
+    },
+    {
+      "file": "characters/atong-alert.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "5506f996f65fb65b6a0e5a559a423c0b390bb25b51241839fb00c48c8404419f",
+      "visibleBounds": [
+        115,
+        23,
+        888,
+        1488
+      ]
+    },
+    {
+      "file": "characters/atong-running.png",
+      "width": 1145,
+      "height": 1374,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "f67b77afc356711cc71389c1a98407450d6346038184a80b9d707e01ab2ee081",
+      "visibleBounds": [
+        112,
+        9,
+        1078,
+        1352
+      ]
+    },
+    {
+      "file": "characters/atong-listening.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "dc3a2e219bfb3f22a61ed94c3e112ff8a4584ce737c4d7ed2496f038ae388122",
+      "visibleBounds": [
+        147,
+        18,
+        924,
+        1493
+      ]
+    },
+    {
+      "file": "characters/atong-moonlight.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "b08a574e4b5aebc62866c462973e75e0050f5d85ca1c892b2ba41cda10a99ef9",
+      "visibleBounds": [
+        134,
+        29,
+        946,
+        1501
+      ]
+    },
+    {
+      "file": "characters/squirrel-alert.png",
+      "width": 1182,
+      "height": 1330,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "714791c5be451add2e777dd100e7ded90c2516026715ad7741cc6fa932499991",
+      "visibleBounds": [
+        18,
+        11,
+        1181,
+        1313
+      ]
+    },
+    {
+      "file": "characters/squirrel-running.png",
+      "width": 1349,
+      "height": 1166,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "7ccea954c46c738b7267880b2063f18af9d923da1a943aa76bc156535f9395f1",
+      "visibleBounds": [
+        64,
+        64,
+        1300,
+        1101
+      ]
+    },
+    {
+      "file": "characters/nabieqi-stalking.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "59c298f8486e11040b9464ad88b772b77c6ef5af1839700a2495524d0ff3f373",
+      "visibleBounds": [
+        37,
+        61,
+        1501,
+        990
+      ]
+    },
+    {
+      "file": "characters/nabieqi-reaching-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "6ad0700817ed62678a0c1537c5a39e31ce57ba1d9236282350987f6de6757300",
+      "visibleBounds": [
+        37,
+        20,
+        1512,
+        1004
+      ]
+    },
+    {
+      "file": "characters/nabieqi-cleansing.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "444de803528bb5684bba318f8b52368bc850e823a23463dbcc959ff433b38836",
+      "visibleBounds": [
+        39,
+        23,
+        1492,
+        994
+      ]
+    },
+    {
+      "file": "characters/angel.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "c97c3f6fd14f7155d94729742e1cb5bd35503df24075d968108a88ad54bb8a62",
+      "visibleBounds": [
+        47,
+        11,
+        987,
+        1484
+      ]
+    },
+    {
+      "file": "props/lantern-unlit.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "31beb9cefc2dc10d2249be2196de06cfd6c3e1b5b665697a83c7eb2ca846e8fc",
+      "visibleBounds": [
+        76,
+        7,
+        955,
+        1518
+      ]
+    },
+    {
+      "file": "props/candle-unlit.png",
+      "width": 1295,
+      "height": 1214,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "00f759868e022ed7b691c2882bd4f435e991a7357b50ba21d00704351609a5e7",
+      "visibleBounds": [
+        49,
+        40,
+        1265,
+        1156
+      ]
+    },
+    {
+      "file": "props/moonstone.png",
+      "width": 1294,
+      "height": 1216,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "55ebb470c804e7d616e21ef2cb8b60838b1e803857548d4cdb0b7853362a40c8",
+      "visibleBounds": [
+        209,
+        172,
+        1085,
+        1042
+      ]
+    },
+    {
+      "file": "props/watch-note.png",
+      "width": 1448,
+      "height": 1086,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "38efb887a09a9cd628686e6f5898f1bb18d3ddf503b78f0ff92e4cdb6ed01f2e",
+      "visibleBounds": [
+        50,
+        76,
+        1397,
+        1010
+      ]
+    },
+    {
+      "file": "props/moon-mark.png",
+      "width": 1351,
+      "height": 1164,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "93d90d93a64437dcc74dc24284457d71ff32263c063621cf8965c9cf72c2940e",
+      "visibleBounds": [
+        79,
+        92,
+        1274,
+        1097
+      ]
+    },
+    {
+      "file": "props/watch-door.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "72cf46fbc33f08c53f194108b92ced4976cad463f565348c4a3f5920c9e3da14",
+      "visibleBounds": [
+        136,
+        43,
+        891,
+        1494
+      ]
+    },
+    {
+      "file": "props/lantern-lit.png",
+      "width": 1024,
+      "height": 1536,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "c3b29e8c766c8a55e7dcdd09eb2a0cfc5652a220bd471d2571087a2918f0ff83",
+      "visibleBounds": [
+        76,
+        7,
+        956,
+        1519
+      ]
+    },
+    {
+      "file": "props/candle-lit.png",
+      "width": 1295,
+      "height": 1215,
+      "transparent": true,
+      "referenceOnly": false,
+      "superseded": false,
+      "sha256": "3c5f3e764394d5c1e8194aef067a361336af5f28b482b270d6a230edc7841fc0",
+      "visibleBounds": [
+        49,
+        11,
+        1260,
+        1182
+      ]
+    },
+    {
+      "file": "characters/nabieqi-reaching.png",
+      "width": 1536,
+      "height": 1024,
+      "transparent": true,
+      "referenceOnly": true,
+      "superseded": true,
+      "sha256": "bdb61511a56d14812c03b9a6bcf75fff89f9586017989ad6e4c6da1c2ad46c0c",
+      "visibleBounds": [
+        42,
+        11,
+        1514,
+        1010
+      ]
+    }
+  ],
+  "layoutViewports": [
+    390,
+    820,
+    1180
+  ],
+  "physicalTabletTested": false
+}

@@ -1,11 +1,17 @@
 """Local Pages-prefix server shared by Story 02 browser checks."""
 import functools
+import json
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 REPO = Path(__file__).resolve().parents[1]
+def remember_family_entry(context):
+    """Gameplay tests use an already-open family session; gate tests exercise login itself."""
+    access = json.loads((REPO/'site-access.json').read_text(encoding='utf-8'))
+    context.add_init_script('try{sessionStorage.setItem("adventure.session.siteAccess",'+json.dumps(access['sha256'])+')}catch{}')
+
 class Handler(SimpleHTTPRequestHandler):
     def log_message(self, *_): pass
     def translate_path(self, path):
@@ -17,7 +23,12 @@ class Handler(SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/favicon.ico':
             self.send_response(204); self.end_headers(); return
-        super().do_GET()
+        try:
+            super().do_GET()
+        except (BrokenPipeError, ConnectionResetError, ConnectionAbortedError):
+            # Fast navigation/closing a browser may abort an in-flight image response.
+            # These are expected client disconnects, not failed story assertions.
+            pass
 
 def serve():
     server = ThreadingHTTPServer(('127.0.0.1', 0), Handler)

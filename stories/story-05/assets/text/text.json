@@ -1,0 +1,2509 @@
+{
+  "font": "Bpmf GenRyu Min H (local render only)",
+  "fontSize": 192,
+  "labels": {
+    "title": {
+      "text": "阿通與霧夜的字母門",
+      "parts": [
+        {
+          "src": "title-0.png",
+          "text": "阿通與霧夜的",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "title-1.png",
+          "text": "字母門",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "start": {
+      "text": "開始冒險",
+      "parts": [
+        {
+          "src": "start-0.png",
+          "text": "開始冒險",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "resume": {
+      "text": "繼續冒險",
+      "parts": [
+        {
+          "src": "resume-0.png",
+          "text": "繼續冒險",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "continue": {
+      "text": "繼續",
+      "parts": [
+        {
+          "src": "continue-0.png",
+          "text": "繼續",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "home": {
+      "text": "回首頁",
+      "parts": [
+        {
+          "src": "home-0.png",
+          "text": "回首頁",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "menu": {
+      "text": "回本書選單",
+      "parts": [
+        {
+          "src": "menu-0.png",
+          "text": "回本書選單",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "previous": {
+      "text": "回上一幕",
+      "parts": [
+        {
+          "src": "previous-0.png",
+          "text": "回上一幕",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "replay": {
+      "text": "再玩一次",
+      "parts": [
+        {
+          "src": "replay-0.png",
+          "text": "再玩一次",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "confirm-replay": {
+      "text": "只重新開始這一本。",
+      "parts": [
+        {
+          "src": "confirm-replay-0.png",
+          "text": "只重新開始這",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "confirm-replay-1.png",
+          "text": "一本。",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "yes-replay": {
+      "text": "重新開始",
+      "parts": [
+        {
+          "src": "yes-replay-0.png",
+          "text": "重新開始",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "cancel": {
+      "text": "先不要",
+      "parts": [
+        {
+          "src": "cancel-0.png",
+          "text": "先不要",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "loading": {
+      "text": "故事準備中。",
+      "parts": [
+        {
+          "src": "loading-0.png",
+          "text": "故事準備中。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "load-error": {
+      "text": "故事暫時沒有載入，請重新整理。",
+      "parts": [
+        {
+          "src": "load-error-0.png",
+          "text": "故事暫時沒有",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "load-error-1.png",
+          "text": "載入，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "load-error-2.png",
+          "text": "請重新整理。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "listen": {
+      "text": "聽字母",
+      "parts": [
+        {
+          "src": "listen-0.png",
+          "text": "聽字母",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "listen-again": {
+      "text": "再聽一次",
+      "parts": [
+        {
+          "src": "listen-again-0.png",
+          "text": "再聽一次",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "listen-first": {
+      "text": "先聽聲音，再找字母。",
+      "parts": [
+        {
+          "src": "listen-first-0.png",
+          "text": "先聽聲音，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "listen-first-1.png",
+          "text": "再找字母。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "learning": {
+      "text": "一起學大小寫",
+      "parts": [
+        {
+          "src": "learning-0.png",
+          "text": "一起學大小寫",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "next-card": {
+      "text": "下一張",
+      "parts": [
+        {
+          "src": "next-card-0.png",
+          "text": "下一張",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "previous-card": {
+      "text": "上一張",
+      "parts": [
+        {
+          "src": "previous-card-0.png",
+          "text": "上一張",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "start-lamps": {
+      "text": "開始點燈",
+      "parts": [
+        {
+          "src": "start-lamps-0.png",
+          "text": "開始點燈",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "start-candles": {
+      "text": "解開燭台鎖",
+      "parts": [
+        {
+          "src": "start-candles-0.png",
+          "text": "解開燭台鎖",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "start-bridge": {
+      "text": "點亮橋上的燈",
+      "parts": [
+        {
+          "src": "start-bridge-0.png",
+          "text": "點亮橋上的燈",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "review": {
+      "text": "回看字母",
+      "parts": [
+        {
+          "src": "review-0.png",
+          "text": "回看字母",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "learn-done": {
+      "text": "字母都學過了，來點燈吧！",
+      "parts": [
+        {
+          "src": "learn-done-0.png",
+          "text": "字母都學過了，",
+          "width": 2040,
+          "height": 240
+        },
+        {
+          "src": "learn-done-1.png",
+          "text": "來點燈吧！",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "correct": {
+      "text": "答對了！一盞燈亮了。",
+      "parts": [
+        {
+          "src": "correct-0.png",
+          "text": "答對了！",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "correct-1.png",
+          "text": "一盞燈亮了。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "next-lamp": {
+      "text": "下一盞",
+      "parts": [
+        {
+          "src": "next-lamp-0.png",
+          "text": "下一盞",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "wrong": {
+      "text": "再聽一次，找出那個字母。",
+      "parts": [
+        {
+          "src": "wrong-0.png",
+          "text": "再聽一次，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "wrong-1.png",
+          "text": "找出那個字母。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "monster-wrong": {
+      "text": "小心，是納別奇！再聽一次。",
+      "parts": [
+        {
+          "src": "monster-wrong-0.png",
+          "text": "小心，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "monster-wrong-1.png",
+          "text": "是納別奇！",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "monster-wrong-2.png",
+          "text": "再聽一次。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "timeout": {
+      "text": "時間到了，先喘口氣，再聽一次。",
+      "parts": [
+        {
+          "src": "timeout-0.png",
+          "text": "時間到了，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "timeout-1.png",
+          "text": "先喘口氣，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "timeout-2.png",
+          "text": "再聽一次。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "retry-question": {
+      "text": "再試一次",
+      "parts": [
+        {
+          "src": "retry-question-0.png",
+          "text": "再試一次",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "retry-stage": {
+      "text": "重新挑戰",
+      "parts": [
+        {
+          "src": "retry-stage-0.png",
+          "text": "重新挑戰",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "hearts-rule": {
+      "text": "有三顆心，點錯字母或怪物會少一顆。",
+      "parts": [
+        {
+          "src": "hearts-rule-0.png",
+          "text": "有三顆心，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "hearts-rule-1.png",
+          "text": "點錯字母或怪",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "hearts-rule-2.png",
+          "text": "物會少一顆。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "hearts-reset": {
+      "text": "三顆心用完，就從這一關重新點燈。",
+      "parts": [
+        {
+          "src": "hearts-reset-0.png",
+          "text": "三顆心用完，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "hearts-reset-1.png",
+          "text": "就從這一關重",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "hearts-reset-2.png",
+          "text": "新點燈。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "listen-help": {
+      "text": "先一起聽，再找一找。",
+      "parts": [
+        {
+          "src": "listen-help-0.png",
+          "text": "先一起聽，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "listen-help-1.png",
+          "text": "再找一找。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "visual-help": {
+      "text": "聲音沒有播放。可以看字找一找。",
+      "parts": [
+        {
+          "src": "visual-help-0.png",
+          "text": "聲音沒有播放。",
+          "width": 2040,
+          "height": 240
+        },
+        {
+          "src": "visual-help-1.png",
+          "text": "可以看字找一",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "visual-help-2.png",
+          "text": "找。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "show-letter": {
+      "text": "看看字母",
+      "parts": [
+        {
+          "src": "show-letter-0.png",
+          "text": "看看字母",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "assisted": {
+      "text": "這題有看字幫忙。",
+      "parts": [
+        {
+          "src": "assisted-0.png",
+          "text": "這題有看字幫",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "assisted-1.png",
+          "text": "忙。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "pause": {
+      "text": "暫停",
+      "parts": [
+        {
+          "src": "pause-0.png",
+          "text": "暫停",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "unpause": {
+      "text": "繼續點燈",
+      "parts": [
+        {
+          "src": "unpause-0.png",
+          "text": "繼續點燈",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "paused": {
+      "text": "休息一下，字母和時間都停住了。",
+      "parts": [
+        {
+          "src": "paused-0.png",
+          "text": "休息一下，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "paused-1.png",
+          "text": "字母和時間都",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "paused-2.png",
+          "text": "停住了。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "settings": {
+      "text": "家長設定",
+      "parts": [
+        {
+          "src": "settings-0.png",
+          "text": "家長設定",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "close": {
+      "text": "回故事",
+      "parts": [
+        {
+          "src": "close-0.png",
+          "text": "回故事",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "timer": {
+      "text": "限時挑戰",
+      "parts": [
+        {
+          "src": "timer-0.png",
+          "text": "限時挑戰",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "no-timer": {
+      "text": "關閉倒數",
+      "parts": [
+        {
+          "src": "no-timer-0.png",
+          "text": "關閉倒數",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "movement": {
+      "text": "字母移動",
+      "parts": [
+        {
+          "src": "movement-0.png",
+          "text": "字母移動",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "normal-motion": {
+      "text": "一般",
+      "parts": [
+        {
+          "src": "normal-motion-0.png",
+          "text": "一般",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "slow-motion": {
+      "text": "慢速",
+      "parts": [
+        {
+          "src": "slow-motion-0.png",
+          "text": "慢速",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "static-motion": {
+      "text": "停止",
+      "parts": [
+        {
+          "src": "static-motion-0.png",
+          "text": "停止",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "settings-help": {
+      "text": "可關倒數，也可讓字母慢下來。",
+      "parts": [
+        {
+          "src": "settings-help-0.png",
+          "text": "可關倒數，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "settings-help-1.png",
+          "text": "也可讓字母慢",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "settings-help-2.png",
+          "text": "下來。",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "sound": {
+      "text": "聲音",
+      "parts": [
+        {
+          "src": "sound-0.png",
+          "text": "聲音",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "fullscreen": {
+      "text": "全螢幕",
+      "parts": [
+        {
+          "src": "fullscreen-0.png",
+          "text": "全螢幕",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "exit-fullscreen": {
+      "text": "離開全螢幕",
+      "parts": [
+        {
+          "src": "exit-fullscreen-0.png",
+          "text": "離開全螢幕",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "fullscreen-help": {
+      "text": "這個瀏覽器先用原本畫面。",
+      "parts": [
+        {
+          "src": "fullscreen-help-0.png",
+          "text": "這個瀏覽器先",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "fullscreen-help-1.png",
+          "text": "用原本畫面。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "walk-ahead": {
+      "text": "看看前面的路",
+      "parts": [
+        {
+          "src": "walk-ahead-0.png",
+          "text": "看看前面的路",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "shelter": {
+      "text": "躲進石亭",
+      "parts": [
+        {
+          "src": "shelter-0.png",
+          "text": "躲進石亭",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "learn-first": {
+      "text": "先一起學字母",
+      "parts": [
+        {
+          "src": "learn-first-0.png",
+          "text": "先一起學字母",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "bridge": {
+      "text": "往橋走",
+      "parts": [
+        {
+          "src": "bridge-0.png",
+          "text": "往橋走",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "village": {
+      "text": "回到村裡",
+      "parts": [
+        {
+          "src": "village-0.png",
+          "text": "回到村裡",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "take-stone": {
+      "text": "阿通拿出了月亮石！",
+      "parts": [
+        {
+          "src": "take-stone-0.png",
+          "text": "阿通拿出了月",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "take-stone-1.png",
+          "text": "亮石！",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "moonstone": {
+      "text": "月亮石",
+      "parts": [
+        {
+          "src": "moonstone-0.png",
+          "text": "月亮石",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "purify-help": {
+      "text": "把月亮石的光，照向它。",
+      "parts": [
+        {
+          "src": "purify-help-0.png",
+          "text": "把月亮石的光，",
+          "width": 2040,
+          "height": 240
+        },
+        {
+          "src": "purify-help-1.png",
+          "text": "照向它。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "purify-touch": {
+      "text": "也可以先點月亮石，再點它。",
+      "parts": [
+        {
+          "src": "purify-touch-0.png",
+          "text": "也可以先點月",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "purify-touch-1.png",
+          "text": "亮石，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "purify-touch-2.png",
+          "text": "再點它。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "light-hit": {
+      "text": "照到了！哭聲變小了。",
+      "parts": [
+        {
+          "src": "light-hit-0.png",
+          "text": "照到了！",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "light-hit-1.png",
+          "text": "哭聲變小了。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "next-light": {
+      "text": "再照一次",
+      "parts": [
+        {
+          "src": "next-light-0.png",
+          "text": "再照一次",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "ordinary-route": {
+      "text": "先回到村裡",
+      "parts": [
+        {
+          "src": "ordinary-route-0.png",
+          "text": "先回到村裡",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "angel-success": {
+      "text": "黑霧散了，是個小天使！",
+      "parts": [
+        {
+          "src": "angel-success-0.png",
+          "text": "黑霧散了，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "angel-success-1.png",
+          "text": "是個小天使！",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "ordinary-success": {
+      "text": "我們平安回村了！",
+      "parts": [
+        {
+          "src": "ordinary-success-0.png",
+          "text": "我們平安回村",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "ordinary-success-1.png",
+          "text": "了！",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "secret-success": {
+      "text": "月光帶來了一位新朋友！",
+      "parts": [
+        {
+          "src": "secret-success-0.png",
+          "text": "月光帶來了一",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "secret-success-1.png",
+          "text": "位新朋友！",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "stage-1": {
+      "text": "第一關：黑森林的燈",
+      "parts": [
+        {
+          "src": "stage-1-0.png",
+          "text": "第一關：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "stage-1-1.png",
+          "text": "黑森林的燈",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "stage-2": {
+      "text": "第二關：空屋的燭台",
+      "parts": [
+        {
+          "src": "stage-2-0.png",
+          "text": "第二關：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "stage-2-1.png",
+          "text": "空屋的燭台",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "stage-3": {
+      "text": "第三關：霧中的木橋",
+      "parts": [
+        {
+          "src": "stage-3-0.png",
+          "text": "第三關：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "stage-3-1.png",
+          "text": "霧中的木橋",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "stage-1-done": {
+      "text": "九盞燈亮了！屋子的門出現了。",
+      "parts": [
+        {
+          "src": "stage-1-done-0.png",
+          "text": "九盞燈亮了！",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "stage-1-done-1.png",
+          "text": "屋子的門出現",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "stage-1-done-2.png",
+          "text": "了。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "stage-2-done": {
+      "text": "燭台都亮了！通往木橋的後門開了。",
+      "parts": [
+        {
+          "src": "stage-2-done-0.png",
+          "text": "燭台都亮了！",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "stage-2-done-1.png",
+          "text": "通往木橋的後",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "stage-2-done-2.png",
+          "text": "門開了。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "stage-3-done": {
+      "text": "最後一盞燈，照出了村口！",
+      "parts": [
+        {
+          "src": "stage-3-done-0.png",
+          "text": "最後一盞燈，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "stage-3-done-1.png",
+          "text": "照出了村口！",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "cover-first": {
+      "text": "聽清字母，點亮霧裡的燈，",
+      "parts": [
+        {
+          "src": "cover-first-0.png",
+          "text": "聽清字母，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "cover-first-1.png",
+          "text": "點亮霧裡的燈，",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "cover-second": {
+      "text": "跟著阿通找到回家的路。",
+      "parts": [
+        {
+          "src": "cover-second-0.png",
+          "text": "跟著阿通找到",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "cover-second-1.png",
+          "text": "回家的路。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "hub-chapter": {
+      "text": "阿通的第五場冒險",
+      "parts": [
+        {
+          "src": "hub-chapter-0.png",
+          "text": "阿通的第五場",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "hub-chapter-1.png",
+          "text": "冒險",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "ending-learned": {
+      "text": "我們一起練習了全部字母！",
+      "parts": [
+        {
+          "src": "ending-learned-0.png",
+          "text": "我們一起練習",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "ending-learned-1.png",
+          "text": "了全部字母！",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "lost-hearts": {
+      "text": "躲好後，再從這關開始。",
+      "parts": [
+        {
+          "src": "lost-hearts-0.png",
+          "text": "躲好後，",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "lost-hearts-1.png",
+          "text": "再從這關開始。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "save-help": {
+      "text": "前面完成的關卡會保留。",
+      "parts": [
+        {
+          "src": "save-help-0.png",
+          "text": "前面完成的關",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "save-help-1.png",
+          "text": "卡會保留。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "heard": {
+      "text": "聽一聽，再看大小寫。",
+      "parts": [
+        {
+          "src": "heard-0.png",
+          "text": "聽一聽，",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "heard-1.png",
+          "text": "再看大小寫。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "ready": {
+      "text": "準備好了",
+      "parts": [
+        {
+          "src": "ready-0.png",
+          "text": "準備好了",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "back-learning": {
+      "text": "回到學習",
+      "parts": [
+        {
+          "src": "back-learning-0.png",
+          "text": "回到學習",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s01-title": {
+      "text": "霧裡的哼唱",
+      "parts": [
+        {
+          "src": "s01-title-0.png",
+          "text": "霧裡的哼唱",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s01-line-0": {
+      "text": "阿通和小松鼠走在回村的路上。",
+      "parts": [
+        {
+          "src": "s01-line-0-0.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s01-line-0-1.png",
+          "text": "走在回村的路",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s01-line-0-2.png",
+          "text": "上。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "s01-line-1": {
+      "text": "白霧忽然蓋住了小路。",
+      "parts": [
+        {
+          "src": "s01-line-1-0.png",
+          "text": "白霧忽然蓋住",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s01-line-1-1.png",
+          "text": "了小路。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s01-line-2": {
+      "text": "遠處傳來一段輕輕的哼唱。",
+      "parts": [
+        {
+          "src": "s01-line-2-0.png",
+          "text": "遠處傳來一段",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s01-line-2-1.png",
+          "text": "輕輕的哼唱。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s01-line-3": {
+      "text": "小松鼠說：先別靠近。",
+      "parts": [
+        {
+          "src": "s01-line-3-0.png",
+          "text": "小松鼠說：",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s01-line-3-1.png",
+          "text": "先別靠近。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s02-title": {
+      "text": "樹後的長手",
+      "parts": [
+        {
+          "src": "s02-title-0.png",
+          "text": "樹後的長手",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s02-line-0": {
+      "text": "樹後伸出一隻長長的手。",
+      "parts": [
+        {
+          "src": "s02-line-0-0.png",
+          "text": "樹後伸出一隻",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s02-line-0-1.png",
+          "text": "長長的手。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s02-line-1": {
+      "text": "那個影子，張嘴伸手飛過來。",
+      "parts": [
+        {
+          "src": "s02-line-1-0.png",
+          "text": "那個影子，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s02-line-1-1.png",
+          "text": "張嘴伸手飛過",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s02-line-1-2.png",
+          "text": "來。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "s02-line-2": {
+      "text": "小松鼠喊：是納別奇！",
+      "parts": [
+        {
+          "src": "s02-line-2-0.png",
+          "text": "小松鼠喊：",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s02-line-2-1.png",
+          "text": "是納別奇！",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s02-line-3": {
+      "text": "兩人跑到有微光的石亭裡。",
+      "parts": [
+        {
+          "src": "s02-line-3-0.png",
+          "text": "兩人跑到有微",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s02-line-3-1.png",
+          "text": "光的石亭裡。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s03-title": {
+      "text": "守夜人的小紙",
+      "parts": [
+        {
+          "src": "s03-title-0.png",
+          "text": "守夜人的小紙",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s03-line-0": {
+      "text": "石亭裡有一張舊紙。",
+      "parts": [
+        {
+          "src": "s03-line-0-0.png",
+          "text": "石亭裡有一張",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s03-line-0-1.png",
+          "text": "舊紙。",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "s03-line-1": {
+      "text": "點亮字母，沿著燈走。",
+      "parts": [
+        {
+          "src": "s03-line-1-0.png",
+          "text": "點亮字母，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s03-line-1-1.png",
+          "text": "沿著燈走。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s03-line-2": {
+      "text": "每聽清一個字母，就亮一盞燈。",
+      "parts": [
+        {
+          "src": "s03-line-2-0.png",
+          "text": "每聽清一個字",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s03-line-2-1.png",
+          "text": "母，就亮一盞",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s03-line-2-2.png",
+          "text": "燈。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "s03-line-3": {
+      "text": "阿通說：先一起學，再出發。",
+      "parts": [
+        {
+          "src": "s03-line-3-0.png",
+          "text": "阿通說：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "s03-line-3-1.png",
+          "text": "先一起學，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s03-line-3-2.png",
+          "text": "再出發。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s04-title": {
+      "text": "黑森林的九盞燈",
+      "parts": [
+        {
+          "src": "s04-title-0.png",
+          "text": "黑森林的九盞",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s04-title-1.png",
+          "text": "燈",
+          "width": 312,
+          "height": 240
+        }
+      ]
+    },
+    "s04-line-0": {
+      "text": "燈裡傳出一個字母的聲音。",
+      "parts": [
+        {
+          "src": "s04-line-0-0.png",
+          "text": "燈裡傳出一個",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s04-line-0-1.png",
+          "text": "字母的聲音。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s04-line-1": {
+      "text": "字母飄來飄去，聽清楚再點。",
+      "parts": [
+        {
+          "src": "s04-line-1-0.png",
+          "text": "字母飄來飄去，",
+          "width": 2040,
+          "height": 240
+        },
+        {
+          "src": "s04-line-1-1.png",
+          "text": "聽清楚再點。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s04-line-2": {
+      "text": "小心，別點到納別奇。",
+      "parts": [
+        {
+          "src": "s04-line-2-0.png",
+          "text": "小心，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "s04-line-2-1.png",
+          "text": "別點到納別奇。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s04-line-3": {
+      "text": "點對了，一盞燈就亮起來。",
+      "parts": [
+        {
+          "src": "s04-line-3-0.png",
+          "text": "點對了，",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "s04-line-3-1.png",
+          "text": "一盞燈就亮起",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s04-line-3-2.png",
+          "text": "來。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "s05-title": {
+      "text": "空屋裡的拍翅聲",
+      "parts": [
+        {
+          "src": "s05-title-0.png",
+          "text": "空屋裡的拍翅",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s05-title-1.png",
+          "text": "聲",
+          "width": 312,
+          "height": 240
+        }
+      ]
+    },
+    "s05-line-0": {
+      "text": "兩人跑進守夜屋，關上門。",
+      "parts": [
+        {
+          "src": "s05-line-0-0.png",
+          "text": "兩人跑進守夜",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s05-line-0-1.png",
+          "text": "屋，關上門。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s05-line-1": {
+      "text": "門外響起沙沙的拍翅聲。",
+      "parts": [
+        {
+          "src": "s05-line-1-0.png",
+          "text": "門外響起沙沙",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s05-line-1-1.png",
+          "text": "的拍翅聲。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s05-line-2": {
+      "text": "桌上寫著：字母也有小寫。",
+      "parts": [
+        {
+          "src": "s05-line-2-0.png",
+          "text": "桌上寫著：",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s05-line-2-1.png",
+          "text": "字母也有小寫。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s05-line-3": {
+      "text": "阿通說：我們先看清楚。",
+      "parts": [
+        {
+          "src": "s05-line-3-0.png",
+          "text": "阿通說：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "s05-line-3-1.png",
+          "text": "我們先看清楚。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s06-title": {
+      "text": "門縫裡的眼睛",
+      "parts": [
+        {
+          "src": "s06-title-0.png",
+          "text": "門縫裡的眼睛",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s06-line-0": {
+      "text": "一隻眼睛出現在門縫裡。",
+      "parts": [
+        {
+          "src": "s06-line-0-0.png",
+          "text": "一隻眼睛出現",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s06-line-0-1.png",
+          "text": "在門縫裡。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s06-line-1": {
+      "text": "小松鼠拉住阿通的衣角。",
+      "parts": [
+        {
+          "src": "s06-line-1-0.png",
+          "text": "小松鼠拉住阿",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s06-line-1-1.png",
+          "text": "通的衣角。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s06-line-2": {
+      "text": "聽清字母，點對飄動的字。",
+      "parts": [
+        {
+          "src": "s06-line-2-0.png",
+          "text": "聽清字母，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s06-line-2-1.png",
+          "text": "點對飄動的字。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s06-line-3": {
+      "text": "別點到伸手的納別奇。",
+      "parts": [
+        {
+          "src": "s06-line-3-0.png",
+          "text": "別點到伸手的",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s06-line-3-1.png",
+          "text": "納別奇。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s07-title": {
+      "text": "哭聲與月亮記號",
+      "parts": [
+        {
+          "src": "s07-title-0.png",
+          "text": "哭聲與月亮記",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s07-title-1.png",
+          "text": "號",
+          "width": 312,
+          "height": 240
+        }
+      ]
+    },
+    "s07-line-0": {
+      "text": "屋後有一段低低的哭聲。",
+      "parts": [
+        {
+          "src": "s07-line-0-0.png",
+          "text": "屋後有一段低",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s07-line-0-1.png",
+          "text": "低的哭聲。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s07-line-1": {
+      "text": "納別奇好像在找什麼。",
+      "parts": [
+        {
+          "src": "s07-line-1-0.png",
+          "text": "納別奇好像在",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s07-line-1-1.png",
+          "text": "找什麼。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s07-line-2": {
+      "text": "阿通說：先到橋上去。",
+      "parts": [
+        {
+          "src": "s07-line-2-0.png",
+          "text": "阿通說：",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "s07-line-2-1.png",
+          "text": "先到橋上去。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "h01-title": {
+      "text": "想起月光洞",
+      "parts": [
+        {
+          "src": "h01-title-0.png",
+          "text": "想起月光洞",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "h01-line-0": {
+      "text": "牆上的記號，像一彎月亮。",
+      "parts": [
+        {
+          "src": "h01-line-0-0.png",
+          "text": "牆上的記號，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h01-line-0-1.png",
+          "text": "像一彎月亮。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "h01-line-1": {
+      "text": "阿通想起月光洞裡的小蝙蝠。",
+      "parts": [
+        {
+          "src": "h01-line-1-0.png",
+          "text": "阿通想起月光",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h01-line-1-1.png",
+          "text": "洞裡的小蝙蝠。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "h01-line-2": {
+      "text": "那顆月亮石，還在背包裡。",
+      "parts": [
+        {
+          "src": "h01-line-2-0.png",
+          "text": "那顆月亮石，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h01-line-2-1.png",
+          "text": "還在背包裡。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "h01-line-3": {
+      "text": "也許，月光能幫上忙。",
+      "parts": [
+        {
+          "src": "h01-line-3-0.png",
+          "text": "也許，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "h01-line-3-1.png",
+          "text": "月光能幫上忙。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s08-title": {
+      "text": "橋邊的最後一張紙",
+      "parts": [
+        {
+          "src": "s08-title-0.png",
+          "text": "橋邊的最後一",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s08-title-1.png",
+          "text": "張紙",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "s08-line-0": {
+      "text": "橋的另一頭，就是村口。",
+      "parts": [
+        {
+          "src": "s08-line-0-0.png",
+          "text": "橋的另一頭，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s08-line-0-1.png",
+          "text": "就是村口。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s08-line-1": {
+      "text": "紙上是最後八個字母。",
+      "parts": [
+        {
+          "src": "s08-line-1-0.png",
+          "text": "紙上是最後八",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s08-line-1-1.png",
+          "text": "個字母。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s08-line-2": {
+      "text": "先聽清楚，再找大小寫。",
+      "parts": [
+        {
+          "src": "s08-line-2-0.png",
+          "text": "先聽清楚，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s08-line-2-1.png",
+          "text": "再找大小寫。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s08-line-3": {
+      "text": "小松鼠說：我會陪著你。",
+      "parts": [
+        {
+          "src": "s08-line-3-0.png",
+          "text": "小松鼠說：",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s08-line-3-1.png",
+          "text": "我會陪著你。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s09-title": {
+      "text": "霧中的逃生橋",
+      "parts": [
+        {
+          "src": "s09-title-0.png",
+          "text": "霧中的逃生橋",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "s09-line-0": {
+      "text": "納別奇張嘴伸手，飛到橋頭。",
+      "parts": [
+        {
+          "src": "s09-line-0-0.png",
+          "text": "納別奇張嘴伸",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s09-line-0-1.png",
+          "text": "手，飛到橋頭。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s09-line-1": {
+      "text": "阿通點亮一盞又一盞燈。",
+      "parts": [
+        {
+          "src": "s09-line-1-0.png",
+          "text": "阿通點亮一盞",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s09-line-1-1.png",
+          "text": "又一盞燈。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s09-line-2": {
+      "text": "橋面從霧裡慢慢出現。",
+      "parts": [
+        {
+          "src": "s09-line-2-0.png",
+          "text": "橋面從霧裡慢",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s09-line-2-1.png",
+          "text": "慢出現。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s09-line-3": {
+      "text": "最後一盞燈，照出了村口！",
+      "parts": [
+        {
+          "src": "s09-line-3-0.png",
+          "text": "最後一盞燈，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s09-line-3-1.png",
+          "text": "照出了村口！",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "r01-title": {
+      "text": "躲進石縫",
+      "parts": [
+        {
+          "src": "r01-title-0.png",
+          "text": "躲進石縫",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "r01-line-0": {
+      "text": "破布遮住了眼前的光。",
+      "parts": [
+        {
+          "src": "r01-line-0-0.png",
+          "text": "破布遮住了眼",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "r01-line-0-1.png",
+          "text": "前的光。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "r01-line-1": {
+      "text": "小松鼠把阿通拉進石縫。",
+      "parts": [
+        {
+          "src": "r01-line-1-0.png",
+          "text": "小松鼠把阿通",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "r01-line-1-1.png",
+          "text": "拉進石縫。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "r01-line-2": {
+      "text": "它還在外頭。",
+      "parts": [
+        {
+          "src": "r01-line-2-0.png",
+          "text": "它還在外頭。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "r01-line-3": {
+      "text": "別急，我們再聽一次。",
+      "parts": [
+        {
+          "src": "r01-line-3-0.png",
+          "text": "別急，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "r01-line-3-1.png",
+          "text": "我們再聽一次。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s10-title": {
+      "text": "亮光邊界",
+      "parts": [
+        {
+          "src": "s10-title-0.png",
+          "text": "亮光邊界",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "s10-line-0": {
+      "text": "納別奇停在村口的光外。",
+      "parts": [
+        {
+          "src": "s10-line-0-0.png",
+          "text": "納別奇停在村",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s10-line-0-1.png",
+          "text": "口的光外。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "s10-line-1": {
+      "text": "阿通和小松鼠終於能喘口氣。",
+      "parts": [
+        {
+          "src": "s10-line-1-0.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "s10-line-1-1.png",
+          "text": "終於能喘口氣。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "s10-line-2": {
+      "text": "村口的燈，照著回家的路。",
+      "parts": [
+        {
+          "src": "s10-line-2-0.png",
+          "text": "村口的燈，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "s10-line-2-1.png",
+          "text": "照著回家的路。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "h02-title": {
+      "text": "月光追逐",
+      "parts": [
+        {
+          "src": "h02-title-0.png",
+          "text": "月光追逐",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "h02-line-0": {
+      "text": "阿通拿出月亮石。",
+      "parts": [
+        {
+          "src": "h02-line-0-0.png",
+          "text": "阿通拿出月亮",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h02-line-0-1.png",
+          "text": "石。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "h02-line-1": {
+      "text": "柔柔的月光，穿過黑霧。",
+      "parts": [
+        {
+          "src": "h02-line-1-0.png",
+          "text": "柔柔的月光，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h02-line-1-1.png",
+          "text": "穿過黑霧。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "h02-line-2": {
+      "text": "納別奇躲開，又換了一個位置。",
+      "parts": [
+        {
+          "src": "h02-line-2-0.png",
+          "text": "納別奇躲開，",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h02-line-2-1.png",
+          "text": "又換了一個位",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h02-line-2-2.png",
+          "text": "置。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "h02-line-3": {
+      "text": "它的哭聲，好像變小了。",
+      "parts": [
+        {
+          "src": "h02-line-3-0.png",
+          "text": "它的哭聲，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "h02-line-3-1.png",
+          "text": "好像變小了。",
+          "width": 1752,
+          "height": 240
+        }
+      ]
+    },
+    "h03-title": {
+      "text": "黑霧散開",
+      "parts": [
+        {
+          "src": "h03-title-0.png",
+          "text": "黑霧散開",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "h03-line-0": {
+      "text": "黑霧像布一樣，慢慢鬆開。",
+      "parts": [
+        {
+          "src": "h03-line-0-0.png",
+          "text": "黑霧像布一樣，",
+          "width": 2040,
+          "height": 240
+        },
+        {
+          "src": "h03-line-0-1.png",
+          "text": "慢慢鬆開。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "h03-line-1": {
+      "text": "破布變成一點點星光。",
+      "parts": [
+        {
+          "src": "h03-line-1-0.png",
+          "text": "破布變成一點",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h03-line-1-1.png",
+          "text": "點星光。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "h03-line-2": {
+      "text": "光裡，有個小小的天使。",
+      "parts": [
+        {
+          "src": "h03-line-2-0.png",
+          "text": "光裡，",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "h03-line-2-1.png",
+          "text": "有個小小的天",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "h03-line-2-2.png",
+          "text": "使。",
+          "width": 600,
+          "height": 240
+        }
+      ]
+    },
+    "h03-line-3": {
+      "text": "它說：Thank you.",
+      "parts": [
+        {
+          "src": "h03-line-3-0.png",
+          "text": "它說：",
+          "width": 888,
+          "height": 240
+        },
+        {
+          "src": "h03-line-3-1.png",
+          "text": "Thank ",
+          "width": 703,
+          "height": 240
+        },
+        {
+          "src": "h03-line-3-2.png",
+          "text": "you.",
+          "width": 453,
+          "height": 240
+        }
+      ]
+    },
+    "e01-title": {
+      "text": "平安回村",
+      "parts": [
+        {
+          "src": "e01-title-0.png",
+          "text": "平安回村",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "e01-line-0": {
+      "text": "天亮了，霧也散了。",
+      "parts": [
+        {
+          "src": "e01-line-0-0.png",
+          "text": "天亮了，",
+          "width": 1176,
+          "height": 240
+        },
+        {
+          "src": "e01-line-0-1.png",
+          "text": "霧也散了。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "e01-line-1": {
+      "text": "阿通和小松鼠平安回村。",
+      "parts": [
+        {
+          "src": "e01-line-1-0.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e01-line-1-1.png",
+          "text": "平安回村。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "e01-line-2": {
+      "text": "他們回頭看了一眼。",
+      "parts": [
+        {
+          "src": "e01-line-2-0.png",
+          "text": "他們回頭看了",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e01-line-2-1.png",
+          "text": "一眼。",
+          "width": 888,
+          "height": 240
+        }
+      ]
+    },
+    "e01-line-3": {
+      "text": "那個影子，已經不在橋上。",
+      "parts": [
+        {
+          "src": "e01-line-3-0.png",
+          "text": "那個影子，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "e01-line-3-1.png",
+          "text": "已經不在橋上。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "e02-title": {
+      "text": "月光裡的新朋友",
+      "parts": [
+        {
+          "src": "e02-title-0.png",
+          "text": "月光裡的新朋",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e02-title-1.png",
+          "text": "友",
+          "width": 312,
+          "height": 240
+        }
+      ]
+    },
+    "e02-line-0": {
+      "text": "小天使飛在阿通身旁。",
+      "parts": [
+        {
+          "src": "e02-line-0-0.png",
+          "text": "小天使飛在阿",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e02-line-0-1.png",
+          "text": "通身旁。",
+          "width": 1176,
+          "height": 240
+        }
+      ]
+    },
+    "e02-line-1": {
+      "text": "它把最後一點霧，變成星光。",
+      "parts": [
+        {
+          "src": "e02-line-1-0.png",
+          "text": "它把最後一點",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e02-line-1-1.png",
+          "text": "霧，變成星光。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    },
+    "e02-line-2": {
+      "text": "月亮石又幫上了一個忙。",
+      "parts": [
+        {
+          "src": "e02-line-2-0.png",
+          "text": "月亮石又幫上",
+          "width": 1752,
+          "height": 240
+        },
+        {
+          "src": "e02-line-2-1.png",
+          "text": "了一個忙。",
+          "width": 1464,
+          "height": 240
+        }
+      ]
+    },
+    "e02-line-3": {
+      "text": "三個朋友，一起走向晨光。",
+      "parts": [
+        {
+          "src": "e02-line-3-0.png",
+          "text": "三個朋友，",
+          "width": 1464,
+          "height": 240
+        },
+        {
+          "src": "e02-line-3-1.png",
+          "text": "一起走向晨光。",
+          "width": 2040,
+          "height": 240
+        }
+      ]
+    }
+  }
+}

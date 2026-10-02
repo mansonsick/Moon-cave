@@ -12,8 +12,9 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--font', required=True, type=Path)
     parser.add_argument('--story', type=Path, default=Path(__file__).resolve().parents[1]/'stories/story-02')
+    parser.add_argument('--source', type=Path, help='Optional labels JSON for a shared site page.')
     args = parser.parse_args()
-    config = json.loads((args.story/'story.json').read_text(encoding='utf-8'))
+    config = json.loads((args.source or args.story/'story.json').read_text(encoding='utf-8'))
     font = ImageFont.truetype(str(args.font), 192)
     if font.getname() != ('Bpmf GenRyu Min', 'H'):
         raise ValueError('Use the project-standard BpmfGenRyuMin-H.ttf.')
