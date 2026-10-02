@@ -12,7 +12,7 @@
   const ready=()=>document.readyState==='loading'?new Promise(r=>document.addEventListener('DOMContentLoaded',r,{once:true})):Promise.resolve();
   async function start(){
     try {
-      [config,labels]=await Promise.all([fetch(new URL('site-access.json',base)).then(r=>{if(!r.ok)throw Error('access config');return r.json();}),fetch(new URL('legal/assets/text/text.json',base)).then(r=>{if(!r.ok)throw Error('access labels');return r.json();}).then(m=>m.labels)]);
+      [config,labels]=await Promise.all([fetch(new URL('site-access.json',base),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('access config');return r.json();}),fetch(new URL('legal/assets/text/text.json',base)).then(r=>{if(!r.ok)throw Error('access labels');return r.json();}).then(m=>m.labels)]);
       await ready();
       if(remembered()){document.documentElement.dataset.siteAccess='granted';footer();return;}
       const gate=document.createElement('section');gate.className='site-access';gate.setAttribute('role','dialog');gate.setAttribute('aria-modal','true');gate.setAttribute('aria-label',labels['access-title'].text);

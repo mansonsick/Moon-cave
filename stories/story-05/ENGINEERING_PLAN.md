@@ -1,6 +1,6 @@
 # 第五本工程接法｜2026-10-02
 
-本輪基於 main `25f061fa479bc237cea44d6c9f82f1ba0d908a4e` 和美術 Draft PR #15 的 `d2c009a`，在 `feature/story-05-foundation` 實作。使用者已確認美術與三顆心規則、授權開始網頁，不包含發布。最新規格為本分支 STORY_SPEC v1.4，取代美術階段「連續三錯但保留本關燈」的舊提案。
+本輪基於 main `25f061fa479bc237cea44d6c9f82f1ba0d908a4e` 和美術 Draft PR #15 的 `d2c009a`，在 `feature/story-05-foundation` 實作。使用者已確認美術與三顆心規則、授權開始網頁；後續於 2026-10-02 確認第五本及本輪變更可正式發布，授權合併 PR #16。最新規格為本分支 STORY_SPEC v1.4，取代美術階段「連續三錯但保留本關燈」的舊提案。
 
 ## 檔案與共用邊界
 
@@ -50,13 +50,13 @@ python -X utf8 tests/story_05_visual_test.py
 python -X utf8 tests/subject_hub_test.py
 ```
 
-測試結果與實機限制詳見 QA_RESULTS.md。未授權直接合併或發布 main；美術 PR #15 保留作歷史文件來源，工程 PR 包含該批已確認美術。
+測試結果與實機限制詳見 QA_RESULTS.md。使用者於 2026-10-02 授權合併工程 PR #16 與發布 main；美術 PR #15 保留作歷史文件來源，工程 PR 包含該批已確認美術。
 
 
 ## 共用家庭入口與網站說明
 
 依使用者確認採 GitHub Pages 的一般訪客入口提醒。六個 index 只加共用 site-access.css／site-access.js 和無 JS 提示；前四本故事程式、圖片、狀態與玩法不改。密碼驗證只在客戶端；公開 config 僅保存雜湊，sessionStorage 保存本分頁已開啟狀態，退出清除。這不是身份驗證或私人託管，不能防止直接下載素材／檢視原始碼或自行略過。不要使用任何真實帳號密碼。
 
-每頁角落有網站說明／退出家庭入口；legal/ 免密碼可閱讀，中文仍用本機字型渲染成圖。禁止儲存時本頁可開啟，但換頁需重輸。JavaScript／安全連線或設定載入不可用時提示，不默默放行。入口只控制顯示；故事資產仍可能在未登入時由瀏覽器載入。未 merge／部署，不宣稱已上線。
+每頁角落有網站說明／退出家庭入口；legal/ 免密碼可閱讀，中文仍用本機字型渲染成圖。禁止儲存時本頁可開啟，但換頁需重輸。JavaScript／安全連線或設定載入不可用時提示，不默默放行。入口只控制顯示；故事資產仍可能在未登入時由瀏覽器載入。使用者已授權本輪 merge／部署，正式生效仍以 Pages 部署完成為準。
 
 重建網站說明：先 render_story_text.py --font '../BpmfGenRyuMin-H.ttf' --story legal --source legal/content.json，再 build_site_notice.py。密碼本機保留在 repo 外，公開 repo 不保存原文或字型。後續換入口密碼需使用新 SHA-256 更新 site-access.json；它不會變成安全的登入服務。
