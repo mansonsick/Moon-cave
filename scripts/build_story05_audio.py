@@ -54,7 +54,7 @@ def main():
     for item in letters:
         with wave.open(str(ROOT/item['src']),'rb') as f:seconds=f.getnframes()/f.getframerate()
         manifest['letter-'+item['letter']]={**item,'available':True,'category':'letter','volume':.9,'seconds':seconds}
-    (ROOT/'manifest.json').write_text(json.dumps({'source':'Original procedural ambience/SFX; local installed en-US TTS for letter names, no third-party samples','entries':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    (ROOT/'manifest.json').write_text(json.dumps({'source':'Original procedural ambience/SFX; credited human US English letter names from Wikimedia Commons. See letters/CREDITS.md and letters/sources.json.','entries':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
     print('Built 4 original ambience loops, 4 cues and indexed 26 letter-name recordings.')
 
 if __name__=='__main__':main()

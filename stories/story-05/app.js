@@ -181,19 +181,21 @@ class AlphabetStory {
     const generation=this.generation;
     const quiz={phase:'idle',assisted:false,seconds:cfg.seconds,heard:false,speechRevision:0,stage,target,motion:null,
       freeze:()=>quiz.motion.setRunning(false),resume:()=>quiz.motion.setRunning(quiz.phase==='answering'&&!this.modalOpen&&!document.hidden),
+      showCards:visible=>{for(const card of targets){card.style.visibility=visible?'visible':'hidden';card.disabled=!visible;card.setAttribute('aria-hidden',String(!visible));}},
+      beginAnswer:()=>{stage.querySelector('.feedback')?.remove();quiz.showCards(true);quiz.phase='answering';quiz.resume();},
       listen:async()=>{
         if(['correct','failed','finished'].includes(quiz.phase))return;
-        const speechRevision=++quiz.speechRevision;quiz.phase='speaking';quiz.freeze();voice.disabled=true;stage.querySelector('.feedback')?.remove();
+        const speechRevision=++quiz.speechRevision;quiz.phase='speaking';quiz.freeze();quiz.showCards(false);voice.disabled=true;stage.querySelector('.feedback')?.remove();
         const ok=await this.audio.letter(target);
         if(generation!==this.generation||speechRevision!==quiz.speechRevision)return;
         voice.disabled=false;quiz.seconds=cfg.seconds;quiz.heard=ok;quiz.phase='ready';
-        if(!ok){quiz.assisted=true;this.overlay(stage,'visual-help',[['ready',()=>{stage.querySelector('.feedback')?.remove();quiz.phase='answering';quiz.resume();}]],target);}
-        else{quiz.phase='answering';quiz.resume();}
+        if(!ok){quiz.assisted=true;this.overlay(stage,'visual-help',[['ready',quiz.beginAnswer]],target);}
+        else quiz.beginAnswer();
       },
       hint:()=>{
         if(['correct','failed'].includes(quiz.phase))return;
-        quiz.speechRevision++;this.audio.cancelLetter();quiz.assisted=true;quiz.phase='paused';quiz.freeze();voice.disabled=false;
-        this.overlay(stage,'listen-help',[['ready',()=>{stage.querySelector('.feedback')?.remove();quiz.phase='answering';quiz.resume();}]],target);
+        quiz.speechRevision++;this.audio.cancelLetter();quiz.assisted=true;quiz.phase='paused';quiz.freeze();quiz.showCards(false);voice.disabled=false;
+        this.overlay(stage,'listen-help',[['ready',quiz.beginAnswer]],target);
       },
       answer:(letter)=>{
         if(quiz.phase!=='answering')return;quiz.freeze();
@@ -218,7 +220,7 @@ class AlphabetStory {
       if(quiz.phase!=='answering'||!this.state.timer||!cfg.seconds)return;
       quiz.seconds=Math.max(0,quiz.seconds-dt);time.textContent=Math.ceil(quiz.seconds)+'s';if(quiz.seconds===0)quiz.miss('timeout');
     }});
-    this.quiz=quiz;this.cleanups.push(()=>quiz.motion.dispose());
+    quiz.showCards(false);this.quiz=quiz;this.cleanups.push(()=>quiz.motion.dispose());
     for(const card of targets)this.cleanups.push(bindStableTap(card,{freeze:quiz.freeze,resume:quiz.resume,allowed:()=>quiz.phase==='answering'&&!this.modalOpen,activate:()=>quiz.answer(card.dataset.letter)}));
     this.cleanups.push(bindStableTap(monster,{freeze:quiz.freeze,resume:quiz.resume,allowed:()=>quiz.phase==='answering'&&!this.modalOpen,hit:e=>monsterHit(e),activate:()=>quiz.miss('monster-wrong')}));
     time.textContent=this.state.timer&&cfg.seconds?cfg.seconds+'s':'∞';
@@ -229,7 +231,7 @@ class AlphabetStory {
   nextQuiz(){this.render();void this.quiz?.listen();}
   pauseQuiz(){
     const quiz=this.quiz;if(!quiz||['correct','failed'].includes(quiz.phase))return;
-    quiz.speechRevision++;quiz.phase='paused';quiz.freeze();this.audio.cancelLetter();
+    quiz.speechRevision++;quiz.phase='paused';quiz.freeze();quiz.showCards(false);this.audio.cancelLetter();
     const replay=root.querySelector('[data-action="replay-letter"]');if(replay)replay.disabled=false;
     this.overlay(quiz.stage,'paused',[['unpause',()=>quiz.listen()]]);
   }
@@ -284,6 +286,7 @@ class AlphabetStory {
       const row=(title,items)=>{const block=element('div','setting-row');block.append(this.text(title));const options=element('div','options');
         for(const [label,value,prop] of items){const b=this.button(label,()=>{this.state[prop]=value;this.save();this.quiz?.motion.setMode(this.state.motion);for(const n of options.children)n.setAttribute('aria-pressed',n===b?'true':'false');});b.setAttribute('aria-pressed',this.state[prop]===value?'true':'false');options.append(b);}block.append(options);panel.append(block);};
       row('timer',[['timer',true,'timer'],['no-timer',false,'timer']]);row('movement',[['normal-motion','normal','motion'],['slow-motion','slow','motion'],['static-motion','static','motion']]);
+      const audioReview=element('a','audio-review');audioReview.href='./assets/audio/letters/review.html';audioReview.target='_blank';audioReview.rel='noopener';audioReview.textContent='🔤 A–Z';panel.append(audioReview);
       panel.append(this.button('close',close));
     });
   }

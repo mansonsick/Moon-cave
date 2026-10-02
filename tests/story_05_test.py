@@ -126,8 +126,16 @@ try:
   assert state(page)==before
   results.append('Original alpha mask: opaque monster costs one heart; transparent padding and drag-out cost none')
   # Real audio and moving touch snapshots; no scripted click bypass of pointer handling.
-  page.evaluate('localStorage.setItem("adventure.settings.sound","true")');seed(page,'S04');action(page,'settings');action(page,'normal-motion');action(page,'close');action(page,'unpause')
+  page.evaluate('localStorage.setItem("adventure.settings.sound","true")');seed(page,'S04')
+  assert page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="hidden"&&n.disabled&&n.getAttribute("aria-hidden")==="true")')
+  action(page,'settings');action(page,'normal-motion');action(page,'close');action(page,'unpause')
+  assert page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="hidden"&&n.disabled)')
   page.wait_for_function('!document.querySelector(".feedback") && !document.querySelector("[data-action=replay-letter]").disabled')
+  assert page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="visible"&&!n.disabled&&n.getAttribute("aria-hidden")==="false")')
+  saved=state(page);action(page,'replay-letter')
+  assert page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="hidden"&&n.disabled)')
+  page.wait_for_function('!document.querySelector("[data-action=replay-letter]").disabled')
+  assert state(page)==saved and page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="visible")')
   card=target_card(page);positions=[]
   for _ in range(8):positions.append(card.bounding_box());page.wait_for_timeout(130)
   assert max(b['x'] for b in positions)-min(b['x'] for b in positions)>1
@@ -146,6 +154,7 @@ try:
   page.wait_for_timeout(1200);assert int(page.locator('.remaining').inner_text()[:-1])<12
   action(page,'pause');clock=page.locator('.remaining').inner_text();page.wait_for_timeout(1300);assert page.locator('.remaining').inner_text()==clock
   action(page,'unpause');action(page,'pause');page.wait_for_timeout(1600);assert page.locator('[data-action="unpause"]').count()==1
+  assert page.locator('.letter-card').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="hidden"&&n.disabled)')
   action(page,'unpause');page.wait_for_function('!document.querySelector(".feedback")');before=state(page)['hearts']
   page.wait_for_selector('[data-action="retry-question"]',timeout=15000);assert state(page)['hearts']==before-1
   results.append('L2 12-second timer begins after voice, pause freezes clock, pause during voice cannot resume itself, timeout costs exactly one heart')
@@ -167,7 +176,7 @@ try:
   results.append('26 A–Z WAVs decode and have finite durations; ambience switching leaves one current loop')
   # Storage denied and failed sounds must remain playable in assisted mode.
   broken=browser.new_context(viewport={'width':820,'height':1180});broken.add_init_script('Storage.prototype.getItem=()=>{throw Error("blocked")};Storage.prototype.setItem=()=>{throw Error("blocked")}')
-  fault=broken.new_page();fault.route('**/assets/audio/**.wav',lambda route:route.abort());fault.goto(url);action(fault,'start');action(fault,'walk-ahead');action(fault,'shelter');learn(fault,9);action(fault,'begin-question')
+  fault=broken.new_page();fault.route('**/assets/audio/**.wav*',lambda route:route.abort());fault.goto(url);action(fault,'start');action(fault,'walk-ahead');action(fault,'shelter');learn(fault,9);action(fault,'begin-question')
   fault.wait_for_selector('[data-action="ready"]',timeout=12000);action(fault,'ready');assert fault.locator('.letter-card').count()==3
   action(fault,'show-letter');preview=fault.locator('.target-preview').inner_text()[0];action(fault,'ready');tap(fault,fault.locator(f'[data-letter="{preview}"]'));assert fault.locator('[data-action="next-lamp"]').count()==1
   broken.close();results.append('Blocked storage plus failed voice files: visual assisted answer succeeds without blocking')

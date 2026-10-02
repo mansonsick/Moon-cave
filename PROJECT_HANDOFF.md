@@ -339,3 +339,9 @@ localStorage 依 origin 隔離，不依 URL path 隔離。兩個路徑都在 `ht
 共用僅新增 `engine/moving-targets.js`，沿用 storage／AudioManager，沒有趁機重構舊故事。`adventure.story-05.state` 保存本書進度，聲音共用 `adventure.settings.sound`；重玩只重置第五本。字型仍只在本機渲染 283 個 PNG 短片段，不公開。音訊為本機英文 TTS 的 26 字母 WAV、原創低音量八音盒／低哼／拍翅配樂及回饋音；需家庭聽感與觸控實測，不宣稱真人錄音或實機驗收。
 
 實作接法與測試見 `stories/story-05/ENGINEERING_PLAN.md`／`QA_RESULTS.md`。本輪發布尚未授權，不 merge main；正式 GitHub Pages 仍為四本。跨舊故事返回上一幕待辦保持，本書已有閱讀回看與本書選單，不宣稱平台待辦全數完成。
+
+### 2026-10-02 第五本音訊修正（最新）
+
+使用者指出音檔與字母不符，確認舊 TTS 的 A 與 I 完全重複。第五本改用 26 個附作者／授權／來源的真人字母名称 WAV；錄音與轉換授權詳見 stories/story-05/assets/audio/letters/CREDITS.md，不影響既有原創背景音。重建已改成來源固定、离線解碼，另檢查 PCM 重複與 ID／檔名／來源字母對應。
+
+聽音關先隱藏字卡，播完才顯示、移動及倒數，重播亦然。學習卡可對照文字；聲音失敗保留看字輔助。家長設定加入 A–Z 錄音試聽與來源表。正式基準及其他四本維持原狀，仍在 feature/story-05-foundation；測試與平板限制見第五本 QA_RESULTS.md，未授權 merge 或發布。

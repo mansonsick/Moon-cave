@@ -2,7 +2,12 @@ import {AudioManager} from '../../engine/audio-manager.js';
 
 // Voice completion / cancellation controls the timer; existing books' manager stays unchanged.
 export class AlphabetAudio extends AudioManager {
-  constructor(...args) {super(...args);this.letterRevision=0;this.letterVoice=null;this.finishLetter=null;this.background=null;}
+  constructor(manifest,baseURL,enabled=true) {
+    // Changed recordings must not reuse a cached, incorrectly pronounced TTS clip.
+    const versioned=Object.fromEntries(Object.entries(manifest).map(([id,e])=>[id,
+      e.category==='letter'&&e.sha256?{...e,src:e.src+'?v='+e.sha256.slice(0,12)}:e]));
+    super(versioned,baseURL,enabled);this.letterRevision=0;this.letterVoice=null;this.finishLetter=null;this.background=null;
+  }
   sceneAmbience(id) {this.background=id;void this.setAmbience(id,this.letterVoice?.12:1);}
   cancelLetter() {
     this.letterRevision++;

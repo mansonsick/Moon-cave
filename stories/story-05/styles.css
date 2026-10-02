@@ -39,3 +39,4 @@ button:hover{background:#fff2bc}button:active{transform:translateY(1px)}button:d
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
 @media(prefers-reduced-motion:reduce){.cleansing-ghost{display:none}}
 .letter-card,.letter-pair,.feedback .target-preview{font-family:Verdana,"Trebuchet MS",Arial,sans-serif}
+.audio-review{display:inline-flex;align-items:center;min-height:48px;padding:8px 12px;color:#243144;font:22px Verdana,sans-serif}

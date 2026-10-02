@@ -1,6 +1,6 @@
 # 第五本工程接法｜2026-10-02
 
-本輪基於 main `25f061fa479bc237cea44d6c9f82f1ba0d908a4e` 和美術 Draft PR #15 的 `d2c009a`，在 `feature/story-05-foundation` 實作。使用者已確認美術與三顆心規則、授權開始網頁，不包含發布。最新規格為本分支 STORY_SPEC v1.2，取代美術階段「連續三錯但保留本關燈」的舊提案。
+本輪基於 main `25f061fa479bc237cea44d6c9f82f1ba0d908a4e` 和美術 Draft PR #15 的 `d2c009a`，在 `feature/story-05-foundation` 實作。使用者已確認美術與三顆心規則、授權開始網頁，不包含發布。最新規格為本分支 STORY_SPEC v1.3，取代美術階段「連續三錯但保留本關燈」的舊提案。
 
 ## 檔案與共用邊界
 
@@ -24,7 +24,7 @@
 
 ## 音訊
 
-首次按開始／繼續冒險才解鎖 Web Audio。26 字母使用本機已安裝 Microsoft Zira Desktop en-US 產生 WAV，明列 ay／bee／…／zee，教字母名稱，不教自然發音；不是孩子或真人錄音。所有檔案經瀏覽器解碼、時長及 A–Z 完整性檢查，仍需家庭聽感確認，不聲稱已做真人錄音審核。
+首次按開始／繼續冒險才解鎖 Web Audio。26 字母改用 Wikimedia Commons 真人美式字母名称錄音；來源／作者／Public domain 或 CC BY-SA 3.0／4.0 授權逐檔保存，轉換 WAV 依原授權。詳見 assets/audio/letters/CREDITS.md。A /eɪ/ 與 I /aɪ/ 不再共用舊 TTS 的錯誤內容。學習卡可對照文字聽音，聽音挑戰在播音及重播期間隱藏、禁用全部字卡，播完才顯示並開始運動／倒數。音訊 URL 帶內容雜湊版本，避免快取舊聲音。
 
 `scripts/build_story05_audio.py` 產生四個 12 秒原創八音盒／低哼／拍翅／低鼓配樂循環及四種提示音，沒有網路樣本或 Hide and Seek 旋律。背景 gain .18，字母 gain .9；播字母時背景再乘 .12，只有一條 ambience。總音訊約 4 MB。靜音／缺檔／解碼失敗改為看字輔助，字形提示需按準備好了才開始；完成標為 assisted，不誤記為獨立聽辨。
 
@@ -38,11 +38,11 @@
 
 ## 重建與測試
 
-使用本機 Python、Pillow、numpy、Playwright；產語音需 Windows 安裝英文聲音。
+使用本機 Python、Pillow、numpy、Playwright；真人錄音重建使用 repo 保存的原檔／轉碼與 Chromium 解碼，不依賴 Windows 語音、網路或裝置 TTS。
 
 ```powershell
 python scripts/build_story05_content.py
-& ./scripts/build_story05_letters.ps1
+python scripts/build_story05_letters.py
 python scripts/build_story05_audio.py
 python scripts/render_story_text.py --font '../BpmfGenRyuMin-H.ttf' --story stories/story-05
 python -X utf8 tests/story_05_test.py
