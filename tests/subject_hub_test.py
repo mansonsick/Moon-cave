@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from story_test_support import serve
+from story_test_support import serve, remember_family_entry
 
 out=Path('../hub-review/subject-hub');out.mkdir(parents=True,exist_ok=True)
 server,base=serve()
@@ -11,6 +11,7 @@ try:
   browser=p.chromium.launch()
   for width,height in [(390,844),(820,1180),(1180,820)]:
    context=browser.new_context(viewport={'width':width,'height':height},has_touch=True)
+   remember_family_entry(context)
    page=context.new_page();errors=[];bad=[];fonts=[]
    page.on('pageerror',lambda e:errors.append(str(e)))
    page.on('response',lambda r:bad.append(r.url) if r.status>=400 else None)
@@ -41,9 +42,10 @@ try:
    assert not errors,errors;assert not bad,bad;assert not fonts,fonts
    context.close()
   context=browser.new_context(java_script_enabled=False,has_touch=True)
-  page=context.new_page();page.goto(base);page.locator('[data-subject="math"]').tap();page.wait_for_url(base+'#math')
-  page.locator('#math .start').tap();page.wait_for_url(base+'stories/story-03/')
+  page=context.new_page();page.goto(base);assert page.locator('.access-nojs').is_visible()
+  assert page.locator('.subject-entry').first.evaluate('n=>getComputedStyle(n).visibility')=='hidden'
+  page.locator('.access-nojs a').click();page.wait_for_url(base+'legal/');assert page.locator('h1').is_visible()
   browser.close()
- print('PASS subject anchors, five stories, new English entry, all story links, 390/820/1180 touch layouts, no JS or font dependency, saved data preserved')
+ print('PASS subject anchors, five stories, English entry, all story links, 390/820/1180 touch layouts, no-JS access notice, no font dependency, saved data preserved')
  (out/'results.json').write_text(json.dumps({'passed':True,'sizes':[390,820,1180],'physical_tablet':False}),encoding='utf-8')
 finally:server.shutdown()

@@ -50,11 +50,19 @@ def main():
         manifest[name]={**write_audio(name,ambience(name)), 'category':'ambience','volume':.18}
     for name in ['success','fail-soft','wing','moonlight']:
         manifest[name]={**write_audio(name,cue(name)),'category':'sfx','volume':.52}
+    music=ROOT/'come-play-with-me.mp3'
+    if not music.is_file():raise FileNotFoundError('The authorized, user-supplied Come Play with Me recording is required.')
+    manifest['come-play-with-me']={
+        'src':music.name,'available':True,'category':'ambience','volume':.12,'seconds':132,
+        'sha256':hashlib.sha256(music.read_bytes()).hexdigest(),'title':'Come Play with Me','artist':'Kevin MacLeod',
+        'source':'https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1400042',
+        'license':'CC BY 4.0','licenseUrl':'https://creativecommons.org/licenses/by/4.0/',
+        'changes':'User-supplied Chosic MP3 copied unchanged; playback volume and temporary letter-voice ducking only.'}
     letters=json.loads((ROOT/'letters/manifest.json').read_text(encoding='utf-8-sig'))
     for item in letters:
         with wave.open(str(ROOT/item['src']),'rb') as f:seconds=f.getnframes()/f.getframerate()
         manifest['letter-'+item['letter']]={**item,'available':True,'category':'letter','volume':.9,'seconds':seconds}
-    (ROOT/'manifest.json').write_text(json.dumps({'source':'Original procedural ambience/SFX; credited human US English letter names from Wikimedia Commons. See letters/CREDITS.md and letters/sources.json.','entries':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print('Built 4 original ambience loops, 4 cues and indexed 26 letter-name recordings.')
+    (ROOT/'manifest.json').write_text(json.dumps({'source':'User-supplied Come Play with Me by Kevin MacLeod, CC BY 4.0 (see CREDITS.md); original procedural legacy loops/SFX; credited human US English letter names from Wikimedia Commons (letters/CREDITS.md).','entries':manifest},ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print('Indexed licensed Come Play with Me, 4 preserved original loops, 4 cues and 26 letter-name recordings.')
 
 if __name__=='__main__':main()

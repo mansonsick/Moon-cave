@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from story_test_support import serve
+from story_test_support import serve, remember_family_entry
 
 OUT=Path(__file__).resolve().parents[2]/'hub-review/story05/visual'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -10,6 +10,7 @@ server,base=serve();errors=[];bad=[]
 try:
  with sync_playwright() as p:
   browser=p.chromium.launch();context=browser.new_context(viewport={'width':820,'height':1180},has_touch=True,reduced_motion='reduce')
+  remember_family_entry(context)
   page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('response',lambda r:bad.append(r.url) if r.status>=400 else None)
   page.goto(base+'stories/story-05/');page.wait_for_selector('[data-action="start"]');page.locator('[data-action="start"]').click()
   assert page.evaluate('JSON.parse(localStorage.getItem("adventure.story-05.state")).motion')=='static'

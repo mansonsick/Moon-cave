@@ -29,7 +29,9 @@ def main():
     for key,entry in audio['entries'].items():
         path=STORY/'assets/audio'/entry['src'];assert path.is_file()
         assert hashlib.sha256(path.read_bytes()).hexdigest()==entry['sha256'],key
-        with wave.open(str(path),'rb') as wav:assert wav.getnframes()>1000 and wav.getsampwidth()==2
+        if path.suffix=='.wav':
+            with wave.open(str(path),'rb') as wav:assert wav.getnframes()>1000 and wav.getsampwidth()==2
+        else:assert path.suffix=='.mp3' and entry['license']=='CC BY 4.0'
     sources=json.loads((STORY/'assets/audio/letters/sources.json').read_text(encoding='utf-8'))
     records=json.loads((STORY/'assets/audio/letters/manifest.json').read_text(encoding='utf-8'))
     assert [s['letter'] for s in sources]==list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')

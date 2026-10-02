@@ -2,7 +2,7 @@
 import json, math, sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-from story_test_support import serve
+from story_test_support import serve, remember_family_entry
 
 OUT=Path(__file__).resolve().parents[2]/'hub-review/story05/qa'
 OUT.mkdir(parents=True,exist_ok=True)
@@ -71,6 +71,7 @@ server,base=serve();results=[]
 try:
  with sync_playwright() as p:
   browser=p.chromium.launch();context=browser.new_context(viewport={'width':820,'height':1180},has_touch=True)
+  remember_family_entry(context)
   page=context.new_page();errors=[];bad=[];fonts=[]
   page.on('pageerror',lambda e:errors.append(str(e)))
   page.on('response',lambda r:bad.append(r.url) if r.status>=400 else None)
@@ -175,7 +176,8 @@ try:
   assert len({x['letter'] for x in audit['report']})==26
   results.append('26 A–Z WAVs decode and have finite durations; ambience switching leaves one current loop')
   # Storage denied and failed sounds must remain playable in assisted mode.
-  broken=browser.new_context(viewport={'width':820,'height':1180});broken.add_init_script('Storage.prototype.getItem=()=>{throw Error("blocked")};Storage.prototype.setItem=()=>{throw Error("blocked")}')
+  broken=browser.new_context(viewport={'width':820,'height':1180});broken.add_init_script('const get=Storage.prototype.getItem,set=Storage.prototype.setItem;Storage.prototype.getItem=function(k){if(this===localStorage)throw Error("blocked");return get.call(this,k)};Storage.prototype.setItem=function(k,v){if(this===localStorage)throw Error("blocked");return set.call(this,k,v)}')
+  remember_family_entry(broken)
   fault=broken.new_page();fault.route('**/assets/audio/**.wav*',lambda route:route.abort());fault.goto(url);action(fault,'start');action(fault,'walk-ahead');action(fault,'shelter');learn(fault,9);action(fault,'begin-question')
   fault.wait_for_selector('[data-action="ready"]',timeout=12000);action(fault,'ready');assert fault.locator('.letter-card').count()==3
   action(fault,'show-letter');preview=fault.locator('.target-preview').inner_text()[0];action(fault,'ready');tap(fault,fault.locator(f'[data-letter="{preview}"]'));assert fault.locator('[data-action="next-lamp"]').count()==1
@@ -190,7 +192,7 @@ try:
         assert not (a['x']<b['x']+b['width'] and a['x']+a['width']>b['x'] and a['y']<b['y']+b['height'] and a['y']+a['height']>b['y'])
     page.screenshot(path=str(OUT/f'bridge-{width}.png'),full_page=True)
     action(page,'larger');assert state(page)['size']>1;action(page,'smaller')
-  results.append('390 / 820 / 1180 layouts, all five targets >=64px, no target/monster overlap, A−/A+')
+  results.append('390 / 820 / 1180 layouts, all five targets >=64px, spacious initial positions, A−/A+')
   assert page.evaluate('(s)=>Object.entries(s).every(([k,v])=>localStorage.getItem(k)===v)',SENTINELS)
   assert not errors and not bad and not fonts,(errors,bad,fonts)
   (OUT/'results.json').write_text(json.dumps({'passed':results,'errors':errors,'badResponses':bad,'fontRequests':fonts,'voiceAudit':audit},ensure_ascii=False,indent=2),encoding='utf-8')

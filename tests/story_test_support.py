@@ -1,11 +1,17 @@
 """Local Pages-prefix server shared by Story 02 browser checks."""
 import functools
+import json
 import threading
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import unquote, urlsplit
 
 REPO = Path(__file__).resolve().parents[1]
+def remember_family_entry(context):
+    """Gameplay tests use an already-open family session; gate tests exercise login itself."""
+    access = json.loads((REPO/'site-access.json').read_text(encoding='utf-8'))
+    context.add_init_script('try{sessionStorage.setItem("adventure.session.siteAccess",'+json.dumps(access['sha256'])+')}catch{}')
+
 class Handler(SimpleHTTPRequestHandler):
     def log_message(self, *_): pass
     def translate_path(self, path):

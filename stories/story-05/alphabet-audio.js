@@ -8,7 +8,11 @@ export class AlphabetAudio extends AudioManager {
       e.category==='letter'&&e.sha256?{...e,src:e.src+'?v='+e.sha256.slice(0,12)}:e]));
     super(versioned,baseURL,enabled);this.letterRevision=0;this.letterVoice=null;this.finishLetter=null;this.background=null;
   }
-  sceneAmbience(id) {this.background=id;void this.setAmbience(id,this.letterVoice?.12:1);}
+  sceneAmbience(id) {
+    this.background=id||null;
+    if(!id){this.desired=null;this.stopAmbience();return;}
+    void this.setAmbience(id,this.letterVoice?.12:1);
+  }
   cancelLetter() {
     this.letterRevision++;
     if(this.letterVoice){this.stopVoice(this.letterVoice);this.letterVoice=null;}

@@ -50,7 +50,7 @@ class AlphabetStory {
   async toggleSound(){
     this.audio.setEnabled(!this.audio.enabled);this.storage.setSound(this.audio.enabled);
     const b=root.querySelector('[data-action="sound"]');if(b)b.textContent=this.audio.enabled?'🔊':'🔇';
-    if(this.audio.enabled){await this.audio.unlock();this.audio.sceneAmbience(this.ambienceFor(this.state.scene));}
+    if(this.audio.enabled){await this.audio.unlock();this.audio.sceneAmbience(this.inMenu?null:this.ambienceFor(this.state.scene));}
     if(this.quiz&&this.quiz.phase==='answering')void this.quiz.listen();
   }
   async fullscreen(){
@@ -58,7 +58,7 @@ class AlphabetStory {
     catch{this.notice('fullscreen-help');}
   }
   updateFullscreen(){const b=root.querySelector('[data-action="fullscreen"]');if(b)b.setAttribute('aria-label',this.config.labels[document.fullscreenElement?'exit-fullscreen':'fullscreen']);}
-  ambienceFor(sid){return ['E01','E02','H03'].includes(sid)?'dawn':['S05','S06','S07','H01'].includes(sid)?'house':['S08','S09','S10','H02'].includes(sid)?'bridge':'fog';}
+  ambienceFor(sid){return ['E01','E02','H03'].includes(sid)?null:'come-play-with-me';}
   art(scene,{quiz=false,learning=false,purify=false}={}) {
     const cfg=this.config.scenes[scene];const stage=element('div','scene'+(quiz?' quiz':'')+(learning?' learning':'')+(purify?' purification':''));
     stage.dataset.scene=scene;stage.setAttribute('aria-label',this.config.labels[cfg.title]);
@@ -173,9 +173,9 @@ class AlphabetStory {
     if(complete&&index===1){stage.querySelector('.door-cover')?.remove();stage.querySelector('.door-eye')?.remove();}
     const refreshHearts=()=>{hearts.replaceChildren();for(let i=0;i<3;i++){const h=element('span','heart'+(i>=this.state.hearts?' empty':''));h.textContent=i<this.state.hearts?'♥':'♡';hearts.append(h);}hearts.setAttribute('aria-label',`剩下${this.state.hearts}顆心`);};refreshHearts();
     if(complete){voice.disabled=true;pause.disabled=true;show.disabled=true;time.textContent='';this.overlay(stage,`stage-${index+1}-done`,[['continue',()=>this.go(cfg.next)]]);void this.audio.playSfx('success');return;}
-    const target=currentLetter(this.state),letters=choicesFor(this.state,cfg.count);const field=element('div','playfield');const lanes=element('div','letter-lanes');
-    const targets=letters.map(letter=>{const lane=element('div','lane');const card=element('button','letter-card');card.type='button';card.textContent=letter;card.dataset.letter=letter;card.setAttribute('aria-label',letter);lane.append(card);lanes.append(lane);return card;});
-    const monsterLane=element('div','monster-lane');const monster=element('canvas','monster-target');monster.tabIndex=0;monster.setAttribute('role','button');monster.setAttribute('aria-label','納別奇');monster.dataset.action='monster';monsterLane.append(monster);field.append(lanes,monsterLane);stage.append(field);
+    const target=currentLetter(this.state),letters=choicesFor(this.state,cfg.count);const field=element('div','playfield');
+    const targets=letters.map(letter=>{const card=element('button','letter-card');card.type='button';card.textContent=letter;card.dataset.letter=letter;card.setAttribute('aria-label',letter);field.append(card);return card;});
+    const monster=element('canvas','monster-target');monster.tabIndex=0;monster.setAttribute('role','button');monster.setAttribute('aria-label','納別奇');monster.dataset.action='monster';field.append(monster);stage.append(field);
     let monsterHit=()=>false;
     alphaTarget(monster,asset('characters/nabieqi-reaching-v2.png')).then(hit=>monsterHit=hit).catch(()=>{monster.style.visibility='hidden';});
     const generation=this.generation;
@@ -216,13 +216,21 @@ class AlphabetStory {
         this.overlay(stage,label,[['retry-question',()=>this.nextQuiz()]]);
       }
     };
-    quiz.motion=new MovingTargets([...targets,monster],{mode:this.state.motion,speed:[.9,1.2,1.5][index],onTick:dt=>{
+    quiz.motion=new MovingTargets([...targets,monster],{mode:this.state.motion,speed:[.9,1.2,1.5][index],onTurn:node=>{
+      if(node===monster)node.style.zIndex=Math.random()<.6?'3':'0';
+    },onTick:dt=>{
       if(quiz.phase!=='answering'||!this.state.timer||!cfg.seconds)return;
       quiz.seconds=Math.max(0,quiz.seconds-dt);time.textContent=Math.ceil(quiz.seconds)+'s';if(quiz.seconds===0)quiz.miss('timeout');
     }});
     quiz.showCards(false);this.quiz=quiz;this.cleanups.push(()=>quiz.motion.dispose());
     for(const card of targets)this.cleanups.push(bindStableTap(card,{freeze:quiz.freeze,resume:quiz.resume,allowed:()=>quiz.phase==='answering'&&!this.modalOpen,activate:()=>quiz.answer(card.dataset.letter)}));
-    this.cleanups.push(bindStableTap(monster,{freeze:quiz.freeze,resume:quiz.resume,allowed:()=>quiz.phase==='answering'&&!this.modalOpen,hit:e=>monsterHit(e),activate:()=>quiz.miss('monster-wrong')}));
+    let monsterTap=()=>quiz.miss('monster-wrong');
+    this.cleanups.push(bindStableTap(monster,{freeze:quiz.freeze,resume:quiz.resume,allowed:()=>quiz.phase==='answering'&&!this.modalOpen,
+      hit:e=>{
+        if(monsterHit(e)){monsterTap=()=>quiz.miss('monster-wrong');return true;}
+        const card=document.elementsFromPoint(e.clientX,e.clientY).find(node=>targets.includes(node));
+        if(!card)return false;monsterTap=()=>quiz.answer(card.dataset.letter);return true;
+      },activate:()=>monsterTap()}));
     time.textContent=this.state.timer&&cfg.seconds?cfg.seconds+'s':'∞';
     this.overlay(stage,'listen-first',[['listen',()=>quiz.listen(),'begin-question']]);
     this.actions([['review',()=>this.go(LEARN_SCENES[index])]]);

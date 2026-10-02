@@ -1,5 +1,15 @@
 # 冒險首頁與《月光洞》搬移回歸測試
 
+## 目前：第五本與家庭入口（2026-10-02）
+
+本次可執行 `story_05_test.py`、`story_05_visual_test.py`、`story_05_audio_test.py`、`story_05_flight_test.py`、`site_access_test.py` 及 `subject_hub_test.py`；素材另跑 `scripts/check_story05_assets.py`。
+
+故事流程測試以 `story_test_support.remember_family_entry(context)` 使用已開啟的測試分頁，入口測試另行驗證密碼、退出、儲存拒絕和無 JS。入口測試可讀 repo 外的本機測試密碼；沒有該檔案時攔截設定回應，使用測試用雜湊，不在 repo 保存真正入口密碼。
+
+下方為歷史驗收腳本及範圍；舊流程若直接進故事，需要先建立測試家庭分頁或輸入入口密碼。無 JS 首頁目前顯示入口提示與公開網站說明，取代過去可直接進入故事的行為。密碼只是客戶端提醒，這些測試不驗證伺服器身份驗證或防止下載公開素材。
+
+## 歷史：首頁與第一本搬移
+
 使用 Python、Playwright 及 Chromium。網站本身不需要建置或安裝套件。
 
 ```sh
