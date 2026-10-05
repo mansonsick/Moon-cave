@@ -1,0 +1,29 @@
+{
+  "mode": "Built-in image_gen.imagegen",
+  "created": "2026-10-05",
+  "main": "cdd23029978f3030aeec5bf830de1598ca9b1cb3",
+  "originalsPreserved": true,
+  "assets": [
+    {
+      "file": "anchor.png",
+      "referenceOnly": true,
+      "status": "awaiting-user-visual-review",
+      "transparent": false,
+      "references": [
+        {
+          "path": "stories/story-04/assets/images/anchor.png",
+          "role": "style and boy/squirrel identity only; other animals and postal scene excluded"
+        },
+        {
+          "path": "stories/story-03/assets/images/atong.png",
+          "role": "boy identity and outfit"
+        },
+        {
+          "path": "stories/story-03/assets/images/squirrel.png",
+          "role": "squirrel identity"
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nAsset type: one character and world anchor illustration for Story 06 \"Atong and the Silent Forest\", a Taiwanese child's Zhuyin listening adventure. This is a visual reference, not a game scene, no UI. Wide landscape composition.\nInput images: Image 1 is existing children's-book painterly STYLE and BOY/SQUIRREL IDENTITY reference only; ignore rabbit, bear, mouse, building and letters. Image 2 is the exact BOY IDENTITY and outfit reference only. Image 3 is exact ORANGE SQUIRREL IDENTITY reference only. These are references, not edit targets.\nScene: a mysterious but gentle afternoon forest clearing. Mossy broadleaf trees, a little stream behind, a large old oak at the side; warm sunlight at one side softly meets a little blue-gray distant mist. Lush detailed watercolor and gouache with fine dark ink outlines matching references; bright enough for beginning readers, not a dark horror scene.\nSubjects: Exactly three clearly separated full-body characters standing together. Atong, a Taiwanese boy about seven, tousled dark brown hair, large dark brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas adventure backpack with brown leather straps. He listens kindly, one hand cupped behind an ear. Orange squirrel beside him, cream face and chest, huge fluffy curved tail, upright friendly curious posture. New small mist spirit on the other side: only about the squirrel's height, round pear-shaped softly translucent smoky blue-gray body, two tiny rounded cloudlike ears, short little mitten hands, lower body tapering into a wispy floating cloud instead of feet, two big gentle dark teal eyes and a tiny closed shy mouth. An original shy cloud creature, subtle nervous expression, soft diffuse edges but clearly readable silhouette. No wings, teeth, claws, horns, costume or red fabric.\nOne object: the listening lantern, hanging lightly from Atong's other lowered hand: a small hand-sized leaf-shaped bronze/wood frame with an oval clear pale-gold glass chamber and soft warm amber light, simple curved carrying handle. No letters/symbols or musical notes on it. It looks like a handmade woodland listening lamp, not a moonstone or a flashlight. Keep the lantern away from the boy's face so the listening pose is clear.\nComposition: full body boy and full squirrel tail are completely visible and uncropped, spirit floating just above the moss; enough open space between all three silhouettes. The boy's hand actually cups his ear, not the lantern. Establish comparative size and consistent warm-versus-blue forest palette, not a crowded poster.\nConstraints: no typography, Chinese characters, Zhuyin symbols, English letters, captions, labels, numbers, watermark, frames, panels, arrows or interface. No extra animals, postal props, bell, spoilers, monster, angel, blood or scary chase. Preserve the identity and clothes from the references."
+    }
+  ]
+}

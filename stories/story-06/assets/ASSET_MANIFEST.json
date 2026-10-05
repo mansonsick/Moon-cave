@@ -1,0 +1,18 @@
+{
+  "storyId": "story-06",
+  "created": "2026-10-05",
+  "generationMethod": "built-in image_gen.imagegen",
+  "originalsPreserved": true,
+  "assets": [
+    {
+      "file": "images/anchor.png",
+      "role": "character-world-reference",
+      "referenceOnly": true,
+      "status": "awaiting-user-visual-review",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "9ec2858087bfc3e4d83ef33d88df10c29e767e8a1697dabc17976447afe4a0f7"
+    }
+  ]
+}
