@@ -1,4 +1,4 @@
-"""Visitor reminder behavior, public notice, six page hooks and no private-font delivery.
+"""Visitor reminder behavior, public notice, eight page hooks and no private-font delivery.
 
 This tests a browser reminder, never claims server-side authentication.
 """
@@ -23,7 +23,7 @@ try:
    page=context.new_page();errors=[];bad=[];fonts=[]
    page.on('pageerror',lambda e:errors.append(str(e)));page.on('response',lambda r:bad.append(r.url) if r.status>=400 else None)
    page.on('request',lambda r:fonts.append(r.url) if r.url.split('?')[0].endswith(('.ttf','.otf','.woff','.woff2')) else None)
-   for route in ['',*[f'stories/{s}/' for s in ['moon-cave','story-02','story-03','story-04','story-05']]]:
+   for route in ['',*[f'stories/{s}/' for s in ['moon-cave','story-02','story-03','story-04','story-05','story-06']],'stories/story-06/audio-review.html']:
     page.goto(base+route);page.wait_for_selector('.site-access');assert page.evaluate('document.documentElement.scrollWidth<=innerWidth')
     assert page.locator('body>:not(.site-access):not(script):not(style):not(noscript)').evaluate_all('ns=>ns.every(n=>getComputedStyle(n).visibility==="hidden"&&n.inert)')
     page.locator('#family-password').fill('000000');page.locator('.site-access button').click();page.wait_for_selector('.access-error img')
@@ -42,7 +42,7 @@ try:
    out=REPO.parent/'hub-review/story05/access';out.mkdir(parents=True,exist_ok=True)
    page.screenshot(path=str(out/f'notice-{size[0]}.png'),full_page=True)
    assert not errors and not bad and not fonts,(errors,bad,fonts)
-   reports.append({'width':size[0],'routes':6,'errors':errors});context.close()
+   reports.append({'width':size[0],'routes':8,'errors':errors});context.close()
   # Denied browser storage still permits this page, requiring re-entry after navigation.
   denied=browser.new_context();denied.add_init_script('Storage.prototype.getItem=()=>{throw Error("denied")};Storage.prototype.setItem=()=>{throw Error("denied")}')
   if not private.exists():denied.route('**/site-access.json',lambda r:r.fulfill(json={'sha256':expected}))
@@ -51,5 +51,5 @@ try:
   # A new browser session is not remembered. This does not test resistance to bypass.
   fresh=browser.new_context();page=fresh.new_page();page.goto(base+'stories/story-05/');page.wait_for_selector('.site-access');fresh.close()
   (out/'results.json').write_text(json.dumps(reports,indent=2),encoding='utf-8')
-  browser.close();print('PASS six gated entry pages at 390/820/1180, wrong/right PIN, tab-session resume/logout, denied storage, no-JS notice, public legal page/credits and no font requests')
+  browser.close();print('PASS eight gated entry pages at 390/820/1180, wrong/right PIN, tab-session resume/logout, denied storage, no-JS notice, public legal page/credits and no font requests')
 finally:server.shutdown()

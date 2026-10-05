@@ -20,7 +20,7 @@ try:
    saved={'moonCaveState':'legacy-save','moonCaveTextScale':'1.3','adventure.story-02.state':'story-two-save','adventure.story-03.state':'story-three-save','adventure.settings.sound':'off'}
    page.evaluate('(values)=>Object.entries(values).forEach(([k,v])=>localStorage.setItem(k,v))',saved);page.reload()
    assert page.locator('.subject-entry').count()==3
-   assert page.locator('#chinese .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['moon-cave','story-02','story-04']
+   assert page.locator('#chinese .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['moon-cave','story-02','story-04','story-06']
    assert page.locator('#math .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['story-03']
    assert page.locator('#english .story-card').evaluate_all('cards=>cards.map(c=>c.dataset.story)')==['story-05']
    assert page.locator('#english .start').count()==1
@@ -37,7 +37,7 @@ try:
    # Opaque/damaged saves prove the hub never parses them. Entry checks below use
    # a clean isolated test session so legacy stories do not parse those fixtures.
    page.evaluate('localStorage.clear()')
-   for subject,story in [('chinese','moon-cave'),('chinese','story-02'),('chinese','story-04'),('math','story-03'),('english','story-05')]:
+   for subject,story in [('chinese','moon-cave'),('chinese','story-02'),('chinese','story-04'),('chinese','story-06'),('math','story-03'),('english','story-05')]:
     page.goto(base+'#'+subject);page.locator(f'[data-story="{story}"] .start').tap();page.wait_for_url(base+'stories/'+story+'/')
    assert not errors,errors;assert not bad,bad;assert not fonts,fonts
    context.close()
@@ -46,6 +46,6 @@ try:
   assert page.locator('.subject-entry').first.evaluate('n=>getComputedStyle(n).visibility')=='hidden'
   page.locator('.access-nojs a').click();page.wait_for_url(base+'legal/');assert page.locator('h1').is_visible()
   browser.close()
- print('PASS subject anchors, five stories, English entry, all story links, 390/820/1180 touch layouts, no-JS access notice, no font dependency, saved data preserved')
+ print('PASS subject anchors, six stories, English entry, all story links, 390/820/1180 touch layouts, no-JS access notice, no font dependency, saved data preserved')
  (out/'results.json').write_text(json.dumps({'passed':True,'sizes':[390,820,1180],'physical_tablet':False}),encoding='utf-8')
 finally:server.shutdown()

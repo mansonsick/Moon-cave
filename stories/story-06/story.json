@@ -1,0 +1,269 @@
+{
+  "storyId": "story-06",
+  "version": 1,
+  "labels": {
+    "title": "阿通與失聲森林",
+    "loading": "故事準備中。",
+    "home": "回首頁",
+    "menu": "故事選單",
+    "previous": "上一幕",
+    "start": "開始冒險",
+    "resume": "繼續冒險",
+    "replay": "再玩一次",
+    "new-confirm": "換一組聲音，重新冒險嗎？",
+    "new-note": "這本的進度會重新開始。",
+    "confirm": "開始新冒險",
+    "cancel": "先不要",
+    "cover-first": "森林的聲音不見了。",
+    "cover-second": "跟阿通一起聽聲音，找回歌聲！",
+    "cover-third": "每次十八題，先學六個再闖關。",
+    "hub-chapter": "阿通的第六場冒險",
+    "hub-first": "聽聽注音，找回森林的聲音。",
+    "hub-second": "神祕森林，先學再玩。",
+    "enter-forest": "往森林裡看看",
+    "take-lamp": "接過聽音燈",
+    "go-grass": "到草地找聲音",
+    "go-stream": "到溪邊找聲音",
+    "go-tree": "去看看古樹",
+    "go-birds": "幫小鳥找聲音",
+    "go-home": "沿著歌聲回家",
+    "together": "一起回家",
+    "learning": "先聽一聽，再看一看。",
+    "learn-touch": "點卡片，聽聽它的聲音。",
+    "learn-count": "已認識",
+    "learn-next": "下一張",
+    "learn-again": "再聽一次",
+    "learn-first": "先認識全部六張聲音卡。",
+    "learn-return": "回看聲音卡",
+    "begin-question": "聽聲音",
+    "listen-wait": "先聽清楚，卡片就會出現。",
+    "choose": "找找剛才的聲音。",
+    "listen-again": "再聽一次",
+    "assist": "看符號幫忙",
+    "assist-note": "這題用看符號一起找。",
+    "audio-unavailable": "聲音暫時聽不到。可以再試一次，或看符號幫忙。",
+    "paused": "先休息一下。再按聽聲音繼續。",
+    "right": "找到了！",
+    "wrong": "再聽一次，慢慢找。",
+    "next-question": "下一個聲音",
+    "continue": "繼續",
+    "stage-one": "蟲兒的聲音回來了！",
+    "stage-two": "溪水的聲音回來了！",
+    "stage-three": "小鳥的歌聲回來了！",
+    "lamp": "聽音燈",
+    "bell": "露珠鈴",
+    "bell-found": "找到露珠鈴了！",
+    "bag": "我的背包",
+    "selected": "已拿起",
+    "bell-back": "回到大路",
+    "completed": "這裡的聲音都回來了。",
+    "progress": "找回聲音",
+    "ending": "森林的聲音回來了！",
+    "settings": "家長設定",
+    "motion": "卡片移動",
+    "slow": "慢慢飄動",
+    "static": "固定位置",
+    "audio-review": "試聽全部注音",
+    "review-note": "教育部的三十七個注音讀音。點符號可試聽。",
+    "credits": "聲音來源",
+    "close": "回到故事",
+    "font-larger": "字放大",
+    "font-smaller": "字縮小",
+    "fullscreen": "全螢幕",
+    "fullscreen-fail": "這台裝置可用瀏覽器放大畫面。",
+    "sound-on": "聲音開啟",
+    "sound-off": "聲音關閉",
+    "website": "網站說明",
+    "summary": "這趟找回的聲音",
+    "independent": "自己聽出",
+    "assisted": "看符號幫忙",
+    "readings": "中文與右側注音，使用本機字型預先渲染。",
+    "audio-credit-title": "教育部國語注音符號手冊",
+    "audio-credit-note": "注音讀音來自教育部獨立音訊素材包，未改動原始錄音。依姓名標示授權使用。森林背景與操作音效為本專案製作。",
+    "sound-check": "聲音試聽完成。",
+    "sound-fail": "聲音暫時無法播放，請再試一次。",
+    "sound-playing": "聲音播放中。",
+    "S01-title": "森林突然安靜",
+    "S01-line-0": "阿通走進午後的森林。小松鼠忽然停下腳步。",
+    "S01-line-1": "「咦？鳥兒怎麼不唱了？」風還在吹，四周卻靜悄悄。",
+    "S02-title": "霧裡的小影子",
+    "S02-line-0": "一團小影子躲進霧裡。它想說話，卻沒有聲音。",
+    "S02-line-1": "小松鼠拿出聽音燈。「我們一起找回聲音吧！」",
+    "S03-title": "草地上的聲音卡",
+    "S03-line-0": "燈裡傳來小小的聲音。「先聽一聽，再看一看。」",
+    "S03-line-1": "阿通和小松鼠坐在草邊，認識今天的六個符號。",
+    "S04-title": "第一關蟲鳴草地",
+    "S04-line-0": "草叢裡藏著聲音。找到它，草燈就會亮。",
+    "S04-line-1": "「聽清楚，點點看！」",
+    "S05-title": "沒有回聲的小溪",
+    "S05-line-0": "小蟲唱起歌來。阿通沿著亮亮的路前進。",
+    "S05-line-1": "溪水流過石頭，卻沒有聲音。「我們再聽六個聲音吧！」",
+    "S06-title": "第二關回聲溪谷",
+    "S06-line-0": "光泡在水面飄動。聲音藏在哪一個裡面？",
+    "S06-line-1": "「仔細聽，慢慢找。」",
+    "S07-title": "樹根旁的岔路",
+    "S07-line-0": "溪水唱起歌來。大路通向一棵古樹。",
+    "S07-line-1": "小松鼠看看樹根。「這裡的草，怎麼倒向一邊？」",
+    "H01-title": "露珠下的小鈴",
+    "H01-line-0": "樹根後有一個小水窪。露珠裡藏著一顆小鈴。",
+    "H01-line-1": "阿通輕輕拿起它。鈴聲像一滴水落下。",
+    "S08-title": "古樹上的空鳥巢",
+    "S08-line-0": "古樹上有六個鳥巢。小鳥們張嘴，卻唱不出歌。",
+    "S08-line-1": "阿通舉起聽音燈。「最後六個，一起聽吧！」",
+    "S09-title": "第三關古樹鳥巢",
+    "S09-line-0": "羽形光片輕輕飛舞。它們帶著小鳥的聲音。",
+    "S09-line-1": "「聽一聽，把聲音找回來！」",
+    "S10-title": "霧裡的悄悄話",
+    "S10-line-0": "蟲兒唱，小溪響，鳥兒也唱了。小霧靈走到阿通面前。",
+    "S10-line-1": "它把聲音藏在霧裡，自己也不敢開口。阿通蹲下：「不急，我們會慢慢聽。」",
+    "H02-title": "小霧靈的第一句話",
+    "H02-line-0": "露珠鈴輕輕響起。小霧靈閉上眼，深深吸氣。",
+    "H02-line-1": "「謝謝你，阿通。」霧慢慢散開，變成亮亮的露珠。",
+    "E01-title": "歌聲陪我們回家",
+    "E01-line-0": "夕陽照著回村的路。阿通和小松鼠一邊走，一邊聽。",
+    "E01-line-1": "蟲聲、溪聲、鳥聲，都回來了。今天的森林，真好聽！",
+    "E02-title": "森林送來一聲謝謝",
+    "E02-line-0": "小霧靈陪他們走到村口。「明天，還來聽我說話嗎？」",
+    "E02-line-1": "阿通揮揮手：「好呀！」樹上的露珠，像星星一樣亮。"
+  },
+  "scenes": [
+    {
+      "id": "S01",
+      "title": "S01-title",
+      "lines": [
+        "S01-line-0",
+        "S01-line-1"
+      ]
+    },
+    {
+      "id": "S02",
+      "title": "S02-title",
+      "lines": [
+        "S02-line-0",
+        "S02-line-1"
+      ]
+    },
+    {
+      "id": "S03",
+      "title": "S03-title",
+      "lines": [
+        "S03-line-0",
+        "S03-line-1"
+      ]
+    },
+    {
+      "id": "S04",
+      "title": "S04-title",
+      "lines": [
+        "S04-line-0",
+        "S04-line-1"
+      ]
+    },
+    {
+      "id": "S05",
+      "title": "S05-title",
+      "lines": [
+        "S05-line-0",
+        "S05-line-1"
+      ]
+    },
+    {
+      "id": "S06",
+      "title": "S06-title",
+      "lines": [
+        "S06-line-0",
+        "S06-line-1"
+      ]
+    },
+    {
+      "id": "S07",
+      "title": "S07-title",
+      "lines": [
+        "S07-line-0",
+        "S07-line-1"
+      ]
+    },
+    {
+      "id": "H01",
+      "title": "H01-title",
+      "lines": [
+        "H01-line-0",
+        "H01-line-1"
+      ]
+    },
+    {
+      "id": "S08",
+      "title": "S08-title",
+      "lines": [
+        "S08-line-0",
+        "S08-line-1"
+      ]
+    },
+    {
+      "id": "S09",
+      "title": "S09-title",
+      "lines": [
+        "S09-line-0",
+        "S09-line-1"
+      ]
+    },
+    {
+      "id": "S10",
+      "title": "S10-title",
+      "lines": [
+        "S10-line-0",
+        "S10-line-1"
+      ]
+    },
+    {
+      "id": "H02",
+      "title": "H02-title",
+      "lines": [
+        "H02-line-0",
+        "H02-line-1"
+      ]
+    },
+    {
+      "id": "E01",
+      "title": "E01-title",
+      "lines": [
+        "E01-line-0",
+        "E01-line-1"
+      ]
+    },
+    {
+      "id": "E02",
+      "title": "E02-title",
+      "lines": [
+        "E02-line-0",
+        "E02-line-1"
+      ]
+    }
+  ],
+  "stages": [
+    {
+      "learn": "S03",
+      "quiz": "S04",
+      "choices": 3,
+      "card": "leaf-card.png",
+      "next": "S05",
+      "success": "stage-one"
+    },
+    {
+      "learn": "S05",
+      "quiz": "S06",
+      "choices": 4,
+      "card": "bubble-card.png",
+      "next": "S07",
+      "success": "stage-two"
+    },
+    {
+      "learn": "S08",
+      "quiz": "S09",
+      "choices": 5,
+      "card": "feather-card-v2.png",
+      "next": "S10",
+      "success": "stage-three"
+    }
+  ]
+}

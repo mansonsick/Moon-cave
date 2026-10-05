@@ -1,0 +1,190 @@
+{
+  "font": "Bpmf GenRyu Min H (local render only)",
+  "symbols": {
+    "ㄅ": {
+      "src": "3105.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄆ": {
+      "src": "3106.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄇ": {
+      "src": "3107.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄈ": {
+      "src": "3108.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄉ": {
+      "src": "3109.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄊ": {
+      "src": "310a.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄋ": {
+      "src": "310b.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄌ": {
+      "src": "310c.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄍ": {
+      "src": "310d.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄎ": {
+      "src": "310e.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄏ": {
+      "src": "310f.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄐ": {
+      "src": "3110.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄑ": {
+      "src": "3111.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄒ": {
+      "src": "3112.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄓ": {
+      "src": "3113.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄔ": {
+      "src": "3114.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄕ": {
+      "src": "3115.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄖ": {
+      "src": "3116.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄗ": {
+      "src": "3117.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄘ": {
+      "src": "3118.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄙ": {
+      "src": "3119.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄚ": {
+      "src": "311a.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄛ": {
+      "src": "311b.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄜ": {
+      "src": "311c.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄝ": {
+      "src": "311d.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄞ": {
+      "src": "311e.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄟ": {
+      "src": "311f.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄠ": {
+      "src": "3120.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄡ": {
+      "src": "3121.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄢ": {
+      "src": "3122.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄣ": {
+      "src": "3123.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄤ": {
+      "src": "3124.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄥ": {
+      "src": "3125.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄦ": {
+      "src": "3126.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄧ": {
+      "src": "3127.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄨ": {
+      "src": "3128.png",
+      "width": 256,
+      "height": 256
+    },
+    "ㄩ": {
+      "src": "3129.png",
+      "width": 256,
+      "height": 256
+    }
+  }
+}
