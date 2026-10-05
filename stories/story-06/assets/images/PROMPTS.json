@@ -7,7 +7,7 @@
     {
       "file": "anchor.png",
       "referenceOnly": true,
-      "status": "awaiting-user-visual-review",
+      "status": "user-approved-anchor",
       "transparent": false,
       "references": [
         {
@@ -23,7 +23,607 @@
           "role": "squirrel identity"
         }
       ],
-      "prompt": "Use case: illustration-story.\nAsset type: one character and world anchor illustration for Story 06 \"Atong and the Silent Forest\", a Taiwanese child's Zhuyin listening adventure. This is a visual reference, not a game scene, no UI. Wide landscape composition.\nInput images: Image 1 is existing children's-book painterly STYLE and BOY/SQUIRREL IDENTITY reference only; ignore rabbit, bear, mouse, building and letters. Image 2 is the exact BOY IDENTITY and outfit reference only. Image 3 is exact ORANGE SQUIRREL IDENTITY reference only. These are references, not edit targets.\nScene: a mysterious but gentle afternoon forest clearing. Mossy broadleaf trees, a little stream behind, a large old oak at the side; warm sunlight at one side softly meets a little blue-gray distant mist. Lush detailed watercolor and gouache with fine dark ink outlines matching references; bright enough for beginning readers, not a dark horror scene.\nSubjects: Exactly three clearly separated full-body characters standing together. Atong, a Taiwanese boy about seven, tousled dark brown hair, large dark brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas adventure backpack with brown leather straps. He listens kindly, one hand cupped behind an ear. Orange squirrel beside him, cream face and chest, huge fluffy curved tail, upright friendly curious posture. New small mist spirit on the other side: only about the squirrel's height, round pear-shaped softly translucent smoky blue-gray body, two tiny rounded cloudlike ears, short little mitten hands, lower body tapering into a wispy floating cloud instead of feet, two big gentle dark teal eyes and a tiny closed shy mouth. An original shy cloud creature, subtle nervous expression, soft diffuse edges but clearly readable silhouette. No wings, teeth, claws, horns, costume or red fabric.\nOne object: the listening lantern, hanging lightly from Atong's other lowered hand: a small hand-sized leaf-shaped bronze/wood frame with an oval clear pale-gold glass chamber and soft warm amber light, simple curved carrying handle. No letters/symbols or musical notes on it. It looks like a handmade woodland listening lamp, not a moonstone or a flashlight. Keep the lantern away from the boy's face so the listening pose is clear.\nComposition: full body boy and full squirrel tail are completely visible and uncropped, spirit floating just above the moss; enough open space between all three silhouettes. The boy's hand actually cups his ear, not the lantern. Establish comparative size and consistent warm-versus-blue forest palette, not a crowded poster.\nConstraints: no typography, Chinese characters, Zhuyin symbols, English letters, captions, labels, numbers, watermark, frames, panels, arrows or interface. No extra animals, postal props, bell, spoilers, monster, angel, blood or scary chase. Preserve the identity and clothes from the references."
+      "prompt": "Use case: illustration-story.\nAsset type: one character and world anchor illustration for Story 06 \"Atong and the Silent Forest\", a Taiwanese child's Zhuyin listening adventure. This is a visual reference, not a game scene, no UI. Wide landscape composition.\nInput images: Image 1 is existing children's-book painterly STYLE and BOY/SQUIRREL IDENTITY reference only; ignore rabbit, bear, mouse, building and letters. Image 2 is the exact BOY IDENTITY and outfit reference only. Image 3 is exact ORANGE SQUIRREL IDENTITY reference only. These are references, not edit targets.\nScene: a mysterious but gentle afternoon forest clearing. Mossy broadleaf trees, a little stream behind, a large old oak at the side; warm sunlight at one side softly meets a little blue-gray distant mist. Lush detailed watercolor and gouache with fine dark ink outlines matching references; bright enough for beginning readers, not a dark horror scene.\nSubjects: Exactly three clearly separated full-body characters standing together. Atong, a Taiwanese boy about seven, tousled dark brown hair, large dark brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas adventure backpack with brown leather straps. He listens kindly, one hand cupped behind an ear. Orange squirrel beside him, cream face and chest, huge fluffy curved tail, upright friendly curious posture. New small mist spirit on the other side: only about the squirrel's height, round pear-shaped softly translucent smoky blue-gray body, two tiny rounded cloudlike ears, short little mitten hands, lower body tapering into a wispy floating cloud instead of feet, two big gentle dark teal eyes and a tiny closed shy mouth. An original shy cloud creature, subtle nervous expression, soft diffuse edges but clearly readable silhouette. No wings, teeth, claws, horns, costume or red fabric.\nOne object: the listening lantern, hanging lightly from Atong's other lowered hand: a small hand-sized leaf-shaped bronze/wood frame with an oval clear pale-gold glass chamber and soft warm amber light, simple curved carrying handle. No letters/symbols or musical notes on it. It looks like a handmade woodland listening lamp, not a moonstone or a flashlight. Keep the lantern away from the boy's face so the listening pose is clear.\nComposition: full body boy and full squirrel tail are completely visible and uncropped, spirit floating just above the moss; enough open space between all three silhouettes. The boy's hand actually cups his ear, not the lantern. Establish comparative size and consistent warm-versus-blue forest palette, not a crowded poster.\nConstraints: no typography, Chinese characters, Zhuyin symbols, English letters, captions, labels, numbers, watermark, frames, panels, arrows or interface. No extra animals, postal props, bell, spoilers, monster, angel, blood or scary chase. Preserve the identity and clothes from the references.",
+      "approved": "2026-10-05"
+    },
+    {
+      "file": "backgrounds/forest-path.png",
+      "category": "background",
+      "scenes": [
+        "S01",
+        "S02"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A winding quiet afternoon broadleaf forest path, old oak trunk on the RIGHT, low hollow roots and ferns at right midground where a separate shy mist spirit may hide later. One bare low branch on upper-left for a separate small bird layer. Trail leads toward a distant sunlit glade; modest distant blue haze only, stream glints far behind. Foreground path open for a child and squirrel walking or handing over a lamp. No cottage, postal objects, giant monument or monsters. Different from the reference composition; this is empty scenery, no characters.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/cricket-meadow.png",
+      "category": "background",
+      "scenes": [
+        "S03",
+        "S04"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A broad soft green cricket meadow clearing enclosed by fern-covered trees. One low broad FLAT mossy stone at lower-left for a seated boy added later. Open clean short grass in the middle, soft patches of tall grass along lower-right, small wildflowers at borders. Six small spaced moss patches along two sides of the middle path, left and right, form natural places for six separate grass-lamp props added later; leave them empty. Upper-middle background has calm open grass and softly distant trunks so three large leaf-shaped symbol choices can later be clearly seen without crossing character faces. Quiet unlit clearing, warm gold sunlight falling in diagonal streaks, no insects baked into the foreground.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/echo-stream.png",
+      "category": "background",
+      "scenes": [
+        "S05",
+        "S06"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A gentle forest creek viewed slightly downwards from the near bank. Water occupies upper-middle and right-middle, a wide clear area for four separate floating bubble symbol choices later. Shallow stepped rocks create several little separate runnels, a small stone step usable by a squirrel at lower-left, dry open near-bank ground at bottom-left for a child. Far bank has a mossy oak and small hiding gap at upper-right for the shy spirit. Water is painted clearly and naturally already visible, but no bubbles with symbols, no drawn sound marks and no movable characters. Six distinct small creek runnels across stepped rocks can be activated later by sound, arranged naturally rather than a grid. Safe small creek, no deep dangerous river or bridge.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/root-fork.png",
+      "category": "background",
+      "scenes": [
+        "S07"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A forest fork at giant old roots. The broad main path starts at the bottom and clearly curves toward a distant majestic old oak in upper-middle. A VERY narrow half-hidden side trail slips behind thick low oak roots at the RIGHT midground, with just a few bent grass blades suggesting passage; natural and discoverable but not a bright special portal. No glowing trail or arrow, no bell and no water-pool reward visible. Open foreground lower-left for boy/squirrel layers observing the fork. Different layout from opening forest: root arch on right, main path curving leftward then toward the ancient tree. Warm late-afternoon light, varied ferns and gnarled roots.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/dew-pool.png",
+      "category": "background",
+      "scenes": [
+        "H01"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. Intimate close view of a SMALL round shallow dew pool sheltered between roots, not a flowing creek. The clear still pool lies lower-right / right-middle; its natural mossy rim is clearly visible, a quiet blank shallow center provides room for ONE small separate bell added later. A smooth open patch of damp earth and one low stone at lower-left for a kneeling child layer to reach the pool. Ferns and broad roots frame the top and sides. Tiny droplets on leaves sparkle gently in sunlight, but no magical object, ring, rune or bell in the pool. Calm hidden nook behind the root fork.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/ancient-tree.png",
+      "category": "background",
+      "scenes": [
+        "S08",
+        "S09",
+        "S10",
+        "H02"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A magnificent ANCIENT OAK dominates the RIGHT half of a spacious quiet forest clearing. Strong low trunk with a small ordinary dark oval NATURAL TREE HOLLOW at lower-right / right-middle, neither luminous nor framed as a slot. A child can easily reach this hollow from the ground. Six short broad branch resting surfaces spread through upper half, three leftward and three rightward, with empty twigs and space for six separate small nest props and birds later. Do NOT paint nests or birds into this background. Clear foreground ground at lower-left for boy and squirrel, and center-lower for a small floating spirit; clear gaps between branches for five moving feather-shaped symbol choices, away from the hollow. Warm late-afternoon sunlight, green oak leaves and blue forest depth. Full roots and low reachable hollow are visibly part of the same tree; no platform puzzle or monumental gate.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "backgrounds/sunset-village.png",
+      "category": "background",
+      "scenes": [
+        "E01",
+        "E02"
+      ],
+      "transparent": false,
+      "prompt": "Use case: illustration-story. Asset type: one reusable BACKGROUND ONLY for Story 06, a gentle mysterious Taiwanese children's Zhuyin adventure. Reference image is approved painterly watercolor/gouache STYLE, forest WORLD and light/color only. Do not include its characters or handheld lamp. Tall portrait composition approximately 2:3, entire scene uncropped, tablet portrait priority. Detailed moss, leaves and warm fine ink contours; afternoon warm gold light with cool blue-green forest depth, mysterious and quiet but never frightening. No opaque fog baked in: later independent mist layers can hide/reveal the path. Clear readable foreground and interaction surfaces. No boy, squirrel, mist spirit, people, movable objects, lanterns, bell, letters, Chinese/Zhuyin symbols, musical notes, text, numerals, arrows, UI, watermark or frames. Keep the lower-left foreground spacious for separate character layers and upper-middle area spacious for large symbol choices added by the app. A warm happy SUNSET VILLAGE RETURN ROAD, visibly different from forest scenes. A wide gently curving dirt road opens in foreground then leads toward three modest wooden village houses with warm tiled roofs, a small vegetable garden, distant low hills and pink-gold sunset sky. An oak branch at upper-left provides a perch for a separate singing bird added later. The road foreground is empty and broad enough for Atong and squirrel with a third small floating spirit; no people or animals painted into the scene. Soft golden hour light, welcoming complete-success ending, no houses with words or signs, no streams, creepy castles or sinister silhouettes.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-studying.png",
+      "category": "character",
+      "scenes": [
+        "S03",
+        "S05"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit. Pose: seated as if on the edge of a low stone that will be a separate background, torso three-quarter facing RIGHT, bent knees and both boots naturally hanging down, cheerful attentive expression. Both hands gently held forward at chest/waist height as if holding a separate learning leaf card, but palms and fingers EMPTY. No card, paper, letters, lamp or furniture in the sprite. Keep the olive backpack naturally visible on his back. He is carefully learning, not walking or running.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-reaching.png",
+      "category": "character",
+      "scenes": [
+        "H01"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit. Pose: child kneeling on one knee, body leaning gently to RIGHT, right arm extended downward and right open hand reaching into a shallow pool that will be in a separate background. Left hand rests naturally on left knee, kind curious gaze directed to his empty reaching fingers. Full kneeling boy including both boots and backpack visible. EMPTY hands, do not add bell, lamp, water, rocks or pool; these are separate game layers. No frightened face.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-raising.png",
+      "category": "character",
+      "scenes": [
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit. Pose: standing with feet naturally apart, three-quarter facing RIGHT and looking up into tree branches. RIGHT arm raised so the hand is slightly above his head, fingers curled naturally around an imaginary small carrying handle. The raised hand is EMPTY: the listening lantern will be a separate layer attached later. Left hand loosely holds a backpack strap. Calm determined curious smile, full body and raised hand uncropped. No lamp, lightbeam, letters, bird, stone or scenery in sprite.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-comforting.png",
+      "category": "character",
+      "scenes": [
+        "S02",
+        "S10",
+        "H02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit. Pose: gently kneeling on one knee, upright torso three-quarter facing RIGHT. He is at eye height of a little floating spirit added separately, smiling patiently. One open relaxed hand extended forward in a reassuring welcome, the other rests on his knee. He looks RIGHT at the other character, not down at a pool. Both hands empty. No bell, lamp, other character or background in image. Full kneeling body including both boots, head and backpack visible. This is a calm comforting pose distinct from a child reaching to the ground.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-waving.png",
+      "category": "character",
+      "scenes": [
+        "E01",
+        "E02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit. Pose: standing mid gentle step, three-quarter facing RIGHT, RIGHT hand raised at shoulder/head height with an open palm waving goodbye to a friend, LEFT hand lowered naturally. A broad friendly happy smile, dark eyes looking at the friend, full boy including both boots and backpack completely visible. No objects in hands, no postal bag. Not frightened or running, this is a successful happy sunset farewell.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-offering.png",
+      "category": "character",
+      "scenes": [
+        "S02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY the approved orange squirrel: fluffy orange fur, cream muzzle and chest, huge curled bushy tail, big brown eyes, pointed tufted ears, no clothes or accessories. Match the small friendly companion in the reference exactly. One squirrel, no boy or spirit. Pose: upright on both hind paws, facing LEFT toward a kneeling child added separately. Both front paws extended forward at lower-chest height as if handing a small separate lamp over. Paws empty, no lamp or objects in image. Gentle encouraging open-mouth smile, warm expressive eyes, full tail curled behind visible. Natural squirrel anatomy, small rounded paws, not human fingers.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-stepping.png",
+      "category": "character",
+      "scenes": [
+        "S05",
+        "S06"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY the approved orange squirrel: fluffy orange fur, cream muzzle and chest, huge curled bushy tail, big brown eyes, pointed tufted ears, no clothes or accessories. Match the small friendly companion in the reference exactly. One squirrel, no boy or spirit. Pose: cautiously taking a small step to RIGHT across a shallow creek rock that will be in a separate background. One hind paw planted below the body, the other slightly raised, front paws held near chest for balance, tail arched up for balance. Curious happy expression looking at the next stone. No stone, water or platform in sprite. Full squirrel body including raised paw and tail uncropped; a careful little stepping pose, not flying or running.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-perching.png",
+      "category": "character",
+      "scenes": [
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard. The subject is ONLY the approved orange squirrel: fluffy orange fur, cream muzzle and chest, huge curled bushy tail, big brown eyes, pointed tufted ears, no clothes or accessories. Match the small friendly companion in the reference exactly. One squirrel, no boy or spirit. Pose: perched upright as if on a low oak branch that will be in a separate background, facing LEFT and slightly upward to watch the birds. Both hind paws gathered below body, one front paw lightly touching chest, the other lifted to point up gently, large tail curled behind. Calm attentive expression, no branch or birds painted in this sprite. Full squirrel visible, soft warm forest light, no alarmed or aggressive face.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-listening.png",
+      "category": "character",
+      "scenes": [
+        "S01",
+        "S02",
+        "S04",
+        "S06",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  The subject is ONLY Atong, the approved seven-year-old Taiwanese boy: tousled dark-brown hair, big dark-brown eyes, blue short-sleeve shirt, khaki shorts, rolled white socks, brown boots, olive canvas backpack with brown leather buckles/straps. No postal satchel or envelope. Exactly one boy, no squirrel/spirit.  Pose: stand leaning forward very slightly, right hand cupped beside right ear, eyebrows curious, soft smile, listening attentively to something at his right. Other hand lowered and EMPTY, no lamp or other prop. Head and eyes turn right. Preserve the blue POLO COLLAR from the approved anchor, khaki shorts, olive backpack, rolled white socks and brown boots. Full body tall portrait cutout.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-waving.png",
+      "category": "character",
+      "scenes": [
+        "E01",
+        "E02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  The subject is ONLY the approved orange squirrel: fluffy orange fur, cream muzzle and chest, huge curled bushy tail, big brown eyes, pointed tufted ears, no clothes or accessories. Match the small friendly companion in the reference exactly. One squirrel, no boy or spirit.  Pose: upright on both hind paws facing slightly right, one front paw raised with an open friendly farewell wave, happy smile and gently curved fluffy tail. No item or clothes. Entire tail and paws visible, compact square cutout.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/mist-peeking.png",
+      "category": "character",
+      "scenes": [
+        "S02",
+        "S04",
+        "S05",
+        "S07",
+        "S08",
+        "S10"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  Subject: only the approved anchor's small shy mist spirit. Cloudy cool gray-blue pear-shaped fluffy body, two puffy round ears, large teal eyes, soft blush, tiny mitten hands held near chin, wispy floating lower body curling to one side. No feet, wings, clothing, teeth or extra accessories. Expression shy and tentative, mouth CLOSED, glancing toward viewer-left. Full silhouette isolated, no hiding tree or scenery; scene will partially occlude it later. Keep face distinct from a squirrel or ghost villain. Soft translucent wispy edges with actual alpha.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/mist-puzzled.png",
+      "category": "character",
+      "scenes": [
+        "S05",
+        "S08",
+        "S10"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  Only the approved anchor's squirrel-sized mist spirit, round pear-shaped cloudy gray-blue body, two puffy rounded ears, teal eyes, tiny mitten hands, wispy curling floating lower body. No feet/wings/clothes/teeth, no others, no ground. Soft translucent edges, preserve silhouette identity, facing viewer-left. Pose: head gently tilted, mildly unsure eyebrows, tiny mitten palms opened a little outwards, mouth CLOSED. A child-safe uncertain expression, no tears or horror. Full isolated sprite.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/bird-quiet.png",
+      "category": "character",
+      "scenes": [
+        "S01",
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  One small friendly woodland BLUE BIRD matching the watercolor/gouache forest style of the anchor. Round blue head with short crest, dark shiny eyes, short golden beak, blue back and wings, cream breast, tiny brown feet. No other characters, no branch, no nest or music-note graphics. Pose: perched with wings folded, beak OPEN trying to sing but perplexed eyes; no sound is visible. Full body, clear feet for later placing onto branch or nest, no branches or letters.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/mist-speaking.png",
+      "category": "character",
+      "scenes": [
+        "H02",
+        "E02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  Only the approved anchor's squirrel-sized mist spirit, round pear-shaped cloudy gray-blue body, two puffy rounded ears, teal eyes, tiny mitten hands, wispy curling floating lower body. No feet/wings/clothes/teeth, no others, no ground. Soft translucent edges, preserve silhouette identity, facing viewer-left. Pose: relieved delighted face, small mouth OPEN in its first happy words, one small mitten hand lifted in grateful wave. Full same cloud body, not transformed into angel or different creature. Full isolated sprite.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/bird-singing.png",
+      "category": "character",
+      "scenes": [
+        "S09",
+        "H02",
+        "E02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: one clean standalone CHARACTER SPRITE on a truly transparent alpha background, not a reference board or character sheet. Reference image is the approved character IDENTITY and watercolor/gouache fine ink STYLE only, not an edit target. Full body, all hair, hands, boots or tail fully visible with transparent margin on every side, no cropped limbs. Natural soft warm daylight with cool soft shading, exact approved outfit and face. No scenery, ground, platform, border, typography, characters, numerals, musical notes or watermark. No invented accessories. Preserve actual transparent alpha, no white/black backdrop or baked checkerboard.  One small friendly woodland BLUE BIRD matching the watercolor/gouache forest style of the anchor. Round blue head with short crest, dark shiny eyes, short golden beak, blue back and wings, cream breast, tiny brown feet. No other characters, no branch, no nest or music-note graphics. Image 2 is the exact QUIET BIRD identity. Preserve its blue crest, round face, blue/cream feathers, golden beak and tiny brown feet. Change pose only: happily singing with beak open, lifted cheerful brows, both wings spread a little in delight; full body with feet visible. No branch/nest and no graphic musical notes.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        },
+        {
+          "path": "stories/story-06/assets/images/characters/bird-quiet.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/listening-lamp.png",
+      "category": "prop",
+      "scenes": [
+        "S02",
+        "S03",
+        "S04",
+        "S05",
+        "S06",
+        "S08",
+        "S09",
+        "S10"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: exact little portable LEAF-SHAPED LISTENING LAMP held by the boy in the reference. Thin arched carrying handle at top, old gold/bronze wooden leaf frame, tapered lower pointed leaf tip, pale honey-glowing frosted glass in the center with fine leaf veins. Front three-quarter view, handle unobstructed for aligning with empty hands. Hand-sized, not tall street lantern, no lamp stand. Small localized amber glow with real translucent alpha, no characters engraved on glass.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/dew-bell.png",
+      "category": "prop",
+      "scenes": [
+        "H01",
+        "H02",
+        "E02"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one small handheld DEWDROP BELL of soft pale blue-silver metal. Rounded droplet-shaped bell cup, tiny clapper visible at bottom, small rounded loop handle on top. A few subtle pearl dewdrops on its surface; gentle forest craftsmanship and soft highlights. Full bell upright, no background aura, no ribbons/letters/runes. Tiny modest magical item, not a church gong or spooky skull. Match warm woodland children's book illustration.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/leaf-card.png",
+      "category": "prop",
+      "scenes": [
+        "S03",
+        "S04"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one broad gently rounded LEAF-SHAPED learning card, front-facing flat view. Pale gold/soft green watercolor leaf border, subtle veins ONLY AT THE EDGE. The large middle 70 percent is a plain warm ivory surface so one large dark Zhuyin symbol can be overlaid later. No mark or symbol anywhere now. Broad rectangular-oval silhouette, no stalk crossing the blank center; soft shadow limited within translucent outer edge, not a ground shadow.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/bubble-card.png",
+      "category": "prop",
+      "scenes": [
+        "S05",
+        "S06"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one round creek WATER BUBBLE learning card, front-facing flat view. Thin delicate blue/teal watery rim, a couple of small bright highlights at outer edge. Broad central 70 percent is a VERY LIGHT OPAQUE ivory-blue surface for overlaying a readable dark large Zhuyin symbol later, not a completely transparent bubble center. Blank center with no decoration, no letters or glyphs. True alpha outside the circle; no other bubbles or scenery.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/feather-card.png",
+      "category": "prop",
+      "scenes": [
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one broad FEATHER-SHAPED learning card, front-facing flat view. Oval feather silhouette slightly pointed at top, pale cream flat blank central 70 percent for overlaying a large readable dark Zhuyin symbol later. Soft blue and sage feather strokes ONLY along the outer border, no quill crossing center. Wider than a thin real feather so text remains readable. One object, no symbols or letters, true transparent outer background.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "superseded-retained"
+    },
+    {
+      "file": "props/grass-lamp-unlit.png",
+      "category": "prop",
+      "scenes": [
+        "S04"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one SMALL GRASS LAMP, frontal three-quarter view. A short natural wooden stem rooted in a compact clump of 3 sage-green leaves, on it a modest oval leaf-frame lantern with simple bronze rim and frosted pale ivory glass. Glass is UNLIT, no glow. Entire tiny garden light visible, not tall street lamp, no earth mound/ground shadow. Sturdy simple compact silhouette to repeat six identical times around a meadow. No text or symbol engraved. The matching lit state will be made separately.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/bird-nest.png",
+      "category": "prop",
+      "scenes": [
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: illustration-story. Asset type: ONE standalone story PROP SPRITE, warm watercolor/gouache with gentle ink texture matching the approved forest anchor. True transparent alpha background with generous margin, full object entirely visible, no cropped edges. No scenery, ground, border, typography, letters, symbols, numbers, music notes or watermark. Reference is style and object identity only, not a background edit. No baked checkerboard or solid background. Subject: one SMALL EMPTY BIRD NEST, bowl of woven soft brown twigs and a little moss, frontal three-quarter slightly above view so hollow opening and front rim both visible. EMPTY no bird, egg, branch, ground or other item. Full compact bowl with space at top to later perch the independently layered blue bird, no glowing magic or symbols.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/anchor.png",
+          "role": "style and identity reference only"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/grass-lamp-lit.png",
+      "category": "prop",
+      "scenes": [
+        "S04"
+      ],
+      "transparent": true,
+      "prompt": "Use case: lighting-weather. Asset type: exact matching LIT STATE of the grass-lamp sprite in the supplied image, with truly transparent alpha preserved. EDIT TARGET: the supplied unlit lamp image. Change ONLY the lantern glass from unlit pale ivory to softly glowing warm amber with a SMALL localized translucent glow around the glass. Keep the exact canvas dimensions, object placement and scale, wood stem shape, three leaves, bronze rim, leaf veins, hook, frame, textures and colors of all other parts identical. No typography, no symbols, no ground, no backdrop, no new objects. No white or checkerboard background. The sprite switches states in a children's forest story, so it must not jump or change its silhouette.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/props/grass-lamp-unlit.png",
+          "role": "edit target"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "props/feather-card-v2.png",
+      "category": "prop",
+      "scenes": [
+        "S08",
+        "S09"
+      ],
+      "transparent": true,
+      "prompt": "Use case: precise-object-edit. Asset type: the feather-shaped learning card provided, on true transparent background. EDIT TARGET is the provided feather card. Preserve its watercolor/ink style, sage-blue feather border, broad blank warm-ivory center and feather silhouette identity. Change only composition/padding: shrink the entire feather card to fit completely inside the canvas with at least 12 percent fully transparent empty margin on ALL FOUR sides, especially both pointed tips. Neither tip may touch or pass the image edge. Keep the whole card front-facing without adding any letters, symbols, scenery, objects or new decoration. Center it and preserve actual alpha transparency. No baked checkerboard or white background.",
+      "method": "built-in image_gen.imagegen",
+      "references": [
+        {
+          "path": "stories/story-06/assets/images/props/feather-card.png",
+          "role": "edit target"
+        }
+      ],
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/atong-walking.png",
+      "method": "unchanged project asset copy",
+      "source": "stories/story-03/assets/images/atong.png",
+      "transparent": true,
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-alert.png",
+      "method": "unchanged project asset copy",
+      "source": "stories/story-03/assets/images/squirrel.png",
+      "transparent": true,
+      "status": "awaiting-scene-visual-review"
+    },
+    {
+      "file": "characters/squirrel-pointing.png",
+      "method": "unchanged project asset copy",
+      "source": "stories/story-04/assets/images/squirrel-pointing.png",
+      "transparent": true,
+      "status": "awaiting-scene-visual-review"
     }
-  ]
+  ],
+  "updated": "2026-10-05",
+  "note": "Full prompt set for the built-in generation/edit calls; reused project PNGs are unchanged copies. No generated PNG was edited with Python."
 }

@@ -1,18 +1,652 @@
 {
   "storyId": "story-06",
   "created": "2026-10-05",
-  "generationMethod": "built-in image_gen.imagegen",
+  "generationMethod": "built-in image_gen.imagegen; three unchanged project asset copies",
   "originalsPreserved": true,
+  "count": 35,
+  "productionCount": 33,
+  "referenceCount": 2,
+  "alphaBoundsThreshold": 32,
   "assets": [
     {
       "file": "images/anchor.png",
-      "role": "character-world-reference",
-      "referenceOnly": true,
-      "status": "awaiting-user-visual-review",
       "width": 1672,
       "height": 941,
       "mode": "RGB",
-      "sha256": "9ec2858087bfc3e4d83ef33d88df10c29e767e8a1697dabc17976447afe4a0f7"
+      "sha256": "9ec2858087bfc3e4d83ef33d88df10c29e767e8a1697dabc17976447afe4a0f7",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "user-approved-anchor",
+      "referenceOnly": true,
+      "role": "character-world-reference"
+    },
+    {
+      "file": "images/backgrounds/ancient-tree.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "e64482008636ee5001c5cbf959471e25e5c1680e46eb0ace1fa9d49d2498d9e9",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/cricket-meadow.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "6ba0a371b2fe8843b18ab72bcaa8a88f0dc7183985edc6fcabae848ff6f28b8e",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/dew-pool.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "fa9ce6b004ebea9f6b5f40adadca317d2590c6d8e74eab6b3c480e74c9170acb",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/echo-stream.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "8532b4cd7c8497e378f6b11d34302e7ed030485f2a75115bbec398a35bfd2db9",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/forest-path.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "2f12464248e40c7ddf22a1e0b648b216a9abdfb800e6e604ec178ca3d927b515",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/root-fork.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "e90ecaf5d4b72f1da96861d7f848509e4cc5f792978583b411fd526cfb1b823d",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/backgrounds/sunset-village.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGB",
+      "sha256": "b0684719fcced8dfd0b0a6f209cdf148ded1a7b03aa55020694e47faa14c6340",
+      "alphaRange": null,
+      "alphaBounds": null,
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "background"
+    },
+    {
+      "file": "images/characters/atong-comforting.png",
+      "width": 1309,
+      "height": 1201,
+      "mode": "RGBA",
+      "sha256": "e7170a50bb162a9870c03b2dab75b3fbf7d4f8430dc144d0dcb77d88ece0480f",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        257,
+        20,
+        1160,
+        1184
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/atong-listening.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "df1cddd191c960d478c6aee3005b4c97f3b015a31df6e178977fb01758272a05",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        190,
+        69,
+        929,
+        1482
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/atong-raising.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "f2bf3d2abb9e5d62c49360f3e48a5fb28d2e37df5faa71c88760ba254d77de20",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        203,
+        12,
+        919,
+        1500
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/atong-reaching.png",
+      "width": 1338,
+      "height": 1175,
+      "mode": "RGBA",
+      "sha256": "e7fcbf5a61e327b1df6cb99e7581fa5ded2c017c202d6ef6b5c5e4817f55ad48",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        329,
+        12,
+        1250,
+        1152
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/atong-studying.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "955a7f3b61199813cf5ec61c126f6b54b1ed5da6062f6f86d16b50bbad4e69f4",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        144,
+        37,
+        945,
+        1445
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/atong-walking.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "354dc1503018f5dfceda60a945e1b8b3bcc4e7092905b669a058cf94726dd2c2",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        175,
+        90,
+        818,
+        1442
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character",
+      "source": "stories/story-03/assets/images/atong.png"
+    },
+    {
+      "file": "images/characters/atong-waving.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "e70dc1ae971e1a8ae107d3e03d59fb068fc565aa17d1a20f6f1534de32fce127",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        169,
+        42,
+        972,
+        1489
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/bird-quiet.png",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "sha256": "d099ce1feebab88b5f97771ea59c3eb6dd9687c3d60094e02c22b41192e28393",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        221,
+        29,
+        1058,
+        1171
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/bird-singing.png",
+      "width": 1199,
+      "height": 1312,
+      "mode": "RGBA",
+      "sha256": "cc6d0760e9ceb90c9bdbee3d66362839a9f2c1b09a6814836ee97e974d00e08e",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        62,
+        33,
+        1172,
+        1263
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/mist-peeking.png",
+      "width": 1149,
+      "height": 1368,
+      "mode": "RGBA",
+      "sha256": "fa0fa6cc93ed8793066034542c4567cadd7a130e85d4f5ffad1029229e2dd0ce",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        92,
+        63,
+        1059,
+        1314
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/mist-puzzled.png",
+      "width": 1307,
+      "height": 1203,
+      "mode": "RGBA",
+      "sha256": "338e3ddacc94c877c6932eb38902d92a298ad9fcec7f152ad445883b10e3c9c8",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        235,
+        74,
+        1095,
+        1137
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/mist-speaking.png",
+      "width": 1295,
+      "height": 1214,
+      "mode": "RGBA",
+      "sha256": "1f0962aff59c20cf4ec23cc062449e40150a47460a838afdb612dc00bed21ec8",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        206,
+        83,
+        1112,
+        1147
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/squirrel-alert.png",
+      "width": 1275,
+      "height": 1234,
+      "mode": "RGBA",
+      "sha256": "22a58d4376780268329b196d27ce9ab6a6b41912c723d7370176d7cc2e7850e3",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        77,
+        56,
+        1234,
+        1184
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character",
+      "source": "stories/story-03/assets/images/squirrel.png"
+    },
+    {
+      "file": "images/characters/squirrel-offering.png",
+      "width": 1312,
+      "height": 1199,
+      "mode": "RGBA",
+      "sha256": "d6af4c5ac4cc6cb7fac4491a6c2042d41151fdea8fed917ff588c08a71e22423",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        103,
+        11,
+        1292,
+        1163
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/squirrel-perching.png",
+      "width": 1306,
+      "height": 1205,
+      "mode": "RGBA",
+      "sha256": "4b5a1aef588df031f00d12d06428de4f5cc208a2888e5abca8d564fb83738311",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        117,
+        28,
+        1283,
+        1167
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/squirrel-pointing.png",
+      "width": 1159,
+      "height": 1358,
+      "mode": "RGBA",
+      "sha256": "46e8ef9453e093cf7d34796d880f1e28dd664f79b400bdbd20f0ffba8beab5dc",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        15,
+        70,
+        1148,
+        1304
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character",
+      "source": "stories/story-04/assets/images/squirrel-pointing.png"
+    },
+    {
+      "file": "images/characters/squirrel-stepping.png",
+      "width": 1363,
+      "height": 1154,
+      "mode": "RGBA",
+      "sha256": "34ca68d83f5ffd28e88d9b92246894335d8eab07cce80c45d2ee3a82c4192d7f",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        77,
+        17,
+        1242,
+        1126
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/characters/squirrel-waving.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGBA",
+      "sha256": "bf131fbfebe661737ea20c431c9b7ed85ece13cb8a368b78e68b517a834426ae",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        34,
+        20,
+        1223,
+        1222
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "character"
+    },
+    {
+      "file": "images/props/bird-nest.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "6bddbe560aa55a53ba03289db7a39103f20b24ff3e6baf719e473a24791e3d8a",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        279,
+        165,
+        1277,
+        888
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/bubble-card.png",
+      "width": 1295,
+      "height": 1214,
+      "mode": "RGBA",
+      "sha256": "1e030cf40ed9001647b2aadc5b7e18bfd116e7f9aa8357f6a448644060533409",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        149,
+        115,
+        1147,
+        1099
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/dew-bell.png",
+      "width": 1321,
+      "height": 1191,
+      "mode": "RGBA",
+      "sha256": "b91e189ff24c1b1ae18e9505d16cb851b713ce73330c31f0b31c0b20b93661f3",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        308,
+        82,
+        1012,
+        1071
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/feather-card-v2.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "12abc641fade3e814f175674030dda0eb5b98f6e439e577b231c989567bc61a8",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        143,
+        80,
+        891,
+        1393
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/feather-card.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "0afcc8a27319fb0bcd997249da09d97d0a093520c4c3b4d88dd97468de6e556a",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        90,
+        3,
+        949,
+        1536
+      ],
+      "status": "superseded-retained",
+      "referenceOnly": true,
+      "role": "prop",
+      "supersededBy": "images/props/feather-card-v2.png"
+    },
+    {
+      "file": "images/props/grass-lamp-lit.png",
+      "width": 1182,
+      "height": 1330,
+      "mode": "RGBA",
+      "sha256": "be93148a4004c3571b510bc0d2a0f7ae3e8000cedd44b629b58488adae1dc8c2",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        276,
+        160,
+        961,
+        1142
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/grass-lamp-unlit.png",
+      "width": 1182,
+      "height": 1330,
+      "mode": "RGBA",
+      "sha256": "a576037a72fa95468fb5acf49b3788d3ddba960c0c81e70bb388d652fdece9f9",
+      "alphaRange": [
+        0,
+        255
+      ],
+      "alphaBounds": [
+        276,
+        161,
+        907,
+        1141
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/leaf-card.png",
+      "width": 1536,
+      "height": 1024,
+      "mode": "RGBA",
+      "sha256": "4be49e05a56a503cf9451916497ef5d2f91eb48ddc1dfcad8bff7e959a58010c",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        38,
+        38,
+        1499,
+        980
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
+    },
+    {
+      "file": "images/props/listening-lamp.png",
+      "width": 1024,
+      "height": 1536,
+      "mode": "RGBA",
+      "sha256": "5ac105aea4f38b73c66162c0c93d1515dbeaebd0f8a8ecb3577834ceb6a54d10",
+      "alphaRange": [
+        0,
+        254
+      ],
+      "alphaBounds": [
+        186,
+        76,
+        824,
+        1348
+      ],
+      "status": "awaiting-scene-visual-review",
+      "referenceOnly": false,
+      "role": "prop"
     }
   ]
 }

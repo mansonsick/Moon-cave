@@ -1,0 +1,1670 @@
+{
+  "storyId": "story-06",
+  "purpose": "art review only; not a game or runtime",
+  "stage": {
+    "width": 1024,
+    "height": 1536,
+    "coordinateUnit": "percent of full uncropped stage",
+    "sizing": "raw images keep their intrinsic aspect ratio; alpha bounds only locate feet and hands"
+  },
+  "approvedAnchor": "assets/images/anchor.png",
+  "scenes": [
+    {
+      "id": "S01",
+      "name": "The forest falls silent",
+      "background": "forest-path",
+      "fog": 0.18,
+      "layers": [
+        {
+          "file": "characters/atong-listening.png",
+          "x": 15.212,
+          "y": 55.291,
+          "width": 38.047,
+          "height": 38.047,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-alert.png",
+          "x": 0.182,
+          "y": 75.156,
+          "width": 28.823,
+          "height": 18.598,
+          "z": 10
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 16.96,
+          "y": 3.848,
+          "width": 10.34,
+          "height": 6.299,
+          "z": 10
+        }
+      ]
+    },
+    {
+      "id": "S02",
+      "name": "A small shadow and the listening lamp",
+      "background": "forest-path",
+      "fog": 0.22,
+      "layers": [
+        {
+          "file": "characters/atong-comforting.png",
+          "x": 4.61,
+          "y": 60.485,
+          "width": 50.606,
+          "height": 30.954,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-offering.png",
+          "x": 45.836,
+          "y": 70.809,
+          "width": 34.167,
+          "height": 20.816,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 66.339,
+          "y": 48.295,
+          "width": 19.288,
+          "height": 15.309,
+          "z": 8
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 44.14,
+          "y": 75.462,
+          "width": 10.868,
+          "height": 10.868,
+          "z": 11
+        }
+      ],
+      "foregroundOccluder": {
+        "z": 9,
+        "polygon": [
+          [
+            85,
+            0
+          ],
+          [
+            85,
+            28
+          ],
+          [
+            82,
+            38
+          ],
+          [
+            80,
+            45
+          ],
+          [
+            77,
+            52
+          ],
+          [
+            74,
+            60
+          ],
+          [
+            69,
+            66
+          ],
+          [
+            71,
+            71
+          ],
+          [
+            100,
+            71
+          ],
+          [
+            100,
+            0
+          ]
+        ],
+        "note": "Same background duplicated as an original-image foreground layer; covers the spirit naturally behind the right tree, no cutout file modification."
+      }
+    },
+    {
+      "id": "S03",
+      "name": "Learning six leaf sounds",
+      "background": "cricket-meadow",
+      "fog": 0.15,
+      "layers": [
+        {
+          "file": "characters/atong-studying.png",
+          "x": 6.598,
+          "y": 57.212,
+          "width": 32.727,
+          "height": 32.727,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-pointing.png",
+          "x": 42.69,
+          "y": 72.092,
+          "width": 22.541,
+          "height": 17.608,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 85.79,
+          "y": 19.547,
+          "width": 12.399,
+          "height": 9.842,
+          "z": 10
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 10.986,
+          "y": 29.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 10.986,
+          "y": 45.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 38.986,
+          "y": 29.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 38.986,
+          "y": 45.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 66.986,
+          "y": 29.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 66.986,
+          "y": 45.637,
+          "width": 22.013,
+          "height": 9.783,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 26.36,
+          "y": 69.631,
+          "width": 10.273,
+          "height": 4.566,
+          "z": 12
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 63.831,
+          "y": 78.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        }
+      ]
+    },
+    {
+      "id": "S04",
+      "name": "The cricket meadow",
+      "background": "cricket-meadow",
+      "fog": 0.15,
+      "layers": [
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 3.662,
+          "y": 40.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 3.662,
+          "y": 49.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 3.662,
+          "y": 58.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 83.662,
+          "y": 40.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 83.662,
+          "y": 49.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-unlit.png",
+          "x": 83.662,
+          "y": 58.85,
+          "width": 12.664,
+          "height": 9.5,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "characters/atong-listening.png",
+          "x": 10.775,
+          "y": 63.584,
+          "width": 31.524,
+          "height": 31.524,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-alert.png",
+          "x": 53.797,
+          "y": 78.305,
+          "width": 23.737,
+          "height": 15.316,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 82.409,
+          "y": 23.446,
+          "width": 15.155,
+          "height": 12.029,
+          "z": 10
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 5.315,
+          "y": 41.516,
+          "width": 29.35,
+          "height": 13.045,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 35.315,
+          "y": 41.516,
+          "width": 29.35,
+          "height": 13.045,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/leaf-card.png",
+          "x": 65.315,
+          "y": 41.516,
+          "width": 29.35,
+          "height": 13.045,
+          "z": 30,
+          "role": "answer-card"
+        }
+      ],
+      "completedLayers": [
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 3.387,
+          "y": 40.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 3.387,
+          "y": 49.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 3.387,
+          "y": 58.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 83.387,
+          "y": 40.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 83.387,
+          "y": 49.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        },
+        {
+          "file": "props/grass-lamp-lit.png",
+          "x": 83.387,
+          "y": 58.859,
+          "width": 12.638,
+          "height": 9.481,
+          "z": 8,
+          "role": "progress-lamp"
+        }
+      ],
+      "answerSafe": {
+        "x": 3,
+        "y": 34,
+        "width": 94,
+        "height": 27
+      }
+    },
+    {
+      "id": "S05",
+      "name": "Learning six creek sounds",
+      "background": "echo-stream",
+      "fog": 0.1,
+      "layers": [
+        {
+          "file": "characters/atong-listening.png",
+          "x": 13.182,
+          "y": 62.535,
+          "width": 32.611,
+          "height": 32.611,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-stepping.png",
+          "x": 4.62,
+          "y": 35.77,
+          "width": 27.653,
+          "height": 15.609,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-puzzled.png",
+          "x": 79.616,
+          "y": 11.304,
+          "width": 18.443,
+          "height": 11.317,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 43.831,
+          "y": 60.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 35.11,
+          "y": 27.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 35.11,
+          "y": 42.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 56.11,
+          "y": 27.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 56.11,
+          "y": 42.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 76.11,
+          "y": 27.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 76.11,
+          "y": 42.948,
+          "width": 17.767,
+          "height": 11.104,
+          "z": 30,
+          "role": "learning-card"
+        }
+      ]
+    },
+    {
+      "id": "S06",
+      "name": "The echo stream",
+      "background": "echo-stream",
+      "fog": 0.08,
+      "layers": [
+        {
+          "file": "characters/atong-listening.png",
+          "x": 10.369,
+          "y": 65.633,
+          "width": 30.437,
+          "height": 30.437,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-stepping.png",
+          "x": 4.404,
+          "y": 37.801,
+          "width": 23.966,
+          "height": 13.528,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 81.1,
+          "y": 20.496,
+          "width": 13.777,
+          "height": 10.935,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 38.831,
+          "y": 68.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 20.134,
+          "y": 24.714,
+          "width": 21.715,
+          "height": 13.571,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 44.134,
+          "y": 35.714,
+          "width": 21.715,
+          "height": 13.571,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 65.134,
+          "y": 24.714,
+          "width": 21.715,
+          "height": 13.571,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/bubble-card.png",
+          "x": 69.134,
+          "y": 46.714,
+          "width": 21.715,
+          "height": 13.571,
+          "z": 30,
+          "role": "answer-card"
+        }
+      ],
+      "answerSafe": {
+        "x": 25,
+        "y": 24,
+        "width": 68,
+        "height": 40
+      },
+      "restoredWater": [
+        {
+          "x": 16,
+          "y": 24,
+          "width": 16,
+          "height": 10
+        },
+        {
+          "x": 47,
+          "y": 30,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "x": 64,
+          "y": 30,
+          "width": 14,
+          "height": 8
+        },
+        {
+          "x": 28,
+          "y": 38,
+          "width": 14,
+          "height": 10
+        },
+        {
+          "x": 76,
+          "y": 45,
+          "width": 14,
+          "height": 9
+        },
+        {
+          "x": 91,
+          "y": 49,
+          "width": 9,
+          "height": 12
+        }
+      ]
+    },
+    {
+      "id": "S07",
+      "name": "The path beside the roots",
+      "background": "root-fork",
+      "fog": 0.04,
+      "layers": [
+        {
+          "file": "characters/atong-walking.png",
+          "x": 23.373,
+          "y": 58.87,
+          "width": 36.355,
+          "height": 36.355,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-pointing.png",
+          "x": 4.69,
+          "y": 75.092,
+          "width": 22.541,
+          "height": 17.608,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 53.409,
+          "y": 32.446,
+          "width": 15.155,
+          "height": 12.029,
+          "z": 10
+        }
+      ],
+      "hiddenHotspot": {
+        "x": 75,
+        "y": 54,
+        "width": 16,
+        "height": 11
+      }
+    },
+    {
+      "id": "H01",
+      "name": "The bell in the dew pool",
+      "background": "dew-pool",
+      "fog": 0.02,
+      "layers": [
+        {
+          "file": "characters/atong-reaching.png",
+          "x": 15.952,
+          "y": 40.716,
+          "width": 47.534,
+          "height": 27.829,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-alert.png",
+          "x": 6.925,
+          "y": 64.255,
+          "width": 25.432,
+          "height": 16.41,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 84.1,
+          "y": 38.496,
+          "width": 13.777,
+          "height": 10.935,
+          "z": 10
+        },
+        {
+          "file": "props/dew-bell.png",
+          "x": 55.495,
+          "y": 59.085,
+          "width": 10.018,
+          "height": 6.021,
+          "z": 11,
+          "role": "hidden-pickup"
+        }
+      ],
+      "pickupHotspot": {
+        "x": 55,
+        "y": 57,
+        "width": 11,
+        "height": 9
+      }
+    },
+    {
+      "id": "S08",
+      "name": "Learning six bird sounds",
+      "background": "ancient-tree",
+      "fog": 0.04,
+      "layers": [
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 7.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 0
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 15.8,
+          "y": 4.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 0
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 54.351,
+          "y": 12.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 1
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 55.8,
+          "y": 9.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 1
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 79.351,
+          "y": 21.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 2
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 80.8,
+          "y": 18.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 2
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 20.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 3
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 15.8,
+          "y": 17.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 3
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 43.351,
+          "y": 30.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 4
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 44.8,
+          "y": 27.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 4
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 85.351,
+          "y": 33.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 5
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 86.8,
+          "y": 30.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 5
+        },
+        {
+          "file": "characters/atong-raising.png",
+          "x": 9.903,
+          "y": 62.742,
+          "width": 33.032,
+          "height": 33.032,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-perching.png",
+          "x": 20.016,
+          "y": 22.68,
+          "width": 22.359,
+          "height": 13.753,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-peeking.png",
+          "x": 53.339,
+          "y": 60.295,
+          "width": 19.288,
+          "height": 15.309,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 32.719,
+          "y": 65.48,
+          "width": 10.506,
+          "height": 10.506,
+          "z": 11
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 16.684,
+          "y": 38.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 16.684,
+          "y": 50.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 40.684,
+          "y": 38.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 40.684,
+          "y": 50.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 62.684,
+          "y": 38.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 62.684,
+          "y": 50.452,
+          "width": 10.529,
+          "height": 10.529,
+          "z": 30,
+          "role": "learning-card"
+        }
+      ],
+      "answerSafe": {
+        "x": 9,
+        "y": 37,
+        "width": 66,
+        "height": 20
+      }
+    },
+    {
+      "id": "S09",
+      "name": "The ancient tree",
+      "background": "ancient-tree",
+      "fog": 0.02,
+      "layers": [
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 7.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 0
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 15.8,
+          "y": 4.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 0
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 54.351,
+          "y": 12.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 1
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 55.8,
+          "y": 9.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 1
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 79.351,
+          "y": 21.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 2
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 80.8,
+          "y": 18.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 2
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 20.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 3
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 15.8,
+          "y": 17.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 3
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 43.351,
+          "y": 30.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 4
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 44.8,
+          "y": 27.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 4
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 85.351,
+          "y": 33.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 5
+        },
+        {
+          "file": "characters/bird-quiet.png",
+          "x": 86.8,
+          "y": 30.873,
+          "width": 8.616,
+          "height": 5.25,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 5
+        },
+        {
+          "file": "characters/atong-listening.png",
+          "x": 9.775,
+          "y": 62.584,
+          "width": 31.524,
+          "height": 31.524,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-perching.png",
+          "x": 20.016,
+          "y": 22.68,
+          "width": 22.359,
+          "height": 13.753,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-puzzled.png",
+          "x": 50.739,
+          "y": 63.165,
+          "width": 22.132,
+          "height": 13.58,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 40.831,
+          "y": 77.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 10.503,
+          "y": 37.33,
+          "width": 12.868,
+          "height": 12.868,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 35.503,
+          "y": 37.33,
+          "width": 12.868,
+          "height": 12.868,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 59.503,
+          "y": 37.33,
+          "width": 12.868,
+          "height": 12.868,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 21.503,
+          "y": 52.33,
+          "width": 12.868,
+          "height": 12.868,
+          "z": 30,
+          "role": "answer-card"
+        },
+        {
+          "file": "props/feather-card-v2.png",
+          "x": 51.503,
+          "y": 52.33,
+          "width": 12.868,
+          "height": 12.868,
+          "z": 30,
+          "role": "answer-card"
+        }
+      ],
+      "completedLayers": [
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 7.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 0
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 4.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 0
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 54.351,
+          "y": 12.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 1
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 56.238,
+          "y": 9.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 1
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 79.351,
+          "y": 21.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 2
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 81.238,
+          "y": 18.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 2
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 20.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 3
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 17.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 3
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 43.351,
+          "y": 30.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 4
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 45.238,
+          "y": 27.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 4
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 85.351,
+          "y": 33.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 5
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 87.238,
+          "y": 30.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 5
+        }
+      ],
+      "answerSafe": {
+        "x": 8,
+        "y": 37,
+        "width": 66,
+        "height": 28
+      }
+    },
+    {
+      "id": "S10",
+      "name": "Listening to a shy friend",
+      "background": "ancient-tree",
+      "fog": 0,
+      "layers": [
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 7.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 0
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 4.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 0
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 54.351,
+          "y": 12.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 1
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 56.238,
+          "y": 9.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 1
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 79.351,
+          "y": 21.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 2
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 81.238,
+          "y": 18.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 2
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 20.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 3
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 17.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 3
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 43.351,
+          "y": 30.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 4
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 45.238,
+          "y": 27.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 4
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 85.351,
+          "y": 33.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 5
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 87.238,
+          "y": 30.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 5
+        },
+        {
+          "file": "characters/atong-comforting.png",
+          "x": 3.61,
+          "y": 63.485,
+          "width": 50.606,
+          "height": 30.954,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-alert.png",
+          "x": 0.053,
+          "y": 75.206,
+          "width": 27.128,
+          "height": 17.504,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-puzzled.png",
+          "x": 44.986,
+          "y": 65.886,
+          "width": 29.509,
+          "height": 18.107,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 69.831,
+          "y": 83.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        }
+      ],
+      "dropzone": {
+        "x": 79.5,
+        "y": 51.5,
+        "width": 11,
+        "height": 13
+      }
+    },
+    {
+      "id": "H02",
+      "name": "The mist spirit's first words",
+      "background": "ancient-tree",
+      "fog": 0,
+      "dew": true,
+      "layers": [
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 7.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 0
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 4.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 0
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 54.351,
+          "y": 12.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 1
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 56.238,
+          "y": 9.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 1
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 79.351,
+          "y": 21.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 2
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 81.238,
+          "y": 18.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 2
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 14.351,
+          "y": 20.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 3
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 16.238,
+          "y": 17.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 3
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 43.351,
+          "y": 30.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 4
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 45.238,
+          "y": 27.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 4
+        },
+        {
+          "file": "props/bird-nest.png",
+          "x": 85.351,
+          "y": 33.701,
+          "width": 11.154,
+          "height": 4.957,
+          "z": 7,
+          "role": "progress-nest",
+          "index": 5
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 87.238,
+          "y": 30.866,
+          "width": 7.311,
+          "height": 5.333,
+          "z": 8,
+          "role": "progress-bird",
+          "index": 5
+        },
+        {
+          "file": "characters/atong-comforting.png",
+          "x": 3.61,
+          "y": 63.485,
+          "width": 50.606,
+          "height": 30.954,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-waving.png",
+          "x": 1.451,
+          "y": 75.734,
+          "width": 25.038,
+          "height": 16.692,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-speaking.png",
+          "x": 45.135,
+          "y": 65.752,
+          "width": 29.211,
+          "height": 18.256,
+          "z": 10
+        },
+        {
+          "file": "props/listening-lamp.png",
+          "x": 69.831,
+          "y": 83.582,
+          "width": 8.453,
+          "height": 8.453,
+          "z": 9
+        },
+        {
+          "file": "props/dew-bell.png",
+          "x": 78.493,
+          "y": 54.961,
+          "width": 13.023,
+          "height": 7.828,
+          "z": 12,
+          "glow": true,
+          "role": "mounted-bell"
+        }
+      ]
+    },
+    {
+      "id": "E01",
+      "name": "The forest sings on the way home",
+      "background": "sunset-village",
+      "fog": 0,
+      "layers": [
+        {
+          "file": "characters/atong-walking.png",
+          "x": 29.271,
+          "y": 58.737,
+          "width": 38.627,
+          "height": 38.627,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-stepping.png",
+          "x": 6.836,
+          "y": 77.739,
+          "width": 31.34,
+          "height": 17.69,
+          "z": 10
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 25.485,
+          "y": 6.839,
+          "width": 8.773,
+          "height": 6.4,
+          "z": 10
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "name": "A thankful goodbye",
+      "background": "sunset-village",
+      "fog": 0,
+      "dew": true,
+      "layers": [
+        {
+          "file": "characters/atong-waving.png",
+          "x": 24.893,
+          "y": 60.013,
+          "width": 36.091,
+          "height": 36.091,
+          "z": 10
+        },
+        {
+          "file": "characters/squirrel-waving.png",
+          "x": 3.667,
+          "y": 77.717,
+          "width": 26.603,
+          "height": 17.735,
+          "z": 10
+        },
+        {
+          "file": "characters/mist-speaking.png",
+          "x": 62.206,
+          "y": 67.674,
+          "width": 31.036,
+          "height": 19.397,
+          "z": 10
+        },
+        {
+          "file": "characters/bird-singing.png",
+          "x": 25.485,
+          "y": 6.839,
+          "width": 8.773,
+          "height": 6.4,
+          "z": 10
+        }
+      ]
+    }
+  ]
+}
