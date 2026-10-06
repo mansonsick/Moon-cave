@@ -59,3 +59,11 @@
 常錯的聲音保存 adventure.story-06.review.state，目標錯誤次數與誤選配對分開；選單／設定／結局可點符號試聽。刷新及新冒險保留，可確認單獨清除；壞複習資料不傷當前進度，舊存檔不用 migration。仍均勻抽 37 池的十八個，不強制重做額外題或改抽題權重。指定私有字型新渲染 13 標籤／21 PNG，現在共 136 標籤／289 PNG，字型不公開。
 
 原通關測試與 37 音訊流程重跑通過；全部 46 音訊解碼、500 抽題／複習驗證通過。新增 feedback regression 實測自動下一題、三場景零題背景、完成曲停止、錯誤保存／試聽／清除隔離／壞資料，以及 24 組螢幕／字體／三關動態卡安全區。目視手機溪谷、平板古樹、最大字體窄畫面。詳見 QA_RESULTS；真平板手感、音量與好聽程度待家庭確認，沒有宣稱人工逐一聽辨。前五本、engine、家庭入口與正式 main 維持；更新 PR #18，未開始下一本。
+
+## 2026-10-06 使用者確認正式發布
+
+使用者確認「把這本上線，首頁記得改」，授權本輪合併 PR #18 與 GitHub Pages 發布。重新 fetch／核對正式 main cdd2302、遠端工程 head 019061a 的 Git tree 與本機已測試版本相同、PR mergeable／clean；Pages 保持 main 根目錄。這次授權取代先前等待發布的限制，不改規格／美術 PR #17。
+
+首頁國文已有本書分層封面、指定注音字圖、描述與開始冒險連結，正式發布涵蓋此入口。首頁驗收再次檢查六本連結與 390／820／1180 觸控科目切換、儲存隔離和無字型請求。本輪僅補發布文件，不改已驗收 runtime、前五本、engine 或家庭入口。
+
+正式網址 <https://mansonsick.github.io/Moon-cave/stories/story-06/>；首頁 <https://mansonsick.github.io/Moon-cave/>。部署後核對 main／Pages build commit 及 live 首頁、入口、故事、注音／完成旋律素材；實際結果與 merge commit 保存在本機 `hub-review/story06` 與 [PR #18](https://github.com/mansonsick/Moon-cave/pull/18) 發布報告。此前 QA 仍適用，正式發布不代表已完成真平板／Safari 或人工逐符號聽辨。
