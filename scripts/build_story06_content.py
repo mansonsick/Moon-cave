@@ -16,6 +16,7 @@ LABELS={
  'settings':'家長設定','motion':'卡片移動','slow':'慢慢飄動','static':'固定位置','audio-review':'試聽全部注音','review-note':'教育部的三十七個注音讀音。點符號可試聽。','credits':'聲音來源','close':'回到故事','font-larger':'字放大','font-smaller':'字縮小','fullscreen':'全螢幕','fullscreen-fail':'這台裝置可用瀏覽器放大畫面。','sound-on':'聲音開啟','sound-off':'聲音關閉','website':'網站說明',
  'summary':'這趟找回的聲音','independent':'自己聽出','assisted':'看符號幫忙','readings':'中文與右側注音，使用本機字型預先渲染。','audio-credit-title':'教育部國語注音符號手冊','audio-credit-note':'注音讀音來自教育部獨立音訊素材包，未改動原始錄音。依姓名標示授權使用。森林背景與操作音效為本專案製作。',
  'sound-check':'聲音試聽完成。','sound-fail':'聲音暫時無法播放，請再試一次。','sound-playing':'聲音播放中。',
+ 'mistakes':'常錯的聲音','mistakes-tip':'點符號，再聽一次。','mistakes-none':'目前沒有常錯的聲音。','mistakes-note':'答錯的聲音會留下，方便慢慢練。','mistakes-keep':'常錯聲音會留下，方便再練習。','mistakes-count':'答錯','times':'次','confused-with':'常和這個混淆','clear-review':'清除複習紀錄','clear-review-confirm':'要清除常錯聲音的紀錄嗎？','clear-review-note':'故事進度不會改變。','clear-review-yes':'清除紀錄','replay-song':'再聽歌聲',
 }
 def main():
  spec=(STORY/'STORY_SPEC.md').read_text(encoding='utf-8')
@@ -28,9 +29,9 @@ def main():
   scenes.append({'id':sid,'title':sid+'-title','lines':[f'{sid}-line-{i}' for i in range(len(lines))]})
  assert len(scenes)==14
  result={'storyId':'story-06','version':1,'labels':LABELS,'scenes':scenes,
-         'stages':[{'learn':'S03','quiz':'S04','choices':3,'card':'leaf-card.png','next':'S05','success':'stage-one'},
-                   {'learn':'S05','quiz':'S06','choices':4,'card':'bubble-card.png','next':'S07','success':'stage-two'},
-                   {'learn':'S08','quiz':'S09','choices':5,'card':'feather-card-v2.png','next':'S10','success':'stage-three'}]}
+         'stages':[{'learn':'S03','quiz':'S04','choices':3,'card':'leaf-card.png','next':'S05','success':'stage-one','ambience':'cricket-song','answerSafe':{'x':17,'y':38,'width':66,'height':25}},
+                   {'learn':'S05','quiz':'S06','choices':4,'card':'bubble-card.png','next':'S07','success':'stage-two','ambience':'stream-song','answerSafe':{'x':30,'y':38,'width':64,'height':27}},
+                   {'learn':'S08','quiz':'S09','choices':5,'card':'feather-card-v2.png','next':'S10','success':'stage-three','ambience':'bird-song','answerSafe':{'x':8,'y':38,'width':66,'height':27}}]}
  (STORY/'story.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
  print('Compiled 14 approved scenes and',len(LABELS),'labels.')
 if __name__=='__main__':main()

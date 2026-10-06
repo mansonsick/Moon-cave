@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {freshState,validateState,canVisit} from '../stories/story-06/state.js';
+import {freshState,validateState,canVisit,freshReview,validateReview,recordMistake,commonMistakes} from '../stories/story-06/state.js';
 for(let i=0;i<500;i++){const s=freshState();assert.equal(new Set(s.roundSymbols.flat()).size,18);assert.deepEqual(validateState(s).roundSymbols,s.roundSymbols);}
 assert.equal(validateState(null),null);
 const draw=freshState();assert.equal(validateState({...draw,roundSymbols:[draw.roundSymbols[0],draw.roundSymbols[0],draw.roundSymbols[2]]}),null);
@@ -13,3 +13,8 @@ const gap=structuredClone(s);gap.results[0][1]={symbol:'?',mode:'independent'};a
 const wrongMode=structuredClone(s);wrongMode.results[0][0].mode='perfect';assert.equal(validateState(wrongMode).progress[0],0);
 const earlier=structuredClone(s);earlier.lamp=false;assert.deepEqual(validateState(earlier).progress,[0,0,0]);
 console.log('PASS: 500 distinct 18-symbol draws, retained saved groups, malformed saves, stage gates and contiguous validated results.');
+const review=freshReview();recordMistake(review,'ㄅ','ㄆ');recordMistake(review,'ㄅ','ㄆ');recordMistake(review,'ㄇ','ㄅ');recordMistake(review,'ㄅ','ㄅ');recordMistake(review,'?','ㄅ');
+assert.equal(review.symbols['ㄅ'].errors,2);assert.equal(review.symbols['ㄅ'].confusions['ㄆ'],2);assert.equal(review.symbols['ㄆ'],undefined);
+assert.deepEqual(commonMistakes(review).map(([c])=>c),['ㄅ','ㄇ']);assert.deepEqual(validateReview(review),review);assert.equal(validateReview(null),null);
+assert.deepEqual(validateReview({schemaVersion:1,symbols:{'?':{errors:99},'ㄅ':{errors:-3},'ㄇ':{errors:2,confusions:{'?':9,'ㄇ':7,'ㄅ':2}}}}),{schemaVersion:1,symbols:{'ㄇ':{errors:2,confusions:{'ㄅ':2}}}});
+console.log('PASS: correct target mistake totals, confusion pairs, ranking and malformed review repair.');

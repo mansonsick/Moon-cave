@@ -1175,6 +1175,197 @@
         }
       ]
     },
+    "mistakes": {
+      "text": "常錯的聲音",
+      "parts": [
+        {
+          "src": "mistakes-0.png",
+          "text": "常錯的聲音",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-tip": {
+      "text": "點符號，再聽一次。",
+      "parts": [
+        {
+          "src": "mistakes-tip-0.png",
+          "text": "點符號，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "mistakes-tip-1.png",
+          "text": "再聽一次。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-none": {
+      "text": "目前沒有常錯的聲音。",
+      "parts": [
+        {
+          "src": "mistakes-none-0.png",
+          "text": "目前沒有常錯",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-none-1.png",
+          "text": "的聲音。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-note": {
+      "text": "答錯的聲音會留下，方便慢慢練。",
+      "parts": [
+        {
+          "src": "mistakes-note-0.png",
+          "text": "答錯的聲音會",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-note-1.png",
+          "text": "留下，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "mistakes-note-2.png",
+          "text": "方便慢慢練。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-keep": {
+      "text": "常錯聲音會留下，方便再練習。",
+      "parts": [
+        {
+          "src": "mistakes-keep-0.png",
+          "text": "常錯聲音會留",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-keep-1.png",
+          "text": "下，方便再練",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-keep-2.png",
+          "text": "習。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-count": {
+      "text": "答錯",
+      "parts": [
+        {
+          "src": "mistakes-count-0.png",
+          "text": "答錯",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "times": {
+      "text": "次",
+      "parts": [
+        {
+          "src": "times-0.png",
+          "text": "次",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "confused-with": {
+      "text": "常和這個混淆",
+      "parts": [
+        {
+          "src": "confused-with-0.png",
+          "text": "常和這個混淆",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review": {
+      "text": "清除複習紀錄",
+      "parts": [
+        {
+          "src": "clear-review-0.png",
+          "text": "清除複習紀錄",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-confirm": {
+      "text": "要清除常錯聲音的紀錄嗎？",
+      "parts": [
+        {
+          "src": "clear-review-confirm-0.png",
+          "text": "要清除常錯聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "clear-review-confirm-1.png",
+          "text": "音的紀錄嗎？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-note": {
+      "text": "故事進度不會改變。",
+      "parts": [
+        {
+          "src": "clear-review-note-0.png",
+          "text": "故事進度不會",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "clear-review-note-1.png",
+          "text": "改變。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-yes": {
+      "text": "清除紀錄",
+      "parts": [
+        {
+          "src": "clear-review-yes-0.png",
+          "text": "清除紀錄",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "replay-song": {
+      "text": "再聽歌聲",
+      "parts": [
+        {
+          "src": "replay-song-0.png",
+          "text": "再聽歌聲",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
     "S01-title": {
       "text": "森林突然安靜",
       "parts": [

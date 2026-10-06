@@ -49,3 +49,27 @@ export function validateState(raw) {
   s.history=(Array.isArray(raw.history)?raw.history:[]).filter(id=>SCENES.includes(id)&&canVisit(s,id)).slice(-40);
   return s;
 }
+
+// Review is optional and separate from the current adventure. A new draw must
+// not erase sounds the family still wants to practise; old saves need no migration.
+export function freshReview(){return {schemaVersion:1,symbols:{}};}
+export function validateReview(raw){
+  if(!raw||raw.schemaVersion!==1||!raw.symbols||typeof raw.symbols!=='object')return null;
+  const review=freshReview();
+  const count=n=>Number.isSafeInteger(n)&&n>0?Math.min(n,1000000):0;
+  for(const symbol of POOL){
+    const entry=raw.symbols[symbol],errors=count(entry?.errors);if(!errors)continue;
+    const confusions={};for(const other of POOL)if(other!==symbol&&count(entry.confusions?.[other]))confusions[other]=count(entry.confusions[other]);
+    review.symbols[symbol]={errors,confusions};
+  }
+  return review;
+}
+export function recordMistake(review,target,chosen){
+  if(!POOL.includes(target)||!POOL.includes(chosen)||target===chosen)return;
+  const e=review.symbols[target]||={errors:0,confusions:{}};
+  e.errors=Math.min(e.errors+1,1000000);e.confusions[chosen]=Math.min((e.confusions[chosen]||0)+1,1000000);
+}
+export function commonMistakes(review){
+  return Object.entries(review.symbols).filter(([,e])=>e.errors>0)
+    .sort((a,b)=>b[1].errors-a[1].errors||a[0].codePointAt(0)-b[0].codePointAt(0));
+}

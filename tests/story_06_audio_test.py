@@ -23,7 +23,7 @@ def main():
    page.goto(base+'stories/story-06/audio-review.html');page.wait_for_selector('.audio-grid button')
    # Browser decodes all original WAVs at the actual runtime URLs.
    decoded=page.evaluate('''async()=>{const m=await(await fetch('./assets/audio/manifest.json')).json();const context=new AudioContext();const out=[];for(const [id,e] of Object.entries(m.entries)){const r=await fetch('./assets/audio/'+e.src);if(!r.ok)throw Error(e.src);const b=await context.decodeAudioData(await r.arrayBuffer());out.push({id,duration:b.duration,channels:b.numberOfChannels,length:b.length});}await context.close();return out;}''')
-   assert len(decoded)==45
+   assert len(decoded)==46
    # Run all 37 actual ended events; this is playback/decoding QA, not a human listening claim.
    for r in records:
     page.locator(f'.audio-grid [data-symbol="{r["symbol"]}"]').click()
@@ -32,12 +32,12 @@ def main():
    initial(page,base+'stories/story-06/');learn(page);scene(page,'S04');target=state(page)['roundSymbols'][0][0]
    click(page,'begin-question');assert not page.locator('.answer-field').is_visible()
    page.wait_for_selector('.answer-field:not([hidden])',timeout=8000);tap(page,f'.answer-card[data-symbol="{target}"]');assert state(page)['results'][0][0]['mode']=='independent'
-   click(page,'next-question');click(page,'begin-question');click(page,'settings');assert not page.locator('.answer-field').is_visible();page.wait_for_timeout(1800);assert not page.locator('.answer-field').is_visible();click(page,'close');click(page,'begin-question');page.wait_for_selector('.answer-field:not([hidden])',timeout=8000)
+   click(page,'next-question');assert not page.locator('.answer-field').is_visible();click(page,'settings');assert not page.locator('.answer-field').is_visible();page.wait_for_timeout(1800);assert not page.locator('.answer-field').is_visible();click(page,'close');click(page,'begin-question');page.wait_for_selector('.answer-field:not([hidden])',timeout=8000)
    click(page,'assist');click(page,'sound');click(page,'sound');click(page,'begin-question');page.wait_for_selector('.answer-field:not([hidden])',timeout=8000);target=state(page)['roundSymbols'][0][1];tap(page,f'.answer-card[data-symbol="{target}"]');assert state(page)['results'][0][1]['mode']=='assisted'
    click(page,'next-question')
    page.route('**/audio/symbols/**',lambda r:r.abort());page.reload();click(page,'resume');click(page,'begin-question');page.wait_for_function("document.querySelector('.quiz-message .bpmf')?.getAttribute('aria-label')?.startsWith('聲音暫時聽不到')",timeout=10000);assert not page.locator('.answer-field').is_visible();click(page,'assist');target=state(page)['roundSymbols'][0][2];tap(page,f'.answer-card[data-symbol="{target}"]');assert state(page)['progress'][0]==3
    assert not errors,errors
    (OUT/'audio-results.json').write_text(json.dumps({'sourceMapping':'37 official HTML table IDs and WAV entries matched','recordings':records,'webAudioDecoded':decoded,'browserPlayback':'37 actual ended events; no human listening claim','checks':['Cards hidden before voice ended','Actual heard question recorded independent','Settings cancels in-flight playback','Visual assistance remains assisted after sound toggles','Blocked download supports explicit visual fallback'],'pageErrors':errors},ensure_ascii=False,indent=2),encoding='utf-8')
-   browser.close();print('PASS: 37 source mappings, unique nonempty PCM, 45 browser decodes, 37 playback completions and quiz audio lifecycle.')
+   browser.close();print('PASS: 37 source mappings, unique nonempty PCM, 46 browser decodes, 37 playback completions and quiz audio lifecycle.')
  finally:server.shutdown()
 if __name__=='__main__':main()

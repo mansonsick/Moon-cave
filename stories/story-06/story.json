@@ -83,6 +83,19 @@
     "sound-check": "聲音試聽完成。",
     "sound-fail": "聲音暫時無法播放，請再試一次。",
     "sound-playing": "聲音播放中。",
+    "mistakes": "常錯的聲音",
+    "mistakes-tip": "點符號，再聽一次。",
+    "mistakes-none": "目前沒有常錯的聲音。",
+    "mistakes-note": "答錯的聲音會留下，方便慢慢練。",
+    "mistakes-keep": "常錯聲音會留下，方便再練習。",
+    "mistakes-count": "答錯",
+    "times": "次",
+    "confused-with": "常和這個混淆",
+    "clear-review": "清除複習紀錄",
+    "clear-review-confirm": "要清除常錯聲音的紀錄嗎？",
+    "clear-review-note": "故事進度不會改變。",
+    "clear-review-yes": "清除紀錄",
+    "replay-song": "再聽歌聲",
     "S01-title": "森林突然安靜",
     "S01-line-0": "阿通走進午後的森林。小松鼠忽然停下腳步。",
     "S01-line-1": "「咦？鳥兒怎麼不唱了？」風還在吹，四周卻靜悄悄。",
@@ -247,7 +260,14 @@
       "choices": 3,
       "card": "leaf-card.png",
       "next": "S05",
-      "success": "stage-one"
+      "success": "stage-one",
+      "ambience": "cricket-song",
+      "answerSafe": {
+        "x": 17,
+        "y": 38,
+        "width": 66,
+        "height": 25
+      }
     },
     {
       "learn": "S05",
@@ -255,7 +275,14 @@
       "choices": 4,
       "card": "bubble-card.png",
       "next": "S07",
-      "success": "stage-two"
+      "success": "stage-two",
+      "ambience": "stream-song",
+      "answerSafe": {
+        "x": 30,
+        "y": 38,
+        "width": 64,
+        "height": 27
+      }
     },
     {
       "learn": "S08",
@@ -263,7 +290,14 @@
       "choices": 5,
       "card": "feather-card-v2.png",
       "next": "S10",
-      "success": "stage-three"
+      "success": "stage-three",
+      "ambience": "bird-song",
+      "answerSafe": {
+        "x": 8,
+        "y": 38,
+        "width": 66,
+        "height": 27
+      }
     }
   ]
 }

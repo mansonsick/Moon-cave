@@ -15,9 +15,11 @@ The complete handbook's separate BY-ND 3.0 TW licence is **not** the licence for
 
 ## Project-created ambience and feedback
 
-`quiet-forest`, `cricket-song`, `stream-song`, `bird-song`, `found-item`, `success`, `fail-soft`, and `secret-bell` are original deterministic synthesis in `scripts/build_story06_audio.py`. There are no downloaded music samples, recordings from previous stories, or commercial songs.
+`quiet-forest`, `cricket-song`, `stream-song`, `bird-song`, `found-item`, `success`, `fail-soft`, `secret-bell`, and `forest-celebration` are original deterministic synthesis in `scripts/build_story06_audio.py`. There are no downloaded music samples, recordings from previous stories, or commercial songs.
 
 The original forest ambience is quiet and advances with restored sounds; one ambience plays at a time. Symbol voice further ducks ambience. Both endings stop the loop.
+
+`forest-celebration` is a new original 10.8-second wordless melody with choir-like harmonic synthesis, gentle chords and bell accents. It contains no human vocal recording or sampled song. It plays once on stage completion and on each ending; explicit replay is available on endings. Continuing, leaving, muting or hiding the page cancels it. Completion does not require listening until it ends.
 
 ## Review limits
 
