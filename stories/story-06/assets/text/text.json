@@ -1,0 +1,2420 @@
+{
+  "font": "Bpmf GenRyu Min H (local render only)",
+  "fontSize": 192,
+  "labels": {
+    "title": {
+      "text": "阿通與失聲森林",
+      "parts": [
+        {
+          "src": "title-0.png",
+          "text": "阿通與失聲森",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "title-1.png",
+          "text": "林",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "loading": {
+      "text": "故事準備中。",
+      "parts": [
+        {
+          "src": "loading-0.png",
+          "text": "故事準備中。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "home": {
+      "text": "回首頁",
+      "parts": [
+        {
+          "src": "home-0.png",
+          "text": "回首頁",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "menu": {
+      "text": "故事選單",
+      "parts": [
+        {
+          "src": "menu-0.png",
+          "text": "故事選單",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "previous": {
+      "text": "上一幕",
+      "parts": [
+        {
+          "src": "previous-0.png",
+          "text": "上一幕",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "start": {
+      "text": "開始冒險",
+      "parts": [
+        {
+          "src": "start-0.png",
+          "text": "開始冒險",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "resume": {
+      "text": "繼續冒險",
+      "parts": [
+        {
+          "src": "resume-0.png",
+          "text": "繼續冒險",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "replay": {
+      "text": "再玩一次",
+      "parts": [
+        {
+          "src": "replay-0.png",
+          "text": "再玩一次",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "new-confirm": {
+      "text": "換一組聲音，重新冒險嗎？",
+      "parts": [
+        {
+          "src": "new-confirm-0.png",
+          "text": "換一組聲音，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "new-confirm-1.png",
+          "text": "重新冒險嗎？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "new-note": {
+      "text": "這本的進度會重新開始。",
+      "parts": [
+        {
+          "src": "new-note-0.png",
+          "text": "這本的進度會",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "new-note-1.png",
+          "text": "重新開始。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "confirm": {
+      "text": "開始新冒險",
+      "parts": [
+        {
+          "src": "confirm-0.png",
+          "text": "開始新冒險",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "cancel": {
+      "text": "先不要",
+      "parts": [
+        {
+          "src": "cancel-0.png",
+          "text": "先不要",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "cover-first": {
+      "text": "森林的聲音不見了。",
+      "parts": [
+        {
+          "src": "cover-first-0.png",
+          "text": "森林的聲音不",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "cover-first-1.png",
+          "text": "見了。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "cover-second": {
+      "text": "跟阿通一起聽聲音，找回歌聲！",
+      "parts": [
+        {
+          "src": "cover-second-0.png",
+          "text": "跟阿通一起聽",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "cover-second-1.png",
+          "text": "聲音，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "cover-second-2.png",
+          "text": "找回歌聲！",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "cover-third": {
+      "text": "每次十八題，先學六個再闖關。",
+      "parts": [
+        {
+          "src": "cover-third-0.png",
+          "text": "每次十八題，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "cover-third-1.png",
+          "text": "先學六個再闖",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "cover-third-2.png",
+          "text": "關。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "hub-chapter": {
+      "text": "阿通的第六場冒險",
+      "parts": [
+        {
+          "src": "hub-chapter-0.png",
+          "text": "阿通的第六場",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "hub-chapter-1.png",
+          "text": "冒險",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "hub-first": {
+      "text": "聽聽注音，找回森林的聲音。",
+      "parts": [
+        {
+          "src": "hub-first-0.png",
+          "text": "聽聽注音，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-first-1.png",
+          "text": "找回森林的聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "hub-first-2.png",
+          "text": "音。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "hub-second": {
+      "text": "神祕森林，先學再玩。",
+      "parts": [
+        {
+          "src": "hub-second-0.png",
+          "text": "神祕森林，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "hub-second-1.png",
+          "text": "先學再玩。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "enter-forest": {
+      "text": "往森林裡看看",
+      "parts": [
+        {
+          "src": "enter-forest-0.png",
+          "text": "往森林裡看看",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "take-lamp": {
+      "text": "接過聽音燈",
+      "parts": [
+        {
+          "src": "take-lamp-0.png",
+          "text": "接過聽音燈",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "go-grass": {
+      "text": "到草地找聲音",
+      "parts": [
+        {
+          "src": "go-grass-0.png",
+          "text": "到草地找聲音",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "go-stream": {
+      "text": "到溪邊找聲音",
+      "parts": [
+        {
+          "src": "go-stream-0.png",
+          "text": "到溪邊找聲音",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "go-tree": {
+      "text": "去看看古樹",
+      "parts": [
+        {
+          "src": "go-tree-0.png",
+          "text": "去看看古樹",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "go-birds": {
+      "text": "幫小鳥找聲音",
+      "parts": [
+        {
+          "src": "go-birds-0.png",
+          "text": "幫小鳥找聲音",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "go-home": {
+      "text": "沿著歌聲回家",
+      "parts": [
+        {
+          "src": "go-home-0.png",
+          "text": "沿著歌聲回家",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "together": {
+      "text": "一起回家",
+      "parts": [
+        {
+          "src": "together-0.png",
+          "text": "一起回家",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "learning": {
+      "text": "先聽一聽，再看一看。",
+      "parts": [
+        {
+          "src": "learning-0.png",
+          "text": "先聽一聽，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "learning-1.png",
+          "text": "再看一看。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-touch": {
+      "text": "點卡片，聽聽它的聲音。",
+      "parts": [
+        {
+          "src": "learn-touch-0.png",
+          "text": "點卡片，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "learn-touch-1.png",
+          "text": "聽聽它的聲音。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "learn-count": {
+      "text": "已認識",
+      "parts": [
+        {
+          "src": "learn-count-0.png",
+          "text": "已認識",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-next": {
+      "text": "下一張",
+      "parts": [
+        {
+          "src": "learn-next-0.png",
+          "text": "下一張",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "learn-again": {
+      "text": "再聽一次",
+      "parts": [
+        {
+          "src": "learn-again-0.png",
+          "text": "再聽一次",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "learn-first": {
+      "text": "先認識全部六張聲音卡。",
+      "parts": [
+        {
+          "src": "learn-first-0.png",
+          "text": "先認識全部六",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "learn-first-1.png",
+          "text": "張聲音卡。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "learn-return": {
+      "text": "回看聲音卡",
+      "parts": [
+        {
+          "src": "learn-return-0.png",
+          "text": "回看聲音卡",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "begin-question": {
+      "text": "聽聲音",
+      "parts": [
+        {
+          "src": "begin-question-0.png",
+          "text": "聽聲音",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "listen-wait": {
+      "text": "先聽清楚，卡片就會出現。",
+      "parts": [
+        {
+          "src": "listen-wait-0.png",
+          "text": "先聽清楚，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "listen-wait-1.png",
+          "text": "卡片就會出現。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "choose": {
+      "text": "找找剛才的聲音。",
+      "parts": [
+        {
+          "src": "choose-0.png",
+          "text": "找找剛才的聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "choose-1.png",
+          "text": "音。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "listen-again": {
+      "text": "再聽一次",
+      "parts": [
+        {
+          "src": "listen-again-0.png",
+          "text": "再聽一次",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "assist": {
+      "text": "看符號幫忙",
+      "parts": [
+        {
+          "src": "assist-0.png",
+          "text": "看符號幫忙",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "assist-note": {
+      "text": "這題用看符號一起找。",
+      "parts": [
+        {
+          "src": "assist-note-0.png",
+          "text": "這題用看符號",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "assist-note-1.png",
+          "text": "一起找。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "audio-unavailable": {
+      "text": "聲音暫時聽不到。可以再試一次，或看符號幫忙。",
+      "parts": [
+        {
+          "src": "audio-unavailable-0.png",
+          "text": "聲音暫時聽不",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-unavailable-1.png",
+          "text": "到。可以再試",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-unavailable-2.png",
+          "text": "一次，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "audio-unavailable-3.png",
+          "text": "或看符號幫忙。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "paused": {
+      "text": "先休息一下。再按聽聲音繼續。",
+      "parts": [
+        {
+          "src": "paused-0.png",
+          "text": "先休息一下。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "paused-1.png",
+          "text": "再按聽聲音繼",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "paused-2.png",
+          "text": "續。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "right": {
+      "text": "找到了！",
+      "parts": [
+        {
+          "src": "right-0.png",
+          "text": "找到了！",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "wrong": {
+      "text": "再聽一次，慢慢找。",
+      "parts": [
+        {
+          "src": "wrong-0.png",
+          "text": "再聽一次，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "wrong-1.png",
+          "text": "慢慢找。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "next-question": {
+      "text": "下一個聲音",
+      "parts": [
+        {
+          "src": "next-question-0.png",
+          "text": "下一個聲音",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "continue": {
+      "text": "繼續",
+      "parts": [
+        {
+          "src": "continue-0.png",
+          "text": "繼續",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "stage-one": {
+      "text": "蟲兒的聲音回來了！",
+      "parts": [
+        {
+          "src": "stage-one-0.png",
+          "text": "蟲兒的聲音回",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "stage-one-1.png",
+          "text": "來了！",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "stage-two": {
+      "text": "溪水的聲音回來了！",
+      "parts": [
+        {
+          "src": "stage-two-0.png",
+          "text": "溪水的聲音回",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "stage-two-1.png",
+          "text": "來了！",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "stage-three": {
+      "text": "小鳥的歌聲回來了！",
+      "parts": [
+        {
+          "src": "stage-three-0.png",
+          "text": "小鳥的歌聲回",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "stage-three-1.png",
+          "text": "來了！",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "lamp": {
+      "text": "聽音燈",
+      "parts": [
+        {
+          "src": "lamp-0.png",
+          "text": "聽音燈",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "bell": {
+      "text": "露珠鈴",
+      "parts": [
+        {
+          "src": "bell-0.png",
+          "text": "露珠鈴",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "bell-found": {
+      "text": "找到露珠鈴了！",
+      "parts": [
+        {
+          "src": "bell-found-0.png",
+          "text": "找到露珠鈴了！",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "bag": {
+      "text": "我的背包",
+      "parts": [
+        {
+          "src": "bag-0.png",
+          "text": "我的背包",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "selected": {
+      "text": "已拿起",
+      "parts": [
+        {
+          "src": "selected-0.png",
+          "text": "已拿起",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "bell-back": {
+      "text": "回到大路",
+      "parts": [
+        {
+          "src": "bell-back-0.png",
+          "text": "回到大路",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "completed": {
+      "text": "這裡的聲音都回來了。",
+      "parts": [
+        {
+          "src": "completed-0.png",
+          "text": "這裡的聲音都",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "completed-1.png",
+          "text": "回來了。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "progress": {
+      "text": "找回聲音",
+      "parts": [
+        {
+          "src": "progress-0.png",
+          "text": "找回聲音",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "ending": {
+      "text": "森林的聲音回來了！",
+      "parts": [
+        {
+          "src": "ending-0.png",
+          "text": "森林的聲音回",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "ending-1.png",
+          "text": "來了！",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "settings": {
+      "text": "家長設定",
+      "parts": [
+        {
+          "src": "settings-0.png",
+          "text": "家長設定",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "motion": {
+      "text": "卡片移動",
+      "parts": [
+        {
+          "src": "motion-0.png",
+          "text": "卡片移動",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "slow": {
+      "text": "慢慢飄動",
+      "parts": [
+        {
+          "src": "slow-0.png",
+          "text": "慢慢飄動",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "static": {
+      "text": "固定位置",
+      "parts": [
+        {
+          "src": "static-0.png",
+          "text": "固定位置",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "audio-review": {
+      "text": "試聽全部注音",
+      "parts": [
+        {
+          "src": "audio-review-0.png",
+          "text": "試聽全部注音",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "review-note": {
+      "text": "教育部的三十七個注音讀音。點符號可試聽。",
+      "parts": [
+        {
+          "src": "review-note-0.png",
+          "text": "教育部的三十",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "review-note-1.png",
+          "text": "七個注音讀音。",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "review-note-2.png",
+          "text": "點符號可試聽。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "credits": {
+      "text": "聲音來源",
+      "parts": [
+        {
+          "src": "credits-0.png",
+          "text": "聲音來源",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "close": {
+      "text": "回到故事",
+      "parts": [
+        {
+          "src": "close-0.png",
+          "text": "回到故事",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "font-larger": {
+      "text": "字放大",
+      "parts": [
+        {
+          "src": "font-larger-0.png",
+          "text": "字放大",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "font-smaller": {
+      "text": "字縮小",
+      "parts": [
+        {
+          "src": "font-smaller-0.png",
+          "text": "字縮小",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "fullscreen": {
+      "text": "全螢幕",
+      "parts": [
+        {
+          "src": "fullscreen-0.png",
+          "text": "全螢幕",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "fullscreen-fail": {
+      "text": "這台裝置可用瀏覽器放大畫面。",
+      "parts": [
+        {
+          "src": "fullscreen-fail-0.png",
+          "text": "這台裝置可用",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "fullscreen-fail-1.png",
+          "text": "瀏覽器放大畫",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "fullscreen-fail-2.png",
+          "text": "面。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "sound-on": {
+      "text": "聲音開啟",
+      "parts": [
+        {
+          "src": "sound-on-0.png",
+          "text": "聲音開啟",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "sound-off": {
+      "text": "聲音關閉",
+      "parts": [
+        {
+          "src": "sound-off-0.png",
+          "text": "聲音關閉",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "website": {
+      "text": "網站說明",
+      "parts": [
+        {
+          "src": "website-0.png",
+          "text": "網站說明",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "summary": {
+      "text": "這趟找回的聲音",
+      "parts": [
+        {
+          "src": "summary-0.png",
+          "text": "這趟找回的聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "summary-1.png",
+          "text": "音",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "independent": {
+      "text": "自己聽出",
+      "parts": [
+        {
+          "src": "independent-0.png",
+          "text": "自己聽出",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "assisted": {
+      "text": "看符號幫忙",
+      "parts": [
+        {
+          "src": "assisted-0.png",
+          "text": "看符號幫忙",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "readings": {
+      "text": "中文與右側注音，使用本機字型預先渲染。",
+      "parts": [
+        {
+          "src": "readings-0.png",
+          "text": "中文與右側注",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "readings-1.png",
+          "text": "音，使用本機",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "readings-2.png",
+          "text": "字型預先渲染。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "audio-credit-title": {
+      "text": "教育部國語注音符號手冊",
+      "parts": [
+        {
+          "src": "audio-credit-title-0.png",
+          "text": "教育部國語注",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-title-1.png",
+          "text": "音符號手冊",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "audio-credit-note": {
+      "text": "注音讀音來自教育部獨立音訊素材包，未改動原始錄音。依姓名標示授權使用。森林背景與操作音效為本專案製作。",
+      "parts": [
+        {
+          "src": "audio-credit-note-0.png",
+          "text": "注音讀音來自",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-1.png",
+          "text": "教育部獨立音",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-2.png",
+          "text": "訊素材包，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-3.png",
+          "text": "未改動原始錄",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-4.png",
+          "text": "音。依姓名標",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-5.png",
+          "text": "示授權使用。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-6.png",
+          "text": "森林背景與操",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-7.png",
+          "text": "作音效為本專",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "audio-credit-note-8.png",
+          "text": "案製作。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "sound-check": {
+      "text": "聲音試聽完成。",
+      "parts": [
+        {
+          "src": "sound-check-0.png",
+          "text": "聲音試聽完成。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    },
+    "sound-fail": {
+      "text": "聲音暫時無法播放，請再試一次。",
+      "parts": [
+        {
+          "src": "sound-fail-0.png",
+          "text": "聲音暫時無法",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "sound-fail-1.png",
+          "text": "播放，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "sound-fail-2.png",
+          "text": "請再試一次。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "sound-playing": {
+      "text": "聲音播放中。",
+      "parts": [
+        {
+          "src": "sound-playing-0.png",
+          "text": "聲音播放中。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes": {
+      "text": "常錯的聲音",
+      "parts": [
+        {
+          "src": "mistakes-0.png",
+          "text": "常錯的聲音",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-tip": {
+      "text": "點符號，再聽一次。",
+      "parts": [
+        {
+          "src": "mistakes-tip-0.png",
+          "text": "點符號，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "mistakes-tip-1.png",
+          "text": "再聽一次。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-none": {
+      "text": "目前沒有常錯的聲音。",
+      "parts": [
+        {
+          "src": "mistakes-none-0.png",
+          "text": "目前沒有常錯",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-none-1.png",
+          "text": "的聲音。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-note": {
+      "text": "答錯的聲音會留下，方便慢慢練。",
+      "parts": [
+        {
+          "src": "mistakes-note-0.png",
+          "text": "答錯的聲音會",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-note-1.png",
+          "text": "留下，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "mistakes-note-2.png",
+          "text": "方便慢慢練。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-keep": {
+      "text": "常錯聲音會留下，方便再練習。",
+      "parts": [
+        {
+          "src": "mistakes-keep-0.png",
+          "text": "常錯聲音會留",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-keep-1.png",
+          "text": "下，方便再練",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "mistakes-keep-2.png",
+          "text": "習。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "mistakes-count": {
+      "text": "答錯",
+      "parts": [
+        {
+          "src": "mistakes-count-0.png",
+          "text": "答錯",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "times": {
+      "text": "次",
+      "parts": [
+        {
+          "src": "times-0.png",
+          "text": "次",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "confused-with": {
+      "text": "常和這個混淆",
+      "parts": [
+        {
+          "src": "confused-with-0.png",
+          "text": "常和這個混淆",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review": {
+      "text": "清除複習紀錄",
+      "parts": [
+        {
+          "src": "clear-review-0.png",
+          "text": "清除複習紀錄",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-confirm": {
+      "text": "要清除常錯聲音的紀錄嗎？",
+      "parts": [
+        {
+          "src": "clear-review-confirm-0.png",
+          "text": "要清除常錯聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "clear-review-confirm-1.png",
+          "text": "音的紀錄嗎？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-note": {
+      "text": "故事進度不會改變。",
+      "parts": [
+        {
+          "src": "clear-review-note-0.png",
+          "text": "故事進度不會",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "clear-review-note-1.png",
+          "text": "改變。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "clear-review-yes": {
+      "text": "清除紀錄",
+      "parts": [
+        {
+          "src": "clear-review-yes-0.png",
+          "text": "清除紀錄",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "replay-song": {
+      "text": "再聽歌聲",
+      "parts": [
+        {
+          "src": "replay-song-0.png",
+          "text": "再聽歌聲",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S01-title": {
+      "text": "森林突然安靜",
+      "parts": [
+        {
+          "src": "S01-title-0.png",
+          "text": "森林突然安靜",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-0": {
+      "text": "阿通走進午後的森林。小松鼠忽然停下腳步。",
+      "parts": [
+        {
+          "src": "S01-line-0-0.png",
+          "text": "阿通走進午後",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S01-line-0-1.png",
+          "text": "的森林。",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S01-line-0-2.png",
+          "text": "小松鼠忽然停",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S01-line-0-3.png",
+          "text": "下腳步。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S01-line-1": {
+      "text": "「咦？鳥兒怎麼不唱了？」風還在吹，四周卻靜悄悄。",
+      "parts": [
+        {
+          "src": "S01-line-1-0.png",
+          "text": "「咦？",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S01-line-1-1.png",
+          "text": "鳥兒怎麼不唱",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S01-line-1-2.png",
+          "text": "了？」風還在",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S01-line-1-3.png",
+          "text": "吹，四周卻靜",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S01-line-1-4.png",
+          "text": "悄悄。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S02-title": {
+      "text": "霧裡的小影子",
+      "parts": [
+        {
+          "src": "S02-title-0.png",
+          "text": "霧裡的小影子",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-0": {
+      "text": "一團小影子躲進霧裡。它想說話，卻沒有聲音。",
+      "parts": [
+        {
+          "src": "S02-line-0-0.png",
+          "text": "一團小影子躲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S02-line-0-1.png",
+          "text": "進霧裡。",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S02-line-0-2.png",
+          "text": "它想說話，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-0-3.png",
+          "text": "卻沒有聲音。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S02-line-1": {
+      "text": "小松鼠拿出聽音燈。「我們一起找回聲音吧！」",
+      "parts": [
+        {
+          "src": "S02-line-1-0.png",
+          "text": "小松鼠拿出聽",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S02-line-1-1.png",
+          "text": "音燈。",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S02-line-1-2.png",
+          "text": "「我們一起找",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S02-line-1-3.png",
+          "text": "回聲音吧！",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S02-line-1-4.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S03-title": {
+      "text": "草地上的聲音卡",
+      "parts": [
+        {
+          "src": "S03-title-0.png",
+          "text": "草地上的聲音",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S03-title-1.png",
+          "text": "卡",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-0": {
+      "text": "燈裡傳來小小的聲音。「先聽一聽，再看一看。」",
+      "parts": [
+        {
+          "src": "S03-line-0-0.png",
+          "text": "燈裡傳來小小",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-1.png",
+          "text": "的聲音。",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-2.png",
+          "text": "「先聽一聽，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-3.png",
+          "text": "再看一看。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-0-4.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S03-line-1": {
+      "text": "阿通和小松鼠坐在草邊，認識今天的六個符號。",
+      "parts": [
+        {
+          "src": "S03-line-1-0.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S03-line-1-1.png",
+          "text": "坐在草邊，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S03-line-1-2.png",
+          "text": "認識今天的六",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S03-line-1-3.png",
+          "text": "個符號。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S04-title": {
+      "text": "第一關蟲鳴草地",
+      "parts": [
+        {
+          "src": "S04-title-0.png",
+          "text": "第一關蟲鳴草",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S04-title-1.png",
+          "text": "地",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-0": {
+      "text": "草叢裡藏著聲音。找到它，草燈就會亮。",
+      "parts": [
+        {
+          "src": "S04-line-0-0.png",
+          "text": "草叢裡藏著聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S04-line-0-1.png",
+          "text": "音。找到它，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S04-line-0-2.png",
+          "text": "草燈就會亮。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S04-line-1": {
+      "text": "「聽清楚，點點看！」",
+      "parts": [
+        {
+          "src": "S04-line-1-0.png",
+          "text": "「聽清楚，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S04-line-1-1.png",
+          "text": "點點看！",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S04-line-1-2.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S05-title": {
+      "text": "沒有回聲的小溪",
+      "parts": [
+        {
+          "src": "S05-title-0.png",
+          "text": "沒有回聲的小",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S05-title-1.png",
+          "text": "溪",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-0": {
+      "text": "小蟲唱起歌來。阿通沿著亮亮的路前進。",
+      "parts": [
+        {
+          "src": "S05-line-0-0.png",
+          "text": "小蟲唱起歌來。",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S05-line-0-1.png",
+          "text": "阿通沿著亮亮",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S05-line-0-2.png",
+          "text": "的路前進。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S05-line-1": {
+      "text": "溪水流過石頭，卻沒有聲音。「我們再聽六個聲音吧！」",
+      "parts": [
+        {
+          "src": "S05-line-1-0.png",
+          "text": "溪水流過石頭，",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S05-line-1-1.png",
+          "text": "卻沒有聲音。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S05-line-1-2.png",
+          "text": "「我們再聽六",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S05-line-1-3.png",
+          "text": "個聲音吧！",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S05-line-1-4.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S06-title": {
+      "text": "第二關回聲溪谷",
+      "parts": [
+        {
+          "src": "S06-title-0.png",
+          "text": "第二關回聲溪",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S06-title-1.png",
+          "text": "谷",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-0": {
+      "text": "光泡在水面飄動。聲音藏在哪一個裡面？",
+      "parts": [
+        {
+          "src": "S06-line-0-0.png",
+          "text": "光泡在水面飄",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S06-line-0-1.png",
+          "text": "動。聲音藏在",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S06-line-0-2.png",
+          "text": "哪一個裡面？",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S06-line-1": {
+      "text": "「仔細聽，慢慢找。」",
+      "parts": [
+        {
+          "src": "S06-line-1-0.png",
+          "text": "「仔細聽，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S06-line-1-1.png",
+          "text": "慢慢找。",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S06-line-1-2.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S07-title": {
+      "text": "樹根旁的岔路",
+      "parts": [
+        {
+          "src": "S07-title-0.png",
+          "text": "樹根旁的岔路",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-0": {
+      "text": "溪水唱起歌來。大路通向一棵古樹。",
+      "parts": [
+        {
+          "src": "S07-line-0-0.png",
+          "text": "溪水唱起歌來。",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S07-line-0-1.png",
+          "text": "大路通向一棵",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S07-line-0-2.png",
+          "text": "古樹。",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "S07-line-1": {
+      "text": "小松鼠看看樹根。「這裡的草，怎麼倒向一邊？」",
+      "parts": [
+        {
+          "src": "S07-line-1-0.png",
+          "text": "小松鼠看看樹",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S07-line-1-1.png",
+          "text": "根。「這裡的",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S07-line-1-2.png",
+          "text": "草，怎麼倒向",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S07-line-1-3.png",
+          "text": "一邊？",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S07-line-1-4.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "H01-title": {
+      "text": "露珠下的小鈴",
+      "parts": [
+        {
+          "src": "H01-title-0.png",
+          "text": "露珠下的小鈴",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-0": {
+      "text": "樹根後有一個小水窪。露珠裡藏著一顆小鈴。",
+      "parts": [
+        {
+          "src": "H01-line-0-0.png",
+          "text": "樹根後有一個",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H01-line-0-1.png",
+          "text": "小水窪。",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "H01-line-0-2.png",
+          "text": "露珠裡藏著一",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H01-line-0-3.png",
+          "text": "顆小鈴。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "H01-line-1": {
+      "text": "阿通輕輕拿起它。鈴聲像一滴水落下。",
+      "parts": [
+        {
+          "src": "H01-line-1-0.png",
+          "text": "阿通輕輕拿起",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H01-line-1-1.png",
+          "text": "它。鈴聲像一",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H01-line-1-2.png",
+          "text": "滴水落下。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "S08-title": {
+      "text": "古樹上的空鳥巢",
+      "parts": [
+        {
+          "src": "S08-title-0.png",
+          "text": "古樹上的空鳥",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S08-title-1.png",
+          "text": "巢",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-0": {
+      "text": "古樹上有六個鳥巢。小鳥們張嘴，卻唱不出歌。",
+      "parts": [
+        {
+          "src": "S08-line-0-0.png",
+          "text": "古樹上有六個",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S08-line-0-1.png",
+          "text": "鳥巢。",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S08-line-0-2.png",
+          "text": "小鳥們張嘴，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S08-line-0-3.png",
+          "text": "卻唱不出歌。",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S08-line-1": {
+      "text": "阿通舉起聽音燈。「最後六個，一起聽吧！」",
+      "parts": [
+        {
+          "src": "S08-line-1-0.png",
+          "text": "阿通舉起聽音",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S08-line-1-1.png",
+          "text": "燈。「最後六",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S08-line-1-2.png",
+          "text": "個，一起聽吧！",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S08-line-1-3.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S09-title": {
+      "text": "第三關古樹鳥巢",
+      "parts": [
+        {
+          "src": "S09-title-0.png",
+          "text": "第三關古樹鳥",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S09-title-1.png",
+          "text": "巢",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-0": {
+      "text": "羽形光片輕輕飛舞。它們帶著小鳥的聲音。",
+      "parts": [
+        {
+          "src": "S09-line-0-0.png",
+          "text": "羽形光片輕輕",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S09-line-0-1.png",
+          "text": "飛舞。",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S09-line-0-2.png",
+          "text": "它們帶著小鳥",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S09-line-0-3.png",
+          "text": "的聲音。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S09-line-1": {
+      "text": "「聽一聽，把聲音找回來！」",
+      "parts": [
+        {
+          "src": "S09-line-1-0.png",
+          "text": "「聽一聽，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "S09-line-1-1.png",
+          "text": "把聲音找回來！",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S09-line-1-2.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "S10-title": {
+      "text": "霧裡的悄悄話",
+      "parts": [
+        {
+          "src": "S10-title-0.png",
+          "text": "霧裡的悄悄話",
+          "width": 1752,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-0": {
+      "text": "蟲兒唱，小溪響，鳥兒也唱了。小霧靈走到阿通面前。",
+      "parts": [
+        {
+          "src": "S10-line-0-0.png",
+          "text": "蟲兒唱，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S10-line-0-1.png",
+          "text": "小溪響，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S10-line-0-2.png",
+          "text": "鳥兒也唱了。",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S10-line-0-3.png",
+          "text": "小霧靈走到阿",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S10-line-0-4.png",
+          "text": "通面前。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "S10-line-1": {
+      "text": "它把聲音藏在霧裡，自己也不敢開口。阿通蹲下：「不急，我們會慢慢聽。」",
+      "parts": [
+        {
+          "src": "S10-line-1-0.png",
+          "text": "它把聲音藏在",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-1.png",
+          "text": "霧裡，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-2.png",
+          "text": "自己也不敢開",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-3.png",
+          "text": "口。阿通蹲下：",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-4.png",
+          "text": "「不急，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-5.png",
+          "text": "我們會慢慢聽。",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "S10-line-1-6.png",
+          "text": "」",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "H02-title": {
+      "text": "小霧靈的第一句話",
+      "parts": [
+        {
+          "src": "H02-title-0.png",
+          "text": "小霧靈的第一",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H02-title-1.png",
+          "text": "句話",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "H02-line-0": {
+      "text": "露珠鈴輕輕響起。小霧靈閉上眼，深深吸氣。",
+      "parts": [
+        {
+          "src": "H02-line-0-0.png",
+          "text": "露珠鈴輕輕響",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H02-line-0-1.png",
+          "text": "起。小霧靈閉",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H02-line-0-2.png",
+          "text": "上眼，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "H02-line-0-3.png",
+          "text": "深深吸氣。",
+          "width": 1464,
+          "height": 215
+        }
+      ]
+    },
+    "H02-line-1": {
+      "text": "「謝謝你，阿通。」霧慢慢散開，變成亮亮的露珠。",
+      "parts": [
+        {
+          "src": "H02-line-1-0.png",
+          "text": "「謝謝你，",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "H02-line-1-1.png",
+          "text": "阿通。",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "H02-line-1-2.png",
+          "text": "」霧慢慢散開，",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "H02-line-1-3.png",
+          "text": "變成亮亮的露",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "H02-line-1-4.png",
+          "text": "珠。",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "E01-title": {
+      "text": "歌聲陪我們回家",
+      "parts": [
+        {
+          "src": "E01-title-0.png",
+          "text": "歌聲陪我們回",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E01-title-1.png",
+          "text": "家",
+          "width": 312,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-0": {
+      "text": "夕陽照著回村的路。阿通和小松鼠一邊走，一邊聽。",
+      "parts": [
+        {
+          "src": "E01-line-0-0.png",
+          "text": "夕陽照著回村",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E01-line-0-1.png",
+          "text": "的路。",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "E01-line-0-2.png",
+          "text": "阿通和小松鼠",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E01-line-0-3.png",
+          "text": "一邊走，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "E01-line-0-4.png",
+          "text": "一邊聽。",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "E01-line-1": {
+      "text": "蟲聲、溪聲、鳥聲，都回來了。今天的森林，真好聽！",
+      "parts": [
+        {
+          "src": "E01-line-1-0.png",
+          "text": "蟲聲、溪聲、",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E01-line-1-1.png",
+          "text": "鳥聲，",
+          "width": 888,
+          "height": 215
+        },
+        {
+          "src": "E01-line-1-2.png",
+          "text": "都回來了。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E01-line-1-3.png",
+          "text": "今天的森林，",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E01-line-1-4.png",
+          "text": "真好聽！",
+          "width": 1176,
+          "height": 215
+        }
+      ]
+    },
+    "E02-title": {
+      "text": "森林送來一聲謝謝",
+      "parts": [
+        {
+          "src": "E02-title-0.png",
+          "text": "森林送來一聲",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E02-title-1.png",
+          "text": "謝謝",
+          "width": 600,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-0": {
+      "text": "小霧靈陪他們走到村口。「明天，還來聽我說話嗎？」",
+      "parts": [
+        {
+          "src": "E02-line-0-0.png",
+          "text": "小霧靈陪他們",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E02-line-0-1.png",
+          "text": "走到村口。",
+          "width": 1464,
+          "height": 215
+        },
+        {
+          "src": "E02-line-0-2.png",
+          "text": "「明天，",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "E02-line-0-3.png",
+          "text": "還來聽我說話",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E02-line-0-4.png",
+          "text": "嗎？」",
+          "width": 888,
+          "height": 215
+        }
+      ]
+    },
+    "E02-line-1": {
+      "text": "阿通揮揮手：「好呀！」樹上的露珠，像星星一樣亮。",
+      "parts": [
+        {
+          "src": "E02-line-1-0.png",
+          "text": "阿通揮揮手：",
+          "width": 1752,
+          "height": 215
+        },
+        {
+          "src": "E02-line-1-1.png",
+          "text": "「好呀！",
+          "width": 1176,
+          "height": 215
+        },
+        {
+          "src": "E02-line-1-2.png",
+          "text": "」樹上的露珠，",
+          "width": 2040,
+          "height": 215
+        },
+        {
+          "src": "E02-line-1-3.png",
+          "text": "像星星一樣亮。",
+          "width": 2040,
+          "height": 215
+        }
+      ]
+    }
+  }
+}

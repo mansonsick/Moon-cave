@@ -130,6 +130,15 @@
       .subject-entry svg { width: 36px; height: 36px; }
       .subject-heading { gap: 12px; }
     }
+    .story-card[data-story="story-06"] .hub-stage { aspect-ratio: 2/3; max-width: 400px; }
+    .story-card[data-story="story-06"] .hub-layer { position:absolute; object-fit:contain; pointer-events:none; }
+    .story-card[data-story="story-06"] .hub-background { object-fit:contain; }
+    .story-card[data-story="story-06"] .cover-link { background:#d3dfc0; }
+    .story-card[data-story="story-06"] .reading-hub-text { font-size:24px; line-height:1.7; }
+    .story-card[data-story="story-06"] h2.reading-hub-text { font-size:30px; }
+    .story-card[data-story="story-06"] .chapter.reading-hub-text { font-size:20px; }
+    .story-card[data-story="story-06"] .description { display:block; }
+    .story-card[data-story="story-06"] .reading-hub-text img { display:inline-block; height:1.12em; max-width:100%; vertical-align:middle; object-fit:contain; }
   </style>
 <link rel="stylesheet" href="./site-access.css">
 <script src="./site-access.js"></script>
@@ -199,6 +208,23 @@
         <a class="start" href="./stories/story-04/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
       </div>
     </article>
+      <article class="story-card" data-story="story-06" aria-labelledby="story-06-title">
+        <a class="cover-link" href="./stories/story-06/" aria-label="進入阿通與失聲森林">
+          <div class="hub-stage">
+            <img class="hub-background" src="./stories/story-06/assets/images/backgrounds/forest-path.png" alt="阿通與小松鼠走進安靜的森林，準備找回聲音。" loading="lazy" decoding="async">
+            <img class="hub-layer" src="./stories/story-06/assets/images/characters/atong-listening.png" alt="" loading="lazy" decoding="async" style="left:15.212%;top:55.291%;width:38.047%;height:38.047%">
+            <img class="hub-layer" src="./stories/story-06/assets/images/characters/squirrel-alert.png" alt="" loading="lazy" decoding="async" style="left:0.182%;top:75.156%;width:28.823%;height:18.598%">
+            <img class="hub-layer" src="./stories/story-06/assets/images/characters/bird-quiet.png" alt="" loading="lazy" decoding="async" style="left:16.96%;top:3.848%;width:10.34%;height:6.299%">
+          </div>
+        </a>
+        <div class="story-info">
+<p class="reading-hub-text chapter" role="img" aria-label="阿通的第六場冒險"><img src="./stories/story-06/assets/text/hub-chapter-0.png" alt="" style="width:9.1267em"><img src="./stories/story-06/assets/text/hub-chapter-1.png" alt="" style="width:3.1256em"></p>
+<h2 id="story-06-title" class="reading-hub-text " role="img" aria-label="阿通與失聲森林"><img src="./stories/story-06/assets/text/title-0.png" alt="" style="width:9.1267em"><img src="./stories/story-06/assets/text/title-1.png" alt="" style="width:1.6253em"></h2>
+<p class="reading-hub-text description" role="img" aria-label="聽聽注音，找回森林的聲音。"><img src="./stories/story-06/assets/text/hub-first-0.png" alt="" style="width:7.6264em"><img src="./stories/story-06/assets/text/hub-first-1.png" alt="" style="width:9.1267em"><img src="./stories/story-06/assets/text/hub-first-2.png" alt="" style="width:3.1256em"></p>
+<p class="reading-hub-text description" role="img" aria-label="神祕森林，先學再玩。"><img src="./stories/story-06/assets/text/hub-second-0.png" alt="" style="width:7.6264em"><img src="./stories/story-06/assets/text/hub-second-1.png" alt="" style="width:7.6264em"></p>
+          <a class="start" href="./stories/story-06/"><img class="text-image" src="./assets/hub-text/start.png" alt="開始冒險" width="1176" height="207"><span aria-hidden="true">→</span></a>
+        </div>
+      </article>
       <a class="subject-return" href="#subjects"><img class="text-image" src="./assets/hub-text/subject-back.png" alt="重新選科目"></a>
     </section>
     <section class="subject-section" id="math" aria-labelledby="math-title">
